@@ -78,7 +78,11 @@ msgctxt "#31014"
 msgid "Default Focused Menu Item"
 msgstr ""
 
-#empty strings from id 31014 to 31038
+msgctxt "#31015"
+msgid "Extras"
+msgstr ""
+
+#empty strings from id 31016 to 31038
 
 msgctxt "#31039"
 msgid "Actions"
@@ -1104,7 +1108,15 @@ msgctxt "#31393"
 msgid "Arial based"
 msgstr ""
 
-#empty strings from id 31394 to 31449
+msgctxt "#31394"
+msgid "Enable Video Extras"
+msgstr ""
+
+msgctxt "#31395"
+msgid "Configure script.videoextras"
+msgstr ""
+
+#empty strings from id 31396 to 31449
 
 msgctxt "#31450"
 msgid "CONFIGURE APPEARANCE SETTINGS"
@@ -1392,6 +1404,10 @@ msgstr ""
 
 msgctxt "#31647"
 msgid "Coverflow"
+msgstr ""
+
+msgctxt "#31648"
+msgid "Full Wall"
 msgstr ""
 
 #empty strings from id 31648 to 31697

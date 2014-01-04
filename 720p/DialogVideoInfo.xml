@@ -2,6 +2,7 @@
 <window>
 	<defaultcontrol always="true">8</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<onload condition="!Skin.HasSetting(DisableVideoExtras)">XBMC.RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
 	<onload condition="!Skin.HasSetting(DisableTvTunes) + System.HasAddon(script.tvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
 	<controls>
 		<control type="group">
@@ -1077,6 +1078,13 @@
 						<label>31213</label>
 						<onclick>XBMC.RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
 						<visible>!Skin.HasSetting(DisableTvTunes) + System.HasAddon(script.tvtunes) + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton")) + [Container.Content(TVShows) | Container.Content(Movies)]</visible>
+					</control>
+					<control type="button" id="105">
+						<description>Extras</description>
+						<include>ButtonInfoDialogsCommonValues</include>
+						<label>31015</label>
+						<onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
+						<visible>!Skin.HasSetting(DisableVideoExtras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows)] + IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
 					</control>
 				</control>
 			</control>

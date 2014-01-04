@@ -5876,6 +5876,32 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
+						<label>31394</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(DisableVideoExtras)</onclick>
+						<selected>!Skin.HasSetting(DisableVideoExtras)</selected>
+						<enable>System.HasAddon(script.videoextras)</enable>
+					</control>
+					<control type="button" id="633">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31395]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Addon.OpenSettings(script.videoextras)</onclick>
+						<enable>!Skin.HasSetting(DisableVideoExtras)</enable>
+						<visible>System.HasAddon(script.videoextras)</visible>
+					</control>
+					<control type="radiobutton" id="634">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
 						<label>31361</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -5885,7 +5911,7 @@
 						<selected>!Skin.HasSetting(DisableWatchItLater)</selected>
 						<enable>System.HasAddon(script.simpleplaylists)</enable>
 					</control>
-					<control type="button" id="633">
+					<control type="button" id="635">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -5898,7 +5924,7 @@
 						<enable>!Skin.HasSetting(DisableWatchItLater)</enable>
 						<visible>System.HasAddon(script.simpleplaylists)</visible>
 					</control>
-					<control type="radiobutton" id="634">
+					<control type="radiobutton" id="636">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -5911,7 +5937,7 @@
 						<selected>!Skin.HasSetting(DisableScriptPlayList)</selected>
 						<enable>System.HasAddon(script.randomandlastitems)</enable>
 					</control>
-					<control type="button" id="635">
+					<control type="button" id="637">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>

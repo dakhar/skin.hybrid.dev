@@ -1,6 +1,8 @@
 [B]2.0.1[/B] [I]Jan 2014[/I]
 - Bugfix font names
 - BugFix Right Aligment
+- Added FullWall View
+- Added Support script.videoextras
 
 [B]2.0.0[/B] [I]Jan 2014[/I]
 - Initial Commit Gotham Version
