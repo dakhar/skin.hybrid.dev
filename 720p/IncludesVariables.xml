@@ -407,10 +407,6 @@
 		<value condition="!Player.Paused">$LOCALIZE[31054]</value>
 		<value condition="Player.Paused">$LOCALIZE[14098]</value>
 	</variable>
-	<variable name="RunFavouriteCmd">
-		<value condition="Skin.HasSetting(PlayFavouriteList)">XBMC.RunScript(script.favourites,playlists=play)</value>
-		<value>XBMC.RunScript(script.favourites)</value>
-	</variable>
 	<variable name="PlaylistSortOrder" type="text">
 		<value condition="Skin.HasSetting(EnableRandomPlaylist)">Random</value>
 		<value>Playlist</value>

@@ -2,7 +2,7 @@
 <window>
 	<defaultcontrol always="true">9000</defaultcontrol>
 	<include condition="!Skin.HasSetting(InitialSetUpRun)">DefaultInitialSetup</include>
-	<onload condition="System.HasAddon(script.favourites)">$VAR[RunFavouriteCmd]</onload>
+	<onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
 	<onload>SetProperty(MenuItemActive,Settings,Home)</onload>
 	<onload condition="stringcompare(Container(9009).Position,0) + !stringcompare(Skin.String(InitialMenuPosi),0)">Control.Move(9009,$INFO[Skin.String(InitialMenuPosi)])</onload>
 	<onload condition="stringcompare(Container(9008).ListItem.Label,$LOCALIZE[31700]) + stringcompare(Skin.String(MPAACountryCert),$LOCALIZE[31701])">Control.Move(9008,1)</onload>
@@ -5971,18 +5971,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Addon.OpenSettings(service.skin.widgets)</onclick>
 						<enable>System.HasAddon(service.skin.widgets)</enable>
-					</control>
-					<control type="button" id="620">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>$LOCALIZE[31359]</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>ActivateWindow(2123)</onclick>
-						<enable>System.HasAddon(script.favourites)</enable>
 					</control>
 					<control type="label" id="655">
 						<width>750</width>

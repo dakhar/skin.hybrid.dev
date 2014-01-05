@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
-	<onunload condition="System.HasAddon(script.favourites)">$VAR[RunFavouriteCmd]</onunload>
+	<onunload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onunload>
 	<defaultcontrol always="true">450</defaultcontrol>
 	<coordinates>
 		<system>1</system>

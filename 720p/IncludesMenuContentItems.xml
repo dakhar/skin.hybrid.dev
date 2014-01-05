@@ -142,9 +142,7 @@
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(UsrSelectBtn)].Fanart,special://skin/backgrounds/homescreen/SKINDEFAULT.jpg)</onclick>
 				<onclick condition="Window.IsVisible(2115)">Dialog.Close(2115)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Dialog.Close(2114)</onclick>
-				<!--onclick>RunScript(script.favourites,changetitle=true&amp;property=$INFO[Window(home).Property(UsrSelectBtn)])</onclick-->
-				<onclick condition="!Skin.HasSetting(PlayFavouriteList)">RunScript(script.favourites,changetitle=true&amp;property=$INFO[Window(home).Property(UsrSelectBtn)])</onclick>
-				<onclick condition="Skin.HasSetting(PlayFavouriteList)">RunScript(script.favourites,playlists=play,changetitle=true&amp;property=$INFO[Window(home).Property(UsrSelectBtn)])</onclick>
+				<onclick>RunScript(script.favourites,changetitle=true&amp;property=$INFO[Window(home).Property(UsrSelectBtn)])</onclick>
 				<onclick>ClearProperty(UsrSelectBtn,Home)</onclick>
 				<visible>System.HasAddon(script.favourites)</visible>
 			</item>
