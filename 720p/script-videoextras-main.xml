@@ -7,7 +7,7 @@
 	<defaultcontrol always="true">51</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
-			<control type="button" id="800">
+		<control type="button" id="800">
 			<include>InvisibleButton</include>
 			<onleft>801</onleft>
 			<onright>804</onright>
@@ -44,10 +44,8 @@
 			<include>Window_OpenClose_Animation</include>
 			<label>$ADDON[script.videoextras 32001]</label>
 		</control>
-
-		
 		<control type="group">
-			<include>Window_OpenClose_Animation</include>		
+			<include>Window_OpenClose_Animation</include>
 		</control>
 		<include>CommonPageCount</include>
 		<include>FloorReturnButtons</include>
@@ -95,33 +93,29 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-							<left>1050</left>
-							<top>8</top>
-							<width>24</width>
-							<height>24</height>
-							<texture diffuse="poster-diffuse.png">MediaStatus/OverlayBase.png</texture>
-							<visible>ListItem.IsResumable</visible>
-						</control>
-						<control type="image">
-							<left>1050</left>
-							<top>8</top>
-							<width>24</width>
-							<height>24</height>
-							<texture diffuse="poster-diffuse.png">$VAR[PartlyWatched,MediaStatus/,.png]</texture>
-							<visible>ListItem.IsResumable</visible>
-						</control>
-						<control type="image">
-							<left>1050</left>
-							<top>8</top>
-							<width>24</width>
-							<height>24</height>
-							<texture>$INFO[ListItem.Overlay,MediaStatus/]</texture>
-							<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
-						</control>
-					
-					
-					
-					
+						<left>1050</left>
+						<top>8</top>
+						<width>24</width>
+						<height>24</height>
+						<texture diffuse="poster-diffuse.png">MediaStatus/OverlayBase.png</texture>
+						<visible>ListItem.IsResumable</visible>
+					</control>
+					<control type="image">
+						<left>1050</left>
+						<top>8</top>
+						<width>24</width>
+						<height>24</height>
+						<texture diffuse="poster-diffuse.png">$VAR[PartlyWatched,MediaStatus/,.png]</texture>
+						<visible>ListItem.IsResumable</visible>
+					</control>
+					<control type="image">
+						<left>1050</left>
+						<top>8</top>
+						<width>24</width>
+						<height>24</height>
+						<texture>$INFO[ListItem.Overlay,MediaStatus/]</texture>
+						<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
+					</control>
 				</itemlayout>
 				<focusedlayout height="40" width="1080">
 					<control type="image">
@@ -161,34 +155,30 @@
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
-					
-						<control type="image">
-							<left>1050</left>
-							<top>8</top>
-							<width>24</width>
-							<height>24</height>
-							<texture diffuse="poster-diffuse.png">MediaStatus/OverlayBase.png</texture>
-							<visible>ListItem.IsResumable</visible>
-						</control>
-						<control type="image">
-							<left>1050</left>
-							<top>8</top>
-							<width>24</width>
-							<height>24</height>
-							<texture diffuse="poster-diffuse.png">$VAR[PartlyWatched,MediaStatus/,.png]</texture>
-							<visible>ListItem.IsResumable</visible>
-						</control>
-						<control type="image">
-							<left>1050</left>
-							<top>8</top>
-							<width>24</width>
-							<height>24</height>
-							<texture>$INFO[ListItem.Overlay,MediaStatus/]</texture>
-							<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
-						</control>
-					
-					
-					
+					<control type="image">
+						<left>1050</left>
+						<top>8</top>
+						<width>24</width>
+						<height>24</height>
+						<texture diffuse="poster-diffuse.png">MediaStatus/OverlayBase.png</texture>
+						<visible>ListItem.IsResumable</visible>
+					</control>
+					<control type="image">
+						<left>1050</left>
+						<top>8</top>
+						<width>24</width>
+						<height>24</height>
+						<texture diffuse="poster-diffuse.png">$VAR[PartlyWatched,MediaStatus/,.png]</texture>
+						<visible>ListItem.IsResumable</visible>
+					</control>
+					<control type="image">
+						<left>1050</left>
+						<top>8</top>
+						<width>24</width>
+						<height>24</height>
+						<texture>$INFO[ListItem.Overlay,MediaStatus/]</texture>
+						<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
+					</control>
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
@@ -208,7 +198,6 @@
 				<visible>Control.IsVisible(51)</visible>
 			</control>
 		</control>
-
 		<include>BottomClock</include>
 	</controls>
 </window>
