@@ -204,7 +204,15 @@ msgctxt "#31068"
 msgid "Media Paused"
 msgstr ""
 
-#empty strings from id 31069 to 31183
+msgctxt "#31069"
+msgid "System music files"
+msgstr ""
+
+msgctxt "#31070"
+msgid "Current playlist"
+msgstr ""
+
+#empty strings from id 31071 to 31183
 
 msgctxt "#31084"
 msgid "of"
