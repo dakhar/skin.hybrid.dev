@@ -20,7 +20,7 @@
 					<onleft>700</onleft>
 					<onright>700</onright>
 					<ondown condition="Control.IsVisible(510)">510</ondown>
-					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9002</ondown>
+					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9004</ondown>
 					<ondown condition="!Control.IsVisible(601) + !Control.IsVisible(510)">9000</ondown>
 					<include>HomeAddonsCommonLayout</include>
 					<content>
@@ -42,7 +42,7 @@
 					<onleft>703</onleft>
 					<onright>703</onright>
 					<ondown condition="Control.IsVisible(510)">510</ondown>
-					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9002</ondown>
+					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9004</ondown>
 					<ondown condition="!Control.IsVisible(601) + !Control.IsVisible(510)">9000</ondown>
 					<include>HomeAddonsCommonLayout</include>
 					<content>
@@ -64,7 +64,7 @@
 					<onleft>704</onleft>
 					<onright>704</onright>
 					<ondown condition="Control.IsVisible(510)">510</ondown>
-					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9002</ondown>
+					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9004</ondown>
 					<ondown condition="!Control.IsVisible(601) + !Control.IsVisible(510)">9000</ondown>
 					<include>HomeAddonsCommonLayout</include>
 					<content>
@@ -86,7 +86,7 @@
 					<onleft>705</onleft>
 					<onright>705</onright>
 					<ondown condition="Control.IsVisible(510)">510</ondown>
-					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9002</ondown>
+					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9004</ondown>
 					<ondown condition="!Control.IsVisible(601) + !Control.IsVisible(510)">9000</ondown>
 					<include>HomeAddonsCommonLayout</include>
 					<content>
@@ -108,7 +108,7 @@
 					<onleft>706</onleft>
 					<onright>706</onright>
 					<ondown condition="Control.IsVisible(510)">510</ondown>
-					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9002</ondown>
+					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9004</ondown>
 					<ondown condition="!Control.IsVisible(601) + !Control.IsVisible(510)">9000</ondown>
 					<include>HomeAddonsCommonLayout</include>
 					<content>
@@ -130,7 +130,7 @@
 					<onleft>707</onleft>
 					<onright>707</onright>
 					<ondown condition="Control.IsVisible(510)">510</ondown>
-					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9002</ondown>
+					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9004</ondown>
 					<ondown condition="!Control.IsVisible(601) + !Control.IsVisible(510)">9000</ondown>
 					<include>HomeAddonsCommonLayout</include>
 					<content>
@@ -152,7 +152,7 @@
 					<onleft>708</onleft>
 					<onright>708</onright>
 					<ondown condition="Control.IsVisible(510)">510</ondown>
-					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9002</ondown>
+					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9004</ondown>
 					<ondown condition="!Control.IsVisible(601) + !Control.IsVisible(510)">9000</ondown>
 					<include>HomeAddonsCommonLayout</include>
 					<content>
@@ -174,7 +174,7 @@
 					<onleft>709</onleft>
 					<onright>709</onright>
 					<ondown condition="Control.IsVisible(510)">510</ondown>
-					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9002</ondown>
+					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9004</ondown>
 					<ondown condition="!Control.IsVisible(601) + !Control.IsVisible(510)">9000</ondown>
 					<include>HomeAddonsCommonLayout</include>
 					<content>
@@ -196,7 +196,7 @@
 					<onleft>710</onleft>
 					<onright>710</onright>
 					<ondown condition="Control.IsVisible(510)">510</ondown>
-					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9002</ondown>
+					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9004</ondown>
 					<ondown condition="!Control.IsVisible(601) + !Control.IsVisible(510)">9000</ondown>
 					<include>HomeAddonsCommonLayout</include>
 					<content>
@@ -218,7 +218,7 @@
 					<onleft>711</onleft>
 					<onright>711</onright>
 					<ondown condition="Control.IsVisible(510)">510</ondown>
-					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9002</ondown>
+					<ondown condition="Control.IsVisible(601) + !Control.IsVisible(510)">9004</ondown>
 					<ondown condition="!Control.IsVisible(601) + !Control.IsVisible(510)">9000</ondown>
 					<include>HomeAddonsCommonLayout</include>
 					<content>
