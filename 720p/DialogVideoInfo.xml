@@ -975,7 +975,7 @@
 						<description>Fetch TvTunes stuff</description>
 						<include>ButtonVideoInfoDialogsValues</include>
 						<label>31213</label>
-						<onclick>XBMC.RunScript(script.tvtunes,mode=solo&amp;tvpath=$INFO[ListItem.FilenameAndPath]&amp;tvname=$INFO[ListItem.TVShowTitle])</onclick>
+						<onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
 						<visible>!Skin.HasSetting(DisableTvTunes) + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton")) + [Container.Content(TVShows) | Container.Content(Movies)]</visible>
 					</control>
 					<control type="button" id="105">
