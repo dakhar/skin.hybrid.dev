@@ -2,8 +2,8 @@
 <window>
 	<defaultcontrol always="true">8</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<onload condition="!Skin.HasSetting(DisableVideoExtras)">XBMC.RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
-	<onload condition="!Skin.HasSetting(DisableTvTunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
+	<onload condition="!Skin.HasSetting(disablevideoextras)">XBMC.RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
+	<onload condition="!Skin.HasSetting(disabletvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
 	<controls>
 		<control type="group">
 			<visible>!Window.IsVisible(FileBrowser)</visible>
@@ -200,7 +200,7 @@
 								<aligny>center</aligny>
 								<textcolor>red</textcolor>
 								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Label</info>
+								<info>ListItem.label</info>
 							</control>
 							<control type="label">
 								<left>175</left>
@@ -212,7 +212,7 @@
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
+								<info>ListItem.label2</info>
 							</control>
 						</itemlayout>
 						<focusedlayout height="30">
@@ -235,7 +235,7 @@
 								<aligny>center</aligny>
 								<textcolor>red</textcolor>
 								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Label</info>
+								<info>ListItem.label</info>
 							</control>
 							<control type="label">
 								<left>175</left>
@@ -247,7 +247,7 @@
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
+								<info>ListItem.label2</info>
 							</control>
 						</focusedlayout>
 						<content>
@@ -380,7 +380,7 @@
 								<aligny>center</aligny>
 								<textcolor>red</textcolor>
 								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Label</info>
+								<info>ListItem.label</info>
 							</control>
 							<control type="label">
 								<left>175</left>
@@ -392,7 +392,7 @@
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
+								<info>ListItem.label2</info>
 							</control>
 						</itemlayout>
 						<focusedlayout height="30">
@@ -415,7 +415,7 @@
 								<aligny>center</aligny>
 								<textcolor>red</textcolor>
 								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Label</info>
+								<info>ListItem.label</info>
 							</control>
 							<control type="label">
 								<left>175</left>
@@ -427,7 +427,7 @@
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
+								<info>ListItem.label2</info>
 							</control>
 						</focusedlayout>
 						<content>
@@ -491,7 +491,7 @@
 						<aspectratio aligny="bottom">keep</aspectratio>
 						<bordertexture border="5">button-nofocus.png</bordertexture>
 						<bordersize>4</bordersize>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.icon]</texture>
 					</control>
 					<control type="image">
 						<left>0</left>
@@ -501,7 +501,7 @@
 						<aspectratio aligny="top">keep</aspectratio>
 						<bordertexture border="5" flipy="true" diffuse="diffuse_mirror2.png">button-nofocus.png</bordertexture>
 						<bordersize>4</bordersize>
-						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.Icon]</texture>
+						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.icon]</texture>
 					</control>
 					<control type="list" id="49">
 						<left>390</left>
@@ -525,7 +525,7 @@
 								<aligny>center</aligny>
 								<textcolor>red</textcolor>
 								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Label</info>
+								<info>ListItem.label</info>
 							</control>
 							<control type="label">
 								<left>175</left>
@@ -537,7 +537,7 @@
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
+								<info>ListItem.label2</info>
 							</control>
 						</itemlayout>
 						<focusedlayout height="30">
@@ -560,7 +560,7 @@
 								<aligny>center</aligny>
 								<textcolor>red</textcolor>
 								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Label</info>
+								<info>ListItem.label</info>
 							</control>
 							<control type="label">
 								<left>175</left>
@@ -572,7 +572,7 @@
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
+								<info>ListItem.label2</info>
 							</control>
 						</focusedlayout>
 						<content>
@@ -666,7 +666,7 @@
 						<aspectratio>keep</aspectratio>
 						<bordertexture border="5">button-nofocus.png</bordertexture>
 						<bordersize>4</bordersize>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.icon]</texture>
 					</control>
 					<control type="list" id="49">
 						<left>390</left>
@@ -690,7 +690,7 @@
 								<aligny>center</aligny>
 								<textcolor>red</textcolor>
 								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Label</info>
+								<info>ListItem.label</info>
 							</control>
 							<control type="label">
 								<left>175</left>
@@ -702,7 +702,7 @@
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
+								<info>ListItem.label2</info>
 							</control>
 						</itemlayout>
 						<focusedlayout height="30">
@@ -725,7 +725,7 @@
 								<aligny>center</aligny>
 								<textcolor>red</textcolor>
 								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Label</info>
+								<info>ListItem.label</info>
 							</control>
 							<control type="label">
 								<left>175</left>
@@ -737,7 +737,7 @@
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>white</selectedcolor>
-								<info>ListItem.Label2</info>
+								<info>ListItem.label2</info>
 							</control>
 						</focusedlayout>
 						<content>
@@ -859,7 +859,7 @@
 					<textcolor>white</textcolor>
 					<pagecontrol>61</pagecontrol>
 					<label>$VAR[VideoDescription]</label>
-					<autoscroll delay="3000" time="1800" repeat="10000">!Control.HasFocus(61) + !Skin.HasSetting(DisableAutoScroll)</autoscroll>
+					<autoscroll delay="3000" time="1800" repeat="10000">!Control.HasFocus(61) + !Skin.HasSetting(disableautoscroll)</autoscroll>
 					<visible>!Control.IsVisible(50)</visible>
 				</control>
 				<control type="label">
@@ -871,7 +871,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<textcolor>white</textcolor>
-					<info>Container(50).ListItem.Label</info>
+					<info>Container(50).ListItem.label</info>
 					<visible>Control.IsVisible(50)</visible>
 				</control>
 				<control type="wraplist" id="50">
@@ -895,7 +895,7 @@
 							<width>100</width>
 							<height>100</height>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+							<texture diffuse="thumb-diffuse.png">$INFO[ListItem.icon]</texture>
 						</control>
 					</itemlayout>
 					<focusedlayout width="110" height="110">
@@ -915,7 +915,7 @@
 							<width>100</width>
 							<height>100</height>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
-							<texture diffuse="thumb-diffuse.png">$INFO[ListItem.Icon]</texture>
+							<texture diffuse="thumb-diffuse.png">$INFO[ListItem.icon]</texture>
 							<animation effect="zoom" start="5,5,100,100" end="-10,-10,130,130" time="200">focus</animation>
 							<animation effect="zoom" start="-10,-10,130,130" end="5,5,100,100" time="200">unfocus</animation>
 						</control>
@@ -962,28 +962,28 @@
 						<include>ButtonVideoInfoDialogsValues</include>
 						<label>20410</label>
 						<visible>!IsEmpty(ListItem.Trailer)</visible>
-						<!--visible>!IsEmpty(ListItem.Trailer) + !Skin.HasSetting(WindowedTrailer)</visible-->
+						<!--visible>!IsEmpty(ListItem.Trailer) + !Skin.HasSetting(windowedtrailer)</visible-->
 					</control>
 					<!--control type="button" id="15">
 						<description>Play Trailer Windowed</description>
 						<include>ButtonVideoInfoDialogsValues</include>
 						<label>20410</label>
 						<onclick>PlayMedia($INFO[ListItem.Trailer],1)</onclick>
-						<visible>!IsEmpty(ListItem.Trailer) + Skin.HasSetting(WindowedTrailer)</visible>
+						<visible>!IsEmpty(ListItem.Trailer) + Skin.HasSetting(windowedtrailer)</visible>
 					</control-->
 					<control type="button" id="100">
 						<description>Fetch TvTunes stuff</description>
 						<include>ButtonVideoInfoDialogsValues</include>
 						<label>31213</label>
 						<onclick>XBMC.RunScript(script.tvtunes,mode=solo)</onclick>
-						<visible>!Skin.HasSetting(DisableTvTunes) + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton")) + [Container.Content(TVShows) | Container.Content(Movies)]</visible>
+						<visible>!Skin.HasSetting(disabletvtunes) + IsEmpty(Window(movieinformation).Property("TvTunes_HideVideoInfoButton")) + [Container.Content(TVShows) | Container.Content(Movies)]</visible>
 					</control>
 					<control type="button" id="105">
 						<description>Extras</description>
 						<include>ButtonVideoInfoDialogsValues</include>
 						<label>31015</label>
 						<onclick>XBMC.RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
-						<visible>!Skin.HasSetting(DisableVideoExtras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows)] + IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
+						<visible>!Skin.HasSetting(disablevideoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows)] + IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
 					</control>
 				</control>
 			</control>

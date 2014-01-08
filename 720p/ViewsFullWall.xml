@@ -73,7 +73,7 @@
 						<aspectratio>stretch</aspectratio>
 						<texture>black-back.png</texture>
 						<!--colordiffuse>AAFFFFFF</colordiffuse-->
-						<visible>!StringCompare(ListItem.Label,..)</visible>
+						<visible>!StringCompare(ListItem.label,..)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="190" width="131">

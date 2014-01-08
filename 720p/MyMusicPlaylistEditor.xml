@@ -78,7 +78,7 @@
 					<width>320</width>
 					<height>200</height>
 					<aspectratio>keep</aspectratio>
-					<texture>$INFO[Container(50).ListItem.Icon]</texture>
+					<texture>$INFO[Container(50).ListItem.icon]</texture>
 				</control>
 				<control type="textbox">
 					<left>480</left>
@@ -102,7 +102,7 @@
 					<width>350</width>
 					<height>200</height>
 					<aspectratio>keep</aspectratio>
-					<texture>$INFO[Container(100).ListItem.Icon]</texture>
+					<texture>$INFO[Container(100).ListItem.icon]</texture>
 				</control>
 				<control type="textbox">
 					<left>465</left>
@@ -204,7 +204,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<info>ListItem.Label</info>
+						<info>ListItem.label</info>
 					</control>
 					<control type="label">
 						<left>395</left>
@@ -216,7 +216,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<info>ListItem.Label2</info>
+						<info>ListItem.label2</info>
 					</control>
 				</itemlayout>
 				<focusedlayout height="30" width="400">
@@ -239,7 +239,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<info>ListItem.Label</info>
+						<info>ListItem.label</info>
 					</control>
 					<control type="label">
 						<left>395</left>
@@ -251,7 +251,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<info>ListItem.Label2</info>
+						<info>ListItem.label2</info>
 					</control>
 				</focusedlayout>
 			</control>
@@ -344,7 +344,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<info>ListItem.Label</info>
+						<info>ListItem.label</info>
 					</control>
 					<control type="label">
 						<left>395</left>
@@ -356,7 +356,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<info>ListItem.Label2</info>
+						<info>ListItem.label2</info>
 					</control>
 				</itemlayout>
 				<focusedlayout height="30" width="400">
@@ -379,7 +379,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<info>ListItem.Label</info>
+						<info>ListItem.label</info>
 					</control>
 					<control type="label">
 						<left>395</left>
@@ -391,7 +391,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>right</align>
 						<aligny>center</aligny>
-						<info>ListItem.Label2</info>
+						<info>ListItem.label2</info>
 					</control>
 				</focusedlayout>
 			</control>

@@ -2,7 +2,7 @@
 <window>
 	<defaultcontrol>1</defaultcontrol>
 	<visible>!Window.IsVisible(SubtitleSearch) + [Window.IsVisible(FullscreenVideo) | Window.IsVisible(visualisation)]</visible>
-	<visible>[Player.Seeking | Player.DisplayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + ![Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)]</visible>
+	<visible>[Player.Seeking | Player.displayAfterSeek | Player.Paused | Player.Forwarding | Player.Rewinding] + ![Window.IsVisible(VideoOSD) | Window.IsVisible(MusicOSD)]</visible>
 	<animation effect="fade" start="0" end="100" time="200">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="200">WindowClose</animation>
 	<controls>
@@ -143,7 +143,7 @@
 				<font>font10_title</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[31267]</label>
-				<visible>Player.Playing + !Player.Seeking + !Player.DisplayAfterSeek</visible>
+				<visible>Player.Playing + !Player.Seeking + !Player.displayAfterSeek</visible>
 			</control>
 			<control type="label">
 				<description>Paused Label</description>
@@ -156,7 +156,7 @@
 				<font>font10_title</font>
 				<textcolor>white</textcolor>
 				<label>31043</label>
-				<visible>[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek</visible>
+				<visible>[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.displayAfterSeek</visible>
 			</control>
 			<control type="label">
 				<description>Cache Label</description>
@@ -195,7 +195,7 @@
 				<font>font10_title</font>
 				<textcolor>white</textcolor>
 				<label>[UPPERCASE]$LOCALIZE[773][/UPPERCASE][COLOR=grey] $INFO[Player.SeekOffset][/COLOR]</label>
-				<visible>Player.DisplayAfterSeek + ![player.forwarding | player.rewinding]</visible>
+				<visible>Player.displayAfterSeek + ![player.forwarding | player.rewinding]</visible>
 			</control>
 			<control type="label">
 				<description>FF Label</description>

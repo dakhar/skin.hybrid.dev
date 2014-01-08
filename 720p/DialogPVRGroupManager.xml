@@ -98,7 +98,7 @@
 								<aligny>center</aligny>
 								<textcolor>grey2</textcolor>
 								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Label</info>
+								<info>ListItem.label</info>
 							</control>
 						</itemlayout>
 						<focusedlayout height="45">
@@ -128,7 +128,7 @@
 								<aligny>center</aligny>
 								<textcolor>white</textcolor>
 								<selectedcolor>selected</selectedcolor>
-								<info>ListItem.Label</info>
+								<info>ListItem.label</info>
 							</control>
 						</focusedlayout>
 					</control>
@@ -196,7 +196,7 @@
 								<height>32</height>
 								<left>5</left>
 								<top>4</top>
-								<texture>$INFO[ListItem.Icon]</texture>
+								<texture>$INFO[ListItem.icon]</texture>
 							</control>
 							<control type="label">
 								<left>40</left>
@@ -233,7 +233,7 @@
 								<height>32</height>
 								<left>5</left>
 								<top>4</top>
-								<texture>$INFO[ListItem.Icon]</texture>
+								<texture>$INFO[ListItem.icon]</texture>
 							</control>
 							<control type="label">
 								<left>40</left>
@@ -313,7 +313,7 @@
 								<height>32</height>
 								<left>5</left>
 								<top>4</top>
-								<texture>$INFO[ListItem.Icon]</texture>
+								<texture>$INFO[ListItem.icon]</texture>
 							</control>
 							<control type="label">
 								<left>40</left>
@@ -350,7 +350,7 @@
 								<height>32</height>
 								<left>5</left>
 								<top>4</top>
-								<texture>$INFO[ListItem.Icon]</texture>
+								<texture>$INFO[ListItem.icon]</texture>
 							</control>
 							<control type="label">
 								<left>40</left>

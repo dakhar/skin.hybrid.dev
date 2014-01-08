@@ -3,7 +3,7 @@
 	<!-- The following property allows TvTunes to keep playing when this window is displayed -->
 	<onload condition="!IsEmpty(ListItem.TvShowTitle)">SetProperty("TvTunesSupported", "TvShows")</onload>
 	<onload condition="IsEmpty(ListItem.TvShowTitle)">SetProperty("TvTunesSupported", "Movies")</onload>
-	<onload condition="!Skin.HasSetting(DisableTvTunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
+	<onload condition="!Skin.HasSetting(disabletvtunes)">XBMC.RunScript(script.tvtunes,backend=True)</onload>
 	<defaultcontrol always="true">51</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<controls>
@@ -78,7 +78,7 @@
 						<top>4</top>
 						<width>40</width>
 						<height>32</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.icon]</texture>
 					</control>
 					<control type="label">
 						<left>60</left>
@@ -90,7 +90,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.label]</label>
 					</control>
 					<control type="image">
 						<left>1050</left>
@@ -141,7 +141,7 @@
 						<top>4</top>
 						<width>40</width>
 						<height>32</height>
-						<texture background="true">$INFO[ListItem.Icon]</texture>
+						<texture background="true">$INFO[ListItem.icon]</texture>
 					</control>
 					<control type="label">
 						<left>60</left>
@@ -153,7 +153,7 @@
 						<selectedcolor>selected</selectedcolor>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.label]</label>
 					</control>
 					<control type="image">
 						<left>1050</left>

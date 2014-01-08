@@ -35,7 +35,7 @@
 				<top>146</top>
 				<width>99</width>
 				<height>140</height>
-				<texture flipy="true" fallback="DefaultVideoCover.png" diffuse="InfoWidget/PosterReflection.png" background="true">$INFO[ListItem.Icon]</texture>
+				<texture flipy="true" fallback="DefaultVideoCover.png" diffuse="InfoWidget/PosterReflection.png" background="true">$INFO[ListItem.icon]</texture>
 				<colordiffuse>80FFFFFF</colordiffuse>
 				<aspectratio align="center" aligny="top">keep</aspectratio>
 			</control>
@@ -44,7 +44,7 @@
 				<top>8</top>
 				<width>99</width>
 				<height>140</height>
-				<texture fallback="DefaultVideoCover.png" diffuse="InfoWidget/PosterDiffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+				<texture fallback="DefaultVideoCover.png" diffuse="InfoWidget/PosterDiffuse.png" background="true">$INFO[ListItem.icon]</texture>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
 			</control>
 			<control type="image">
@@ -54,7 +54,7 @@
 				<height>140</height>
 				<aspectratio>stretch</aspectratio>
 				<texture diffuse="InfoWidget/PosterDiffuse.png">black-back.png</texture>
-				<include condition="!IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
+				<include condition="!IsEmpty(Skin.String(mediapaneltrans))">TransparentEffect</include>
 			</control>
 		</itemlayout>
 		<focusedlayout width="101" height="157">
@@ -63,7 +63,7 @@
 				<top>146</top>
 				<width>99</width>
 				<height>140</height>
-				<texture flipy="true" fallback="DefaultVideoCover.png" diffuse="InfoWidget/PosterReflection.png" background="true">$INFO[ListItem.Icon]</texture>
+				<texture flipy="true" fallback="DefaultVideoCover.png" diffuse="InfoWidget/PosterReflection.png" background="true">$INFO[ListItem.icon]</texture>
 				<colordiffuse>80FFFFFF</colordiffuse>
 				<aspectratio align="center" aligny="top">keep</aspectratio>
 				<animation type="Focus" reversible="false">
@@ -76,7 +76,7 @@
 				<top>8</top>
 				<width>99</width>
 				<height>140</height>
-				<texture fallback="DefaultVideoCover.png" diffuse="InfoWidget/PosterDiffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+				<texture fallback="DefaultVideoCover.png" diffuse="InfoWidget/PosterDiffuse.png" background="true">$INFO[ListItem.icon]</texture>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
 				<animation type="Focus" reversible="false">
 					<effect type="zoom" center="auto" start="80" end="100" time="400" tween="back" easing="out" />
@@ -92,7 +92,7 @@
 				<top>106</top>
 				<width>99</width>
 				<height>99</height>
-				<texture flipy="true" fallback="DefaultAlbumCover.png" diffuse="InfoWidget/PosterReflection.png" background="true">$INFO[ListItem.Icon]</texture>
+				<texture flipy="true" fallback="DefaultAlbumCover.png" diffuse="InfoWidget/PosterReflection.png" background="true">$INFO[ListItem.icon]</texture>
 				<colordiffuse>80FFFFFF</colordiffuse>
 				<aspectratio align="center" aligny="top">keep</aspectratio>
 			</control>
@@ -101,7 +101,7 @@
 				<top>8</top>
 				<width>99</width>
 				<height>99</height>
-				<texture fallback="DefaultAlbumCover.png" diffuse="InfoWidget/PosterDiffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+				<texture fallback="DefaultAlbumCover.png" diffuse="InfoWidget/PosterDiffuse.png" background="true">$INFO[ListItem.icon]</texture>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
 			</control>
 			<control type="image">
@@ -111,7 +111,7 @@
 				<height>99</height>
 				<aspectratio>stretch</aspectratio>
 				<texture diffuse="InfoWidget/PosterDiffuse.png">black-back.png</texture>
-				<include condition="!IsEmpty(Skin.String(MediaPanelTrans))">TransparentEffect</include>
+				<include condition="!IsEmpty(Skin.String(mediapaneltrans))">TransparentEffect</include>
 			</control>
 		</itemlayout>
 		<focusedlayout width="101" height="137">
@@ -120,7 +120,7 @@
 				<top>106</top>
 				<width>99</width>
 				<height>99</height>
-				<texture flipy="true" fallback="DefaultAlbumCover.png" diffuse="InfoWidget/PosterReflection.png" background="true">$INFO[ListItem.Icon]</texture>
+				<texture flipy="true" fallback="DefaultAlbumCover.png" diffuse="InfoWidget/PosterReflection.png" background="true">$INFO[ListItem.icon]</texture>
 				<colordiffuse>80FFFFFF</colordiffuse>
 				<aspectratio align="center" aligny="top">keep</aspectratio>
 				<animation type="Focus" reversible="false">
@@ -133,7 +133,7 @@
 				<top>8</top>
 				<width>99</width>
 				<height>99</height>
-				<texture fallback="DefaultAlbumCover.png" diffuse="InfoWidget/PosterDiffuse.png" background="true">$INFO[ListItem.Icon]</texture>
+				<texture fallback="DefaultAlbumCover.png" diffuse="InfoWidget/PosterDiffuse.png" background="true">$INFO[ListItem.icon]</texture>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
 				<animation type="Focus" reversible="false">
 					<effect type="zoom" center="auto" start="80" end="100" time="400" tween="back" easing="out" />
@@ -296,7 +296,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecentMovie.9.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RecentMovie.10.Title)]</label>
@@ -313,149 +313,149 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMovie.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecentMovie.10.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMovie.1.Title)]</label>
 						<label2></label2>
 						<icon>$INFO[Window(Home).Property(LatestMovie.1.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.1.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.1.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMovie.1.RunningTime)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestMovie.1.Rating)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMovie.1.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMovie.1.Year)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.1.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.1.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMovie.1.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMovie.2.Title)]</label>
 						<label2></label2>
 						<icon>$INFO[Window(Home).Property(LatestMovie.2.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.2.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.2.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMovie.2.RunningTime)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestMovie.2.Rating)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMovie.2.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMovie.2.Year)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.2.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.2.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMovie.2.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMovie.3.Title)]</label>
 						<label2></label2>
 						<icon>$INFO[Window(Home).Property(LatestMovie.3.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.3.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.3.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMovie.3.RunningTime)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestMovie.3.Rating)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMovie.3.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMovie.3.Year)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.3.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.3.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMovie.3.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMovie.4.Title)]</label>
 						<label2></label2>
 						<icon>$INFO[Window(Home).Property(LatestMovie.4.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.4.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.4.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMovie.4.RunningTime)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestMovie.4.Rating)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMovie.4.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMovie.4.Year)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.4.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.4.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMovie.4.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMovie.5.Title)]</label>
 						<label2></label2>
 						<icon>$INFO[Window(Home).Property(LatestMovie.5.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.5.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.5.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMovie.5.RunningTime)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestMovie.5.Rating)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMovie.5.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMovie.5.Year)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.5.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.5.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMovie.5.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMovie.6.Title)]</label>
 						<label2></label2>
 						<icon>$INFO[Window(Home).Property(LatestMovie.6.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.6.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.6.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMovie.6.RunningTime)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestMovie.6.Rating)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMovie.6.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMovie.6.Year)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.6.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.6.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMovie.6.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMovie.7.Title)]</label>
 						<label2></label2>
 						<icon>$INFO[Window(Home).Property(LatestMovie.7.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.7.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.7.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMovie.7.RunningTime)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestMovie.7.Rating)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMovie.7.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMovie.7.Year)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.7.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.7.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMovie.7.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMovie.8.Title)]</label>
 						<label2></label2>
 						<icon>$INFO[Window(Home).Property(LatestMovie.8.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.8.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.8.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMovie.8.RunningTime)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestMovie.8.Rating)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMovie.8.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMovie.8.Year)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.8.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.8.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMovie.8.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMovie.9.Title)]</label>
 						<label2></label2>
 						<icon>$INFO[Window(Home).Property(LatestMovie.9.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.9.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.9.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMovie.9.RunningTime)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestMovie.9.Rating)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMovie.9.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMovie.9.Year)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.9.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.9.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMovie.9.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMovie.10.Title)]</label>
 						<label2></label2>
 						<icon>$INFO[Window(Home).Property(LatestMovie.10.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.10.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMovie.10.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMovie.10.RunningTime)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestMovie.10.Rating)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMovie.10.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMovie.10.Year)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.10.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMovie.10.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMovie.10.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 				</content>
 			</control>
@@ -609,7 +609,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomMovie.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomMovie.10.Title)]</label>
@@ -626,7 +626,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomMovie.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 				</content>
 			</control>
@@ -780,7 +780,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecommendedMovie.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RecommendedMovie.10.Title)]</label>
@@ -797,14 +797,14 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecommendedMovie.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 				</content>
 			</control>
 			<control type="panel" id="510">
 				<!-- UnWatched Movies -->
 				<include>WidgetVideoPanel</include>
-				<visible>Library.HasContent(Movies) + !Skin.HasSetting(DisableScriptPlayList)</visible>
+				<visible>Library.HasContent(Movies) + !Skin.HasSetting(disablescriptplaylist)</visible>
 				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies)</visible>
 				<include>WidgetVideoLayout</include>
 				<content>
@@ -951,7 +951,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(PlaylistRandomMovieUnWatched.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(PlaylistRandomMovieUnWatched.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(PlaylistRandomMovieUnWatched.10.Title)]</label>
@@ -968,14 +968,14 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(PlaylistRandomMovieUnWatched.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(PlaylistRandomMovieUnWatched.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 				</content>
 			</control>
 			<control type="panel" id="510">
 				<!-- Playlist One  Movies -->
 				<include>WidgetVideoPanel</include>
-				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),PlayList) + !Skin.HasSetting(DisableScriptPlayList)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),PlayList) + !Skin.HasSetting(disablescriptplaylist)</visible>
 				<visible>Library.HasContent(Movies) + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie)</visible>
 				<include>WidgetVideoLayout</include>
 				<content>
@@ -1130,7 +1130,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListOne.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListOne.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(1)</visible>
 					</item>
 					<item>
@@ -1148,7 +1148,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListOne.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListOne.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(1)</visible>
 					</item>
 					<item>
@@ -1302,7 +1302,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListTwo.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListTwo.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(2)</visible>
 					</item>
 					<item>
@@ -1320,7 +1320,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListTwo.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListTwo.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(2)</visible>
 					</item>
 					<item>
@@ -1474,7 +1474,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListThree.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListThree.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(3)</visible>
 					</item>
 					<item>
@@ -1492,7 +1492,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListThree.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListThree.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(3)</visible>
 					</item>
 					<item>
@@ -1646,7 +1646,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListFour.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListFour.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(4)</visible>
 					</item>
 					<item>
@@ -1664,7 +1664,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListFour.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListFour.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(4)</visible>
 					</item>
 					<item>
@@ -1818,7 +1818,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListFive.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListFive.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(5)</visible>
 					</item>
 					<item>
@@ -1836,7 +1836,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListFive.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListFive.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(5)</visible>
 					</item>
 					<item>
@@ -1990,7 +1990,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListSix.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListSix.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(6)</visible>
 					</item>
 					<item>
@@ -2008,7 +2008,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListSix.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListSix.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(6)</visible>
 					</item>
 					<item>
@@ -2162,7 +2162,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListSeven.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListSeven.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(7)</visible>
 					</item>
 					<item>
@@ -2180,7 +2180,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListSeven.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListSeven.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(7)</visible>
 					</item>
 					<item>
@@ -2334,7 +2334,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListEight.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListEight.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(8)</visible>
 					</item>
 					<item>
@@ -2352,7 +2352,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListEight.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListEight.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(8)</visible>
 					</item>
 					<item>
@@ -2506,7 +2506,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListNine.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListNine.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(9)</visible>
 					</item>
 					<item>
@@ -2524,7 +2524,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListNine.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListNine.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(9)</visible>
 					</item>
 					<item>
@@ -2678,7 +2678,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListTen.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListTen.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(10)</visible>
 					</item>
 					<item>
@@ -2696,7 +2696,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListTen.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListTen.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(10)</visible>
 					</item>
 				</content>
@@ -2856,7 +2856,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecentEpisode.9.Premiered)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.9.File)])</onclick>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>!IsEmpty(Window(Home).Property(RecentEpisode.9.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
@@ -2873,139 +2873,139 @@
 						<property name="Year">$INFO[Window(Home).Property(RecentEpisode.10.Premiered)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentEpisode.10.File)])</onclick>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>!IsEmpty(Window(Home).Property(RecentEpisode.10.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestEpisode.1.EpisodeTitle)]</label>
 						<label2>$INFO[Window(Home).Property(LatestEpisode.1.ShowTitle)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestEpisode.1.ShowThumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.1.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.1.fanart)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestEpisode.1.Rating)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<property name="EpisodeNumber">$INFO[Window(Home).Property(LatestEpisode.1.EpisodeNumber)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestEpisode.1.Plot)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.1.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.1.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestEpisode.1.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestEpisode.2.EpisodeTitle)]</label>
 						<label2>$INFO[Window(Home).Property(LatestEpisode.2.ShowTitle)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestEpisode.2.ShowThumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.2.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.2.fanart)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestEpisode.2.Rating)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<property name="EpisodeNumber">$INFO[Window(Home).Property(LatestEpisode.2.EpisodeNumber)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestEpisode.2.Plot)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.2.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.2.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestEpisode.2.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestEpisode.3.EpisodeTitle)]</label>
 						<label2>$INFO[Window(Home).Property(LatestEpisode.3.ShowTitle)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestEpisode.3.ShowThumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.3.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.3.fanart)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestEpisode.3.Rating)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<property name="EpisodeNumber">$INFO[Window(Home).Property(LatestEpisode.3.EpisodeNumber)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestEpisode.3.Plot)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.3.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.3.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestEpisode.3.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestEpisode.4.EpisodeTitle)]</label>
 						<label2>$INFO[Window(Home).Property(LatestEpisode.4.ShowTitle)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestEpisode.4.ShowThumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.4.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.4.fanart)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestEpisode.4.Rating)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<property name="EpisodeNumber">$INFO[Window(Home).Property(LatestEpisode.4.EpisodeNumber)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestEpisode.4.Plot)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.4.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.4.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestEpisode.4.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestEpisode.5.EpisodeTitle)]</label>
 						<label2>$INFO[Window(Home).Property(LatestEpisode.5.ShowTitle)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestEpisode.5.ShowThumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.5.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.5.fanart)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestEpisode.5.Rating)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<property name="EpisodeNumber">$INFO[Window(Home).Property(LatestEpisode.5.EpisodeNumber)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestEpisode.5.Plot)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.5.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.5.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestEpisode.5.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestEpisode.6.EpisodeTitle)]</label>
 						<label2>$INFO[Window(Home).Property(LatestEpisode.6.ShowTitle)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestEpisode.6.ShowThumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.6.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.6.fanart)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestEpisode.6.Rating)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<property name="EpisodeNumber">$INFO[Window(Home).Property(LatestEpisode.6.EpisodeNumber)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestEpisode.6.Plot)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.6.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.6.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestEpisode.6.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestEpisode.7.EpisodeTitle)]</label>
 						<label2>$INFO[Window(Home).Property(LatestEpisode.7.ShowTitle)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestEpisode.7.ShowThumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.7.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.7.fanart)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestEpisode.7.Rating)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<property name="EpisodeNumber">$INFO[Window(Home).Property(LatestEpisode.7.EpisodeNumber)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestEpisode.7.Plot)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.7.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.7.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestEpisode.7.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestEpisode.8.EpisodeTitle)]</label>
 						<label2>$INFO[Window(Home).Property(LatestEpisode.8.ShowTitle)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestEpisode.8.ShowThumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.8.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.8.fanart)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestEpisode.8.Rating)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<property name="EpisodeNumber">$INFO[Window(Home).Property(LatestEpisode.8.EpisodeNumber)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestEpisode.8.Plot)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.8.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.8.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestEpisode.8.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestEpisode.9.EpisodeTitle)]</label>
 						<label2>$INFO[Window(Home).Property(LatestEpisode.9.ShowTitle)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestEpisode.9.ShowThumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.9.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.9.fanart)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestEpisode.9.Rating)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<property name="EpisodeNumber">$INFO[Window(Home).Property(LatestEpisode.9.EpisodeNumber)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestEpisode.9.Plot)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.9.Path)])</onclick>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.9.path)])</onclick>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>!IsEmpty(Window(Home).Property(LatestEpisode.9.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestEpisode.10.EpisodeTitle)]</label>
 						<label2>$INFO[Window(Home).Property(LatestEpisode.10.ShowTitle)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestEpisode.10.ShowThumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.10.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestEpisode.10.fanart)]</property>
 						<property name="Rating" fallback="12310">$INFO[Window(Home).Property(LatestEpisode.10.Rating)]</property>
 						<property name="Mpaa">$LOCALIZE[31229]</property>
 						<property name="EpisodeNumber">$INFO[Window(Home).Property(LatestEpisode.10.EpisodeNumber)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestEpisode.10.Plot)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.10.Path)])</onclick>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestEpisode.10.path)])</onclick>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>!IsEmpty(Window(Home).Property(LatestEpisode.10.EpisodeTitle)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 				</content>
@@ -3160,7 +3160,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomEpisode.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomEpisode.10.Title)]</label>
@@ -3177,7 +3177,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomEpisode.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 				</content>
 			</control>
@@ -3304,7 +3304,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RecommendedEpisode.10.Title)]</label>
@@ -3318,14 +3318,14 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 				</content>
 			</control>
 			<control type="panel" id="510">
 				<!-- PlayList Episodes -->
 				<include>WidgetVideoPanel</include>
-				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),PlayList) + !Skin.HasSetting(DisableScriptPlayList)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),PlayList) + !Skin.HasSetting(disablescriptplaylist)</visible>
 				<visible>Library.HasContent(TVShows) + StringCompare(Container(9000).ListItem.Property(PlayListType),Episode)</visible>
 				<include>WidgetVideoLayout</include>
 				<content>
@@ -3471,7 +3471,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListOne.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListOne.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(1)</visible>
 					</item>
 					<item>
@@ -3488,7 +3488,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListOne.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListOne.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(1)</visible>
 					</item>
 					<item>
@@ -3633,7 +3633,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListTwo.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListTwo.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(2)</visible>
 					</item>
 					<item>
@@ -3650,7 +3650,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListTwo.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListTwo.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(2)</visible>
 					</item>
 					<item>
@@ -3795,7 +3795,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListThree.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListThree.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(3)</visible>
 					</item>
 					<item>
@@ -3812,7 +3812,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListThree.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListThree.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(3)</visible>
 					</item>
 					<item>
@@ -3957,7 +3957,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListFour.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListFour.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(4)</visible>
 					</item>
 					<item>
@@ -3974,7 +3974,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListFour.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListFour.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(4)</visible>
 					</item>
 					<item>
@@ -4119,7 +4119,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListFive.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListFive.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(5)</visible>
 					</item>
 					<item>
@@ -4136,7 +4136,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListFive.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListFive.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(5)</visible>
 					</item>
 					<item>
@@ -4281,7 +4281,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListSix.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListSix.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(6)</visible>
 					</item>
 					<item>
@@ -4298,7 +4298,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListSix.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListSix.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(6)</visible>
 					</item>
 					<item>
@@ -4443,7 +4443,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListSeven.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListSeven.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(7)</visible>
 					</item>
 					<item>
@@ -4460,7 +4460,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListSeven.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListSeven.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(7)</visible>
 					</item>
 					<item>
@@ -4605,7 +4605,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListEight.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListEight.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(8)</visible>
 					</item>
 					<item>
@@ -4622,7 +4622,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListEight.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListEight.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(8)</visible>
 					</item>
 					<item>
@@ -4767,7 +4767,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListNine.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListNine.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(9)</visible>
 					</item>
 					<item>
@@ -4784,7 +4784,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListNine.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListNine.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(9)</visible>
 					</item>
 					<item>
@@ -4929,7 +4929,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListTen.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListTen.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(10)</visible>
 					</item>
 					<item>
@@ -4946,7 +4946,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListTen.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListTen.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(10)</visible>
 					</item>
 				</content>
@@ -5079,7 +5079,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecentMusicVideo.9.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.9.File)])</onclick>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.9.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
@@ -5093,129 +5093,129 @@
 						<property name="Year">$INFO[Window(Home).Property(RecentMusicVideo.10.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecentMusicVideo.10.File)])</onclick>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>!IsEmpty(Window(Home).Property(RecentMusicVideo.10.Title)) + SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMusicVideo.1.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestMusicVideo.1.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestMusicVideo.1.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.1.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.1.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMusicVideo.1.RunningTime)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMusicVideo.1.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMusicVideo.1.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.1.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.1.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.1.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMusicVideo.2.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestMusicVideo.2.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestMusicVideo.2.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.2.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.2.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMusicVideo.2.RunningTime)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMusicVideo.2.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMusicVideo.2.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.2.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.2.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.2.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMusicVideo.3.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestMusicVideo.3.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestMusicVideo.3.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.3.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.3.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMusicVideo.3.RunningTime)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMusicVideo.3.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMusicVideo.3.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.3.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.3.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.3.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMusicVideo.4.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestMusicVideo.4.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestMusicVideo.4.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.4.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.4.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMusicVideo.4.RunningTime)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMusicVideo.4.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMusicVideo.4.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.4.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.4.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.4.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMusicVideo.5.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestMusicVideo.5.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestMusicVideo.5.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.5.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.5.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMusicVideo.5.RunningTime)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMusicVideo.5.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMusicVideo.5.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.5.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.5.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.5.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMusicVideo.6.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestMusicVideo.6.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestMusicVideo.6.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.6.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.6.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMusicVideo.6.RunningTime)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMusicVideo.6.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMusicVideo.6.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.6.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.6.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.6.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMusicVideo.7.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestMusicVideo.7.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestMusicVideo.7.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.7.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.7.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMusicVideo.7.RunningTime)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMusicVideo.7.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMusicVideo.7.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.7.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.7.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.7.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMusicVideo.8.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestMusicVideo.8.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestMusicVideo.8.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.8.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.8.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMusicVideo.8.RunningTime)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMusicVideo.8.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMusicVideo.8.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.8.Path)])</onclick>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.8.path)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.8.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMusicVideo.9.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestMusicVideo.9.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestMusicVideo.9.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.9.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.9.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMusicVideo.9.RunningTime)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMusicVideo.9.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMusicVideo.9.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.9.Path)])</onclick>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.9.path)])</onclick>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.9.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestMusicVideo.10.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestMusicVideo.10.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestMusicVideo.10.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.10.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestMusicVideo.10.fanart)]</property>
 						<property name="Runtime">$INFO[Window(Home).Property(LatestMusicVideo.10.RunningTime)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(LatestMusicVideo.10.Plot)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestMusicVideo.10.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.10.Path)])</onclick>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<onclick>PlayMedia($ESCINFO[Window(Home).Property(LatestMusicVideo.10.path)])</onclick>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>!IsEmpty(Window(Home).Property(LatestMusicVideo.10.Title)) + !SubString(Window(Home).Property(SkinWidgets_RecentItems),true)</visible>
 					</item>
 				</content>
@@ -5343,7 +5343,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomMusicVideo.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomMusicVideo.10.Title)]</label>
@@ -5357,7 +5357,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMusicVideo.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomMusicVideo.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 				</content>
 			</control>
@@ -5484,7 +5484,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RecommendedMusicVideo.10.Title)]</label>
@@ -5498,14 +5498,14 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMusicVideo.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecommendedMusicVideo.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 				</content>
 			</control>
 			<control type="panel" id="510">
 				<!-- Playlist Concerts -->
 				<include>WidgetVideoPanel</include>
-				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),PlayList) + !Skin.HasSetting(DisableScriptPlayList)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),PlayList) + !Skin.HasSetting(disablescriptplaylist)</visible>
 				<visible>Library.HasContent(MusicVideos) + StringCompare(Container(9000).ListItem.Property(PlayListType),MusicVideo)</visible>
 				<include>WidgetVideoLayout</include>
 				<content>
@@ -5633,7 +5633,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListOne.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListOne.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(1)</visible>
 					</item>
 					<item>
@@ -5648,7 +5648,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListOne.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListOne.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(1)</visible>
 					</item>
 					<item>
@@ -5775,7 +5775,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListTwo.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListTwo.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(2)</visible>
 					</item>
 					<item>
@@ -5790,7 +5790,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListTwo.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListTwo.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(2)</visible>
 					</item>
 					<item>
@@ -5917,7 +5917,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListThree.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListThree.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(3)</visible>
 					</item>
 					<item>
@@ -5932,7 +5932,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListThree.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListThree.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(3)</visible>
 					</item>
 					<item>
@@ -6059,7 +6059,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListFour.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListFour.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(4)</visible>
 					</item>
 					<item>
@@ -6074,7 +6074,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListFour.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListFour.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(4)</visible>
 					</item>
 					<item>
@@ -6201,7 +6201,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListFive.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListFive.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(5)</visible>
 					</item>
 					<item>
@@ -6216,7 +6216,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListFive.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListFive.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(5)</visible>
 					</item>
 					<item>
@@ -6343,7 +6343,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListSix.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListSix.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(6)</visible>
 					</item>
 					<item>
@@ -6358,7 +6358,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListSix.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListSix.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(6)</visible>
 					</item>
 					<item>
@@ -6485,7 +6485,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListSeven.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListSeven.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(7)</visible>
 					</item>
 					<item>
@@ -6500,7 +6500,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListSeven.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListSeven.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(7)</visible>
 					</item>
 					<item>
@@ -6627,7 +6627,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListEight.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListEight.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(8)</visible>
 					</item>
 					<item>
@@ -6642,7 +6642,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListEight.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListEight.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(8)</visible>
 					</item>
 					<item>
@@ -6769,7 +6769,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListNine.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListNine.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(9)</visible>
 					</item>
 					<item>
@@ -6784,7 +6784,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListNine.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListNine.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(9)</visible>
 					</item>
 					<item>
@@ -6911,7 +6911,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListTen.9.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListTen.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(10)</visible>
 					</item>
 					<item>
@@ -6926,7 +6926,7 @@
 						<onclick>PlayList.Clear</onclick>
 						<onclick>PlayMedia($ESCINFO[Window(Home).Property(HomePlayListTen.10.File)])</onclick>
 						<visible>!IsEmpty(Window(Home).Property(HomePlayListTen.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(10)</visible>
 					</item>
 				</content>
@@ -6948,113 +6948,113 @@
 						<label>$INFO[Window(Home).Property(LatestSong.1.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestSong.1.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestSong.1.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.1.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.1.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestSong.1.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.1.Path)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.1.path)])</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestSong.1.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestSong.2.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestSong.2.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestSong.2.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.2.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.2.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestSong.2.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.2.Path)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.2.path)])</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestSong.2.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestSong.3.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestSong.3.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestSong.3.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.3.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.3.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestSong.3.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.3.Path)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.3.path)])</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestSong.3.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestSong.4.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestSong.4.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestSong.4.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.4.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.4.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestSong.4.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.4.Path)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.4.path)])</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestSong.4.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestSong.5.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestSong.5.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestSong.5.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.5.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.5.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestSong.5.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.5.Path)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.5.path)])</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestSong.5.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestSong.6.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestSong.6.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestSong.6.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.6.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.6.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestSong.6.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.6.Path)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.6.path)])</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestSong.6.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestSong.7.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestSong.7.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestSong.7.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.7.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.7.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestSong.7.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.7.Path)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.7.path)])</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestSong.7.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestSong.8.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestSong.8.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestSong.8.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.8.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.8.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestSong.8.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.8.Path)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.8.path)])</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestSong.8.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestSong.9.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestSong.9.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestSong.9.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.9.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.9.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestSong.9.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.9.Path)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.9.path)])</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestSong.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(LatestSong.10.Title)]</label>
 						<label2>$INFO[Window(Home).Property(LatestSong.10.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(LatestSong.10.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.10.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(LatestSong.10.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(LatestSong.10.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
-						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.10.Path)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick>PlayMedia($INFO[Window(Home).Property(LatestSong.10.path)])</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(LatestSong.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 				</content>
 			</control>
@@ -7076,7 +7076,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecentAlbum.1.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecentAlbum.1.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecentAlbum.1.Title))</visible>
 					</item>
 					<item>
@@ -7090,7 +7090,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecentAlbum.2.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecentAlbum.2.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecentAlbum.2.Title))</visible>
 					</item>
 					<item>
@@ -7104,7 +7104,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecentAlbum.3.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecentAlbum.3.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecentAlbum.3.Title))</visible>
 					</item>
 					<item>
@@ -7118,7 +7118,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecentAlbum.4.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecentAlbum.4.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecentAlbum.4.Title))</visible>
 					</item>
 					<item>
@@ -7132,7 +7132,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecentAlbum.5.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecentAlbum.5.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecentAlbum.5.Title))</visible>
 					</item>
 					<item>
@@ -7146,7 +7146,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecentAlbum.6.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecentAlbum.6.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecentAlbum.6.Title))</visible>
 					</item>
 					<item>
@@ -7160,7 +7160,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecentAlbum.7.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecentAlbum.7.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecentAlbum.7.Title))</visible>
 					</item>
 					<item>
@@ -7174,7 +7174,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecentAlbum.8.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecentAlbum.8.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecentAlbum.8.Title))</visible>
 					</item>
 					<item>
@@ -7188,9 +7188,9 @@
 						<property name="Year">$INFO[Window(Home).Property(RecentAlbum.9.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecentAlbum.9.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecentAlbum.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RecentAlbum.10.Title)]</label>
@@ -7203,9 +7203,9 @@
 						<property name="Year">$INFO[Window(Home).Property(RecentAlbum.10.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecentAlbum.10.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecentAlbum.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 				</content>
 			</control>
@@ -7220,113 +7220,113 @@
 						<label>$INFO[Window(Home).Property(RandomSong.1.Title)]</label>
 						<label2>$INFO[Window(Home).Property(RandomSong.1.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(RandomSong.1.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.1.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.1.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(RandomSong.1.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomSong.1.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomSong.1.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomSong.2.Title)]</label>
 						<label2>$INFO[Window(Home).Property(RandomSong.2.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(RandomSong.2.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.2.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.2.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(RandomSong.2.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomSong.2.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomSong.2.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomSong.3.Title)]</label>
 						<label2>$INFO[Window(Home).Property(RandomSong.3.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(RandomSong.3.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.3.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.3.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(RandomSong.3.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomSong.3.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomSong.3.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomSong.4.Title)]</label>
 						<label2>$INFO[Window(Home).Property(RandomSong.4.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(RandomSong.4.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.4.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.4.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(RandomSong.4.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomSong.4.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomSong.4.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomSong.5.Title)]</label>
 						<label2>$INFO[Window(Home).Property(RandomSong.5.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(RandomSong.5.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.5.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.5.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(RandomSong.5.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomSong.5.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomSong.5.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomSong.6.Title)]</label>
 						<label2>$INFO[Window(Home).Property(RandomSong.6.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(RandomSong.6.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.6.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.6.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(RandomSong.6.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomSong.6.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomSong.6.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomSong.7.Title)]</label>
 						<label2>$INFO[Window(Home).Property(RandomSong.7.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(RandomSong.7.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.7.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.7.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(RandomSong.7.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomSong.7.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomSong.7.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomSong.8.Title)]</label>
 						<label2>$INFO[Window(Home).Property(RandomSong.8.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(RandomSong.8.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.8.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.8.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(RandomSong.8.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomSong.8.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomSong.8.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomSong.9.Title)]</label>
 						<label2>$INFO[Window(Home).Property(RandomSong.9.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(RandomSong.9.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.9.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.9.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(RandomSong.9.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomSong.9.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomSong.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomSong.10.Title)]</label>
 						<label2>$INFO[Window(Home).Property(RandomSong.10.Artist)]</label2>
 						<icon>$INFO[Window(Home).Property(RandomSong.10.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.10.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomSong.10.fanart)]</property>
 						<property name="Year">$INFO[Window(Home).Property(RandomSong.10.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomSong.10.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomSong.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 				</content>
 			</control>
@@ -7348,7 +7348,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RandomAlbum.1.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomAlbum.1.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomAlbum.1.Title))</visible>
 					</item>
 					<item>
@@ -7362,7 +7362,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RandomAlbum.2.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomAlbum.2.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomAlbum.2.Title))</visible>
 					</item>
 					<item>
@@ -7376,7 +7376,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RandomAlbum.3.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomAlbum.3.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomAlbum.3.Title))</visible>
 					</item>
 					<item>
@@ -7390,7 +7390,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RandomAlbum.4.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomAlbum.4.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomAlbum.4.Title))</visible>
 					</item>
 					<item>
@@ -7404,7 +7404,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RandomAlbum.5.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomAlbum.5.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomAlbum.5.Title))</visible>
 					</item>
 					<item>
@@ -7418,7 +7418,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RandomAlbum.6.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomAlbum.6.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomAlbum.6.Title))</visible>
 					</item>
 					<item>
@@ -7432,7 +7432,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RandomAlbum.7.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomAlbum.7.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomAlbum.7.Title))</visible>
 					</item>
 					<item>
@@ -7446,7 +7446,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RandomAlbum.8.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomAlbum.8.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomAlbum.8.Title))</visible>
 					</item>
 					<item>
@@ -7460,9 +7460,9 @@
 						<property name="Year">$INFO[Window(Home).Property(RandomAlbum.9.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomAlbum.9.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomAlbum.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomAlbum.10.Title)]</label>
@@ -7475,9 +7475,9 @@
 						<property name="Year">$INFO[Window(Home).Property(RandomAlbum.10.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RandomAlbum.10.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomAlbum.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 				</content>
 			</control>
@@ -7491,104 +7491,104 @@
 					<item>
 						<label>$INFO[Window(Home).Property(RandomArtist.1.Title)]</label>
 						<icon>$INFO[Window(Home).Property(RandomArtist.1.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.1.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.1.fanart)]</property>
 						<property name="Genre">$INFO[Window(Home).Property(RandomArtist.1.Genre)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(RandomArtist.1.Description)]</property>
 						<onclick>ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(RandomArtist.1.LibraryPath)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomArtist.1.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomArtist.2.Title)]</label>
 						<icon>$INFO[Window(Home).Property(RandomArtist.2.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.2.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.2.fanart)]</property>
 						<property name="Genre">$INFO[Window(Home).Property(RandomArtist.2.Genre)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(RandomArtist.2.Description)]</property>
 						<onclick>ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(RandomArtist.2.LibraryPath)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomArtist.2.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomArtist.3.Title)]</label>
 						<icon>$INFO[Window(Home).Property(RandomArtist.3.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.3.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.3.fanart)]</property>
 						<property name="Genre">$INFO[Window(Home).Property(RandomArtist.3.Genre)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(RandomArtist.3.Description)]</property>
 						<onclick>ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(RandomArtist.3.LibraryPath)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomArtist.3.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomArtist.4.Title)]</label>
 						<icon>$INFO[Window(Home).Property(RandomArtist.4.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.4.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.4.fanart)]</property>
 						<property name="Genre">$INFO[Window(Home).Property(RandomArtist.4.Genre)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(RandomArtist.4.Description)]</property>
 						<onclick>ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(RandomArtist.4.LibraryPath)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomArtist.4.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomArtist.5.Title)]</label>
 						<icon>$INFO[Window(Home).Property(RandomArtist.5.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.5.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.5.fanart)]</property>
 						<property name="Genre">$INFO[Window(Home).Property(RandomArtist.5.Genre)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(RandomArtist.5.Description)]</property>
 						<onclick>ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(RandomArtist.5.LibraryPath)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomArtist.5.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomArtist.6.Title)]</label>
 						<icon>$INFO[Window(Home).Property(RandomArtist.6.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.6.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.6.fanart)]</property>
 						<property name="Genre">$INFO[Window(Home).Property(RandomArtist.6.Genre)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(RandomArtist.6.Description)]</property>
 						<onclick>ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(RandomArtist.6.LibraryPath)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomArtist.6.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomArtist.7.Title)]</label>
 						<icon>$INFO[Window(Home).Property(RandomArtist.7.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.7.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.7.fanart)]</property>
 						<property name="Genre">$INFO[Window(Home).Property(RandomArtist.7.Genre)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(RandomArtist.7.Description)]</property>
 						<onclick>ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(RandomArtist.7.LibraryPath)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomArtist.7.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomArtist.8.Title)]</label>
 						<icon>$INFO[Window(Home).Property(RandomArtist.8.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.8.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.8.fanart)]</property>
 						<property name="Genre">$INFO[Window(Home).Property(RandomArtist.8.Genre)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(RandomArtist.8.Description)]</property>
 						<onclick>ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(RandomArtist.8.LibraryPath)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomArtist.8.Title))</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomArtist.9.Title)]</label>
 						<icon>$INFO[Window(Home).Property(RandomArtist.9.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.9.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.9.fanart)]</property>
 						<property name="Genre">$INFO[Window(Home).Property(RandomArtist.9.Genre)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(RandomArtist.9.Description)]</property>
 						<onclick>ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(RandomArtist.9.LibraryPath)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomArtist.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RandomArtist.10.Title)]</label>
 						<icon>$INFO[Window(Home).Property(RandomArtist.10.Thumb)]</icon>
-						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.10.Fanart)]</property>
+						<property name="Fanart">$INFO[Window(Home).Property(RandomArtist.10.fanart)]</property>
 						<property name="Genre">$INFO[Window(Home).Property(RandomArtist.10.Genre)]</property>
 						<property name="Plot">$INFO[Window(Home).Property(RandomArtist.10.Description)]</property>
 						<onclick>ActivateWindow(MusicLibrary,$INFO[Window(Home).Property(RandomArtist.10.LibraryPath)])</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RandomArtist.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 				</content>
 			</control>
@@ -7610,7 +7610,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecommendedAlbum.1.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecommendedAlbum.1.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))</visible>
 					</item>
 					<item>
@@ -7624,7 +7624,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecommendedAlbum.2.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecommendedAlbum.2.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.2.Title))</visible>
 					</item>
 					<item>
@@ -7638,7 +7638,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecommendedAlbum.3.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecommendedAlbum.3.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.3.Title))</visible>
 					</item>
 					<item>
@@ -7652,7 +7652,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecommendedAlbum.4.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecommendedAlbum.4.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.4.Title))</visible>
 					</item>
 					<item>
@@ -7666,7 +7666,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecommendedAlbum.5.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecommendedAlbum.5.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.5.Title))</visible>
 					</item>
 					<item>
@@ -7680,7 +7680,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecommendedAlbum.6.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecommendedAlbum.6.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.6.Title))</visible>
 					</item>
 					<item>
@@ -7694,7 +7694,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecommendedAlbum.7.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecommendedAlbum.7.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.7.Title))</visible>
 					</item>
 					<item>
@@ -7708,7 +7708,7 @@
 						<property name="Year">$INFO[Window(Home).Property(RecommendedAlbum.8.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecommendedAlbum.8.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.8.Title))</visible>
 					</item>
 					<item>
@@ -7722,9 +7722,9 @@
 						<property name="Year">$INFO[Window(Home).Property(RecommendedAlbum.9.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecommendedAlbum.9.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.9.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 					<item>
 						<label>$INFO[Window(Home).Property(RecommendedAlbum.10.Title)]</label>
@@ -7737,9 +7737,9 @@
 						<property name="Year">$INFO[Window(Home).Property(RecommendedAlbum.10.Year)]</property>
 						<onclick>PlayList.Clear</onclick>
 						<onclick>$INFO[Window(Home).Property(RecommendedAlbum.10.Play)]</onclick>
-						<onclick condition="!Skin.HasSetting(DisableSlideShowArt) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
+						<onclick condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow)">AlarmClock(artistslideshow,RunScript(script.artistslideshow),0:01,true)</onclick>
 						<visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.10.Title))</visible>
-						<visible>Skin.HasSetting(HorizontalHomeScreen)</visible>
+						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 					</item>
 				</content>
 			</control>

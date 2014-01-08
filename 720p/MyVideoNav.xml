@@ -3,7 +3,7 @@
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<views>50,51,500,501,508,515,503,504,505,555,560,732</views>
-	<onload condition="!Skin.HasSetting(DisableTvTunes) + !Player.HasMedia">XBMC.RunScript(script.tvtunes,backend=True)</onload>
+	<onload condition="!Skin.HasSetting(disabletvtunes) + !Player.HasMedia">XBMC.RunScript(script.tvtunes,backend=True)</onload>
 	<controls>
 		<include>CommonBackground</include>
 		<include>MediaViewBackgrounds</include>
@@ -47,7 +47,7 @@
 		<include>CommonNowPlaying</include>
 		<include>BehindDialogFadeOut</include>
 		<control type="group">
-			<visible>!Skin.HasSetting(KioskMode)</visible>
+			<visible>!Skin.HasSetting(kioskmode)</visible>
 			<left>-250</left>
 			<include>SideBladeLeft</include>
 			<control type="grouplist" id="9000">

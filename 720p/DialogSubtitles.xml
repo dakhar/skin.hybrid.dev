@@ -158,7 +158,7 @@
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
-							<info>ListItem.Label</info>
+							<info>ListItem.label</info>
 						</control>
 						<control type="image">
 							<left>135</left>
@@ -186,7 +186,7 @@
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
-							<info>ListItem.Label2</info>
+							<info>ListItem.label2</info>
 						</control>
 						<control type="image">
 							<left>710</left>
@@ -229,7 +229,7 @@
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
-							<info>ListItem.Label</info>
+							<info>ListItem.label</info>
 						</control>
 						<control type="image">
 							<left>135</left>
@@ -257,7 +257,7 @@
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
-							<info>ListItem.Label2</info>
+							<info>ListItem.label2</info>
 						</control>
 						<control type="image">
 							<left>710</left>
@@ -367,7 +367,7 @@
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
-							<info>ListItem.Label</info>
+							<info>ListItem.label</info>
 						</control>
 					</itemlayout>
 					<focusedlayout width="400" height="36">
@@ -396,7 +396,7 @@
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
 							<align>left</align>
-							<info>ListItem.Label</info>
+							<info>ListItem.label</info>
 						</control>
 					</focusedlayout>
 				</control>
