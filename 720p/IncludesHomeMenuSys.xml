@@ -297,7 +297,7 @@
 		<onload>Skin.SetString(homeitem.4.sub,Videos)</onload>
 		<onload>Skin.SetString(homeitem.4.stats,Videos)</onload>
 		<onload>Skin.SetString(homeitem.4.addon,None)</onload>
-		<onload>Skin.SetString(homeitem.4.widget,UnWatched)</onload>
+		<onload>Skin.SetString(homeitem.4.widget,UnWatchedMovies)</onload>
 		<onload>Skin.SetString(homeitem.4.type,Videos)</onload>
 		<onload condition="Library.HasContent(Movies)">Skin.SetString(homeitem.4.display,LiveContent)</onload>
 		<onload>Skin.SetString(homeitem.4.fanart,special://skin/backgrounds/homescreen/videos.jpg)</onload>

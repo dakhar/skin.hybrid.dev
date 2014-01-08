@@ -2134,6 +2134,7 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums)">$LOCALIZE[31190]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomArtists)">$LOCALIZE[31186]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums)">$LOCALIZE[31191]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies)">$LOCALIZE[16101] $LOCALIZE[342]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),PlayList) + !Skin.HasSetting(enablerandomplaylist)">$LOCALIZE[559]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),PlayList) + Skin.HasSetting(enablerandomplaylist)">$LOCALIZE[31271] $LOCALIZE[559]</value>
 	</variable>
