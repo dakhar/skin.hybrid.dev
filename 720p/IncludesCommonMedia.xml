@@ -10,7 +10,7 @@
 				<randomize>true</randomize>
 				<fadetime>1000</fadetime>
 				<visible>Window.IsVisible(home)</visible>
-				<visible>!StringCompare(Container(9000).ListItem.Property(Background),LiveContent) | StringCompare(Container(9000).ListItem.Property(Background),LiveContent) + !SubString(Window(Home).Property(SkinWidgets_RandomItems),true)</visible>
+				<visible>!StringCompare(Container(9000).ListItem.Property(Background),LiveContent) | StringCompare(Container(9000).ListItem.Property(Background),LiveContent) + !SubString(Window(home).Property(SkinWidgets_RandomItems),true)</visible>
 			</control>
 			<control type="multiimage" id="8999">
 				<include>Dimensions_Fullscreen</include>
@@ -19,12 +19,12 @@
 				<timeperimage>8000</timeperimage>
 				<randomize>true</randomize>
 				<fadetime>1000</fadetime>
-				<visible>!StringCompare(Container(9000).ListItem.Property(Background),LiveContent) | StringCompare(Container(9000).ListItem.Property(Background),LiveContent) + !SubString(Window(Home).Property(SkinWidgets_RandomItems),true)</visible>
+				<visible>!StringCompare(Container(9000).ListItem.Property(Background),LiveContent) | StringCompare(Container(9000).ListItem.Property(Background),LiveContent) + !SubString(Window(home).Property(SkinWidgets_RandomItems),true)</visible>
 				<visible>[Window.IsVisible(home) + IsEmpty(Control.GetLabel(8998))]|[!Window.IsVisible(home) + !Container.Content(Seasons) + !Container.Content(Episodes)]</visible>
 			</control>
 			<control type="group">
 				<include>LiveContentBackgrounds</include>
-				<visible>StringCompare(Container(9000).ListItem.Property(Background),LiveContent) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + !StringCompare(Container(9000).ListItem.Property(HiLiteItem),Weather) + !Skin.HasSetting(holidayeffects)</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(Background),LiveContent) + SubString(Window(home).Property(SkinWidgets_RandomItems),true) + !StringCompare(Container(9000).ListItem.Property(HiLiteItem),Weather) + !Skin.HasSetting(holidayeffects)</visible>
 			</control>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>

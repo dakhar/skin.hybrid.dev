@@ -301,7 +301,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(hidewidgetextrainfo)</onclick>
-						<selected>Skin.HasSetting(hidewidgetextrainfo)</selected>
+						<selected>!Skin.HasSetting(hidewidgetextrainfo)</selected>
 					</control>
 					<control type="radiobutton" id="110">
 						<width>750</width>
@@ -727,7 +727,6 @@
 						<onclick>Skin.Reset(homeitemlastaction)</onclick>
 						<onclick>SetProperty(usrselectbtn,homeitem.1,home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(homeitem.1.label))">Skin.SetString(homeitem.1.label)</onclick>
 					</control>
 					<control type="button" id="203">
 						<width>750</width>
@@ -814,7 +813,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.2,home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(homeitem.2.label))">Skin.SetString(homeitem.2.label)</onclick>
 					</control>
 					<control type="button" id="208">
 						<width>750</width>
@@ -897,7 +895,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.3,home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(homeitem.3.label))">Skin.SetString(homeitem.3.label)</onclick>
 					</control>
 					<control type="button" id="213">
 						<width>750</width>
@@ -980,7 +977,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.4,home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(homeitem.4.label))">Skin.SetString(homeitem.4.label)</onclick>
 					</control>
 					<control type="button" id="218">
 						<width>750</width>
@@ -1063,7 +1059,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.5,home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(homeitem.5.label))">Skin.SetString(homeitem.5.label)</onclick>
 					</control>
 					<control type="button" id="223">
 						<width>750</width>
@@ -1146,7 +1141,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.6,home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(homeitem.6.label))">Skin.SetString(homeitem.6.label)</onclick>
 					</control>
 					<control type="button" id="228">
 						<width>750</width>
@@ -1229,7 +1223,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.7,home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(homeitem.7.label))">Skin.SetString(homeitem.7.label)</onclick>
 					</control>
 					<control type="button" id="233">
 						<width>750</width>
@@ -1312,7 +1305,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.8,home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(homeitem.8.label))">Skin.SetString(homeitem.8.label)</onclick>
 					</control>
 					<control type="button" id="238">
 						<width>750</width>
@@ -1395,7 +1387,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.9,home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(homeitem.9.label))">Skin.SetString(homeitem.9.label)</onclick>
 					</control>
 					<control type="button" id="243">
 						<width>750</width>
@@ -1478,7 +1469,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.10,home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(homeitem.10.label))">Skin.SetString(homeitem.10.label)</onclick>
 					</control>
 					<control type="button" id="248">
 						<width>750</width>
@@ -1715,7 +1705,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subvideos.1,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subvideos.1.label)) + !stringcompare(Skin.String(subvideos.1.path),Hidden)">Skin.SetString(subvideos.1.label)</onclick>
 					</control>
 					<control type="button" id="303">
 						<width>750</width>
@@ -1729,7 +1718,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subvideos.2,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subvideos.2.label)) + !stringcompare(Skin.String(subvideos.2.path),Hidden)">Skin.SetString(subvideos.2.label)</onclick>
 					</control>
 					<control type="button" id="304">
 						<width>750</width>
@@ -1743,7 +1731,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subvideos.3,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subvideos.3.label)) + !stringcompare(Skin.String(subvideos.3.path),Hidden)">Skin.SetString(subvideos.3.label)</onclick>
 					</control>
 					<control type="button" id="305">
 						<width>750</width>
@@ -1757,7 +1744,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subvideos.4,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subvideos.4.label)) + !stringcompare(Skin.String(subvideos.4.path),Hidden)">Skin.SetString(subvideos.4.label)</onclick>
 					</control>
 					<control type="button" id="306">
 						<width>750</width>
@@ -1771,7 +1757,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subvideos.5,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subvideos.5.label)) + !stringcompare(Skin.String(subvideos.5.path),Hidden)">Skin.SetString(subvideos.5.label)</onclick>
 					</control>
 					<control type="button" id="307">
 						<width>750</width>
@@ -1785,7 +1770,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subvideos.6,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subvideos.6.label)) + !stringcompare(Skin.String(subvideos.6.path),Hidden)">Skin.SetString(subvideos.6.label)</onclick>
 					</control>
 					<control type="label" id="308">
 						<width>750</width>
@@ -1821,7 +1805,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,submovies.1,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(submovies.1.label)) + !stringcompare(Skin.String(submovies.1.path),Hidden)">Skin.SetString(submovies.1.label)</onclick>
 					</control>
 					<control type="button" id="311">
 						<width>750</width>
@@ -1835,7 +1818,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,submovies.2,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(submovies.2.label)) + !stringcompare(Skin.String(submovies.2.path),Hidden)">Skin.SetString(submovies.2.label)</onclick>
 					</control>
 					<control type="button" id="312">
 						<width>750</width>
@@ -1849,7 +1831,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,submovies.3,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(submovies.3.label)) + !stringcompare(Skin.String(submovies.3.path),Hidden)">Skin.SetString(submovies.3.label)</onclick>
 					</control>
 					<control type="button" id="313">
 						<width>750</width>
@@ -1863,7 +1844,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,submovies.4,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(submovies.4.label)) + !stringcompare(Skin.String(submovies.4.path),Hidden)">Skin.SetString(submovies.4.label)</onclick>
 					</control>
 					<control type="button" id="314">
 						<width>750</width>
@@ -1877,7 +1857,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,submovies.5,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(submovies.5.label)) + !stringcompare(Skin.String(submovies.5.path),Hidden)">Skin.SetString(submovies.5.label)</onclick>
 					</control>
 					<control type="button" id="315">
 						<width>750</width>
@@ -1891,7 +1870,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,submovies.6,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(submovies.6.label)) + !stringcompare(Skin.String(submovies.6.path),Hidden)">Skin.SetString(submovies.6.label)</onclick>
 					</control>
 					<control type="label" id="316">
 						<width>750</width>
@@ -1927,7 +1905,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subtvshows.1,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subtvshows.1.label)) + !stringcompare(Skin.String(subtvshows.1.path),Hidden)">Skin.SetString(subtvshows.1.label)</onclick>
 					</control>
 					<control type="button" id="319">
 						<width>750</width>
@@ -1941,7 +1918,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subtvshows.2,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subtvshows.2.label)) + !stringcompare(Skin.String(subtvshows.2.path),Hidden)">Skin.SetString(subtvshows.2.label)</onclick>
 					</control>
 					<control type="button" id="320">
 						<width>750</width>
@@ -1955,7 +1931,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subtvshows.3,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subtvshows.3.label)) + !stringcompare(Skin.String(subtvshows.3.path),Hidden)">Skin.SetString(subtvshows.3.label)</onclick>
 					</control>
 					<control type="button" id="321">
 						<width>750</width>
@@ -1969,7 +1944,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subtvshows.4,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subtvshows.4.label)) + !stringcompare(Skin.String(subtvshows.4.path),Hidden)">Skin.SetString(subtvshows.4.label)</onclick>
 					</control>
 					<control type="button" id="322">
 						<width>750</width>
@@ -1983,7 +1957,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subtvshows.5,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subtvshows.5.label)) + !stringcompare(Skin.String(subtvshows.5.path),Hidden)">Skin.SetString(subtvshows.5.label)</onclick>
 					</control>
 					<control type="button" id="323">
 						<width>750</width>
@@ -1997,7 +1970,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subtvshows.6,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subtvshows.6.label)) + !stringcompare(Skin.String(subtvshows.6.path),Hidden)">Skin.SetString(subtvshows.6.label)</onclick>
 					</control>
 					<control type="label" id="324">
 						<width>750</width>
@@ -2033,7 +2005,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subconcerts.1,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subconcerts.1.label)) + !stringcompare(Skin.String(subconcerts.1.path),Hidden)">Skin.SetString(subconcerts.1.label)</onclick>
 					</control>
 					<control type="button" id="327">
 						<width>750</width>
@@ -2047,7 +2018,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subconcerts.2,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subconcerts.2.label)) + !stringcompare(Skin.String(subconcerts.2.path),Hidden)">Skin.SetString(subconcerts.2.label)</onclick>
 					</control>
 					<control type="button" id="328">
 						<width>750</width>
@@ -2061,7 +2031,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subconcerts.3,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subconcerts.3.label)) + !stringcompare(Skin.String(subconcerts.3.path),Hidden)">Skin.SetString(subconcerts.3.label)</onclick>
 					</control>
 					<control type="button" id="329">
 						<width>750</width>
@@ -2075,7 +2044,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subconcerts.4,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subconcerts.4.label)) + !stringcompare(Skin.String(subconcerts.4.path),Hidden)">Skin.SetString(subconcerts.4.label)</onclick>
 					</control>
 					<control type="button" id="330">
 						<width>750</width>
@@ -2089,7 +2057,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subconcerts.5,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subconcerts.5.label)) + !stringcompare(Skin.String(subconcerts.5.path),Hidden)">Skin.SetString(subconcerts.5.label)</onclick>
 					</control>
 					<control type="button" id="331">
 						<width>750</width>
@@ -2103,7 +2070,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subconcerts.6,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subconcerts.6.label)) + !stringcompare(Skin.String(subconcerts.6.path),Hidden)">Skin.SetString(subconcerts.6.label)</onclick>
 					</control>
 					<control type="label" id="332">
 						<width>750</width>
@@ -2139,7 +2105,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,submusic.1,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(submusic.1.label)) + !stringcompare(Skin.String(submusic.1.path),Hidden)">Skin.SetString(submusic.1.label)</onclick>
 					</control>
 					<control type="button" id="335">
 						<width>750</width>
@@ -2153,7 +2118,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,submusic.2,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(submusic.2.label)) + !stringcompare(Skin.String(submusic.2.path),Hidden)">Skin.SetString(submusic.2.label)</onclick>
 					</control>
 					<control type="button" id="336">
 						<width>750</width>
@@ -2167,7 +2131,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,submusic.3,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(submusic.3.label)) + !stringcompare(Skin.String(submusic.3.path),Hidden)">Skin.SetString(submusic.3.label)</onclick>
 					</control>
 					<control type="button" id="337">
 						<width>750</width>
@@ -2181,7 +2144,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,submusic.4,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(submusic.4.label)) + !stringcompare(Skin.String(submusic.4.path),Hidden)">Skin.SetString(submusic.4.label)</onclick>
 					</control>
 					<control type="button" id="338">
 						<width>750</width>
@@ -2195,7 +2157,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,submusic.5,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(submusic.5.label)) + !stringcompare(Skin.String(submusic.5.path),Hidden)">Skin.SetString(submusic.5.label)</onclick>
 					</control>
 					<control type="button" id="339">
 						<width>750</width>
@@ -2209,7 +2170,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,submusic.6,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(submusic.6.label)) + !stringcompare(Skin.String(submusic.6.path),Hidden)">Skin.SetString(submusic.6.label)</onclick>
 					</control>
 					<control type="label" id="340">
 						<width>750</width>
@@ -2245,7 +2205,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subprog.1,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subprog.1.label)) + !stringcompare(Skin.String(subprog.1.path),Hidden)">Skin.SetString(subprog.1.label)</onclick>
 					</control>
 					<control type="button" id="343">
 						<width>750</width>
@@ -2259,7 +2218,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subprog.2,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subprog.2.label)) + !stringcompare(Skin.String(subprog.2.path),Hidden)">Skin.SetString(subprog.2.label)</onclick>
 					</control>
 					<control type="button" id="344">
 						<width>750</width>
@@ -2273,7 +2231,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subprog.3,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subprog.3.label)) + !stringcompare(Skin.String(subprog.3.path),Hidden)">Skin.SetString(subprog.3.label)</onclick>
 					</control>
 					<control type="button" id="345">
 						<width>750</width>
@@ -2287,7 +2244,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subprog.4,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subprog.4.label)) + !stringcompare(Skin.String(subprog.4.path),Hidden)">Skin.SetString(subprog.4.label)</onclick>
 					</control>
 					<control type="button" id="346">
 						<width>750</width>
@@ -2301,7 +2257,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subprog.5,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subprog.5.label)) + !stringcompare(Skin.String(subprog.5.path),Hidden)">Skin.SetString(subprog.5.label)</onclick>
 					</control>
 					<control type="button" id="347">
 						<width>750</width>
@@ -2315,7 +2270,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subprog.6,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subprog.6.label)) + !stringcompare(Skin.String(subprog.6.path),Hidden)">Skin.SetString(subprog.6.label)</onclick>
 					</control>
 					<control type="label" id="348">
 						<width>750</width>
@@ -2351,7 +2305,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subpictures.1,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subpictures.1.label)) + !stringcompare(Skin.String(subpictures.1.path),Hidden)">Skin.SetString(subpictures.1.label)</onclick>
 					</control>
 					<control type="button" id="351">
 						<width>750</width>
@@ -2365,7 +2318,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subpictures.2,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subpictures.2.label))">Skin.SetString(subpictures.2.label)</onclick>
 					</control>
 					<control type="button" id="352">
 						<width>750</width>
@@ -2379,7 +2331,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subpictures.3,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subpictures.3.label))">Skin.SetString(subpictures.3.label)</onclick>
 					</control>
 					<control type="button" id="353">
 						<width>750</width>
@@ -2393,7 +2344,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subpictures.4,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subpictures.4.label))">Skin.SetString(subpictures.4.label)</onclick>
 					</control>
 					<control type="button" id="354">
 						<width>750</width>
@@ -2407,7 +2357,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subpictures.5,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subpictures.5.label))">Skin.SetString(subpictures.5.label)</onclick>
 					</control>
 					<control type="button" id="355">
 						<width>750</width>
@@ -2421,7 +2370,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subpictures.6,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subpictures.6.label))">Skin.SetString(subpictures.6.label)</onclick>
 					</control>
 					<control type="label" id="356">
 						<width>750</width>
@@ -2459,7 +2407,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,sublivetv.1,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(sublivetv.1.label)) + !stringcompare(Skin.String(sublivetv.1.path),Hidden)">Skin.SetString(sublivetv.1.label)</onclick>
 						<visible>System.GetBool(pvrmanager.enabled)</visible>
 					</control>
 					<control type="button" id="359">
@@ -2474,7 +2421,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,sublivetv.2,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(sublivetv.2.label)) + !stringcompare(Skin.String(sublivetv.2.path),Hidden)">Skin.SetString(sublivetv.2.label)</onclick>
 						<visible>System.GetBool(pvrmanager.enabled)</visible>
 					</control>
 					<control type="button" id="360">
@@ -2489,7 +2435,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,sublivetv.3,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(sublivetv.3.label)) + !stringcompare(Skin.String(sublivetv.3.path),Hidden)">Skin.SetString(sublivetv.3.label)</onclick>
 						<visible>System.GetBool(pvrmanager.enabled)</visible>
 					</control>
 					<control type="button" id="361">
@@ -2504,7 +2449,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,sublivetv.4,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(sublivetv.4.label)) + !stringcompare(Skin.String(sublivetv.4.path),Hidden)">Skin.SetString(sublivetv.4.label)</onclick>
 						<visible>System.GetBool(pvrmanager.enabled)</visible>
 					</control>
 					<control type="button" id="362">
@@ -2519,7 +2463,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,sublivetv.5,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(sublivetv.5.label)) + !stringcompare(Skin.String(sublivetv.5.path),Hidden)">Skin.SetString(sublivetv.5.label)</onclick>
 						<visible>System.GetBool(pvrmanager.enabled)</visible>
 					</control>
 					<control type="button" id="363">
@@ -2534,7 +2477,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,sublivetv.6,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(sublivetv.6.label))">Skin.SetString(sublivetv.6.label)</onclick>
 						<visible>System.GetBool(pvrmanager.enabled)</visible>
 					</control>
 					<control type="label" id="364">
@@ -2571,7 +2513,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subsystem.1,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subsystem.1.label)) + !stringcompare(Skin.String(subsystem.1.path),Hidden)">Skin.SetString(subsystem.1.label)</onclick>
 					</control>
 					<control type="button" id="367">
 						<width>750</width>
@@ -2585,7 +2526,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subsystem.2,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subsystem.2.label)) + !stringcompare(Skin.String(subsystem.2.path),Hidden)">Skin.SetString(subsystem.2.label)</onclick>
 					</control>
 					<control type="button" id="368">
 						<width>750</width>
@@ -2599,7 +2539,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subsystem.3,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subsystem.3.label)) + !stringcompare(Skin.String(subsystem.3.path),Hidden)">Skin.SetString(subsystem.3.label)</onclick>
 					</control>
 					<control type="button" id="369">
 						<width>750</width>
@@ -2613,7 +2552,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subsystem.4,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subsystem.4.label)) + !stringcompare(Skin.String(subsystem.4.path),Hidden)">Skin.SetString(subsystem.4.label)</onclick>
 					</control>
 					<control type="button" id="370">
 						<width>750</width>
@@ -2627,7 +2565,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subsystem.5,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subsystem.5.label)) + !stringcompare(Skin.String(subsystem.5.path),Hidden)">Skin.SetString(subsystem.5.label)</onclick>
 					</control>
 					<control type="button" id="371">
 						<width>750</width>
@@ -2641,7 +2578,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,subsystem.6,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(subsystem.6.label)) + !stringcompare(Skin.String(subsystem.6.path),Hidden)">Skin.SetString(subsystem.6.label)</onclick>
 					</control>
 					<control type="label" id="372">
 						<width>750</width>
@@ -2677,7 +2613,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubone.1,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubone.1.label))">Skin.SetString(usersubone.1.label)</onclick>
 					</control>
 					<control type="button" id="375">
 						<width>750</width>
@@ -2691,7 +2626,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubone.2,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubone.2.label))">Skin.SetString(usersubone.2.label)</onclick>
 					</control>
 					<control type="button" id="376">
 						<width>750</width>
@@ -2705,7 +2639,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubone.3,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubone.3.label))">Skin.SetString(usersubone.3.label)</onclick>
 					</control>
 					<control type="button" id="377">
 						<width>750</width>
@@ -2719,7 +2652,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubone.4,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubone.4.label))">Skin.SetString(usersubone.4.label)</onclick>
 					</control>
 					<control type="button" id="378">
 						<width>750</width>
@@ -2733,7 +2665,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubone.5,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubone.5.label))">Skin.SetString(usersubone.5.label)</onclick>
 					</control>
 					<control type="button" id="379">
 						<width>750</width>
@@ -2747,7 +2678,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubone.6,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubone.6.label))">Skin.SetString(usersubone.6.label)</onclick>
 					</control>
 					<control type="label" id="380">
 						<width>750</width>
@@ -2783,7 +2713,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubtwo.1,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubtwo.1.label))">Skin.SetString(usersubtwo.1.label)</onclick>
 					</control>
 					<control type="button" id="383">
 						<width>750</width>
@@ -2797,7 +2726,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubtwo.2,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubtwo.2.label))">Skin.SetString(usersubtwo.2.label)</onclick>
 					</control>
 					<control type="button" id="384">
 						<width>750</width>
@@ -2811,7 +2739,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubtwo.3,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubtwo.3.label))">Skin.SetString(usersubtwo.3.label)</onclick>
 					</control>
 					<control type="button" id="385">
 						<width>750</width>
@@ -2825,7 +2752,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubtwo.4,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubtwo.4.label))">Skin.SetString(usersubtwo.4.label)</onclick>
 					</control>
 					<control type="button" id="386">
 						<width>750</width>
@@ -2839,7 +2765,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubtwo.5,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubtwo.5.label))">Skin.SetString(usersubtwo.5.label)</onclick>
 					</control>
 					<control type="button" id="387">
 						<width>750</width>
@@ -2853,7 +2778,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubtwo.6,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubtwo.6.label))">Skin.SetString(usersubtwo.6.label)</onclick>
 					</control>
 					<control type="label" id="388">
 						<width>750</width>
@@ -2889,7 +2813,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubthree.1,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubthree.1.label))">Skin.SetString(usersubthree.1.label)</onclick>
 					</control>
 					<control type="button" id="391">
 						<width>750</width>
@@ -2903,7 +2826,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubthree.2,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubthree.2.label))">Skin.SetString(usersubthree.2.label)</onclick>
 					</control>
 					<control type="button" id="392">
 						<width>750</width>
@@ -2917,7 +2839,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubthree.3,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubthree.3.label))">Skin.SetString(usersubthree.3.label)</onclick>
 					</control>
 					<control type="button" id="393">
 						<width>750</width>
@@ -2931,7 +2852,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubthree.4,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubthree.4.label))">Skin.SetString(usersubthree.4.label)</onclick>
 					</control>
 					<control type="button" id="394">
 						<width>750</width>
@@ -2945,7 +2865,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubthree.5,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubthree.5.label))">Skin.SetString(usersubthree.5.label)</onclick>
 					</control>
 					<control type="button" id="395">
 						<width>750</width>
@@ -2959,7 +2878,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,usersubthree.6,home)</onclick>
 						<onclick>ActivateWindow(2115)</onclick>
-						<onclick condition="!IsEmpty(Skin.String(usersubthree.6.label))">Skin.SetString(usersubthree.6.label)</onclick>
 					</control>
 				</control>
 				<control type="textbox">

@@ -5,7 +5,7 @@
 			<left>0</left>
 			<top>0</top>
 			<onup condition="Skin.HasSetting(horizontalhomescreen)">9000</onup>
-			<ondown condition="Skin.HasSetting(horizontalhomescreen) + IntegerGreaterThan(Window(Home).Property(favourite.count),0) + !Skin.HasSetting(disablescriptfavourites)">ActivateWindow(Favourites)</ondown>
+			<ondown condition="Skin.HasSetting(horizontalhomescreen) + IntegerGreaterThan(Window(home).Property(favourite.count),0) + !Skin.HasSetting(disablescriptfavourites)">ActivateWindow(Favourites)</ondown>
 			<onleft condition="!Skin.HasSetting(horizontalhomescreen)">9000</onleft>
 			<onright condition="!Skin.HasSetting(horizontalhomescreen) + Control.IsVisible(601)">9004</onright>
 			<onright condition="!Skin.HasSetting(horizontalhomescreen) + !Control.IsVisible(601) + Control.IsVisible(510)">510</onright>
@@ -774,7 +774,7 @@
 		<scrolltime>200</scrolltime>
 		<orientation>Horizontal</orientation>
 		<onup>9000</onup>
-		<ondown condition="IntegerGreaterThan(Window(Home).Property(favourite.count),0) + !Skin.HasSetting(disablescriptfavourites)">ActivateWindow(Favourites)</ondown>
+		<ondown condition="IntegerGreaterThan(Window(home).Property(favourite.count),0) + !Skin.HasSetting(disablescriptfavourites)">ActivateWindow(Favourites)</ondown>
 		<hitrect x="-640" y="0" w="2560" h="45" />
 	</include>
 	<include name="HorzSubMenuAnimation">

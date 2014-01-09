@@ -63,16 +63,22 @@
 	<include name="CloseMenuChoice">
 		<onclick condition="Window.IsVisible(2114)">Dialog.Close(2114)</onclick>
 		<onclick condition="Window.IsVisible(2115)">Dialog.Close(2115)</onclick>
+		<!--	usrselectbtn,homeitem. 2114 -->
+		<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label)</onclick>
+		<!--
+		usrselectbtn,subvideos 2115
+		<onclick condition="!IsEmpty(Skin.String(subvideos.1.label)) + !stringcompare(Skin.String(subvideos.1.path),Hidden)">Skin.SetString(subvideos.1.label)</onclick>
+		-->
 		<onclick>Skin.Reset(usrselectaddon)</onclick>
 		<onclick>ClearProperty(usrselectbtn,Home)</onclick>
 	</include>
 	<!--
 	<include name="InfoWidgetVizability">
 		<visible>
-			[Library.HasContent(Music) + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentAlbums) | [SubString(Window(Home).Property(SkinWidgets_RandomItems),true) + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomArtists)] | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums) + SubString(Window(Home).Property(SkinWidgets_Recommended),true)] |
-			[Library.HasContent(Movies) + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + SubString(Window(Home).Property(SkinWidgets_Recommended),true)]|
-			[Library.HasContent(TVShows) + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedEpisodes) + SubString(Window(Home).Property(SkinWidgets_Recommended),true)]|
-			[Library.HasContent(MusicVideos) + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentConcerts) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomConcerts) + SubString(Window(Home).Property(SkinWidgets_RandomItems),true) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedConcerts) + SubString(Window(Home).Property(SkinWidgets_Recommended),true)]
+			[Library.HasContent(Music) + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentAlbums) | [SubString(Window(home).Property(SkinWidgets_RandomItems),true) + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomArtists)] | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums) + SubString(Window(home).Property(SkinWidgets_Recommended),true)] |
+			[Library.HasContent(Movies) + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + SubString(Window(home).Property(SkinWidgets_RandomItems),true) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + SubString(Window(home).Property(SkinWidgets_Recommended),true)]|
+			[Library.HasContent(TVShows) + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) + SubString(Window(home).Property(SkinWidgets_RandomItems),true) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedEpisodes) + SubString(Window(home).Property(SkinWidgets_Recommended),true)]|
+			[Library.HasContent(MusicVideos) + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentConcerts) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomConcerts) + SubString(Window(home).Property(SkinWidgets_RandomItems),true) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedConcerts) + SubString(Window(home).Property(SkinWidgets_Recommended),true)]
 		</visible>
 	</include>
 	-->

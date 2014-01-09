@@ -430,7 +430,7 @@
 		<height>600</height>
 		<onup>9000</onup>
 		<ondown>9000</ondown>
-		<onleft condition="IntegerGreaterThan(Window(Home).Property(favourite.count),0) + !Skin.HasSetting(disablescriptfavourites)">ActivateWindow(Favourites)</onleft>
+		<onleft condition="IntegerGreaterThan(Window(home).Property(favourite.count),0) + !Skin.HasSetting(disablescriptfavourites)">ActivateWindow(Favourites)</onleft>
 		<onright>9001</onright>
 		<pagecontrol>-</pagecontrol>
 		<scrolltime>550</scrolltime>

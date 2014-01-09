@@ -6,14 +6,19 @@
 				<description>Skin Default</description>
 				<label>$LOCALIZE[31257]</label>
 				<include>ClearButtonChoice</include>
-				<include>CloseMenuChoice</include>
+				<onclick>Dialog.Close(2115)</onclick>
+				<onclick>Skin.Reset(usrselectaddon)</onclick>
+				<onclick>ClearProperty(usrselectbtn,Home)</onclick>
 				<visible>![substring(Window(home).Property(usrselectbtn),UserSub,Left) | substring(Window(home).Property(usrselectbtn),subprog)] + Window.IsVisible(2115)</visible>
 			</item>
 			<item>
 				<description>Clear Setting</description>
 				<label>$LOCALIZE[31317]</label>
 				<include>ClearButtonChoice</include>
-				<include>CloseMenuChoice</include>
+				<onclick condition="Window.IsVisible(2114)">Dialog.Close(2114)</onclick>
+				<onclick condition="Window.IsVisible(2115)">Dialog.Close(2115)</onclick>
+				<onclick>Skin.Reset(usrselectaddon)</onclick>
+				<onclick>ClearProperty(usrselectbtn,Home)</onclick>
 				<visible>substring(Window(home).Property(usrselectbtn),UserSub,Left) | substring(Window(home).Property(usrselectbtn),subprog) | Window.IsVisible(2114)</visible>
 			</item>
 			<item>
@@ -22,7 +27,9 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,Hidden)</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[31328])</onclick>
-				<include>CloseMenuChoice</include>
+				<onclick>Dialog.Close(2115)</onclick>
+				<onclick>Skin.Reset(usrselectaddon)</onclick>
+				<onclick>ClearProperty(usrselectbtn,Home)</onclick>
 				<visible>!substring(Window(home).Property(usrselectbtn),UserSub,Left) + !substring(Window(home).Property(usrselectbtn),subprog) + Window.IsVisible(2115)</visible>
 			</item>
 			<item>
