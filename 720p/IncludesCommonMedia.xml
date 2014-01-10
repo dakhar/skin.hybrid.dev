@@ -63,6 +63,7 @@
 				</control>
 				<visible>Skin.HasSetting(holidayeffects)</visible>
 			</control>
+			
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
 				<aspectratio>scale</aspectratio>
@@ -83,6 +84,20 @@
 				<include>Window_OpenClose_Animation</include>
 				<visible>!Player.HasVideo + !Skin.HasSetting(hidebackgroundfanart)</visible>
 			</control>
+			
+			<control type="image">
+					<left>-350</left>
+					<top>440r</top>
+					<width>720</width>
+					<height>720</height>
+					<include>BackgroundFade</include>
+					<fadetime>FanartCrossfadeTime</fadetime>
+					<aspectratio>stretch</aspectratio>
+					<texture background="true">$INFO[ListItem.Art(discart)]</texture>
+					<visible>!IsEmpty(ListItem.Title) + !IsEmpty(ListItem.Art(discart))</visible>
+				</control>	
+			
+			
 			<visible>Skin.HasSetting(hidenowplayingfanart) | !Player.HasAudio | Player.Paused | SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE) | Window.IsVisible(weather)</visible>
 		</control>
 		<control type="group">
