@@ -5,6 +5,8 @@
 			<include condition="!Skin.HasSetting(hidewidgetextrainfo)">ExtraInfoWidgetPanel</include>
 			<include condition="Skin.HasSetting(horizontalhomescreen)">HorzMediaPanel</include>
 			<include condition="!Skin.HasSetting(horizontalhomescreen)">VertMediaPanel</include>
+			
+			
 			<control type="group" id="602">
 				<left>130</left>
 				<top>309</top>
@@ -12,6 +14,8 @@
 				<include>WidgetTVShowContent</include>
 				<include>WidgetConcertsContent</include>
 				<include>WidgetMusicContent</include>
+				
+				
 				<control type="group">
 					<top>30</top>
 					<animation effect="slide" start="0,0" end="0,20" time="0" easing="out" tween="sine" condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomArtists) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums)">Conditional</animation>
@@ -51,6 +55,7 @@
 						<textcolor>white</textcolor>
 						<visible>Control.HasFocus(510)</visible>
 					</control>
+					<visible>!IsEmpty(Container(510).ListItem(1).Label)</visible>
 				</control>
 			</control>
 			<animation effect="slide" start="0,0" end="0,-229" time="0" easing="out" tween="sine" condition="Skin.HasSetting(hidewidgetextrainfo) + !Skin.HasSetting(hidehomenowplaying) + Player.HasMedia">Conditional</animation>
@@ -148,6 +153,7 @@
 				<visible>Library.HasContent(MusicVideos) + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentConcerts) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomConcerts) + SubString(Window(home).Property(SkinWidgets_RandomItems),true) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedConcerts) + SubString(Window(home).Property(SkinWidgets_Recommended),true)</visible>
 			</control>
 			<visible>Skin.HasSetting(horizontalhomescreen)</visible>
+			<visible>!IsEmpty(Container(510).ListItem(1).Label)</visible>
 		</control>
 	</include>
 	<include name="VertMediaPanel">
@@ -195,6 +201,7 @@
 				<visible>Library.HasContent(MusicVideos) + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentConcerts) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomConcerts) + SubString(Window(home).Property(SkinWidgets_RandomItems),true) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedConcerts) + SubString(Window(home).Property(SkinWidgets_Recommended),true)</visible>
 			</control>
 			<visible>!Skin.HasSetting(horizontalhomescreen)</visible>
+			<visible>!IsEmpty(Container(510).ListItem(1).Label)</visible>
 		</control>
 	</include>
 	<include name="HomeMediaPanel">
