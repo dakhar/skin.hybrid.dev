@@ -118,9 +118,17 @@
 						<description>Playlist Movies</description>
 						<label>$LOCALIZE[136]</label>
 						<onclick>Dialog.Close(2118)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].widget,PlayList)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].widget,VideoPlayList)</onclick>
 						<onclick>ClearProperty(usrselectbtn,Home)</onclick>
-						<include>MenuTypePlayListCheck</include>
+						<include>MenuMoviePlayListCheck</include>
+					</item>
+					<item>
+						<description>Playlist Music</description>
+						<label>$LOCALIZE[136]</label>
+						<onclick>Dialog.Close(2118)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].widget,MusicPlayList)</onclick>
+						<onclick>ClearProperty(usrselectbtn,Home)</onclick>
+						<include>MenuMusicPlayListCheck</include>
 					</item>
 					<!--item>
 						<description>Weather</description>
