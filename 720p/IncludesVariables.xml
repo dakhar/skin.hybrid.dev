@@ -2209,8 +2209,11 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomArtists)">$LOCALIZE[31186]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums)">$LOCALIZE[31191]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies)">$LOCALIZE[16101] $LOCALIZE[342]</value>
+		<!--
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),PlayList) + !Skin.HasSetting(enablerandomplaylist)">$LOCALIZE[559]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),PlayList) + Skin.HasSetting(enablerandomplaylist)">$LOCALIZE[31271] $LOCALIZE[559]</value>
+		-->
+		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),PlayList)">$INFO[Container(9000).ListItem.label] $LOCALIZE[559]</value>
 	</variable>
 	<variable name="PartlyWatched">
 		<value condition="[Window.IsVisible(2125) | Window.IsVisible(2124)] + IntegerGreaterThan(Container(450).listItem.Property(PercentPlayed),0) + !IntegerGreaterThan(Container(450).listItem.Property(PercentPlayed),19)">OverlayPartlywatched1</value>
