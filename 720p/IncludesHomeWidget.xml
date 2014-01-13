@@ -5,8 +5,6 @@
 			<include condition="!Skin.HasSetting(hidewidgetextrainfo)">ExtraInfoWidgetPanel</include>
 			<include condition="Skin.HasSetting(horizontalhomescreen)">HorzMediaPanel</include>
 			<include condition="!Skin.HasSetting(horizontalhomescreen)">VertMediaPanel</include>
-			
-			
 			<control type="group" id="602">
 				<left>130</left>
 				<top>309</top>
@@ -14,8 +12,6 @@
 				<include>WidgetTVShowContent</include>
 				<include>WidgetConcertsContent</include>
 				<include>WidgetMusicContent</include>
-				
-				
 				<control type="group">
 					<top>30</top>
 					<animation effect="slide" start="0,0" end="0,20" time="0" easing="out" tween="sine" condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomArtists) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums)">Conditional</animation>
@@ -637,9 +633,6 @@
 			<visible>![Player.HasMedia | Control.HasFocus(510)] + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))</visible>
 			<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) | StringCompare(Container(9000).ListItem.Property(PlayListType),Movie)</visible>
 		</control>
-		
-		
-		
 		<control type="label">
 			<left>300</left>
 			<top>186</top>

@@ -87,13 +87,9 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + SubString(Window(home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(home).Property(RandomAlbum.5.Art(thumb))]</value>
 		<value condition="!IsEmpty(Window(home).Property(LatestAlbum.5.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)">$INFO[Window(home).Property(LatestAlbum.5.Thumb)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">DefaultAlbumCover.png</value>
-		
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(home).Property(RandomMusicVideo.5.Art(poster))]</value>
-		
 		<value condition="SubString(Window(home).Property(SkinWidgets_RandomItems),true) + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos)]">$INFO[Window(home).Property(RandomMovie.5.Art(poster))]</value>
 		<value condition="SubString(Window(home).Property(SkinWidgets_RandomItems),true) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">$INFO[Window(home).Property(RandomEpisode.5.Art(tvshow.poster))]</value>
-		
-		
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows)">$INFO[Window(home).Property(LatestEpisode.5.ShowThumb)]</value>
 		<value condition="Container(9000).HasFocus(1) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),VideoPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie)">$INFO[Window(home).Property(HomePlayListOne.5.Art(poster))]</value>
 		<value condition="Container(9000).HasFocus(2) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),VideoPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie)">$INFO[Window(home).Property(HomePlayListTwo.5.Art(poster))]</value>
@@ -115,15 +111,7 @@
 		<value condition="Container(9000).HasFocus(8) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),VideoPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Episode)">$INFO[Window(home).Property(HomePlayListEight.5.Art(tvshow.poster))]</value>
 		<value condition="Container(9000).HasFocus(9) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),VideoPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Episode)">$INFO[Window(home).Property(HomePlayListNine.5.Art(tvshow.poster))]</value>
 		<value condition="Container(9000).HasFocus(10) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),VideoPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Episode)">$INFO[Window(home).Property(HomePlayListTen.5.Art(tvshow.poster))]</value>
-		
 		<value condition="Library.HasContent(Movies)">$INFO[Window(home).Property(LatestMovie.5.Thumb)]</value>
-		
-		
-		
-			
-		
-		
-		
 		<value>DefaultVideoCover.png</value>
 	</variable>
 	<variable name="LiveContentTwo">
@@ -304,8 +292,6 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + SubString(Window(home).Property(SkinWidgets_RandomItems),true)">$INFO[Window(home).Property(RandomAlbum.6.Art(thumb))]</value>
 		<value condition="!IsEmpty(Window(home).Property(LatestAlbum.6.Thumb)) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music)">$INFO[Window(home).Property(LatestAlbum.6.Thumb)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList)">DefaultAlbumCover.png</value>
-		
-		
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts)">$INFO[Window(home).Property(RandomMusicVideo.6.Art(poster))]</value>
 		<value condition="SubString(Window(home).Property(SkinWidgets_RandomItems),true) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies)">$INFO[Window(home).Property(RandomMovie.6.Art(poster))]</value>
 		<value condition="SubString(Window(home).Property(SkinWidgets_RandomItems),true) + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows) | StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos)]">$INFO[Window(home).Property(RandomEpisode.6.Art(tvshow.poster))]</value>
@@ -1449,10 +1435,8 @@
 		<value condition="stringcompare(Skin.String(homeitem.13.widget),RandomConcerts)">$LOCALIZE[31188]</value>
 		<value condition="stringcompare(Skin.String(homeitem.13.widget),SuggestedConcerts)">$LOCALIZE[31199]</value>
 		<value condition="stringcompare(Skin.String(homeitem.13.widget),UnWatchedMovies)">$LOCALIZE[16101] $LOCALIZE[20342]</value>
-		
 		<value condition="stringcompare(Skin.String(homeitem.13.widget),VideoPlayList)">$LOCALIZE[157] $LOCALIZE[136]</value>
 		<value condition="stringcompare(Skin.String(homeitem.13.widget),MusicPlayList)">$LOCALIZE[249] $LOCALIZE[136]</value>
-		
 		<value condition="stringcompare(Skin.String(homeitem.13.widget),Weather)">$LOCALIZE[8]</value>
 		<value condition="stringcompare(Skin.String(homeitem.13.widget),Favourites)">$LOCALIZE[1036]</value>
 		<value>$LOCALIZE[31254]</value>
@@ -1723,8 +1707,6 @@
 		<value condition="Control.HasFocus(709) + IntegerGreaterThan(Container(709).NumItems,0)">$INFO[Container(709).ListItem.label,[B][COLOR=red]$LOCALIZE[31242]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="Control.HasFocus(710) + IntegerGreaterThan(Container(701).NumItems,0)">$INFO[Container(710).ListItem.label,[B][COLOR=red]$LOCALIZE[31242]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="Control.HasFocus(711) + IntegerGreaterThan(Container(711).NumItems,0)">$INFO[Container(711).ListItem.label,[B][COLOR=red]$LOCALIZE[31242]$LOCALIZE[31000] [/COLOR][/B]]</value>
-		
-		
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),VideoPlayList) + Container(9000).Hasfocus(1) + StringCompare(Skin.String(homeitem.1.widget),VideoPlayList) + !IsEmpty(Window(home).Property(HomePlayListOne.Count))">$INFO[Window(home).Property(HomePlayListOne.Count),[B][COLOR=red]$LOCALIZE[31259]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListOne.Watched),[B][COLOR=red]$LOCALIZE[16102]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListOne.Unwatched),[B][COLOR=red]$LOCALIZE[16101]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),VideoPlayList) + Container(9000).Hasfocus(2) + StringCompare(Skin.String(homeitem.2.widget),VideoPlayList) + !IsEmpty(Window(home).Property(HomePlayListTwo.Count))">$INFO[Window(home).Property(HomePlayListTwo.Count),[B][COLOR=red]$LOCALIZE[31259]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListTwo.Watched),[B][COLOR=red]$LOCALIZE[16102]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListTwo.Unwatched),[B][COLOR=red]$LOCALIZE[16101]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),VideoPlayList) + Container(9000).Hasfocus(3) + StringCompare(Skin.String(homeitem.3.widget),VideoPlayList) + !IsEmpty(Window(home).Property(HomePlayListThree.Count))">$INFO[Window(home).Property(HomePlayListThree.Count),[B][COLOR=red]$LOCALIZE[31259]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListThree.Watched),[B][COLOR=red]$LOCALIZE[16102]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListThree.Unwatched),[B][COLOR=red]$LOCALIZE[16101]$LOCALIZE[31000] [/COLOR][/B]]</value>
@@ -1735,9 +1717,6 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),VideoPlayList) + Container(9000).Hasfocus(8) + StringCompare(Skin.String(homeitem.8.widget),VideoPlayList) + !IsEmpty(Window(home).Property(HomePlayListEight.Count))">$INFO[Window(home).Property(HomePlayListEight.Count),[B][COLOR=red]$LOCALIZE[31259]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListEight.Watched),[B][COLOR=red]$LOCALIZE[16102]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListEight.Unwatched),[B][COLOR=red]$LOCALIZE[16101]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),VideoPlayList) + Container(9000).Hasfocus(9) + StringCompare(Skin.String(homeitem.9.widget),VideoPlayList) + !IsEmpty(Window(home).Property(HomePlayListNine.Count))">$INFO[Window(home).Property(HomePlayListNine.Count),[B][COLOR=red]$LOCALIZE[31259]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListNine.Watched),[B][COLOR=red]$LOCALIZE[16102]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListNine.Unwatched),[B][COLOR=red]$LOCALIZE[16101]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),VideoPlayList) + Container(9000).Hasfocus(10) + StringCompare(Skin.String(homeitem.10.widget),VideoPlayList) + !IsEmpty(Window(home).Property(HomePlayListTen.Count))">$INFO[Window(home).Property(HomePlayListTen.Count),[B][COLOR=red]$LOCALIZE[31259]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListTen.Watched),[B][COLOR=red]$LOCALIZE[16102]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListTen.Unwatched),[B][COLOR=red]$LOCALIZE[16101]$LOCALIZE[31000] [/COLOR][/B]]</value>
-		
-		
-	
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + Container(9000).Hasfocus(1) + StringCompare(Skin.String(homeitem.1.widget),MusicPlayList) + !IsEmpty(Window(home).Property(HomePlayListOne.Artists))">$INFO[Window(home).Property(HomePlayListOne.Artists),[B][COLOR=red]$LOCALIZE[133]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListOne.Albums),[B][COLOR=red]$LOCALIZE[132]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListOne.Songs),[B][COLOR=red]$LOCALIZE[134]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + Container(9000).Hasfocus(2) + StringCompare(Skin.String(homeitem.2.widget),MusicPlayList) + !IsEmpty(Window(home).Property(HomePlayListTwo.Artists))">$INFO[Window(home).Property(HomePlayListTwo.Artists),[B][COLOR=red]$LOCALIZE[133]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListTwo.Albums),[B][COLOR=red]$LOCALIZE[132]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListTwo.Songs),[B][COLOR=red]$LOCALIZE[134]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + Container(9000).Hasfocus(3) + StringCompare(Skin.String(homeitem.3.widget),MusicPlayList) + !IsEmpty(Window(home).Property(HomePlayListThree.Artists))">$INFO[Window(home).Property(HomePlayListThree.Artists),[B][COLOR=red]$LOCALIZE[133]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListThree.Albums),[B][COLOR=red]$LOCALIZE[132]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListThree.Songs),[B][COLOR=red]$LOCALIZE[134]$LOCALIZE[31000] [/COLOR][/B]]</value>
@@ -1748,9 +1727,6 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + Container(9000).Hasfocus(8) + StringCompare(Skin.String(homeitem.8.widget),MusicPlayList) + !IsEmpty(Window(home).Property(HomePlayListEight.Artists))">$INFO[Window(home).Property(HomePlayListEight.Artists),[B][COLOR=red]$LOCALIZE[133]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListEight.Albums),[B][COLOR=red]$LOCALIZE[132]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListEight.Songs),[B][COLOR=red]$LOCALIZE[134]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + Container(9000).Hasfocus(9) + StringCompare(Skin.String(homeitem.9.widget),MusicPlayList) + !IsEmpty(Window(home).Property(HomePlayListNine.Artists))">$INFO[Window(home).Property(HomePlayListNine.Artists),[B][COLOR=red]$LOCALIZE[133]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListNine.Albums),[B][COLOR=red]$LOCALIZE[132]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListNine.Songs),[B][COLOR=red]$LOCALIZE[134]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + Container(9000).Hasfocus(10) + StringCompare(Skin.String(homeitem.10.widget),MusicPlayList) + !IsEmpty(Window(home).Property(HomePlayListTen.Artists))">$INFO[Window(home).Property(HomePlayListTen.Artists),[B][COLOR=red]$LOCALIZE[133]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListTen.Albums),[B][COLOR=red]$LOCALIZE[132]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListTen.Songs),[B][COLOR=red]$LOCALIZE[134]$LOCALIZE[31000] [/COLOR][/B]]</value>
-		
-		
-		
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Videos) + !IsEmpty(Window.Property(Movies.Count))">$INFO[Window.Property(Movies.Count),[B][COLOR=red]$LOCALIZE[20342]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window.Property(TVShows.Count),[B][COLOR=red]$LOCALIZE[20343]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window.Property(MusicVideos.Count),[B][COLOR=red]$LOCALIZE[20389]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Movies) + !IsEmpty(Window.Property(Movies.Count))">$INFO[Window.Property(Movies.Count),[B][COLOR=red]$LOCALIZE[20342]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window.Property(Movies.Watched),[B][COLOR=red]$LOCALIZE[16102]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window.Property(Movies.UnWatched),[B][COLOR=red]$LOCALIZE[16101]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),TVShows) + !IsEmpty(Window.Property(TVShows.Count))">$INFO[Window.Property(TVShows.Count),[B][COLOR=red]$LOCALIZE[20343]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window.Property(Episodes.Count),[B][COLOR=red]$LOCALIZE[20360]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window.Property(Episodes.UnWatched),[B][COLOR=red]$LOCALIZE[16101]$LOCALIZE[31000] [/COLOR][/B]]</value>
@@ -1789,19 +1765,6 @@
 		<value condition="substring(Player.Filenameandpath,.xvid,right)">xvid</value>
 		<value>dv</value>
 	</variable>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	<variable name="InfoWidgetMediaGenre">
 		<value condition="Player.HasAudio + !Control.HasFocus(510)">$INFO[MusicPlayer.Genre]</value>
 		<value condition="Control.HasFocus(510)">$INFO[Container(510).ListItem.Property(Genre)]</value>
@@ -1835,34 +1798,22 @@
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + !IsEmpty(Window(home).Property(RecommendedMovie.1.PlotOutline))">$INFO[Window(home).Property(RecommendedMovie.1.PlotOutline)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + !IsEmpty(Window(home).Property(RecommendedMovie.1.PlotOutline))">$INFO[Window(home).Property(RecommendedMovie.1.PlotOutline)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + !IsEmpty(Window(home).Property(RecommendedMovie.1.PlotOutline))">$INFO[Window(home).Property(RecommendedMovie.1.PlotOutline)]</value>
-		
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + !IsEmpty(Window(home).Property(RecommendedMovie.1.PlotOutline))">$INFO[Window(home).Property(RecommendedMovie.1.PlotOutline)]</value>
-		
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + !IsEmpty(Window(home).Property(RecommendedMovie.1.PlotOutline))">$INFO[Window(home).Property(RecommendedMovie.1.PlotOutline)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Plot)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Plot)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Plot)]</value>
-		
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Plot)]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Plot)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + !IsEmpty(Container(510).ListItem.Property(PlotOutline))">$INFO[Container(510).ListItem.Property(PlotOutline)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + !IsEmpty(Container(510).ListItem.Property(PlotOutline))">$INFO[Container(510).ListItem.Property(PlotOutline)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + !IsEmpty(Container(510).ListItem.Property(PlotOutline))">$INFO[Container(510).ListItem.Property(PlotOutline)]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + !IsEmpty(Container(510).ListItem.Property(PlotOutline))">$INFO[Container(510).ListItem.Property(PlotOutline)]</value>
-		
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + !IsEmpty(Container(510).ListItem.Property(PlotOutline))">$INFO[Container(510).ListItem.Property(PlotOutline)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.Property(Plot)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.Property(Plot)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.Property(Plot)]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.Property(Plot)]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.Property(Plot)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) + !IsEmpty(Window(home).Property(RecommendedEpisode.1.Title))">$INFO[Window(home).Property(RecommendedEpisode.1.Plot)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) + !IsEmpty(Window(home).Property(RecommendedEpisode.1.Title))">$INFO[Window(home).Property(RecommendedEpisode.1.Plot)]</value>
@@ -1903,18 +1854,12 @@
 		<value condition="![SubString(RecommendedMovie.1.Runtime,min) | Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[31264]  $VAR[InfoWidgetPlayPercent][COLOR=black] $LOCALIZE[31084] [/COLOR]$INFO[Window(home).Property(RecommendedMovie.1.Runtime)] $LOCALIZE[12391]</value>
 		<value condition="![SubString(RecommendedMovie.1.Runtime,min) | Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[31264]  $VAR[InfoWidgetPlayPercent][COLOR=black] $LOCALIZE[31084] [/COLOR]$INFO[Window(home).Property(RecommendedMovie.1.Runtime)] $LOCALIZE[12391]</value>
 		<value condition="![SubString(RecommendedMovie.1.Runtime,min) | Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[31264]  $VAR[InfoWidgetPlayPercent][COLOR=black] $LOCALIZE[31084] [/COLOR]$INFO[Window(home).Property(RecommendedMovie.1.Runtime)] $LOCALIZE[12391]</value>
-		
 		<value condition="![SubString(RecommendedMovie.1.Runtime,min) | Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[31264]  $VAR[InfoWidgetPlayPercent][COLOR=black] $LOCALIZE[31084] [/COLOR]$INFO[Window(home).Property(RecommendedMovie.1.Runtime)] $LOCALIZE[12391]</value>
-		
-		
 		<value condition="![SubString(RecommendedMovie.1.Runtime,min) | Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[31264]  $VAR[InfoWidgetPlayPercent][COLOR=black] $LOCALIZE[31084] [/COLOR]$INFO[Window(home).Property(RecommendedMovie.1.Runtime)] $LOCALIZE[12391]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + SubString(RecommendedMovie.1.Runtime,min) + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[31264]  $VAR[InfoWidgetPlayPercent][COLOR=black] $LOCALIZE[31084] [/COLOR]$INFO[Window(home).Property(RecommendedMovie.1.Runtime)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + SubString(RecommendedMovie.1.Runtime,min) + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[31264]  $VAR[InfoWidgetPlayPercent][COLOR=black] $LOCALIZE[31084] [/COLOR]$INFO[Window(home).Property(RecommendedMovie.1.Runtime)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + SubString(RecommendedMovie.1.Runtime,min) + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[31264]  $VAR[InfoWidgetPlayPercent][COLOR=black] $LOCALIZE[31084] [/COLOR]$INFO[Window(home).Property(RecommendedMovie.1.Runtime)]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + SubString(RecommendedMovie.1.Runtime,min) + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[31264]  $VAR[InfoWidgetPlayPercent][COLOR=black] $LOCALIZE[31084] [/COLOR]$INFO[Window(home).Property(RecommendedMovie.1.Runtime)]</value>
-		
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + SubString(RecommendedMovie.1.Runtime,min) + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[31264]  $VAR[InfoWidgetPlayPercent][COLOR=black] $LOCALIZE[31084] [/COLOR]$INFO[Window(home).Property(RecommendedMovie.1.Runtime)]</value>
 		<value condition="![SubString(RecommendedEpisode.1.Runtime,min) | Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) + !IsEmpty(Window(home).Property(RecommendedEpisode.1.Title))">$LOCALIZE[31264]  $VAR[InfoWidgetPlayPercent][COLOR=black] $LOCALIZE[31084] [/COLOR]$INFO[Window(home).Property(RecommendedEpisode.1.Runtime)] $LOCALIZE[12391]</value>
 		<value condition="![SubString(RecommendedEpisode.1.Runtime,min) | Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) + !IsEmpty(Window(home).Property(RecommendedEpisode.1.Title))">$LOCALIZE[31264]  $VAR[InfoWidgetPlayPercent][COLOR=black] $LOCALIZE[31084] [/COLOR]$INFO[Window(home).Property(RecommendedEpisode.1.Runtime)] $LOCALIZE[12391]</value>
@@ -1949,12 +1894,8 @@
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + SubString(Container(510).ListItem.Property(Runtime),min)">$INFO[Container(510).ListItem.Property(Runtime)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + !IsEmpty(Container(510).ListItem.Property(Runtime)) + !SubString(Container(510).ListItem.Property(Runtime),min)">$INFO[Container(510).ListItem.Property(Runtime)] $LOCALIZE[12391]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + SubString(Container(510).ListItem.Property(Runtime),min)">$INFO[Container(510).ListItem.Property(Runtime)]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + !IsEmpty(Container(510).ListItem.Property(Runtime)) + !SubString(Container(510).ListItem.Property(Runtime),min)">$INFO[Container(510).ListItem.Property(Runtime)] $LOCALIZE[12391]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + SubString(Container(510).ListItem.Property(Runtime),min)">$INFO[Container(510).ListItem.Property(Runtime)]</value>
-		
-		
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + !IsEmpty(Container(510).ListItem.Property(Runtime)) + !SubString(Container(510).ListItem.Property(Runtime),min)">$INFO[Container(510).ListItem.Property(Runtime)] $LOCALIZE[12391]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + SubString(Container(510).ListItem.Property(Runtime),min)">$INFO[Container(510).ListItem.Property(Runtime)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) + IsEmpty(Window(home).Property(RecommendedEpisode.1.Title)) + !IsEmpty(Container(510).ListItem.Property(Runtime)) + !SubString(Container(510).ListItem.Property(Runtime),min)">$INFO[Container(510).ListItem.Property(Runtime)] $LOCALIZE[12391]</value>
@@ -1980,9 +1921,7 @@
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Year)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Year)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Year)]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Year)]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Year)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) + !IsEmpty(Window(home).Property(RecommendedEpisode.1.Title))">$INFO[Window(home).Property(RecommendedEpisode.1.Year)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) + !IsEmpty(Window(home).Property(RecommendedEpisode.1.Title))">$INFO[Window(home).Property(RecommendedEpisode.1.Year)]</value>
@@ -2009,18 +1948,12 @@
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[563]$LOCALIZE[31000] $INFO[Window(home).Property(RecommendedMovie.1.Rating)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[563]$LOCALIZE[31000] $INFO[Window(home).Property(RecommendedMovie.1.Rating)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[563]$LOCALIZE[31000] $INFO[Window(home).Property(RecommendedMovie.1.Rating)]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[563]$LOCALIZE[31000] $INFO[Window(home).Property(RecommendedMovie.1.Rating)]</value>
-		
-		
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[563]$LOCALIZE[31000] $INFO[Window(home).Property(RecommendedMovie.1.Rating)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[563]$LOCALIZE[31000] $INFO[Container(510).ListItem.Property(Rating)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[563]$LOCALIZE[31000] $INFO[Container(510).ListItem.Property(Rating)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[563]$LOCALIZE[31000] $INFO[Container(510).ListItem.Property(Rating)]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[563]$LOCALIZE[31000] $INFO[Container(510).ListItem.Property(Rating)]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$LOCALIZE[563]$LOCALIZE[31000] $INFO[Container(510).ListItem.Property(Rating)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) + !IsEmpty(Window(home).Property(RecommendedEpisode.1.Title))">$LOCALIZE[563]$LOCALIZE[31000] $INFO[Window(home).Property(RecommendedEpisode.1.Rating)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) + !IsEmpty(Window(home).Property(RecommendedEpisode.1.Title))">$LOCALIZE[563]$LOCALIZE[31000] $INFO[Window(home).Property(RecommendedEpisode.1.Rating)]</value>
@@ -2071,19 +2004,11 @@
 		<value condition="!Control.HasFocus(510) + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),4) + !IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),7)">LeftRating/rating3.png</value>
 		<value condition="!Control.HasFocus(510) + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),7) + !IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),9)">LeftRating/rating4.png</value>
 		<value condition="!Control.HasFocus(510) + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),9)">LeftRating/rating5.png</value>
-		
-		
 		<value condition="!Control.HasFocus(510) + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),2)">LeftRating/rating1.png</value>
 		<value condition="!Control.HasFocus(510) + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),2) + !IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),4)">LeftRating/rating2.png</value>
 		<value condition="!Control.HasFocus(510) + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),4) + !IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),7)">LeftRating/rating3.png</value>
 		<value condition="!Control.HasFocus(510) + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),7) + !IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),9)">LeftRating/rating4.png</value>
 		<value condition="!Control.HasFocus(510) + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),9)">LeftRating/rating5.png</value>
-		
-		
-		
-		
-		
-		
 		<value condition="!Control.HasFocus(510) + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + !IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),2)">LeftRating/rating1.png</value>
 		<value condition="!Control.HasFocus(510) + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),2) + !IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),4)">LeftRating/rating2.png</value>
 		<value condition="!Control.HasFocus(510) + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),4) + !IntegerGreaterThan(Window(home).Property(RecentMovie.1.Rating),7)">LeftRating/rating3.png</value>
@@ -2114,12 +2039,7 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) + !Player.HasMedia">$INFO[Window(home).Property(RecommendedMovie.1.PercentPlayed)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + !Player.HasMedia">$INFO[Window(home).Property(RecommendedMovie.1.PercentPlayed)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + !Player.HasMedia">$INFO[Window(home).Property(RecommendedMovie.1.PercentPlayed)]</value>
-		
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !Player.HasMedia">$INFO[Window(home).Property(RecommendedMovie.1.PercentPlayed)]</value>
-		
-		
-		
-		
 		<value condition="StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + !Player.HasMedia">$INFO[Window(home).Property(RecommendedMovie.1.PercentPlayed)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) + !Player.HasMedia">$INFO[Window(home).Property(RecommendedEpisode.1.PercentPlayed)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) + !Player.HasMedia">$INFO[Window(home).Property(RecommendedEpisode.1.PercentPlayed)]</value>
@@ -2134,18 +2054,12 @@
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Art(fanart))]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Art(fanart))]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Art(fanart))]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Art(fanart))]</value>
-		
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Art(fanart))]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.Property(Fanart)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.Property(Fanart)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.Property(Fanart)]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.Property(Fanart)]</value>
-		
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.Property(Fanart)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) + !IsEmpty(Window(home).Property(RecommendedEpisode.1.Title))">$INFO[Window(home).Property(RecommendedEpisode.1.Art(tvshow.fanart))]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) + !IsEmpty(Window(home).Property(RecommendedEpisode.1.Title))">$INFO[Window(home).Property(RecommendedEpisode.1.Art(tvshow.fanart))]</value>
@@ -2187,19 +2101,12 @@
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Art(poster))]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Art(poster))]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Art(poster))]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Art(poster))]</value>
-		
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Art(poster))]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.icon]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.icon]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.icon]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.icon]</value>
-		
-		
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.icon]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) + !IsEmpty(Window(home).Property(RecommendedEpisode.1.Title))">$INFO[Window(home).Property(RecommendedEpisode.1.Art(tvshow.poster))]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) + !IsEmpty(Window(home).Property(RecommendedEpisode.1.Title))">$INFO[Window(home).Property(RecommendedEpisode.1.Art(tvshow.poster))]</value>
@@ -2253,17 +2160,12 @@
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Title)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Title)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Title)]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Title)]</value>
-		
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.Title)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.label]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.label]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.label]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.label]</value>
-		
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Container(510).ListItem.label]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) + !IsEmpty(Window(home).Property(RecommendedEpisode.1.Title))">$INFO[Window(home).Property(RecommendedEpisode.1.Title)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) + !IsEmpty(Window(home).Property(RecommendedEpisode.1.Title))">$INFO[Window(home).Property(RecommendedEpisode.1.Title)]</value>
@@ -2305,11 +2207,7 @@
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.TagLine)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.TagLine)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.TagLine)]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.TagLine)]</value>
-		
-		
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(PlayListType),Movie) + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title))">$INFO[Window(home).Property(RecommendedMovie.1.TagLine)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) + !IsEmpty(Window(home).Property(RecommendedEpisode.1.Title))">$INFO[Window(home).Property(RecommendedEpisode.1.EpisodeNo)][COLOR=80FFFFFF] | [/COLOR]$INFO[Window(home).Property(RecommendedEpisode.1.TVShowTitle)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) + !IsEmpty(Window(home).Property(RecommendedEpisode.1.Title))">$INFO[Window(home).Property(RecommendedEpisode.1.EpisodeNo)][COLOR=80FFFFFF] | [/COLOR]$INFO[Window(home).Property(RecommendedEpisode.1.TVShowTitle)]</value>

@@ -7743,14 +7743,6 @@
 					</item>
 				</content>
 			</control>
-		
-		
-		
-		
-		
-		
-		
-		
 			<control type="panel" id="510">
 				<!--- Playlist Music -->
 				<include>WidgetMusicPanel</include>
@@ -7910,8 +7902,6 @@
 						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(1)</visible>
 					</item>
-					
-					
 					<item>
 						<label>$INFO[Window(home).Property(HomePlayListTwo.1.Title)]</label>
 						<label2>$INFO[Window(home).Property(HomePlayListTwo.1.Artist)]</label2>
@@ -8064,11 +8054,6 @@
 						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(2)</visible>
 					</item>
-					
-					
-					
-					
-
 					<item>
 						<label>$INFO[Window(home).Property(HomePlayListThree.1.Title)]</label>
 						<label2>$INFO[Window(home).Property(HomePlayListThree.1.Artist)]</label2>
@@ -8221,12 +8206,6 @@
 						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(3)</visible>
 					</item>
-										
-					
-					
-					
-					
-
 					<item>
 						<label>$INFO[Window(home).Property(HomePlayListFour.1.Title)]</label>
 						<label2>$INFO[Window(home).Property(HomePlayListFour.1.Artist)]</label2>
@@ -8379,10 +8358,6 @@
 						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(4)</visible>
 					</item>
-										
-					
-	
-
 					<item>
 						<label>$INFO[Window(home).Property(HomePlayListFive.1.Title)]</label>
 						<label2>$INFO[Window(home).Property(HomePlayListFive.1.Artist)]</label2>
@@ -8535,8 +8510,6 @@
 						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(5)</visible>
 					</item>
-					
-
 					<item>
 						<label>$INFO[Window(home).Property(HomePlayListSix.1.Title)]</label>
 						<label2>$INFO[Window(home).Property(HomePlayListSix.1.Artist)]</label2>
@@ -8689,9 +8662,6 @@
 						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(6)</visible>
 					</item>
-						
-					
-	
 					<item>
 						<label>$INFO[Window(home).Property(HomePlayListSeven.1.Title)]</label>
 						<label2>$INFO[Window(home).Property(HomePlayListSeven.1.Artist)]</label2>
@@ -8844,11 +8814,6 @@
 						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(7)</visible>
 					</item>
-									
-					
-					
-					
-					
 					<item>
 						<label>$INFO[Window(home).Property(HomePlayListEight.1.Title)]</label>
 						<label2>$INFO[Window(home).Property(HomePlayListEight.1.Artist)]</label2>
@@ -9001,16 +8966,6 @@
 						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(8)</visible>
 					</item>
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
 					<item>
 						<label>$INFO[Window(home).Property(HomePlayListNine.1.Title)]</label>
 						<label2>$INFO[Window(home).Property(HomePlayListNine.1.Artist)]</label2>
@@ -9163,10 +9118,6 @@
 						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(9)</visible>
 					</item>
-					
-					
-					
-					
 					<item>
 						<label>$INFO[Window(home).Property(HomePlayListTen.1.Title)]</label>
 						<label2>$INFO[Window(home).Property(HomePlayListTen.1.Artist)]</label2>
@@ -9319,19 +9270,8 @@
 						<visible>Skin.HasSetting(horizontalhomescreen)</visible>
 						<visible>Container(9000).HasFocus(10)</visible>
 					</item>
-					
-					
-					
-					
 				</content>
-			</control>		
-		
-		
-		
-		
-		
-		
-		
+			</control>
 		</control>
 	</include>
 </includes>
