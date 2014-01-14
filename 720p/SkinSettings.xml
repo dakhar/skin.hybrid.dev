@@ -393,6 +393,31 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
+						<label>  $LOCALIZE[31036]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(disablebanners)</onclick>
+						<selected>!Skin.HasSetting(disablebanners)</selected>
+					</control>
+					<control type="radiobutton" id="128">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>  $LOCALIZE[31035]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(hidenewmediastat)</onclick>
+						<selected>!Skin.HasSetting(hidenewmediastat)</selected>
+						<enable>!Skin.HasSetting(disablebanners)</enable>
+					</control>
+					<control type="radiobutton" id="129">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
 						<label>  $LOCALIZE[31389]</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -401,7 +426,7 @@
 						<onclick>Skin.ToggleSetting(disableautoscroll)</onclick>
 						<selected>!Skin.HasSetting(disableautoscroll)</selected>
 					</control>
-					<control type="radiobutton" id="128">
+					<control type="radiobutton" id="130">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -413,7 +438,7 @@
 						<onclick>Skin.ToggleSetting(abckeyboard)</onclick>
 						<selected>!Skin.HasSetting(abckeyboard)</selected>
 					</control>
-					<control type="radiobutton" id="129">
+					<control type="radiobutton" id="131">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -425,7 +450,7 @@
 						<onclick>Skin.ToggleSetting(kioskmode)</onclick>
 						<selected>Skin.HasSetting(kioskmode)</selected>
 					</control>
-					<control type="radiobutton" id="130">
+					<control type="radiobutton" id="132">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>

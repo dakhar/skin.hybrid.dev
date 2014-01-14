@@ -82,7 +82,23 @@ msgctxt "#31015"
 msgid "Extras"
 msgstr ""
 
-#empty strings from id 31016 to 31038
+#empty strings from id 31016 to 31036
+
+msgctxt "#31035"
+msgid "Enable New Media Banners"
+msgstr ""
+
+msgctxt "#31036"
+msgid "Enable Status Banners"
+msgstr ""
+
+msgctxt "#31037"
+msgid "View Settings"
+msgstr ""
+
+msgctxt "#31038"
+msgid "Animated Case"
+msgstr ""
 
 msgctxt "#31039"
 msgid "Actions"

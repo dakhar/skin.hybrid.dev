@@ -107,15 +107,6 @@
 					<onclick>right</onclick>
 					<onclick>Filter</onclick>
 				</control>
-				<!--control type="radiobutton" id="99">
-					<description>Show Info Toggle</description>
-					<textwidth>170</textwidth>
-					<include>ButtonCommonValues</include>
-					<label>31005</label>
-					<onclick>Skin.ToggleSetting(View508HideInfo)</onclick>
-					<selected>Skin.HasSetting(View508HideInfo)</selected>
-					<visible>Control.IsVisible(508)</visible>
-				</control-->
 				<control type="label" id="201">
 					<width>250</width>
 					<height>35</height>
@@ -151,6 +142,34 @@
 					<selected>system.ismaster</selected>
 					<visible>system.haslocks</visible>
 				</control>
+				<!--control type="label" id="100">
+					<width>250</width>
+					<height>35</height>
+					<font>font12</font>
+					<label>31037</label>
+					<textcolor>red</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+					<visible>Control.IsVisible(501)</visible>
+				</control-->
+				<!--control type="radiobutton" id="101">
+					<description>Show Info Toggle</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>31005</label>
+					<onclick>Skin.ToggleSetting(View508HideInfo)</onclick>
+					<selected>Skin.HasSetting(View508HideInfo)</selected>
+					<visible>Control.IsVisible(508)</visible>
+				</control-->
+				<!--control type="radiobutton" id="102">
+					<description>Show Info Toggle</description>
+					<textwidth>170</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>31038</label>
+					<onclick>Skin.ToggleSetting(disableanimatedcase)</onclick>
+					<selected>!Skin.HasSetting(disableanimatedcase)</selected>
+					<visible>Control.IsVisible(501)</visible>
+				</control-->
 				<control type="label" id="203">
 					<width>250</width>
 					<height>35</height>
