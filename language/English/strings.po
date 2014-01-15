@@ -89,7 +89,7 @@ msgid "Enable New Media Banners"
 msgstr ""
 
 msgctxt "#31036"
-msgid "Enable Status Banners"
+msgid "Enable Watched Checkmarks"
 msgstr ""
 
 msgctxt "#31037"

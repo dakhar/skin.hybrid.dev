@@ -398,8 +398,8 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(disablebanners)</onclick>
-						<selected>!Skin.HasSetting(disablebanners)</selected>
+						<onclick>Skin.ToggleSetting(diablewatchedcheck)</onclick>
+						<selected>!Skin.HasSetting(diablewatchedcheck)</selected>
 					</control>
 					<control type="radiobutton" id="128">
 						<width>750</width>
@@ -412,7 +412,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(hidenewmediastat)</onclick>
 						<selected>!Skin.HasSetting(hidenewmediastat)</selected>
-						<enable>!Skin.HasSetting(disablebanners)</enable>
+						<enable>!Skin.HasSetting(diablewatchedcheck)</enable>
 					</control>
 					<control type="radiobutton" id="129">
 						<width>750</width>

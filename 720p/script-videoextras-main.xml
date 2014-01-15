@@ -92,6 +92,7 @@
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.label]</label>
 					</control>
+					<control type="group">
 					<control type="image">
 						<left>1050</left>
 						<top>8</top>
@@ -115,6 +116,8 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.Overlay,MediaStatus/]</texture>
 						<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
+					</control>
+					<visible>!Skin.HasSetting(diablewatchedcheck)</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout height="40" width="1080">
@@ -155,6 +158,7 @@
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.label]</label>
 					</control>
+					<control type="group">
 					<control type="image">
 						<left>1050</left>
 						<top>8</top>
@@ -178,6 +182,8 @@
 						<height>24</height>
 						<texture>$INFO[ListItem.Overlay,MediaStatus/]</texture>
 						<visible>IntegerGreaterThan(ListItem.PlayCount,0)</visible>
+					</control>
+					<visible>!Skin.HasSetting(diablewatchedcheck)</visible>
 					</control>
 				</focusedlayout>
 			</control>

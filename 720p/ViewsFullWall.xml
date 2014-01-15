@@ -34,7 +34,7 @@
 						<texture background="true">$VAR[PosterThumb]</texture>
 					</control>
 					<control type="group">
-						<visible>!IsEmpty(ListItem.Overlay)</visible>
+						<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(diablewatchedcheck)</visible>
 						<control type="image">
 							<left>46</left>
 							<top>5</top>
@@ -96,7 +96,7 @@
 							<bordertexture border="8">ThumbBorder.png</bordertexture>
 						</control>
 						<control type="group">
-							<visible>!IsEmpty(ListItem.Overlay)</visible>
+							<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(diablewatchedcheck)</visible>
 							<control type="image">
 								<left>44</left>
 								<top>6</top>

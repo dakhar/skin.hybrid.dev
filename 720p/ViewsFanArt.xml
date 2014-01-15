@@ -37,7 +37,7 @@
 						<texture background="true">$VAR[PosterThumb]</texture>
 					</control>
 					<control type="group">
-						<visible>!IsEmpty(ListItem.Overlay)</visible>
+						<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(diablewatchedcheck)</visible>
 						<control type="image">
 							<left>48</left>
 							<top>24</top>
@@ -113,7 +113,7 @@
 						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$VAR[PosterThumb]</texture>
 					</control>
 					<control type="group">
-						<visible>!IsEmpty(ListItem.Overlay)</visible>
+						<visible>!IsEmpty(ListItem.Overlay) + !Skin.HasSetting(diablewatchedcheck)</visible>
 						<control type="image">
 							<left>48</left>
 							<top>24</top>

@@ -56,7 +56,7 @@
 							<texture background="true" diffuse="ClearCase/EmptyCaseMask.png">$VAR[PosterThumb]</texture>
 						</control>
 						<control type="group">
-							<visible>!Skin.HasSetting(disablebanners) + !IsEmpty(ListItem.Overlay)</visible>
+							<visible>!Skin.HasSetting(diablewatchedcheck) + !IsEmpty(ListItem.Overlay)</visible>
 							<posx>90</posx>
 							<posy>10</posy>
 							<control type="image">
@@ -160,7 +160,7 @@
 							</animation>
 						</control>
 						<control type="group">
-							<visible>!Skin.HasSetting(disablebanners) + !IsEmpty(ListItem.Overlay)</visible>
+							<visible>!Skin.HasSetting(diablewatchedcheck) + !IsEmpty(ListItem.Overlay)</visible>
 							<control type="image">
 								<posx>90</posx>
 								<posy>10</posy>
