@@ -2347,6 +2347,16 @@
 	
 	
 	
+	<!--
+	<texture background="true" fallback="StatusBanner/DefaultUnwatched.png">StatusBanner/$LOCALIZE[16101].png</texture>
+	<visible>!StringCompare(ListItem.Overlay,OverlayWatched.png) + !ListItem.IsResumable</visible>
+	-->
+	
+	
+	<!--
+	<texture background="true" fallback="StatusBanner/DefaultInProgress.png">StatusBanner/$LOCALIZE[31344].png</texture>
+	<visible>ListItem.IsResumable</visible>
+	-->
 	
 	</variable>
 	<variable name="MusicHeaderLabel">
