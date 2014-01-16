@@ -149,7 +149,7 @@
 					<textcolor>red</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
-					<visible>Control.IsVisible(501)</visible>
+					<visible>Control.IsVisible(508)</visible>
 				</control-->
 				<!--control type="radiobutton" id="101">
 					<description>Show Info Toggle</description>
@@ -160,15 +160,7 @@
 					<selected>Skin.HasSetting(View508HideInfo)</selected>
 					<visible>Control.IsVisible(508)</visible>
 				</control-->
-				<!--control type="radiobutton" id="102">
-					<description>Show Info Toggle</description>
-					<textwidth>170</textwidth>
-					<include>ButtonCommonValues</include>
-					<label>31038</label>
-					<onclick>Skin.ToggleSetting(disableanimatedcase)</onclick>
-					<selected>!Skin.HasSetting(disableanimatedcase)</selected>
-					<visible>Control.IsVisible(501)</visible>
-				</control-->
+				
 				<control type="label" id="203">
 					<width>250</width>
 					<height>35</height>

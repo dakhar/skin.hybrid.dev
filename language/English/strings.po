@@ -96,9 +96,7 @@ msgctxt "#31037"
 msgid "View Settings"
 msgstr ""
 
-msgctxt "#31038"
-msgid "Animated Case"
-msgstr ""
+# Empty string id 31038
 
 msgctxt "#31039"
 msgid "Actions"
@@ -1389,9 +1387,8 @@ msgstr ""
 
 #View Type labels 31635 to 31660
 
-
 msgctxt "#31638"
-msgid "Poster Wrap"
+msgid "Animated Case"
 msgstr ""
 
 msgctxt "#31639"
