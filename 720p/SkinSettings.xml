@@ -128,8 +128,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<label>$INFO[ListItem.label]</label>
-`						<animation effect="zoom" start="65" end="125" center="380,51" time="200">Focus</animation><animation effect="zoom" start="125" end="65" center="380,51" time="200">UnFocus</animation>
-					</control>
+`						<animation effect="zoom" start="65" end="125" center="380,51" time="200">Focus</animation><animation effect="zoom" start="125" end="65" center="380,51" time="200">UnFocus</animation></control>
 				</focusedlayout>
 				<content>
 					<item id="1">
@@ -574,7 +573,7 @@
 						<onclick>Skin.ToggleSetting(hideseekbarosd)</onclick>
 						<selected>!Skin.HasSetting(hideseekbarosd)</selected>
 					</control>
-					<control type="radiobutton" id="191">
+					<control type="radiobutton" id="190">
 						<description>Hide OSD Thumbnail</description>
 						<width>750</width>
 						<height>40</height>
@@ -587,7 +586,7 @@
 						<onclick>Skin.ToggleSetting(hideartworkosd)</onclick>
 						<selected>!Skin.HasSetting(hideartworkosd)</selected>
 					</control>
-					<control type="label" id="192">
+					<control type="label" id="191">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -597,18 +596,18 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="group" id="193">
+					<control type="group" id="192">
 						<width>750</width>
 						<height>40</height>
-						<control type="grouplist" id="194">
+						<control type="grouplist" id="193">
 							<orientation>horizontal</orientation>
 							<width>750</width>
 							<height>40</height>
 							<itemgap>0</itemgap>
-							<onup>191</onup>
-							<ondown>101</ondown>
+							<onup>190</onup>
+							<ondown>199</ondown>
 							<align>left</align>
-							<control type="radiobutton" id="195">
+							<control type="radiobutton" id="194">
 								<description>Default</description>
 								<width>150</width>
 								<height>40</height>
@@ -620,7 +619,7 @@
 								<onclick>Skin.Reset(mediapaneltrans)</onclick>
 								<selected>IsEmpty(Skin.String(mediapaneltrans))</selected>
 							</control>
-							<control type="radiobutton" id="196">
+							<control type="radiobutton" id="195">
 								<description>Step 1</description>
 								<width>150</width>
 								<height>40</height>
@@ -632,7 +631,7 @@
 								<onclick>Skin.SetString(mediapaneltrans,EEEEEEEE)</onclick>
 								<selected>stringcompare(Skin.String(mediapaneltrans),EEEEEEEE)</selected>
 							</control>
-							<control type="radiobutton" id="197">
+							<control type="radiobutton" id="196">
 								<description>Step 2</description>
 								<width>150</width>
 								<height>40</height>
@@ -644,7 +643,7 @@
 								<onclick>Skin.SetString(mediapaneltrans,DFFFFFFF)</onclick>
 								<selected>stringcompare(Skin.String(mediapaneltrans),DFFFFFFF)</selected>
 							</control>
-							<control type="radiobutton" id="198">
+							<control type="radiobutton" id="197">
 								<description>Step 3</description>
 								<width>150</width>
 								<height>40</height>
@@ -656,7 +655,7 @@
 								<onclick>Skin.SetString(mediapaneltrans,A8FFFFFF)</onclick>
 								<selected>stringcompare(Skin.String(mediapaneltrans),A8FFFFFF)</selected>
 							</control>
-							<control type="radiobutton" id="199">
+							<control type="radiobutton" id="198">
 								<description>Step 4</description>
 								<width>150</width>
 								<height>40</height>
@@ -669,6 +668,19 @@
 								<selected>stringcompare(Skin.String(mediapaneltrans),48FFFFFF)</selected>
 							</control>
 						</control>
+					</control>
+					<control type="radiobutton" id="199">
+						<description>Darken Backgrounds</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>  $LOCALIZE[31018]</label>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(disabledarkbackground)</onclick>
+						<selected>!Skin.HasSetting(disabledarkbackground)</selected>
 					</control>
 				</control>
 				<control type="textbox">

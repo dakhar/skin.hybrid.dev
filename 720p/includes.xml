@@ -22,6 +22,7 @@
 	<include file="ViewsFullWidthList.xml" />
 	<include file="ViewsWideIcon.xml" />
 	<include file="ViewsCoverFlow.xml" />
+	<include file="ViewsLogoVertical.xml" />
 	<include file="ViewsFullWall.xml" />
 	<include file="ViewsThumbnailList.xml" />
 	<include file="ViewsFileMode.xml" />
@@ -233,11 +234,8 @@
 			<align>center</align>
 			<aligny>center</aligny>
 			<include>Window_OpenClose_Animation</include>
-			<!--label>[UPPERCASE]$VAR[ContentHeaderLabel][/UPPERCASE]</label-->
-			
-			<label>$INFO[System.Language,StatusBanner/Watched/,.png]</label>
-			
-			<!--visible>!Control.IsVisible(510)</visible-->
+			<label>[UPPERCASE]$VAR[ContentHeaderLabel][/UPPERCASE]</label>
+			<visible>!Control.IsVisible(510)</visible>
 		</control>
 		<control type="label">
 			<left>10</left>
