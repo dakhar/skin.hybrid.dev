@@ -149,15 +149,23 @@
 				<onclick condition="SubString(Container(9000).ListItem.Property(WidgetSet),Albums,Right) + !Player.HasMedia">$INFO[Window(home).Property(RecommendedAlbum.1.Play)]</onclick>
 				<onclick condition="SubString(Container(9000).ListItem.Property(WidgetSet),Artists,Right) + !Player.HasMedia">$INFO[Window(home).Property(RecommendedAlbum.1.Play)]</onclick>
 				<onup>510</onup>
-				<ondown condition="!Player.HasMedia">9000</ondown>
-				<ondown condition="Player.HasMedia">600</ondown>
+				<ondown condition="!Player.HasMedia | !Skin.HasSetting(hidefullscreenitem)">9000</ondown>
+				<ondown condition="Player.HasMedia + Skin.HasSetting(hidefullscreenitem)">607</ondown>
 				<onleft>9000</onleft>
-				<onright>510</onright>
+				<onright condition="!Player.HasMedia | !Skin.HasSetting(hidefullscreenitem)">510</onright>
+				<onright condition="Player.HasMedia + Skin.HasSetting(hidefullscreenitem)">610</onright>
+				<onleft>9000</onleft>
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<aspectratio>stretch</aspectratio>
 				<colordiffuse>C3FFFFFF</colordiffuse>
-				<visible>[SubString(Container(9000).ListItem.Property(WidgetSet),Movies,Right) + !IsEmpty(Window.Property(RecommendedMovie.1.Title)) | SubString(Container(9000).ListItem.Property(WidgetSet),Episodes,Right) + !IsEmpty(Window.Property(RecommendedEpisode.1.Title)) | SubString(Container(9000).ListItem.Property(WidgetSet),Concerts,Right) + !IsEmpty(Window.Property(RecommendedMusicVideo.1.Title)) | SubString(Container(9000).ListItem.Property(WidgetSet),Songs,Right) + !IsEmpty(Window.Property(RecommendedAlbum.1.Title))| SubString(Container(9000).ListItem.Property(WidgetSet),Albums,Right) + !IsEmpty(Window.Property(RecommendedAlbum.1.Title))| SubString(Container(9000).ListItem.Property(WidgetSet),Artists,Right) + !IsEmpty(Window.Property(RecommendedAlbum.1.Title)) | Player.HasMedia]</visible>
+			<visible>
+				Player.HasMedia |
+				[!IsEmpty(Window.Property(RecommendedMovie.1.Title)) + [StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies)]]|
+				[!IsEmpty(Window.Property(RecommendedEpisode.1.Title)) + [StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedEpisodes)]]|
+				[!IsEmpty(Window.Property(RecommendedMusicVideo.1.Title)) + [StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentConcerts) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomConcerts) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedConcerts)]]|
+				[!IsEmpty(Window.Property(RecommendedAlbum.1.Title)) + [StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomArtists)]]
+			</visible>
 			</control>
 			<control type="image">
 				<left>6</left>
@@ -354,6 +362,9 @@
 				<font>font12</font>
 				<autoscroll delay="20000" time="3000" repeat="20000">!Skin.HasSetting(noallowscroll)</autoscroll>
 			</control>
+			
+			
+			
 			<control type="group" id="600">
 				<left>6</left>
 				<top>304</top>
@@ -362,7 +373,7 @@
 				<defaultcontrol>607</defaultcontrol>
 				<include>VisibleFadeEffect</include>
 				<include>Window_OpenClose_Animation</include>
-				<visible>Player.HasMedia+ ![System.IdleTime(5) | Control.HasFocus(510)]</visible>
+				<visible>Player.HasMedia + Skin.HasSetting(hidefullscreenitem) + ![System.IdleTime(5) | Control.HasFocus(510)]</visible>
 				<control type="image">
 					<description>Background image</description>
 					<left>0</left>

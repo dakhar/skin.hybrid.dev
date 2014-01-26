@@ -415,13 +415,11 @@
 		<height>60</height>
 		<onleft>9000</onleft>
 		<onright>9000</onright>
+		
+		
 		<onup condition="Control.IsVisible(601)">9004</onup>
 		<onup condition="!Control.IsVisible(601) + Control.IsVisible(510)">510</onup>
-		<!--
-		<onup condition="Control.IsVisible(601)">9004</onup>
-		<onup condition="!Control.IsVisible(601) + Control.IsVisible(510)">510</onup>
-		<onup condition="!Control.IsVisible(601) + !Control.IsVisible(510) + !StringCompare(Container(9000).ListItem.Property(AddOnSet),None)">9003</onup>
-	-->
+		
 		<ondown>9001</ondown>
 		<pagecontrol>-</pagecontrol>
 		<scrolltime>300</scrolltime>
