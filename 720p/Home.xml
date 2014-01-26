@@ -14,10 +14,6 @@
 	<onload condition="!Skin.HasSetting(disablegamebrowser) + !System.HasAddon(script.games.rom.collection.browser)">Skin.Setbool(disablegamebrowser)</onload>
 	<onload condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow) + IsEmpty(Window.Property(ArtistSlideshowRunning))">RunScript(script.artistslideshow, daemon=True)</onload>
 	<onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
-	<!--
-	<onload condition="IsEmpty(Skin.String(WeatherFanartDir))">Skin.SetString(WeatherFanartDir,special://skin/backgrounds/weather/)</onload>
-	<onload condition="IsEmpty(Skin.String(UsrGenreFanartDir))">Skin.SetString(UsrGenreFanartDir,special://skin/backgrounds/moviegenre/)</onload>
-	-->
 	<onload condition="!Skin.HasSetting(disablescriptplaylist) + Library.HasContent(Movies)">XBMC.RunScript(script.randomandlastitems,type=Movie,limit=12,method=Random,playlist=special://skin/extras/Playlists/UnwatchedMovies.xsp,menu=UnWatched)</onload>
 	<onload condition="!Skin.HasSetting(disablescriptplaylist) + !IsEmpty(Skin.String(homeitem.1.playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(homeitem.1.playlist)],method=$VAR[playlistsortorder],limit=12,unwatched=False,resume=False,property=HomeplaylistOne)</onload>
 	<onload condition="!Skin.HasSetting(disablescriptplaylist) + !IsEmpty(Skin.String(homeitem.2.playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(homeitem.2.playlist)],method=$VAR[playlistsortorder],limit=12,unwatched=False,resume=False,property=HomeplaylistTwo)</onload>
@@ -602,6 +598,7 @@
 				<aspectratio>stretch</aspectratio>
 				<texture>Home/StatusBar.png</texture>
 				<colordiffuse>FFFFFAF0</colordiffuse>
+				<visible>system.getbool(lookandfeel.enablerssfeeds) | !Skin.HasSetting(hidehomestats) | [MusicPlayer.HasNext + !Skin.HasSetting(hidenextsongsinfo)]</visible>
 			</control>
 			<control type="label">
 				<left>10</left>
