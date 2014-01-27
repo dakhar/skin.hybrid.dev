@@ -1167,7 +1167,15 @@ msgctxt "#31396"
 msgid "Enable Clean Home Screen"
 msgstr ""
 
-#empty strings from id 31397 to 31449
+msgctxt "#31397"
+msgid "Enable TV Show Next Aired"
+msgstr ""
+
+msgctxt "#31398"
+msgid "Configure script.tv.show.next.aired"
+msgstr ""
+
+#empty strings from id 31399 to 31449
 
 msgctxt "#31450"
 msgid "CONFIGURE APPEARANCE SETTINGS"

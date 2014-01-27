@@ -5862,7 +5862,46 @@
 						<enable>!Skin.HasSetting(disablevideoextras)</enable>
 						<visible>System.HasAddon(script.videoextras)</visible>
 					</control>
+					
+					
+					
+					
+					
 					<control type="radiobutton" id="634">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>31397</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(disabletvnextaired)</onclick>
+						<selected>!Skin.HasSetting(disabletvnextaired)</selected>
+						<enable>System.HasAddon(script.tv.show.next.aired)</enable>
+					</control>
+					<control type="button" id="635">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label> - $LOCALIZE[31398]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Addon.OpenSettings(script.tv.show.next.aired)</onclick>
+						<enable>!Skin.HasSetting(disabletvnextaired)</enable>
+						<visible>System.HasAddon(script.tv.show.next.aired)</visible>
+					</control>
+					
+					
+					
+					
+					
+					
+					
+					
+					<control type="radiobutton" id="638">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -5875,7 +5914,7 @@
 						<selected>!Skin.HasSetting(disablewatchitlater)</selected>
 						<enable>System.HasAddon(script.simpleplaylists)</enable>
 					</control>
-					<control type="button" id="635">
+					<control type="button" id="639">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -5888,7 +5927,7 @@
 						<enable>!Skin.HasSetting(disablewatchitlater)</enable>
 						<visible>System.HasAddon(script.simpleplaylists)</visible>
 					</control>
-					<control type="radiobutton" id="636">
+					<control type="radiobutton" id="640">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -5901,7 +5940,7 @@
 						<selected>!Skin.HasSetting(disablescriptplaylist)</selected>
 						<enable>System.HasAddon(script.randomandlastitems)</enable>
 					</control>
-					<control type="button" id="637">
+					<control type="button" id="641">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -5914,6 +5953,21 @@
 						<enable>!Skin.HasSetting(disablescriptplaylist)</enable>
 						<visible>System.HasAddon(script.randomandlastitems)</visible>
 					</control>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 					<control type="label" id="645">
 						<width>750</width>
 						<height>45</height>
