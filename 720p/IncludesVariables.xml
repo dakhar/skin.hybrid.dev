@@ -917,10 +917,6 @@
 		<value condition="stringcompare(ListItem.VideoResolution,720) | stringcompare(ListItem.VideoResolution,1080)">Disks/disc-bluray.png</value>
 		<value>Disks/disc-dvd.png</value>
 	</variable>
-	<variable name="PlayList">
-		<value condition="Window.IsActive(videolibrary) + !StringCompare(Playlist.Length(video),0)">ActivateWindow(videoplaylist)</value>
-		<value condition="[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)] + !StringCompare(Playlist.Length(music),0)">ActivateWindow(musicplaylist)</value>
-	</variable>
 	<variable name="SubMenuPlayBtn">
 		<value condition="!Player.Paused">$LOCALIZE[31054]</value>
 		<value condition="Player.Paused">$LOCALIZE[14098]</value>

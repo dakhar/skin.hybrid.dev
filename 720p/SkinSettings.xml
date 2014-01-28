@@ -4116,7 +4116,7 @@
 								<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 								<thumb>$INFO[Skin.String(searchbtnbackground)]</thumb>
 								<property name="HiLiteItem">SearchBtn</property>
-								<visible>System.HasAddon(script.globalsearch) + !Skin.HasSetting(disableglobalsearch) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
+								<visible>!Skin.HasSetting(disableglobalsearch) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
 							</item>
 							<item id="16">
 								<description>Holiday Theme</description>

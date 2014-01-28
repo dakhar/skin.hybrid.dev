@@ -8,6 +8,7 @@
 	<onload condition="!IsEmpty(Window(home).Property(SubMenuBackground))">ClearProperty(SubMenuBackground,Home)</onload>
 	<onload condition="Skin.HasSetting(holidayeffects) + System.Date(1-6,11-23)">Skin.Reset(holidayeffects)</onload>
 	<onload condition="!Skin.HasSetting(disablescriptplaylist) + !System.HasAddon(script.randomandlastitems)">Skin.Setbool(disablescriptplaylist)</onload>
+	<onload condition="!Skin.HasSetting(disableglobalsearch) + !System.HasAddon(script.globalsearch)">Skin.Setbool(disableglobalsearch)</onload>
 	<onload condition="!Skin.HasSetting(disablevideoextras) + !System.HasAddon(script.videoextras)">Skin.Setbool(disablevideoextras)</onload>
 	<onload condition="!Skin.HasSetting(disabletvtunes) + !System.HasAddon(script.tvtunes)">Skin.Setbool(disabletvtunes)</onload>
 	<onload condition="!Skin.HasSetting(disabletvnextaired) + !System.HasAddon(script.tv.show.next.aired)">Skin.Setbool(disabletvnextaired)</onload>
