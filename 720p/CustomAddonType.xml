@@ -118,70 +118,70 @@
 						<description>User Addon Set 1</description>
 						<label fallback="31230">$INFO[Skin.String(userselectaddon.1.label)]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,AddonSetOne)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,addonsetone)</onclick>
 						<onclick>ClearProperty(usrselectbtn,Home)</onclick>
 					</item>
 					<item>
 						<description>User Addon Set 2</description>
 						<label fallback="31231">$INFO[Skin.String(userselectaddon.2.label)]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,AddonSetTwo)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,addonsettwo)</onclick>
 						<onclick>ClearProperty(usrselectbtn,Home)</onclick>
 					</item>
 					<item>
 						<description>User Addon Set 3</description>
 						<label fallback="31232">$INFO[Skin.String(userselectaddon.3.label)]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,AddonSetThree)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,addonsetthree)</onclick>
 						<onclick>ClearProperty(usrselectbtn,Home)</onclick>
 					</item>
 					<item>
 						<description>User Addon Set 4</description>
 						<label fallback="31233">$INFO[Skin.String(userselectaddon.4.label)]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,AddonSetFour)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,addonsetfour)</onclick>
 						<onclick>ClearProperty(usrselectbtn,Home)</onclick>
 					</item>
 					<item>
 						<description>User Addon Set 5</description>
 						<label fallback="31234">$INFO[Skin.String(userselectaddon.5.label)]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,AddonSetFive)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,addonsetfive)</onclick>
 						<onclick>ClearProperty(usrselectbtn,Home)</onclick>
 					</item>
 					<item>
 						<description>User Addon Set 6</description>
 						<label fallback="31235">$INFO[Skin.String(userselectaddon.6.label)]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,AddonSetSix)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,addonsetsix)</onclick>
 						<onclick>ClearProperty(usrselectbtn,Home)</onclick>
 					</item>
 					<item>
 						<description>User Addon Set 7</description>
 						<label fallback="31236">$INFO[Skin.String(userselectaddon.7.label)]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,AddonSetSeven)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,addonsetseven)</onclick>
 						<onclick>ClearProperty(usrselectbtn,Home)</onclick>
 					</item>
 					<item>
 						<description>User Addon Set 8</description>
 						<label fallback="31237">$INFO[Skin.String(userselectaddon.8.label)]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,AddonSetEight)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,addonseteight)</onclick>
 						<onclick>ClearProperty(usrselectbtn,Home)</onclick>
 					</item>
 					<item>
 						<description>User Addon Set 9</description>
 						<label fallback="31238">$INFO[Skin.String(userselectaddon.9.label)]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,AddonSetNine)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,addonsetnine)</onclick>
 						<onclick>ClearProperty(usrselectbtn,Home)</onclick>
 					</item>
 					<item>
 						<description>User Addon Set 10</description>
 						<label fallback="31239">$INFO[Skin.String(userselectaddon.10.label)]</label>
 						<onclick>Dialog.Close(2117)</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,AddonSetTen)</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,addonsetten)</onclick>
 						<onclick>ClearProperty(usrselectbtn,Home)</onclick>
 					</item>
 				</content>

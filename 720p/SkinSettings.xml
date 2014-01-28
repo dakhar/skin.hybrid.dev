@@ -1721,7 +1721,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>$VAR[UserssubvideosName] $LOCALIZE[31291]</label>
+						<label>$VAR[UsersSubVideosName] $LOCALIZE[31291]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -1732,7 +1732,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[31240]</label>
-						<label2>[COLOR=white]$VAR[UserssubvideosName][/COLOR]</label2>
+						<label2>[COLOR=white]$VAR[UsersSubVideosName][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -1821,7 +1821,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>$VAR[UserssubmoviesName] $LOCALIZE[31291]</label>
+						<label>$VAR[UsersSubMoviesName] $LOCALIZE[31291]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -1832,7 +1832,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[31240]</label>
-						<label2>[COLOR=white]$VAR[UserssubmoviesName][/COLOR]</label2>
+						<label2>[COLOR=white]$VAR[UsersSubMoviesName][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -1921,7 +1921,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>$VAR[UserssubtvshowsName] $LOCALIZE[31291]</label>
+						<label>$VAR[UsersSubTVShowsName] $LOCALIZE[31291]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -1932,7 +1932,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[31240]</label>
-						<label2>[COLOR=white]$VAR[UserssubtvshowsName][/COLOR]</label2>
+						<label2>[COLOR=white]$VAR[UsersSubTVShowsName][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -2021,7 +2021,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>$VAR[UserssubconcertsName] $LOCALIZE[31291]</label>
+						<label>$VAR[UsersSubConcertsName] $LOCALIZE[31291]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -2032,7 +2032,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[31240]</label>
-						<label2>[COLOR=white]$VAR[UserssubconcertsName][/COLOR]</label2>
+						<label2>[COLOR=white]$VAR[UsersSubConcertsName][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -2121,7 +2121,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>$VAR[UserssubmusicName] $LOCALIZE[31291]</label>
+						<label>$VAR[UsersSubMusicName] $LOCALIZE[31291]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -2132,7 +2132,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[31240]</label>
-						<label2>[COLOR=white]$VAR[UserssubmusicName][/COLOR]</label2>
+						<label2>[COLOR=white]$VAR[UsersSubMusicName][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -2221,7 +2221,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>$VAR[UserssubprogsName] $LOCALIZE[31291]</label>
+						<label>$VAR[UsersSubProgsName] $LOCALIZE[31291]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -2232,7 +2232,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[31240]</label>
-						<label2>[COLOR=white]$VAR[UserssubprogsName][/COLOR]</label2>
+						<label2>[COLOR=white]$VAR[UsersSubProgsName][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -2321,7 +2321,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>$VAR[UserssubpicturesName] $LOCALIZE[31291]</label>
+						<label>$VAR[UsersSubPicturesName] $LOCALIZE[31291]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -2332,7 +2332,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[31240]</label>
-						<label2>[COLOR=white]$VAR[UserssubpicturesName][/COLOR]</label2>
+						<label2>[COLOR=white]$VAR[UsersSubPicturesName][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -2421,7 +2421,7 @@
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
-						<label>$VAR[UserssublivetvName] $LOCALIZE[31291]</label>
+						<label>$VAR[UsersSubLiveTVName] $LOCALIZE[31291]</label>
 						<textcolor>blue</textcolor>
 						<shadowcolor>black</shadowcolor>
 						<align>left</align>
@@ -2433,7 +2433,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[31240]</label>
-						<label2>[COLOR=white]$VAR[UserssublivetvName][/COLOR]</label2>
+						<label2>[COLOR=white]$VAR[UsersSubLiveTVName][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -2995,12 +2995,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]1[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetOne.1.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetone.1.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetOne.1,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetone.1,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="403">
@@ -3008,12 +3008,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]2[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetOne.2.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetone.2.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetOne.2,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetone.2,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="404">
@@ -3021,12 +3021,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]3[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetOne.3.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetone.3.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetOne.3,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetone.3,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="405">
@@ -3034,12 +3034,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]4[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetOne.4.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetone.4.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetOne.4,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetone.4,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="406">
@@ -3047,12 +3047,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]5[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetOne.5.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetone.5.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetOne.5,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetone.5,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="label" id="707">
@@ -3082,12 +3082,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]1[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetTwo.1.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsettwo.1.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetTwo.1,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsettwo.1,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="410">
@@ -3095,12 +3095,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]2[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetTwo.2.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsettwo.2.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetTwo.2,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsettwo.2,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="411">
@@ -3108,12 +3108,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]3[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetTwo.3.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsettwo.3.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetTwo.3,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsettwo.3,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="412">
@@ -3121,12 +3121,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]4[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetTwo.4.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsettwo.4.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetTwo.4,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsettwo.4,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="413">
@@ -3134,12 +3134,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]5[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetTwo.5.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsettwo.5.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetTwo.5,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsettwo.5,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="label" id="714">
@@ -3169,12 +3169,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]1[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetThree.1.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetthree.1.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetThree.1,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetthree.1,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="417">
@@ -3182,12 +3182,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]2[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetThree.2.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetthree.2.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetThree.2,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetthree.2,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="418">
@@ -3195,12 +3195,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]3[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetThree.3.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetthree.3.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetThree.3,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetthree.3,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="419">
@@ -3208,12 +3208,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]4[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetThree.4.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetthree.4.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetThree.4,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetthree.4,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="420">
@@ -3221,12 +3221,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]5[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetThree.5.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetthree.5.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetThree.5,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetthree.5,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="label" id="721">
@@ -3256,12 +3256,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]1[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetFour.1.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetfour.1.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetFour.1,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetfour.1,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="424">
@@ -3269,12 +3269,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]2[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetFour.2.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetfour.2.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetFour.2,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetfour.2,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="425">
@@ -3282,12 +3282,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]3[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetFour.3.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetfour.3.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetFour.3,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetfour.3,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="426">
@@ -3295,12 +3295,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]4[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetFour.4.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetfour.4.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetFour.4,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetfour.4,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="427">
@@ -3308,12 +3308,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]5[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetFour.5.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetfour.5.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetFour.5,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetfour.5,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="label" id="728">
@@ -3343,12 +3343,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]1[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetFive.1.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetfive.1.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetFive.1,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetfive.1,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="431">
@@ -3356,12 +3356,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]2[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetFive.2.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetfive.2.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetFive.2,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetfive.2,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="432">
@@ -3369,12 +3369,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]3[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetFive.3.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetfive.3.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetFive.3,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetfive.3,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="433">
@@ -3382,12 +3382,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]4[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetFive.4.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetfive.4.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetFive.4,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetfive.4,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="434">
@@ -3395,12 +3395,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]5[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetFive.5.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetfive.5.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetFive.5,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetfive.5,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="label" id="735">
@@ -3430,12 +3430,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]1[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetSix.1.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetsix.1.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetSix.1,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetsix.1,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="438">
@@ -3443,12 +3443,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]2[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetSix.2.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetsix.2.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetSix.2,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetsix.2,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="439">
@@ -3456,12 +3456,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]3[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetSix.3.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetsix.3.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetSix.3,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetsix.3,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="440">
@@ -3469,12 +3469,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]4[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetSix.4.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetsix.4.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetSix.4,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetsix.4,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="441">
@@ -3482,12 +3482,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]5[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetSix.5.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetsix.5.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetSix.5,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetsix.5,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="label" id="742">
@@ -3517,12 +3517,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]1[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetSeven.1.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetseven.1.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetSeven.1,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetseven.1,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="445">
@@ -3530,12 +3530,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]2[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetSeven.2.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetseven.2.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetSeven.2,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetseven.2,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="446">
@@ -3543,12 +3543,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]3[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetSeven.3.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetseven.3.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetSeven.3,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetseven.3,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="447">
@@ -3556,12 +3556,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]4[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetSeven.4.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetseven.4.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetSeven.4,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetseven.4,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="448">
@@ -3569,12 +3569,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]5[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetSeven.5.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetseven.5.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetSeven.5,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetseven.5,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="label" id="749">
@@ -3604,12 +3604,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]1[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetEight.1.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonseteight.1.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetEight.1,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonseteight.1,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="452">
@@ -3617,12 +3617,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]2[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetEight.2.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonseteight.2.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetEight.2,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonseteight.2,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="453">
@@ -3630,12 +3630,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]3[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetEight.3.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonseteight.3.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetEight.3,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonseteight.3,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="454">
@@ -3643,12 +3643,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]4[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetEight.4.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonseteight.4.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetEight.4,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonseteight.4,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="455">
@@ -3656,12 +3656,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]5[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetEight.5.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonseteight.5.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetEight.5,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonseteight.5,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="label" id="756">
@@ -3691,12 +3691,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]1[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetNine.1.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetnine.1.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetNine.1,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetnine.1,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="459">
@@ -3704,12 +3704,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]2[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetNine.2.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetnine.2.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetNine.2,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetnine.2,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="460">
@@ -3717,12 +3717,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]3[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetNine.3.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetnine.3.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetNine.3,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetnine.3,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="461">
@@ -3730,12 +3730,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]4[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetNine.4.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetnine.4.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetNine.4,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetnine.4,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="462">
@@ -3743,12 +3743,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]5[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetNine.5.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetnine.5.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetNine.5,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetnine.5,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="label" id="763">
@@ -3778,12 +3778,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]1[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetTen.1.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetten.1.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetTen.1,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetten.1,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="466">
@@ -3791,12 +3791,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]2[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetTen.2.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetten.2.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetTen.2,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetten.2,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="467">
@@ -3804,12 +3804,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]3[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetTen.3.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetten.3.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetTen.3,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetten.3,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="468">
@@ -3817,12 +3817,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]4[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetTen.4.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetten.4.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetTen.4,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetten.4,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 						<control type="button" id="469">
@@ -3830,12 +3830,12 @@
 							<height>40</height>
 							<font>font13</font>
 							<label>$LOCALIZE[24000] [B]5[/B]</label>
-							<label2>[COLOR=selected]$INFO[Skin.String(AddonSetTen.5.label)][/COLOR]</label2>
+							<label2>[COLOR=selected]$INFO[Skin.String(addonsetten.5.label)][/COLOR]</label2>
 							<textcolor>grey2</textcolor>
 							<focusedcolor>white</focusedcolor>
 							<texturefocus>MenuItemFO.png</texturefocus>
 							<texturenofocus>MenuItemNF.png</texturenofocus>
-							<onclick>SetProperty(usrselectbtn,AddonSetTen.5,home)</onclick>
+							<onclick>SetProperty(usrselectbtn,addonsetten.5,home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
 					</control>
