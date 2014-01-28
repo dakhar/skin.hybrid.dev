@@ -838,7 +838,6 @@
 		<value condition="Player.HasAudio + IsEmpty(Window(Visualisation).Property(ArtistSlideshowRunning)) + !Control.HasFocus(510)">$INFO[MusicPlayer.Property(Artist_Description)]</value>
 		<value condition="Control.HasFocus(510) | StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList)">$INFO[Container(510).ListItem.Property(Plot)]</value>
 	</variable>
-	
 	<variable name="InfoWidgetVideoStar">
 		<value condition="!IntegerGreaterThan(Container(510).ListItem.Property(Rating),2)">rating1.png</value>
 		<value condition="IntegerGreaterThan(Container(510).ListItem.Property(Rating),2) + !IntegerGreaterThan(Container(510).ListItem.Property(Rating),4)">rating2.png</value>
@@ -2367,8 +2366,6 @@
 		<value condition="substring(VideoPlayer.mpaa,Rated R) | substring(VideoPlayer.mpaa,Rated: R)">mpaa_restricted</value>
 		<value condition="substring(VideoPlayer.mpaa,Rated NC-17) | substring(VideoPlayer.mpaa,Rated: NC-17)">mpaa_nc17</value>
 	</variable>
-	
-	
 	<variable name="InfoWidgetMPAA">
 		<value condition="SubString(Container(510).ListItem.Property(Mpaa),Rated NR) | SubString(Container(510).ListItem.Property(Mpaa),Rated: NR) | StringCompare(Container(510).ListItem.Property(Mpaa),NR)">WidgetRating/MPAA_NR_Certificate_US.png</value>
 		<value condition="SubString(Container(510).ListItem.Property(Mpaa),Rated G) | SubString(Container(510).ListItem.Property(Mpaa),Rated: G) | StringCompare(Container(510).ListItem.Property(Mpaa),G)">WidgetRating/MPAA_G_Certificate_US.png</value>

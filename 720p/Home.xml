@@ -159,7 +159,7 @@
 				<texturenofocus>-</texturenofocus>
 				<aspectratio>stretch</aspectratio>
 				<colordiffuse>C3FFFFFF</colordiffuse>
-			<visible>
+				<visible>
 				Player.HasMedia |
 				[!IsEmpty(Window.Property(RecommendedMovie.1.Title)) + [StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies)]]|
 				[!IsEmpty(Window.Property(RecommendedEpisode.1.Title)) + [StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedEpisodes)]]|
@@ -362,9 +362,6 @@
 				<font>font12</font>
 				<autoscroll delay="20000" time="3000" repeat="20000">!Skin.HasSetting(noallowscroll)</autoscroll>
 			</control>
-			
-			
-			
 			<control type="group" id="600">
 				<left>6</left>
 				<top>304</top>

@@ -71,7 +71,6 @@
 						<label>$INFO[ListItem.label]</label>
 					</control>
 					<control type="label">
-						<!--left>695</left-->
 						<left>680</left>
 						<top>0</top>
 						<width>400</width>
@@ -98,16 +97,6 @@
 						<visible>Window.IsVisible(Videos)</visible>
 						<animation effect="slide" start="0,0" end="40,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
 					</control>
-					<!--control type="image">
-						<left>646</left>
-						<top>8</top>
-						<width>26</width>
-						<height>26</height>
-						<fadetime>IconCrossfadeTime</fadetime>
-						<texture>$INFO[ListItem.subtitleLanguage,Language/,.png]</texture>
-						<visible>Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
-						<visible>Skin.HasSetting(ViewSubTitleFlag) + !IsEmpty(ListItem.subtitleLanguage)</visible>
-					</control-->
 					<control type="image">
 						<left>640</left>
 						<top>8</top>
@@ -115,7 +104,6 @@
 						<height>26</height>
 						<texture>$VAR[VideoResolutionFlag]</texture>
 						<visible>Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
-						<!--visible>!Skin.HasSetting(ViewSubTitleFlag)</visible-->
 					</control>
 				</itemlayout>
 				<focusedlayout height="40" width="580">
@@ -185,7 +173,6 @@
 						<label>$INFO[ListItem.label]</label>
 					</control>
 					<control type="label">
-						<!--left>695</left-->
 						<left>680</left>
 						<top>0</top>
 						<width>400</width>
@@ -212,17 +199,6 @@
 						<visible>Window.IsVisible(Videos)</visible>
 						<animation effect="slide" start="0,0" end="40,0" delay="0" time="0" condition="![Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]">conditional</animation>
 					</control>
-					<!--control type="image">
-						<left>646</left>
-						<top>8</top>
-						<width>26</width>
-						<height>26</height>
-						<fadetime>IconCrossfadeTime</fadetime>
-						<texture>$INFO[ListItem.subtitleLanguage,Language/,.png]</texture>
-						<animation effect="slide" start="0,0" end="18,0" delay="0" time="0" condition="stringcompare(Skin.String(WatchStatusType),Hidden)">conditional</animation>
-						<visible>Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
-						<visible>Skin.HasSetting(ViewSubTitleFlag) + !IsEmpty(ListItem.subtitleLanguage)</visible>
-					</control-->
 					<control type="image">
 						<left>640</left>
 						<top>8</top>
@@ -230,7 +206,6 @@
 						<height>26</height>
 						<texture>$VAR[VideoResolutionFlag]</texture>
 						<visible>Window.IsVisible(Videos) + [Container.Content(Movies) | Container.Content(Episodes) | Container.Content(MusicVideos)]</visible>
-						<!--visible>!Skin.HasSetting(ViewSubTitleFlag)</visible-->
 					</control>
 				</focusedlayout>
 			</control>

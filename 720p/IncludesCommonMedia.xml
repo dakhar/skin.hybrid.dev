@@ -146,12 +146,7 @@
 				<visible>!IsEmpty(Skin.String(searchbtnbackground))</visible>
 			</control>
 		</control>
-		
-		
-		
-		
-		
-<control type="group">
+		<control type="group">
 			<visible>!IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))</visible>
 			<visible>Window.IsActive(script-NextAired-TVGuide.xml)</visible>
 			<control type="image">
@@ -210,15 +205,7 @@
 				<fadetime>FanartCrossfadeTime</fadetime>
 				<include>VisibleFadeEffect</include>
 			</control>
-		</control>		
-		
-		
-		
-		
-		
-		
-		
-		
+		</control>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture>special://skin/backgrounds/homescreen/media-overlay.jpg</texture>
@@ -230,20 +217,7 @@
 			<visible>Player.HasVideo + [StringCompare(Container(9000).ListItem.Property(HiLiteItem),FullScreen) | Skin.HasSetting(hidehomenowplaying)] + ![Window.IsVisible(PVR) + [Control.IsVisible(11) | Control.IsVisible(12)]]</visible>
 		</control>
 	</include>
-	
-	
-	
 	<include name="HomeScreenFloor">
-		<!--control type="image" id="1">
-			<left>0</left>
-			<top>60r</top>
-			<width>1780</width>
-			<height>60</height>
-			<texture>floor.png</texture>
-			<animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
-			<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
-			<visible>!Skin.HasSetting(horizontalhomescreen) + Window.IsVisible(home)</visible>
-		</control-->
 		<control type="image" id="1">
 			<left>0</left>
 			<top>90r</top>
@@ -252,7 +226,6 @@
 			<texture>floor.png</texture>
 			<animation effect="fade" time="250" condition="Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="fade" time="250" condition="Window.Next(Home)">WindowClose</animation>
-			<!--visible>Skin.HasSetting(horizontalhomescreen) | !Window.IsVisible(home)</visible-->
 			<visible>!Window.IsVisible(home)</visible>
 			<visible>!Window.IsVisible(fullscreenvideo)</visible>
 		</control>

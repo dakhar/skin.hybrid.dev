@@ -49,7 +49,7 @@
 			<aspectratio>stretch</aspectratio>
 			<texture>black-back.png</texture>
 			<visible>!Skin.HasSetting(disabledarkbackground)</visible>
-		</control>		
+		</control>
 		<control type="label">
 			<left>55</left>
 			<top>5</top>
@@ -79,7 +79,7 @@
 		</control>
 		<include>FloorReturnButtons</include>
 		<control type="grouplist" id="2000">
-			<include>Window_OpenClose_Animation</include>		
+			<include>Window_OpenClose_Animation</include>
 			<left>40</left>
 			<top>70</top>
 			<width>1200</width>
@@ -292,7 +292,7 @@
 			</control>
 		</control>
 		<control type="group">
-			<include>Window_OpenClose_Animation</include>		
+			<include>Window_OpenClose_Animation</include>
 			<control type="image">
 				<description>left Arrow</description>
 				<left>10</left>

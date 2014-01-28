@@ -5862,11 +5862,6 @@
 						<enable>!Skin.HasSetting(disablevideoextras)</enable>
 						<visible>System.HasAddon(script.videoextras)</visible>
 					</control>
-					
-					
-					
-					
-					
 					<control type="radiobutton" id="634">
 						<width>750</width>
 						<height>40</height>
@@ -5893,14 +5888,6 @@
 						<enable>!Skin.HasSetting(disabletvnextaired)</enable>
 						<visible>System.HasAddon(script.tv.show.next.aired)</visible>
 					</control>
-					
-					
-					
-					
-					
-					
-					
-					
 					<control type="radiobutton" id="638">
 						<width>750</width>
 						<height>40</height>
@@ -5953,21 +5940,6 @@
 						<enable>!Skin.HasSetting(disablescriptplaylist)</enable>
 						<visible>System.HasAddon(script.randomandlastitems)</visible>
 					</control>
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
 					<control type="label" id="645">
 						<width>750</width>
 						<height>45</height>

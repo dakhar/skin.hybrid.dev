@@ -7,7 +7,6 @@
 			<control type="wraplist" id="730">
 				<left>695r</left>
 				<top>100</top>
-				<!--height>530</height-->
 				<height>530</height>
 				<width>650</width>
 				<onleft>9000</onleft>
@@ -21,7 +20,7 @@
 				<focusposition>1</focusposition>
 				<preloaditems>2</preloaditems>
 				<visible>Container.Content(TVShows) | Container.Content(Movies) | Container.Content(Episodes) | Container.Content(Seasons)</visible>
-				<itemlayout condition="!Skin.HasSetting(enablebannernotlogo)  + ![Container.Content(Episodes) | Container.Content(Seasons)]" width="650" height="110">
+				<itemlayout condition="![Container.Content(Episodes) | Container.Content(Seasons)]" width="650" height="110">
 					<control type="image">
 						<visible>!IsEmpty(ListItem.Title) + !IsEmpty(ListItem.Art(clearlogo))</visible>
 						<left>200</left>
@@ -47,7 +46,7 @@
 						<label>[B]$INFO[ListItem.Label][/B]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout condition="!Skin.HasSetting(enablebannernotlogo) + ![Container.Content(Episodes) | Container.Content(Seasons)]" width="550" height="200">
+				<focusedlayout condition="![Container.Content(Episodes) | Container.Content(Seasons)]" width="550" height="200">
 					<control type="image">
 						<visible>!IsEmpty(ListItem.Title) + !IsEmpty(ListItem.Art(clearlogo))</visible>
 						<left>200</left>
@@ -70,38 +69,7 @@
 						<font>font35_title</font>
 						<textcolor>white</textcolor>
 						<label>[B]$INFO[ListItem.Label][/B]</label>
-						<!--animation effect="zoom" start="100" end="125" center="auto" time="200">Focus</animation-->
 					</control>
-					<!--
-					<control type="image">
-						<visible>!IsEmpty(ListItem.Title) + !IsEmpty(ListItem.Art(clearlogo))</visible>
-						<left>85</left>
-						<top>7</top>
-						<width>250</width>
-						<height>95</height>
-						<texture background="true">$INFO[ListItem.Art(clearlogo)]</texture>
-						<fadetime>200</fadetime>
-						<aspectratio align="right" scalediffuse="false">keep</aspectratio>
-						<animation type="Focus" reversible="false">
-	
-							<effect type="zoom" center="auto" start="51" end="125" time="600" tween="back" easing="out" />
-						</animation>
-					</control>
-					<control type="label">
-						<visible>IsEmpty(ListItem.Title) | IsEmpty(ListItem.Art(clearlogo))</visible>
-						<left>380</left>
-						<top>30</top>
-						<width>330</width>
-						<height>89</height>
-						<align>right</align>
-						<font>font28_title</font>
-						<textcolor>white</textcolor>
-						<label>[B]$INFO[ListItem.Label][/B]</label>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="auto" start="100" end="125" time="600" tween="back" easing="out" />
-						</animation>
-					</control>
-					-->
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">

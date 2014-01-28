@@ -7,7 +7,6 @@
 		<fadetime>IconCrossfadeTime</fadetime>
 	</include>
 	<include name="GenreTextPlace">
-		<!--width>108</width-->
 		<width min="40" max="140">auto</width>
 		<height>20</height>
 		<font>font10_title</font>

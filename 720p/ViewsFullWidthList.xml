@@ -12,10 +12,8 @@
 				<visible>!Skin.HasSetting(disabledarkbackground)</visible>
 			</control>
 			<control type="list" id="51">
-				<!--left>95</posx-->
 				<left>45</left>
 				<top>100</top>
-				<!--width>1080</width-->
 				<width>1175</width>
 				<height>520</height>
 				<onleft>2</onleft>
