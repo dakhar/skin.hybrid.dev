@@ -750,6 +750,9 @@
 		<value condition="SubString(Container(9000).ListItem.Property(WidgetSet),Songs,Right) + ![Player.HasMedia | Control.HasFocus(510)]">$INFO[Window(home).Property(RecommendedAlbum.1.Title)]</value>
 		<value condition="SubString(Container(9000).ListItem.Property(WidgetSet),Albums,Right) + ![Player.HasMedia | Control.HasFocus(510)]">$INFO[Window(home).Property(RecommendedAlbum.1.Title)]</value>
 		<value condition="SubString(Container(9000).ListItem.Property(WidgetSet),Artists,Right) + ![Player.HasMedia | Control.HasFocus(510)]">$INFO[Window(home).Property(RecommendedAlbum.1.Title)]</value>
+		<value condition="Player.HasVideo + !Control.HasFocus(510) + StringCompare(VideoPlayer.Title,player.swf playpath=105Test1 live=true)">$LOCALIZE[31206]</value>
+		<value condition="Player.HasVideo + !Control.HasFocus(510) + StringCompare(VideoPlayer.Title,player.swf playpath=rmc1 live=true)">$LOCALIZE[31221]</value>
+		<value condition="Player.HasVideo + !Control.HasFocus(510) + Player.IsInternetStream + SubString(VideoPlayer.Title,Virgin 1,Left)">$LOCALIZE[31222]</value>
 		<value condition="Player.HasVideo + !Control.HasFocus(510)">$INFO[VideoPlayer.Title]</value>
 		<value condition="Player.HasAudio + !Control.HasFocus(510)">$INFO[MusicPlayer.Title]</value>
 		<value condition="Control.HasFocus(510) | StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList)">$INFO[Container(510).ListItem.Label]</value>
@@ -788,7 +791,10 @@
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + SubString(Container(9000).ListItem.Property(WidgetSet),Albums,Right)">$INFO[Window(home).Property(RecommendedAlbum.1.Thumb)]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + SubString(Container(9000).ListItem.Property(WidgetSet),Artists,Right)">$INFO[Window(home).Property(RecommendedAlbum.1.Thumb)]</value>
 		<value condition="Player.HasAudio + ![Control.HasFocus(510)]">$INFO[MusicPlayer.Cover]</value>
-		<value condition="Player.HasVideo + ![Control.HasFocus(510)]">$INFO[VideoPlayer.Cover]</value>
+		<value condition="Player.HasVideo + !Control.HasFocus(510) + StringCompare(VideoPlayer.Title,player.swf playpath=105Test1 live=true)">special://skin/extras/Streaming/Radio105NetworkTV.png</value>
+		<value condition="Player.HasVideo + !Control.HasFocus(510) + StringCompare(VideoPlayer.Title,player.swf playpath=rmc1 live=true)">special://skin/extras/Streaming/RadioMontecarloTV.png</value>
+		<value condition="Player.HasVideo + !Control.HasFocus(510) + Player.IsInternetStream + SubString(VideoPlayer.Title,Virgin 1,Left)">special://skin/extras/Streaming/Virgin.png</value>
+		<value condition="Player.HasVideo + !Control.HasFocus(510)">$INFO[VideoPlayer.Cover]</value>
 		<value condition="Control.HasFocus(510) | StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList)">$INFO[Container(510).ListItem.Icon]</value>
 	</variable>
 	<variable name="InfoWidgetTagLine">
@@ -1895,14 +1901,30 @@
 		<value condition="StringCompare(Window.Property(Weather.CurrentView),hourly)">[UPPERCASE]$LOCALIZE[31181][/UPPERCASE]</value>
 		<value>[UPPERCASE]$LOCALIZE[10508][/UPPERCASE]</value>
 	</variable>
+	<variable name="CommonMediaPlaying">
+		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=105Test1 live=true)">[B]$LOCALIZE[31206][/B]  ([COLOR=blue]$LOCALIZE[31212][/COLOR])</value>
+		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=rmc1 live=true)">[B]$LOCALIZE[31221][/B]  ([COLOR=blue]$LOCALIZE[31212][/COLOR])</value>
+		<value condition="Player.IsInternetStream + SubString(VideoPlayer.Title,Virgin 1,Left)">[B]$LOCALIZE[31222][/B]  ([COLOR=blue]$LOCALIZE[31212][/COLOR])</value>
+		<value>[B]$INFO[MusicPlayer.Title]$INFO[VideoPlayer.Title][/B]  ([COLOR=blue]$INFO[Player.Time] / $INFO[Player.Duration,][/COLOR])</value>
+	</variable>
 	<variable name="VideoNowPlaying">
+		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=105Test1 live=true)">$LOCALIZE[31206]</value>
+		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=rmc1 live=true)">$LOCALIZE[31221]</value>
+		<value condition="Player.IsInternetStream + SubString(VideoPlayer.Title,Virgin 1,Left)">$LOCALIZE[31222]</value>
 		<value condition="VideoPlayer.Content(Movies) + !IsEmpty(VideoPlayer.Year) + !substring(VideoPlayer.Title,VideoPlayer.Year)">$INFO[VideoPlayer.Title] ($INFO[VideoPlayer.Year])</value>
-		<value>$INFO[VideoPlayer.Title]</value>
+		<!--value>$INFO[VideoPlayer.Title]</value-->
+		<value>$INFO[Player.Title]</value>
 	</variable>
 	<variable name="VideoPlayingDescription" type="text">
 		<value condition="!IsEmpty(VideoPlayer.PlotOutline)">$INFO[VideoPlayer.PlotOutline]</value>
 		<value condition="!IsEmpty(VideoPlayer.Plot )">$INFO[VideoPlayer.Plot]</value>
 		<value>$LOCALIZE[161]</value>
+	</variable>
+	<variable name="StreamingVideoIcon">
+		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=105Test1 live=true)">special://skin/extras/Streaming/Radio105NetworkTV.png</value>
+		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=rmc1 live=true)">special://skin/extras/Streaming/RadioMontecarloTV.png</value>
+		<value condition="SubString(VideoPlayer.Title,Virgin 1,Left)">special://skin/extras/Streaming/Virgin.png</value>
+		<value>DefaultVideo.png</value>
 	</variable>
 	<variable name="VideoPlayerCase">
 		<value condition="VideoPlayer.IsStereoscopic">3DCase</value>
