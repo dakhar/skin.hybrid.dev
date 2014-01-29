@@ -163,7 +163,7 @@
 				</control>
 				<control type="group">
 					<include>MediaInfoPopup</include>
-					<visible>![Skin.String(mediapopupcontrol,Hidden) + IsEmpty(ListItem.Title) + Container.OnNext + Container.OnPrevious + Container.Content(Sets)]</visible>
+					<visible>!Skin.String(mediapopupcontrol,Hidden) + !IsEmpty(ListItem.Title) + !Container.OnNext + !Container.OnPrevious</visible>
 					<visible>Control.IsVisible(515) + ![ListItem.IsFolder + Container.Content(Movies)]</visible>
 					<control type="image">
 						<left>0</left>
@@ -351,7 +351,7 @@
 				</control>
 				<control type="group">
 					<include>MediaInfoPopup</include>
-					<visible>![Skin.String(mediapopupcontrol,Hidden) + IsEmpty(ListItem.Title) + Container.OnNext + Container.OnPrevious]</visible>
+					<visible>!Skin.String(mediapopupcontrol,Hidden) + !IsEmpty(ListItem.Title) + !Container.OnNext + !Container.OnPrevious</visible>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -502,8 +502,8 @@
 					<label>$INFO[ListItem.label]</label>
 				</control>
 				<control type="group">
-					<include>MediaInfoPopup</include>
-					<visible>![Skin.String(mediapopupcontrol,Hidden) + Container.OnNext + Container.OnPrevious]</visible>
+			<include>MediaInfoPopup</include>
+			<visible>!Skin.String(mediapopupcontrol,Hidden) + !Container.OnNext + !Container.OnPrevious</visible>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -643,9 +643,9 @@
 					<label>$INFO[ListItem.label]</label>
 				</control>
 				<control type="group">
-					<include>MediaInfoPopup</include>
-					<visible>![Skin.String(mediapopupcontrol,Hidden) + StringCompare(ListItem.label,..) + Container.OnNext + Container.OnPrevious]</visible>
-					<visible>Control.IsVisible(515) + ![ListItem.IsFolder + Container.Content(Movies)]</visible>
+			<include>MediaInfoPopup</include>
+			<visible>!Skin.String(mediapopupcontrol,Hidden) + !StringCompare(ListItem.label,..) + !Container.OnNext + !Container.OnPrevious</visible>
+			<visible>Control.IsVisible(515) + ![ListItem.IsFolder + Container.Content(Movies)]</visible>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>

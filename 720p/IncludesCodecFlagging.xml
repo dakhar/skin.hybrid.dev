@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+	<!--Studio 64x95-->
+	<include name="VideoSudioFlagging">
+		<control type="image">
+			<description>Sudio Background</description>
+			<width>52</width>
+			<height>35</height>
+			<aspectratio>stretch</aspectratio>
+			<texture>flagging/blank.png</texture>
+			<visible>!IsEmpty(listitem.Studio)</visible>
+		</control>
+		<control type="image">
+			<description>Sudio image</description>
+			<width>52</width>
+			<height>35</height>
+			<aspectratio align="center">keep</aspectratio>
+			<texture>$INFO[listitem.Studio,studios/,.png]</texture>
+			<visible>!IsEmpty(listitem.Studio)</visible>
+		</control>
+	</include>
 	<include name="VideoMPAAFlaggingConditions">
 		<control type="image">
 			<description>Rating image</description>

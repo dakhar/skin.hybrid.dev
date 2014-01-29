@@ -345,9 +345,9 @@
 		<control type="group">
 			<left>180</left>
 			<top>100</top>
-			<visible>Control.IsVisible(509)</visible>
-			<visible>!StringCompare(ListItem.label,..) + !Container.OnNext + !Container.OnPrevious</visible>
 			<include>MediaInfoPopup</include>
+			<visible>!Skin.String(mediapopupcontrol,Hidden) + !IsEmpty(ListItem.Title) + !Container.OnNext + !Container.OnPrevious</visible>
+			<visible>Control.IsVisible(509)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
 				<left>0</left>

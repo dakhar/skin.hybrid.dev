@@ -112,13 +112,6 @@
 							<animation effect="zoom" start="12,71,173,173" end="-3,51,209,209" time="250">Focus</animation>
 							<animation effect="zoom" start="-3,51,209,209" end="12,71,173,173" time="250">UnFocus</animation>
 						</control>
-						
-						
-						
-						
-						
-						
-						
 						<control type="label">
 							<left>100</left>
 							<top>250</top>
@@ -232,6 +225,7 @@
 				<align>center</align>
 				<itemgap>2</itemgap>
 				<orientation>horizontal</orientation>
+				<include>VideoSudioFlagging</include>
 				<include>VideoMPAAFlaggingConditions</include>
 				<include>VideoSubTitleFlagging</include>
 				<include>VideoCodecFlaggingConditions</include>

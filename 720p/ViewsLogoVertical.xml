@@ -89,9 +89,9 @@
 				<visible>Control.IsVisible(730)</visible>
 			</control>
 			<control type="group">
-				<include>MediaInfoPopup</include>
-				<visible>![Skin.String(mediapopupcontrol,Hidden) + IsEmpty(ListItem.Title) + Container.OnNext + Container.OnPrevious + Container.Content(Sets)]</visible>
-				<visible>Control.IsVisible(730) + ![ListItem.IsFolder + Container.Content(Movies)]</visible>
+			<include>MediaInfoPopup</include>
+			<visible>!Skin.String(mediapopupcontrol,Hidden) + !IsEmpty(ListItem.Title) + !Container.OnNext + !Container.OnPrevious</visible>
+			<visible>Control.IsVisible(730) + ![ListItem.IsFolder + Container.Content(Movies)]</visible>
 				<control type="image">
 					<left>50</left>
 					<top>100</top>

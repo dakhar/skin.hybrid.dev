@@ -889,11 +889,8 @@
 	</include>
 	<include name="MediaInfoPopup">
 		<animation effect="fade" start="0" end="100" time="1600" delay="2000" condition="IsEmpty(Skin.String(mediapopupcontrol))">Visible</animation>
-		<!--Default-->
 		<animation effect="fade" start="0" end="100" time="300" delay="300" condition="Skin.String(mediapopupcontrol,Instant)">Visible</animation>
-		<!--Instant-->
 		<animation effect="fade" start="0" end="100" time="1600" delay="3000" condition="Skin.String(mediapopupcontrol,Delayed)">Visible</animation>
-		<!--Delayed-->
 		<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
 	</include>
 	<include name="VideoBoxDimensions">
