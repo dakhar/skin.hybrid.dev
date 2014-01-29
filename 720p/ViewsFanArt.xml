@@ -136,10 +136,9 @@
 		<control type="group">
 			<left>180</left>
 			<top>100</top>
-			<animation effect="fade" start="0" end="100" time="1600" delay="2000">Visible</animation>
-			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
-			<visible>!StringCompare(ListItem.label,..) + !Container.OnNext + !Container.OnPrevious</visible>
-			<visible>Control.IsVisible(508) + ![ListItem.IsFolder + Container.Content(Movies)] + !Container.Content(Sets)</visible>
+			<include>MediaInfoPopup</include>
+			<visible>![Skin.String(mediapopupcontrol,Hidden) + IsEmpty(ListItem.Title) + Container.OnNext + Container.OnPrevious + Container.Content(Sets)]</visible>
+			<visible>Control.IsVisible(508) + ![ListItem.IsFolder + Container.Content(Movies)]</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
 				<left>0</left>

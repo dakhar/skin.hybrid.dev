@@ -887,6 +887,15 @@
 		<animation effect="rotate" end="720" center="auto" time="800" loop="true" reversible="false" condition="Player.Rewinding16x">Conditional</animation>
 		<animation effect="rotate" end="720" center="auto" time="400" loop="true" reversible="false" condition="Player.Rewinding32x">Conditional</animation>
 	</include>
+	<include name="MediaInfoPopup">
+		<animation effect="fade" start="0" end="100" time="1600" delay="2000" condition="IsEmpty(Skin.String(mediapopupcontrol))">Visible</animation>
+		<!--Default-->
+		<animation effect="fade" start="0" end="100" time="300" delay="300" condition="Skin.String(mediapopupcontrol,Instant)">Visible</animation>
+		<!--Instant-->
+		<animation effect="fade" start="0" end="100" time="1600" delay="3000" condition="Skin.String(mediapopupcontrol,Delayed)">Visible</animation>
+		<!--Delayed-->
+		<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
+	</include>
 	<include name="VideoBoxDimensions">
 		<left>26</left>
 		<top>6</top>

@@ -162,9 +162,9 @@
 					<visible>!IsEmpty(ListItem.Title) + IsEmpty(ListItem.Art(clearlogo))</visible>
 				</control>
 				<control type="group">
-					<animation effect="fade" start="0" end="100" time="1600" delay="2000">Visible</animation>
-					<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
-					<visible>!IsEmpty(ListItem.Title) + !Container.OnNext + !Container.OnPrevious</visible>
+					<include>MediaInfoPopup</include>
+					<visible>![Skin.String(mediapopupcontrol,Hidden) + IsEmpty(ListItem.Title) + Container.OnNext + Container.OnPrevious + Container.Content(Sets)]</visible>
+					<visible>Control.IsVisible(515) + ![ListItem.IsFolder + Container.Content(Movies)]</visible>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -174,16 +174,15 @@
 						<texture border="20">ContentPanel.png</texture>
 					</control>
 					<control type="image">
-				<left>20</left>
-				<top>20</top>
-				<width>440</width>
-				<height>335</height>
-				<aspectratio align="center" aligny="center">keep</aspectratio>
-				<texture background="true">$INFO[listitem.Studio,studios/,.png]</texture>
-				<animation effect="fade" end="55" condition="true">Conditional</animation>
-				<visible>!Container.Content(Seasons) + !Container.Content(Episodes)</visible>
-			</control>
-					
+						<left>20</left>
+						<top>20</top>
+						<width>440</width>
+						<height>335</height>
+						<aspectratio align="center" aligny="center">keep</aspectratio>
+						<texture background="true">$INFO[listitem.Studio,studios/,.png]</texture>
+						<animation effect="fade" end="55" condition="true">Conditional</animation>
+						<visible>!Container.Content(Seasons) + !Container.Content(Episodes)</visible>
+					</control>
 					<control type="textbox">
 						<description>Description Value for Video</description>
 						<left>20</left>
@@ -351,9 +350,8 @@
 					<visible>!IsEmpty(ListItem.Title) + IsEmpty(ListItem.Art(clearlogo))</visible>
 				</control>
 				<control type="group">
-					<animation effect="fade" start="0" end="100" time="1600" delay="2000">Visible</animation>
-					<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
-					<visible>!IsEmpty(ListItem.Title) + !Container.OnNext + !Container.OnPrevious</visible>
+					<include>MediaInfoPopup</include>
+					<visible>![Skin.String(mediapopupcontrol,Hidden) + IsEmpty(ListItem.Title) + Container.OnNext + Container.OnPrevious]</visible>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -504,9 +502,8 @@
 					<label>$INFO[ListItem.label]</label>
 				</control>
 				<control type="group">
-					<animation effect="fade" start="0" end="100" time="1600" delay="2000">Visible</animation>
-					<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
-					<visible>!Container.OnNext + !Container.OnPrevious</visible>
+					<include>MediaInfoPopup</include>
+					<visible>![Skin.String(mediapopupcontrol,Hidden) + Container.OnNext + Container.OnPrevious]</visible>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -646,9 +643,9 @@
 					<label>$INFO[ListItem.label]</label>
 				</control>
 				<control type="group">
-					<animation effect="fade" start="0" end="100" time="1600" delay="2000">Visible</animation>
-					<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
-					<visible>!StringCompare(ListItem.label,..) + !Container.OnNext + !Container.OnPrevious</visible>
+					<include>MediaInfoPopup</include>
+					<visible>![Skin.String(mediapopupcontrol,Hidden) + StringCompare(ListItem.label,..) + Container.OnNext + Container.OnPrevious]</visible>
+					<visible>Control.IsVisible(515) + ![ListItem.IsFolder + Container.Content(Movies)]</visible>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>

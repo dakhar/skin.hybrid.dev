@@ -347,8 +347,7 @@
 			<top>100</top>
 			<visible>Control.IsVisible(509)</visible>
 			<visible>!StringCompare(ListItem.label,..) + !Container.OnNext + !Container.OnPrevious</visible>
-			<animation effect="fade" start="0" end="100" time="1600" delay="2000">Visible</animation>
-			<animation effect="fade" start="100" end="0" time="0">Hidden</animation>
+			<include>MediaInfoPopup</include>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
 				<left>0</left>
