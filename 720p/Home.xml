@@ -7,7 +7,6 @@
 	<onload condition="!IsEmpty(Window(home).Property(MenuItemActive))">ClearProperty(MenuItemActive,Home)</onload>
 	<onload condition="!IsEmpty(Window(home).Property(SubMenuBackground))">ClearProperty(SubMenuBackground,Home)</onload>
 	<onload condition="Skin.HasSetting(holidayeffects) + System.Date(1-6,11-23)">Skin.Reset(holidayeffects)</onload>
-	
 	<onload condition="!Skin.HasSetting(disablescriptplaylist) + !System.HasAddon(script.randomandlastitems)">Skin.Setbool(disablescriptplaylist)</onload>
 	<onload condition="!Skin.HasSetting(disableglobalsearch) + !System.HasAddon(script.globalsearch)">Skin.Setbool(disableglobalsearch)</onload>
 	<onload condition="!Skin.HasSetting(disablevideoextras) + !System.HasAddon(script.videoextras)">Skin.Setbool(disablevideoextras)</onload>
@@ -15,7 +14,6 @@
 	<onload condition="!Skin.HasSetting(disabletvnextaired) + !System.HasAddon(script.tv.show.next.aired)">Skin.Setbool(disabletvnextaired)</onload>
 	<onload condition="!Skin.HasSetting(disablegamebrowser) + !System.HasAddon(script.games.rom.collection.browser)">Skin.Setbool(disablegamebrowser)</onload>
 	<onload condition="!Skin.HasSetting(disableslideshowart) + System.HasAddon(script.artistslideshow) + IsEmpty(Window.Property(ArtistSlideshowRunning))">RunScript(script.artistslideshow, daemon=True)</onload>
-	
 	<onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
 	<onload condition="!Skin.HasSetting(disablescriptplaylist) + Library.HasContent(Movies)">XBMC.RunScript(script.randomandlastitems,type=Movie,limit=12,method=Random,playlist=special://skin/extras/Playlists/UnwatchedMovies.xsp,menu=UnWatched)</onload>
 	<onload condition="!Skin.HasSetting(disablescriptplaylist) + !IsEmpty(Skin.String(homeitem.1.playlist))">XBMC.RunScript(script.randomandlastitems,playlist=$INFO[Skin.String(homeitem.1.playlist)],method=$VAR[PlaylistSortOrder],limit=12,unwatched=False,resume=False,property=HomeplaylistOne)</onload>
@@ -49,13 +47,9 @@
 			<animation effect="zoom" start="0" end="100" center="auto" time="300" delay="1000" easing="out" tween="sine">Visible</animation>
 			<animation effect="zoom" start="100" end="0" center="auto" time="200" easing="in" tween="sine">Hidden</animation>
 			<animation effect="zoom" start="100" end="0" center="auto" time="200" easing="out" tween="sine" condition="Skin.HasSetting(enablecleanhome) + ![Control.HasFocus(9004) | Player.HasMedia | Control.HasFocus(510)]">Conditional</animation>
-			
 			<visible>![Skin.HasSetting(hidesuggestedinfo) | Player.HasMedia]  | Player.HasMedia + !Skin.HasSetting(hidehomenowplaying) | Control.HasFocus(510)</visible>
-			
 			<visible>!StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites)</visible>
-			
 			<include>WidgetPanelVizability</include>
-			
 			<control type="image">
 				<left>471</left>
 				<top>152</top>
@@ -90,8 +84,6 @@
 				<height>262</height>
 				<texture>InfoWidget/fanartframe.png</texture>
 			</control>
-			
-			
 			<control type="multiimage">
 				<left>6</left>
 				<top>116</top>
@@ -115,7 +107,6 @@
 				<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
 				<visible>Player.HasAudio + !Control.HasFocus(510)</visible>
 			</control>
-			
 			<control type="image">
 				<left>8</left>
 				<top>120</top>
@@ -126,7 +117,6 @@
 				<fadetime>FanartCrossFadeTime</fadetime>
 				<visible>Player.HasAudio + !Control.HasFocus(510)</visible>
 			</control>
-			
 			<control type="videowindow" id="8">
 				<left>6</left>
 				<top>116</top>
@@ -136,9 +126,6 @@
 				<animation effect="slide" start="0,0" end="-2000,0" time="0">WindowClose</animation>
 				<visible>!Control.HasFocus(510)</visible>
 			</control>
-			
-			
-			
 			<control type="image">
 				<left>1042</left>
 				<top>115</top>
@@ -375,7 +362,7 @@
 				<label>$VAR[InfoWidgetPlot]</label>
 				<textcolor>white</textcolor>
 				<font>font12</font>
-				<autoscroll delay="20000" time="3000" repeat="20000">!Skin.HasSetting(noallowscroll)</autoscroll>
+				<autoscroll delay="20000" time="3000" repeat="20000">!Skin.HasSetting(disableautoscroll)</autoscroll>
 			</control>
 			<control type="group" id="600">
 				<left>6</left>

@@ -266,22 +266,32 @@
 					<control type="grouplist">
 						<description>Media Genre Flagging</description>
 						<left>8</left>
-						<top>502</top>
+						<top>521</top>
 						<width>495</width>
-						<align>center</align>
+						<align>left</align>
 						<itemgap>5</itemgap>
 						<orientation>horizontal</orientation>
+						<control type="image">
+							<description>Rating image</description>
+							<left>5</left>
+							<top>531</top>
+							<width>73</width>
+							<height>35</height>
+							<aspectratio align="right">stretch</aspectratio>
+							<texture>$VAR[RatingMPAA,flagging/ratings/,.png]</texture>
+							<visible>!IsEmpty(ListItem.Title)</visible>
+						</control>
+						<control type="image">
+							<description>Studio image</description>
+							<left>83</left>
+							<top>531</top>
+							<width>73</width>
+							<height>35</height>
+							<aspectratio align="right">stretch</aspectratio>
+							<texture>$INFO[ListItem.Studio,flagging/studio/,.png]</texture>
+							<visible>!IsEmpty(ListItem.Title)</visible>
+						</control>
 						<include>SmallVideoGenreFlagging</include>
-					</control>
-					<control type="grouplist">
-						<description>Media Genre Reflection</description>
-						<left>8</left>
-						<top>558</top>
-						<width>495</width>
-						<align>center</align>
-						<itemgap>5</itemgap>
-						<orientation>horizontal</orientation>
-						<include>SmallGenreReflection</include>
 					</control>
 				</control>
 			</control>
