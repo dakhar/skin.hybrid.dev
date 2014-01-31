@@ -2194,6 +2194,35 @@
 		<value condition="!IsEmpty(Container(9005).ListItem.Thumb)">$INFO[Container(9005).ListItem.Thumb]</value>
 		<value>$LOCALIZE[31366]</value>
 	</variable>
+	<variable name="SmallGenreIcons">
+		<value condition="substring(ListItem.label,$LOCALIZE[31600]) | substring(ListItem.label,Action)">Action</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31601]) | substring(ListItem.label,Adventure)">Adventure</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31602]) | substring(ListItem.label,Animation)">Animation</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31603]) | substring(ListItem.label,Biography)">Biography</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31604]) | substring(ListItem.label,Children)">Children</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31605]) | substring(ListItem.label,Comedy)">Comedy</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31606]) | substring(ListItem.label,Crime)">Crime</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31607]) | substring(ListItem.label,Disaster)">Disaster</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31608]) | substring(ListItem.label,Document)">Document</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31609]) | substring(ListItem.label,Drama)">Drama</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31610]) | substring(ListItem.label,Family)">Family</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31611]) | substring(ListItem.label,Fantasy)">Fantasy</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31612]) | substring(ListItem.label,History)">History</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31613]) | substring(ListItem.label,Holiday) | substring(ListItem.label,Christmas)">Holiday</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31614]) | substring(ListItem.label,Horror)">Horror</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31615]) | substring(ListItem.label,Indie)">Indie</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31616]) | substring(ListItem.label,Music)">Musical</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31617]) | substring(ListItem.label,Mystery)">Mystery</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31618]) | substring(ListItem.label,Romance)">Romance</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31619]) | substring(ListItem.label,Sci)">Sci-Fi</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31620]) | substring(ListItem.label,Short)">Short</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31621]) | substring(ListItem.label,Sport)">Sport</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31622]) | substring(ListItem.label,Suspense)">Suspense</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31623]) | substring(ListItem.label,Thriller)">Thriller</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31624]) | substring(ListItem.label,War)">War</value>
+		<value condition="substring(ListItem.label,$LOCALIZE[31625]) | substring(ListItem.label,Western)">Western</value>
+		<value condition="!StringCompare(ListItem.label,..)">Unknown</value>
+	</variable>
 	<variable name="RatingMPAA">
 		<value condition="substring(ListItem.Mpaa,TV-Y) + ![substring(ListItem.Mpaa,TV-Y7) | substring(ListItem.Mpaa,TV-Y7-FV)]">TV/tv-y</value>
 		<value condition="substring(ListItem.Mpaa,TV-Y7) | substring(ListItem.Mpaa,TV-Y7-FV)">TV/tv-y7</value>

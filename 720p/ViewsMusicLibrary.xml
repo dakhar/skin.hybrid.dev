@@ -224,7 +224,6 @@
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.StarRating,CenterRating/]</texture>
 				</control>
-				
 			</control>
 		</control>
 	</include>
@@ -273,7 +272,6 @@
 						<texture>black-back.png</texture>
 						<colordiffuse>AAFFFFFF</colordiffuse>
 					</control>
-					
 				</itemlayout>
 				<focusedlayout height="200" width="160">
 					<control type="image">

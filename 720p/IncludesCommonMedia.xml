@@ -63,19 +63,6 @@
 				</control>
 				<visible>Skin.HasSetting(holidayeffects)</visible>
 			</control>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
 				<aspectratio>scale</aspectratio>
