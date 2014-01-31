@@ -224,15 +224,7 @@
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.StarRating,CenterRating/]</texture>
 				</control>
-				<control type="image">
-					<description>Rating value</description>
-					<left>80</left>
-					<top>515</top>
-					<width>150</width>
-					<height>30</height>
-					<aspectratio>keep</aspectratio>
-					<texture flipy="true" diffuse="diffuse_mirror.png">$INFO[ListItem.StarRating,CenterRating/]</texture>
-				</control>
+				
 			</control>
 		</control>
 	</include>
@@ -281,17 +273,7 @@
 						<texture>black-back.png</texture>
 						<colordiffuse>AAFFFFFF</colordiffuse>
 					</control>
-					<control type="image">
-						<left>2</left>
-						<top>180</top>
-						<width>160</width>
-						<height>160</height>
-						<aspectratio>stretch</aspectratio>
-						<bordertexture border="5" diffuse="diffuse_mirror2.png">button-nofocus.png</bordertexture>
-						<bordersize>4</bordersize>
-						<fadetime>200</fadetime>
-						<texture background="true" flipy="true" diffuse="diffuse_mirror2.png">$INFO[ListItem.icon]</texture>
-					</control>
+					
 				</itemlayout>
 				<focusedlayout height="200" width="160">
 					<control type="image">

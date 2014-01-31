@@ -898,8 +898,8 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums)">$LOCALIZE[31190]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomArtists)">$LOCALIZE[31186]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums)">$LOCALIZE[31191]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RomGames)">$LOCALIZE[31397]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),NextAired)">$LOCALIZE[31396]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RomGames)">$LOCALIZE[31246]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),NextAired)">$LOCALIZE[31245]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList) | StringCompare(Container(9000).ListItem.Property(WidgetSet),MusicPlayList)">$INFO[Container(9000).ListItem.Label] $LOCALIZE[559]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites) + !Control.HasFocus(510)">$LOCALIZE[1036]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites) + Control.HasFocus(510)">[COLOR=selected]$INFO[Container(510).ListItem.Label][/COLOR]</value>

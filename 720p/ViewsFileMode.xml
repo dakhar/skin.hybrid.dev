@@ -240,15 +240,7 @@
 					<bordertexture border="8">ThumbShadow.png</bordertexture>
 					<bordersize>8</bordersize>
 				</control>
-				<control type="image">
-					<left>16</left>
-					<top>565</top>
-					<width>388</width>
-					<height>565</height>
-					<aspectratio aligny="top">keep</aspectratio>
-					<fadetime>IconCrossfadeTime</fadetime>
-					<texture diffuse="diffuse_mirror3.png" flipy="true" background="true">$VAR[PosterThumb]</texture>
-				</control>
+				
 			</control>
 		</control>
 	</include>
