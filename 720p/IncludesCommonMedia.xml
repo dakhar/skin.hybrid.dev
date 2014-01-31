@@ -63,6 +63,19 @@
 				</control>
 				<visible>Skin.HasSetting(holidayeffects)</visible>
 			</control>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
 				<aspectratio>scale</aspectratio>
@@ -82,6 +95,25 @@
 				<visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
 				<include>Window_OpenClose_Animation</include>
 				<visible>!Player.HasVideo + !Skin.HasSetting(hidebackgroundfanart)</visible>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<aspectratio>scale</aspectratio>
+				<texture background="true">$INFO[ListItem.Label,special://skin/backgrounds/genres/,.jpg]</texture>
+				<include>BackgroundFade</include>
+				<fadetime>FanartCrossfadeTime</fadetime>
+				<include>Window_OpenClose_Animation</include>
+				<visible>!Player.HasVideo + !StringCompare(ListItem.label,..) + Container.Content(genres) + !Skin.HasSetting(hidebackgroundfanart)</visible>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<aspectratio>scale</aspectratio>
+				<texture background="true">$INFO[Container.FolderName,special://skin/backgrounds/genres/,.jpg]</texture>
+				<include>BackgroundFade</include>
+				<fadetime>FanartCrossfadeTime</fadetime>
+				<include>Window_OpenClose_Animation</include>
+				<visible>!Player.HasVideo + StringCompare(ListItem.label,..) + !Skin.HasSetting(hidebackgroundfanart)</visible>
+				<visible>SubString(ListItem.FilenameAndPath,videodb://movies/genres) | SubString(ListItem.FilenameAndPath,videodb://tvshows/genres) | SubString(ListItem.FilenameAndPath,videodb://musicvideos/genres) | SubString(ListItem.FilenameAndPath,musicdb://genres)</visible>
 			</control>
 			<visible>Skin.HasSetting(hidenowplayingfanart) | !Player.HasAudio | Player.Paused | SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE) | Window.IsVisible(weather)</visible>
 		</control>
