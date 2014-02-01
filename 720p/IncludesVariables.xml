@@ -2223,6 +2223,18 @@
 		<value condition="substring(ListItem.label,$LOCALIZE[31625]) | substring(ListItem.label,Western)">Western</value>
 		<value condition="!StringCompare(ListItem.label,..)">Unknown</value>
 	</variable>
+	<variable name="GenreLabelFanart">
+		<value condition="substring(ListItem.label,Sci)">sciencefiction</value>
+		<value condition="substring(ListItem.label,Suspense)">psychologicalthriller</value>
+		<value condition="substring(ListItem.label,Sport)">sports</value>
+		<value condition="!StringCompare(ListItem.label,..)">$INFO[ListItem.Label]</value>
+	</variable>
+	<variable name="GenreFolderFanart">
+		<value condition="substring(Container.FolderName,Sci)">sciencefiction</value>
+		<value condition="substring(Container.FolderName,Suspense)">psychologicalthriller</value>
+		<value condition="substring(Container.FolderName,Sport)">sports</value>
+		<value condition="StringCompare(ListItem.label,..)">$INFO[Container.FolderName]</value>
+	</variable>
 	<variable name="RatingMPAA">
 		<value condition="substring(ListItem.Mpaa,TV-Y) + ![substring(ListItem.Mpaa,TV-Y7) | substring(ListItem.Mpaa,TV-Y7-FV)]">TV/tv-y</value>
 		<value condition="substring(ListItem.Mpaa,TV-Y7) | substring(ListItem.Mpaa,TV-Y7-FV)">TV/tv-y7</value>
