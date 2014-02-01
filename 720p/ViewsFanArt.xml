@@ -407,7 +407,7 @@
 				<height>35</height>
 				<aspectratio align="right">stretch</aspectratio>
 				<texture>$INFO[ListItem.Studio,flagging/studio/,.png]</texture>
-				<visible>!IsEmpty(ListItem.Title)</visible>
+				<visible>Container.Content(TVShows)</visible>
 			</control>
 			<control type="grouplist">
 				<description>Media Genre Flagging</description>
