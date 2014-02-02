@@ -2224,12 +2224,14 @@
 		<value condition="!StringCompare(ListItem.label,..)">Unknown</value>
 	</variable>
 	<variable name="GenreLabelFanart">
+		<value condition="substring(ListItem.label,Holiday) | substring(ListItem.label,Christmas)">christmas</value>
 		<value condition="substring(ListItem.label,Sci)">sciencefiction</value>
 		<value condition="substring(ListItem.label,Suspense)">psychologicalthriller</value>
 		<value condition="substring(ListItem.label,Sport)">sports</value>
 		<value condition="!StringCompare(ListItem.label,..)">$INFO[ListItem.Label]</value>
 	</variable>
 	<variable name="GenreFolderFanart">
+		<value condition="substring(Container.FolderName,Holiday) | substring(Container.FolderName,Christmas)">christmas</value>
 		<value condition="substring(Container.FolderName,Sci)">sciencefiction</value>
 		<value condition="substring(Container.FolderName,Suspense)">psychologicalthriller</value>
 		<value condition="substring(Container.FolderName,Sport)">sports</value>

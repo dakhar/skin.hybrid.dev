@@ -376,7 +376,7 @@
 			<left>0</left>
 			<top>0</top>
 			<width>1280</width>
-			<height>200</height>
+			<height>250</height>
 			<include>TransparentEffect</include>
 			<texture flipy="true">floor.png</texture>
 		</control>
