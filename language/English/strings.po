@@ -1189,7 +1189,19 @@ msgctxt "#31401"
 msgid "Delayed"
 msgstr ""
 
-#empty strings from id 31401 to 31449
+msgctxt "#31402"
+msgid "Current Background"
+msgstr ""
+
+msgctxt "#31403"
+msgid "Select Background Image"
+msgstr ""
+
+msgctxt "#31404"
+msgid "Enable AddOn and Widget Fanart"
+msgstr ""
+
+#empty strings from id 31405 to 31449
 
 msgctxt "#31450"
 msgid "CONFIGURE APPEARANCE SETTINGS"

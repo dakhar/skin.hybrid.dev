@@ -263,6 +263,19 @@
 						<enable>Skin.HasSetting(autovisablesubmenu) | Skin.HasSetting(enablecleanhome)</enable>
 					</control>
 					<control type="radiobutton" id="106">
+						<description>enable addon fanart</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>  $LOCALIZE[31404]</label>
+						<onclick>Skin.ToggleSetting(hideaddonfanart)</onclick>
+						<selected>!Skin.HasSetting(hideaddonfanart)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="107">
 						<description>enable library stats</description>
 						<width>750</width>
 						<height>40</height>
@@ -275,7 +288,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="107">
+					<control type="radiobutton" id="108">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -287,7 +300,7 @@
 						<onclick>Skin.ToggleSetting(hidesuggestedinfo)</onclick>
 						<selected>!Skin.HasSetting(hidesuggestedinfo)</selected>
 					</control>
-					<control type="radiobutton" id="108">
+					<control type="radiobutton" id="109">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -299,7 +312,7 @@
 						<onclick>Skin.ToggleSetting(hidehomenowplaying)</onclick>
 						<selected>!Skin.HasSetting(hidehomenowplaying)</selected>
 					</control>
-					<control type="radiobutton" id="109">
+					<control type="radiobutton" id="110">
 						<description>RainDrop Effect</description>
 						<width>750</width>
 						<height>40</height>
@@ -4151,6 +4164,456 @@
 								<property name="HiLiteItem">Global</property>
 								<visible>Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(holidayeffects)</visible>
 							</item>
+							<item id="18">
+								<description>AddOnSetOne 1</description>
+								<label>$INFO[Skin.String(addonsetone.1.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetone.1.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetone.1.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetone.1.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="19">
+								<description>AddOnSetOne 2</description>
+								<label>$INFO[Skin.String(addonsetone.2.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetone.2.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetone.2.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetone.2.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="20">
+								<description>AddOnSetOne 3</description>
+								<label>$INFO[Skin.String(addonsetone.3.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetone.3.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetone.3.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetone.3.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="21">
+								<description>AddOnSetOne 4</description>
+								<label>$INFO[Skin.String(addonsetone.4.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetone.4.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetone.4.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetone.4.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="22">
+								<description>AddOnSetOne 5</description>
+								<label>$INFO[Skin.String(addonsetone.5.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetone.5.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetone.5.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetone.5.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="23">
+								<description>AddOnSetTwo 1</description>
+								<label>$INFO[Skin.String(addonsettwo.1.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsettwo.1.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsettwo.1.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsettwo.1.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="24">
+								<description>AddOnSetTwo 2</description>
+								<label>$INFO[Skin.String(addonsettwo.2.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsettwo.2.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsettwo.2.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsettwo.2.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="25">
+								<description>AddOnSetTwo 3</description>
+								<label>$INFO[Skin.String(addonsettwo.3.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsettwo.3.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsettwo.3.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsettwo.3.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="26">
+								<description>AddOnSetTwo 4</description>
+								<label>$INFO[Skin.String(addonsettwo.4.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsettwo.4.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsettwo.4.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsettwo.4.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="27">
+								<description>AddOnSetTwo 5</description>
+								<label>$INFO[Skin.String(addonsettwo.5.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsettwo.5.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsettwo.5.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsettwo.5.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="28">
+								<description>AddOnSetThree 1</description>
+								<label>$INFO[Skin.String(addonsetthree.1.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetthree.1.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetthree.1.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetthree.1.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="29">
+								<description>AddOnSetThree 2</description>
+								<label>$INFO[Skin.String(addonsetthree.2.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetthree.2.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetthree.2.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetthree.2.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="30">
+								<description>AddOnSetThree 3</description>
+								<label>$INFO[Skin.String(addonsetthree.3.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetthree.3.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetthree.3.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetthree.3.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="31">
+								<description>AddOnSetThree 4</description>
+								<label>$INFO[Skin.String(addonsetthree.4.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetthree.4.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetthree.4.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetthree.4.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="32">
+								<description>AddOnSetThree 5</description>
+								<label>$INFO[Skin.String(addonsetthree.5.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetthree.5.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetthree.5.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetthree.5.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="33">
+								<description>AddOnSetFour 1</description>
+								<label>$INFO[Skin.String(addonsetfour.1.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetfour.1.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetfour.1.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetfour.1.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="34">
+								<description>AddOnSetFour 2</description>
+								<label>$INFO[Skin.String(addonsetfour.2.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetfour.2.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetfour.2.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetfour.2.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="35">
+								<description>AddOnSetFour 3</description>
+								<label>$INFO[Skin.String(addonsetfour.3.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetfour.3.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetfour.3.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetfour.3.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="36">
+								<description>AddOnSetFour 4</description>
+								<label>$INFO[Skin.String(addonsetfour.4.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetfour.4.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetfour.4.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetfour.4.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="37">
+								<description>AddOnSetFour 5</description>
+								<label>$INFO[Skin.String(addonsetfour.5.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetfour.5.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetfour.5.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetfour.5.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="38">
+								<description>AddOnSetFive 1</description>
+								<label>$INFO[Skin.String(addonsetfive.1.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetfive.1.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetfive.1.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetfive.1.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="39">
+								<description>AddOnSetFive 2</description>
+								<label>$INFO[Skin.String(addonsetfive.2.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetfive.2.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetfive.2.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetfive.2.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="40">
+								<description>AddOnSetFive 3</description>
+								<label>$INFO[Skin.String(addonsetfive.3.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetfive.3.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetfive.3.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetfive.3.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="41">
+								<description>AddOnSetFive 4</description>
+								<label>$INFO[Skin.String(addonsetfive.4.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetfive.4.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetfive.4.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetfive.4.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="42">
+								<description>AddOnSetFive 5</description>
+								<label>$INFO[Skin.String(addonsetfive.5.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetfive.5.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetfive.5.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetfive.5.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="43">
+								<description>AddOnSetSix 1</description>
+								<label>$INFO[Skin.String(addonsetsix.1.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetsix.1.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetsix.1.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetsix.1.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="44">
+								<description>AddOnSetSix 2</description>
+								<label>$INFO[Skin.String(addonsetsix.2.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetsix.2.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetsix.2.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetsix.2.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="45">
+								<description>AddOnSetSix 3</description>
+								<label>$INFO[Skin.String(addonsetsix.3.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetsix.3.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetsix.3.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetsix.3.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="46">
+								<description>AddOnSetSix 4</description>
+								<label>$INFO[Skin.String(addonsetsix.4.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetsix.4.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetsix.4.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetsix.4.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="47">
+								<description>AddOnSetSix 5</description>
+								<label>$INFO[Skin.String(addonsetsix.5.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetsix.5.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetsix.5.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetsix.5.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="48">
+								<description>AddOnSetSeven 1</description>
+								<label>$INFO[Skin.String(addonsetseven.1.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetseven.1.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetseven.1.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetseven.1.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="49">
+								<description>AddOnSetSeven 2</description>
+								<label>$INFO[Skin.String(addonsetseven.2.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetseven.2.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetseven.2.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetseven.2.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="50">
+								<description>AddOnSetSeven 3</description>
+								<label>$INFO[Skin.String(addonsetseven.3.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetseven.3.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetseven.3.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetseven.3.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="51">
+								<description>AddOnSetSeven 4</description>
+								<label>$INFO[Skin.String(addonsetseven.4.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetseven.4.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetseven.4.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetseven.4.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="52">
+								<description>AddOnSetSeven 5</description>
+								<label>$INFO[Skin.String(addonsetseven.5.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetseven.5.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetseven.5.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetseven.5.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="53">
+								<description>AddOnSetEight 1</description>
+								<label>$INFO[Skin.String(addonseteight.1.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonseteight.1.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonseteight.1.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonseteight.1.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="54">
+								<description>AddOnSetEight 2</description>
+								<label>$INFO[Skin.String(addonseteight.2.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonseteight.2.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonseteight.2.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonseteight.2.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="55">
+								<description>AddOnSetEight 3</description>
+								<label>$INFO[Skin.String(addonseteight.3.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonseteight.3.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonseteight.3.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonseteight.3.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="56">
+								<description>AddOnSetEight 4</description>
+								<label>$INFO[Skin.String(addonseteight.4.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonseteight.4.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonseteight.4.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonseteight.4.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="57">
+								<description>AddOnSetEight 5</description>
+								<label>$INFO[Skin.String(addonseteight.5.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonseteight.5.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonseteight.5.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonseteight.5.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="58">
+								<description>AddOnSetNine 1</description>
+								<label>$INFO[Skin.String(addonsetnine.1.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetnine.1.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetnine.1.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetnine.1.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="59">
+								<description>AddOnSetNine 2</description>
+								<label>$INFO[Skin.String(addonsetnine.2.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetnine.2.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetnine.2.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetnine.2.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="60">
+								<description>AddOnSetNine 3</description>
+								<label>$INFO[Skin.String(addonsetnine.3.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetnine.3.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetnine.3.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetnine.3.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="61">
+								<description>AddOnSetNine 4</description>
+								<label>$INFO[Skin.String(addonsetnine.4.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetnine.4.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetnine.4.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetnine.4.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="62">
+								<description>AddOnSetNine 5</description>
+								<label>$INFO[Skin.String(addonsetnine.5.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetnine.5.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetnine.5.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetnine.5.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="63">
+								<description>AddOnSetTen 1</description>
+								<label>$INFO[Skin.String(addonsetten.1.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetten.1.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetten.1.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetten.1.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="64">
+								<description>AddOnSetTen 2</description>
+								<label>$INFO[Skin.String(addonsetten.2.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetten.2.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetten.2.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetten.2.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="65">
+								<description>AddOnSetTen 3</description>
+								<label>$INFO[Skin.String(addonsetten.3.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetten.3.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetten.3.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetten.3.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="66">
+								<description>AddOnSetTen 4</description>
+								<label>$INFO[Skin.String(addonsetten.4.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetten.4.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetten.4.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetten.4.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
+							<item id="67">
+								<description>AddOnSetTen 5</description>
+								<label>$INFO[Skin.String(addonsetten.5.label)]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.String(addonsetten.5.icon)]</icon>
+								<thumb>$INFO[Skin.String(addonsetten.5.fanart)]</thumb>
+								<property name="HiLiteItem">AddOnBtn</property>
+								<visible>!IsEmpty(Skin.String(addonsetten.5.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground) + !Skin.HasSetting(hideaddonfanart)</visible>
+							</item>
 						</content>
 					</control>
 					<control type="group">
@@ -5136,7 +5599,6 @@
 								<ondown>504</ondown>
 							</control>
 						</control>
-						<!--Container(9005).HasFocus(11) Not Needed FullScreen -->
 						<control type="group">
 							<visible>Container(9005).HasFocus(12)</visible>
 							<control type="button" id="500">
@@ -5545,6 +6007,1056 @@
 								<onclick>Skin.Reset(globalbackgroundpath)</onclick>
 								<onleft>501</onleft>
 								<onright>500</onright>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(18)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetone.1.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetone.1.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(19)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetone.2.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetone.2.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(20)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetone.3.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetone.3.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(21)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetone.4.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetone.4.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(22)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetone.5.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetone.5.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(23)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsettwo.1.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsettwo.1.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(24)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsettwo.2.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsettwo.2.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(25)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsettwo.3.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsettwo.3.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(26)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsettwo.4.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsettwo.4.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(27)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsettwo.5.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsettwo.5.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(28)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetthree.1.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetthree.1.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(29)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetthree.2.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetthree.2.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(30)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetthree.3.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetthree.3.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(31)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetthree.4.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetthree.4.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(32)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetthree.5.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetthree.5.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(33)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetfour.1.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetfour.1.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(34)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetfour.2.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetfour.2.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(35)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetfour.3.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetfour.3.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(36)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetfour.4.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetfour.4.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(37)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetfour.5.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetfour.5.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(38)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetfive.1.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetfive.1.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(39)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetfive.2.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetfive.2.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(40)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetfive.3.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetfive.3.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(41)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetfive.4.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetfive.4.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(42)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetfive.5.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetfive.5.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(43)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetsix.1.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetsix.1.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(44)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetsix.2.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetsix.2.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(45)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetsix.3.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetsix.3.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(46)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetsix.4.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetsix.4.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(47)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetsix.5.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetsix.5.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(48)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetseven.1.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetseven.1.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(49)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetseven.2.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetseven.2.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(50)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetseven.3.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetseven.3.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(51)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetseven.4.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetseven.4.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(52)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetseven.5.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetseven.5.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(53)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonseteight.1.fanart)</onclick>
+								<onclick>Skin.SetImage(addonseteight.1.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(54)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonseteight.2.fanart)</onclick>
+								<onclick>Skin.SetImage(addonseteight.2.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(55)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonseteight.3.fanart)</onclick>
+								<onclick>Skin.SetImage(addonseteight.3.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(56)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonseteight.4.fanart)</onclick>
+								<onclick>Skin.SetImage(addonseteight.4.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(57)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonseteight.5.fanart)</onclick>
+								<onclick>Skin.SetImage(addonseteight.5.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(58)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetnine.1.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetnine.1.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(59)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetnine.2.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetnine.2.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(60)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetnine.3.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetnine.3.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(61)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetnine.4.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetnine.4.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(62)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetnine.5.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetnine.5.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(63)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetten.1.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetten.1.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(64)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetten.2.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetten.2.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(65)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetten.3.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetten.3.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(66)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetten.4.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetten.4.fanart)</onclick>
+								<onup>504</onup>
+								<ondown>504</ondown>
+							</control>
+						</control>
+						<control type="group">
+							<visible>Container(9005).HasFocus(67)</visible>
+							<control type="button" id="500">
+								<description>Change Selected Image Button</description>
+								<left>210</left>
+								<top>0</top>
+								<width>240</width>
+								<height>40</height>
+								<label>$LOCALIZE[31403]</label>
+								<font>font12_title</font>
+								<textcolor>grey2</textcolor>
+								<focusedcolor>white</focusedcolor>
+								<align>center</align>
+								<texturenofocus border="5">button-nofocus.png</texturenofocus>
+								<texturefocus border="5">button-focus.png</texturefocus>
+								<onclick>Skin.Reset(addonsetten.5.fanart)</onclick>
+								<onclick>Skin.SetImage(addonsetten.5.fanart)</onclick>
 								<onup>504</onup>
 								<ondown>504</ondown>
 							</control>

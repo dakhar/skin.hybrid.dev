@@ -283,6 +283,7 @@
 			<onclick>$INFO[Skin.String(addonsetone.1.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetone.1.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetone.1.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetone.1.path))</visible>
 		</item>
 		<item>
@@ -291,6 +292,7 @@
 			<onclick>$INFO[Skin.String(addonsetone.2.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetone.2.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetone.2.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetone.2.path))</visible>
 		</item>
 		<item>
@@ -299,6 +301,7 @@
 			<onclick>$INFO[Skin.String(addonsetone.3.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetone.3.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetone.3.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetone.3.path))</visible>
 		</item>
 		<item>
@@ -307,6 +310,7 @@
 			<onclick>$INFO[Skin.String(addonsetone.4.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetone.4.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetone.4.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetone.4.path))</visible>
 		</item>
 		<item>
@@ -315,6 +319,7 @@
 			<onclick>$INFO[Skin.String(addonsetone.5.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetone.5.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetone.5.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetone.5.path))</visible>
 		</item>
 	</include>
@@ -325,6 +330,7 @@
 			<onclick>$INFO[Skin.String(addonsettwo.1.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsettwo.1.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsettwo.1.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsettwo.1.path))</visible>
 		</item>
 		<item>
@@ -333,6 +339,7 @@
 			<onclick>$INFO[Skin.String(addonsettwo.2.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsettwo.2.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsettwo.2.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsettwo.2.path))</visible>
 		</item>
 		<item>
@@ -341,6 +348,7 @@
 			<onclick>$INFO[Skin.String(addonsettwo.3.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsettwo.3.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsettwo.3.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsettwo.3.path))</visible>
 		</item>
 		<item>
@@ -349,6 +357,7 @@
 			<onclick>$INFO[Skin.String(addonsettwo.4.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsettwo.4.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsettwo.4.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsettwo.4.path))</visible>
 		</item>
 		<item>
@@ -357,6 +366,7 @@
 			<onclick>$INFO[Skin.String(addonsettwo.5.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsettwo.5.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsettwo.5.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsettwo.5.path))</visible>
 		</item>
 	</include>
@@ -367,6 +377,7 @@
 			<onclick>$INFO[Skin.String(addonsetthree.1.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetthree.1.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetthree.1.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetthree.1.path))</visible>
 		</item>
 		<item>
@@ -375,6 +386,7 @@
 			<onclick>$INFO[Skin.String(addonsetthree.2.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetthree.2.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetthree.2.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetthree.2.path))</visible>
 		</item>
 		<item>
@@ -383,6 +395,7 @@
 			<onclick>$INFO[Skin.String(addonsetthree.3.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetthree.3.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetthree.3.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetthree.3.path))</visible>
 		</item>
 		<item>
@@ -391,6 +404,7 @@
 			<onclick>$INFO[Skin.String(addonsetthree.4.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetthree.4.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetthree.4.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetthree.4.path))</visible>
 		</item>
 		<item>
@@ -399,6 +413,7 @@
 			<onclick>$INFO[Skin.String(addonsetthree.5.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetthree.5.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetthree.5.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetthree.5.path))</visible>
 		</item>
 	</include>
@@ -409,6 +424,7 @@
 			<onclick>$INFO[Skin.String(addonsetfour.1.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetfour.1.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetfour.1.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetfour.1.path))</visible>
 		</item>
 		<item>
@@ -417,6 +433,7 @@
 			<onclick>$INFO[Skin.String(addonsetfour.2.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetfour.2.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetfour.2.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetfour.2.path))</visible>
 		</item>
 		<item>
@@ -425,6 +442,7 @@
 			<onclick>$INFO[Skin.String(addonsetfour.3.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetfour.3.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetfour.3.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetfour.3.path))</visible>
 		</item>
 		<item>
@@ -433,6 +451,7 @@
 			<onclick>$INFO[Skin.String(addonsetfour.4.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetfour.4.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetfour.4.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetfour.4.path))</visible>
 		</item>
 		<item>
@@ -441,6 +460,7 @@
 			<onclick>$INFO[Skin.String(addonsetfour.5.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetfour.5.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetfour.5.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetfour.5.path))</visible>
 		</item>
 	</include>
@@ -451,6 +471,7 @@
 			<onclick>$INFO[Skin.String(addonsetfive.1.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetfive.1.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetfive.1.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetfive.1.path))</visible>
 		</item>
 		<item>
@@ -459,6 +480,7 @@
 			<onclick>$INFO[Skin.String(addonsetfive.2.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetfive.2.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetfive.2.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetfive.2.path))</visible>
 		</item>
 		<item>
@@ -467,6 +489,7 @@
 			<onclick>$INFO[Skin.String(addonsetfive.3.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetfive.3.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetfive.3.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetfive.3.path))</visible>
 		</item>
 		<item>
@@ -475,6 +498,7 @@
 			<onclick>$INFO[Skin.String(addonsetfive.4.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetfive.4.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetfive.4.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetfive.4.path))</visible>
 		</item>
 		<item>
@@ -483,6 +507,7 @@
 			<onclick>$INFO[Skin.String(addonsetfive.5.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetfive.5.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetfive.5.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetfive.5.path))</visible>
 		</item>
 	</include>
@@ -493,6 +518,7 @@
 			<onclick>$INFO[Skin.String(addonsetsix.1.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetsix.1.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetsix.1.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetsix.1.path))</visible>
 		</item>
 		<item>
@@ -501,6 +527,7 @@
 			<onclick>$INFO[Skin.String(addonsetsix.2.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetsix.2.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetsix.2.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetsix.2.path))</visible>
 		</item>
 		<item>
@@ -509,6 +536,7 @@
 			<onclick>$INFO[Skin.String(addonsetsix.3.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetsix.3.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetsix.3.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetsix.3.path))</visible>
 		</item>
 		<item>
@@ -517,6 +545,7 @@
 			<onclick>$INFO[Skin.String(addonsetsix.4.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetsix.4.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetsix.4.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetsix.4.path))</visible>
 		</item>
 		<item>
@@ -525,6 +554,7 @@
 			<onclick>$INFO[Skin.String(addonsetsix.5.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetsix.5.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetsix.5.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetsix.5.path))</visible>
 		</item>
 	</include>
@@ -535,6 +565,7 @@
 			<onclick>$INFO[Skin.String(addonsetseven.1.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetseven.1.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetseven.1.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetseven.1.path))</visible>
 		</item>
 		<item>
@@ -543,6 +574,7 @@
 			<onclick>$INFO[Skin.String(addonsetseven.2.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetseven.2.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetseven.2.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetseven.2.path))</visible>
 		</item>
 		<item>
@@ -551,6 +583,7 @@
 			<onclick>$INFO[Skin.String(addonsetseven.3.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetseven.3.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetseven.3.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetseven.3.path))</visible>
 		</item>
 		<item>
@@ -559,6 +592,7 @@
 			<onclick>$INFO[Skin.String(addonsetseven.4.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetseven.4.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetseven.4.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetseven.4.path))</visible>
 		</item>
 		<item>
@@ -567,6 +601,7 @@
 			<onclick>$INFO[Skin.String(addonsetseven.5.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetseven.5.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetseven.5.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetseven.5.path))</visible>
 		</item>
 	</include>
@@ -577,6 +612,7 @@
 			<onclick>$INFO[Skin.String(addonseteight.1.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonseteight.1.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonseteight.1.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonseteight.1.path))</visible>
 		</item>
 		<item>
@@ -585,6 +621,7 @@
 			<onclick>$INFO[Skin.String(addonseteight.2.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonseteight.2.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonseteight.2.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonseteight.2.path))</visible>
 		</item>
 		<item>
@@ -593,6 +630,7 @@
 			<onclick>$INFO[Skin.String(addonseteight.3.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonseteight.3.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonseteight.3.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonseteight.3.path))</visible>
 		</item>
 		<item>
@@ -601,6 +639,7 @@
 			<onclick>$INFO[Skin.String(addonseteight.4.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonseteight.4.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonseteight.4.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonseteight.4.path))</visible>
 		</item>
 		<item>
@@ -609,6 +648,7 @@
 			<onclick>$INFO[Skin.String(addonseteight.5.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonseteight.5.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonseteight.5.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonseteight.5.path))</visible>
 		</item>
 	</include>
@@ -619,6 +659,7 @@
 			<onclick>$INFO[Skin.String(addonsetnine.1.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetnine.1.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetnine.1.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetnine.1.path))</visible>
 		</item>
 		<item>
@@ -627,6 +668,7 @@
 			<onclick>$INFO[Skin.String(addonsetnine.2.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetnine.2.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetnine.2.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetnine.2.path))</visible>
 		</item>
 		<item>
@@ -635,6 +677,7 @@
 			<onclick>$INFO[Skin.String(addonsetnine.3.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetnine.3.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetnine.3.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetnine.3.path))</visible>
 		</item>
 		<item>
@@ -643,6 +686,7 @@
 			<onclick>$INFO[Skin.String(addonsetnine.4.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetnine.4.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetnine.4.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetnine.4.path))</visible>
 		</item>
 		<item>
@@ -651,6 +695,7 @@
 			<onclick>$INFO[Skin.String(addonsetnine.5.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetnine.5.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetnine.5.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetnine.5.path))</visible>
 		</item>
 	</include>
@@ -661,6 +706,7 @@
 			<onclick>$INFO[Skin.String(addonsetten.1.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetten.1.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetten.1.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetten.1.path))</visible>
 		</item>
 		<item>
@@ -669,6 +715,7 @@
 			<onclick>$INFO[Skin.String(addonsetten.2.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetten.2.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetten.2.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetten.2.path))</visible>
 		</item>
 		<item>
@@ -677,6 +724,7 @@
 			<onclick>$INFO[Skin.String(addonsetten.3.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetten.3.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetten.3.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetten.3.path))</visible>
 		</item>
 		<item>
@@ -685,6 +733,7 @@
 			<onclick>$INFO[Skin.String(addonsetten.4.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetten.4.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetten.4.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetten.4.path))</visible>
 		</item>
 		<item>
@@ -693,6 +742,7 @@
 			<onclick>$INFO[Skin.String(addonsetten.5.path)]</onclick>
 			<icon>DefaultAddon.png</icon>
 			<thumb>$INFO[Skin.String(addonsetten.5.icon)]</thumb>
+			<property name="Fanart">$INFO[Skin.String(addonsetten.5.fanart)]</property>
 			<visible>!IsEmpty(Skin.String(addonsetten.5.path))</visible>
 		</item>
 	</include>

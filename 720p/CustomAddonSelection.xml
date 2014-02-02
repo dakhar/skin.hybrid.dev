@@ -121,6 +121,8 @@
 						<label>$LOCALIZE[1036]</label>
 						<onclick>Dialog.Close(2119)</onclick>
 						<onclick>RunScript(script.favourites,changetitle=true&amp;property=$INFO[Window(home).Property(usrselectbtn)])</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(usrselectbtn)].fanart)</onclick>
+						<!--onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].fanart,Favourite)</onclick-->
 						<onclick>ClearProperty(usrselectbtn,home)</onclick>
 						<visible>System.HasAddon(script.favourites)</visible>
 					</item>
@@ -133,6 +135,7 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$INFO[system.addontitle(Skin.String(usrselectaddon))])</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,RunAddon($INFO[Skin.String(usrselectaddon)]))</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,$INFO[system.addonicon(Skin.String(usrselectaddon))])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].fanart,special://home/addons/$INFO[Skin.String(usrselectaddon)]/fanart.jpg)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label)</onclick>
 						<onclick>ClearProperty(usrselectbtn,home)</onclick>
 					</item>
@@ -145,6 +148,7 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$INFO[system.addontitle(Skin.String(usrselectaddon))])</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,RunAddon($INFO[Skin.String(usrselectaddon)]))</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,$INFO[system.addonicon(Skin.String(usrselectaddon))])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].fanart,special://home/addons/$INFO[Skin.String(usrselectaddon)]/fanart.jpg)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label)</onclick>
 						<onclick>ClearProperty(usrselectbtn,home)</onclick>
 					</item>
@@ -157,6 +161,7 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$INFO[system.addontitle(Skin.String(usrselectaddon))])</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,RunAddon($INFO[Skin.String(usrselectaddon)]))</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,$INFO[system.addonicon(Skin.String(usrselectaddon))])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].fanart,special://home/addons/$INFO[Skin.String(usrselectaddon)]/fanart.jpg)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label)</onclick>
 						<onclick>ClearProperty(usrselectbtn,home)</onclick>
 					</item>
@@ -169,6 +174,7 @@
 						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$INFO[system.addontitle(Skin.String(usrselectaddon))])</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,RunAddon($INFO[Skin.String(usrselectaddon)]))</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,$INFO[system.addonicon(Skin.String(usrselectaddon))])</onclick>
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].fanart,special://home/addons/$INFO[Skin.String(usrselectaddon)]/fanart.jpg)</onclick>
 						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label)</onclick>
 						<onclick>ClearProperty(usrselectbtn,home)</onclick>
 					</item>

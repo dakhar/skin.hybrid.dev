@@ -168,6 +168,30 @@
 			</control>
 		</control>
 		<control type="group">
+			<visible>!Skin.HasSetting(hidebackgroundfanart) + !Skin.HasSetting(hideaddonfanart)</visible>
+			<visible>ControlGroup(9003).HasFocus</visible>
+			<include>VisibleFadeEffect</include>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture background="true">$VAR[HomeAddOnBackground]</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>FanartCrossfadeTime</fadetime>
+				<include>VisibleFadeEffect</include>
+			</control>
+		</control>
+		<control type="group">
+			<visible>!Skin.HasSetting(hidebackgroundfanart) + !Skin.HasSetting(hideaddonfanart)</visible>
+			<visible>Control.HasFocus(510)</visible>
+			<include>VisibleFadeEffect</include>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture background="true">$INFO[Container(510).ListItem.Property(Fanart)]</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>FanartCrossfadeTime</fadetime>
+				<include>VisibleFadeEffect</include>
+			</control>
+		</control>
+		<control type="group">
 			<visible>!IsEmpty(Window(home).Property(TVGuide.BackgroundFanart))</visible>
 			<visible>Window.IsActive(script-NextAired-TVGuide.xml)</visible>
 			<control type="image">
