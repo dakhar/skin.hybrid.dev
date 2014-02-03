@@ -122,7 +122,7 @@
 						<label>$LOCALIZE[1036]</label>
 						<onclick>Dialog.Close(2119)</onclick>
 						<onclick>RunScript(script.favourites,changetitle=true&amp;property=$INFO[Window(home).Property(usrselectbtn)])</onclick>
-						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].fanart,UsrFavourite)</onclick>	
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].fanart,UsrFavourite)</onclick>
 						<onclick>ClearProperty(usrselectbtn,home)</onclick>
 						<visible>System.HasAddon(script.favourites)</visible>
 					</item>

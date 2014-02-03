@@ -262,7 +262,6 @@
 						<onclick>Skin.ToggleSetting(enablecleanhome)</onclick>
 						<selected>Skin.HasSetting(enablecleanhome)</selected>
 					</control>
-					
 					<control type="radiobutton" id="106">
 						<description>enable addon fanart</description>
 						<width>750</width>
@@ -276,7 +275,6 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					
 					<control type="radiobutton" id="107">
 						<width>750</width>
 						<height>40</height>
@@ -7192,13 +7190,6 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					
-					
-					
-					
-					
-					
-					
 					<control type="label" id="607">
 						<width>750</width>
 						<height>45</height>
@@ -7306,9 +7297,6 @@
 						<enable>!IsEmpty(Skin.String(lyricscriptpath))</enable>
 						<onclick>Addon.OpenSettings($INFO[Skin.String(lyricscriptpath)])</onclick>
 					</control>
-					
-					
-					
 					<control type="radiobutton" id="626">
 						<width>750</width>
 						<height>40</height>
