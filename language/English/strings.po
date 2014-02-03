@@ -394,7 +394,7 @@ msgctxt "#31201"
 msgid "Concerts"
 msgstr ""
 
-msgctxt "#31252"
+msgctxt "#31202"
 msgid "Live TV"
 msgstr ""
 
