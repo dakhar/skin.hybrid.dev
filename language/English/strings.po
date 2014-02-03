@@ -1659,3 +1659,7 @@ msgstr ""
 msgctxt "#31924"
 msgid "Allows a scrolling banner listing the next five queued songs to be shown on the home screen and music visualisation info screens."
 msgstr ""
+
+msgctxt "#31925"
+msgid "Allows fanart from the selected addon or widget to show on the home screen."
+msgstr ""

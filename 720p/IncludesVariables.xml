@@ -76,6 +76,7 @@
 	<variable name="HomeAddOnBackground" type="text">
 		<value condition="Skin.HasSetting(singleglobalbackground) + !IsEmpty(Skin.String(globalbackgroundpath))">$INFO[Skin.String(globalbackgroundpath)]</value>
 		<value condition="Skin.HasSetting(singleglobalbackground) + IsEmpty(Skin.String(globalbackgroundpath))">$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</value>
+		<value condition="Control.HasFocus(700) + StringCompare(Container(700).ListItem.Property(Fanart),UsrFavourite)">$INFO[Container(700).ListItem.Label,special://skin/backgrounds/favourites/,.jpg]</value>
 		<value condition="Control.HasFocus(700) + IsEmpty(Container(700).ListItem.Property(Fanart))">$INFO[Container(700).ListItem.Icon]</value>
 		<value condition="Control.HasFocus(700) + !IsEmpty(Container(700).ListItem.Property(Fanart))">$INFO[Container(700).ListItem.Property(Fanart)]</value>
 		<value condition="Control.HasFocus(703) + IsEmpty(Container(703).ListItem.Property(Fanart))">$INFO[Container(703).ListItem.Icon]</value>
@@ -2187,6 +2188,7 @@
 		<value condition="StringCompare(Container(9005).ListItem.Property(HiLiteItem),Music) + !Skin.HasSetting(hidemusicdbfanart) + !IsEmpty(Window(home).Property(RandomAlbum.1.fanart))">$INFO[Window(home).Property(RandomAlbum.1.fanart)]</value>
 		<value condition="StringCompare(Container(9005).ListItem.Property(HiLiteItem),Concerts) + !Skin.HasSetting(hideconcertdbfanart) + !IsEmpty(Skin.String(usrconcertsfanartdir))">$INFO[Skin.String(usrconcertsfanartdir)]</value>
 		<value condition="StringCompare(Container(9005).ListItem.Property(HiLiteItem),Concerts) + !Skin.HasSetting(hideconcertdbfanart) + !IsEmpty(Window(home).Property(RandomMusicVideo.1.fanart))">$INFO[Window(home).Property(RandomMusicVideo.1.fanart)]</value>
+		<value condition="StringCompare(Container(9005).ListItem.thumb,UsrFavourite)">$INFO[Container(9005).ListItem.label,special://skin/backgrounds/favourites/,.jpg]</value>
 		<value condition="StringCompare(Container(9005).ListItem.Property(HiLiteItem),AddOnBtn) + !IsEmpty(Container(9005).ListItem.thumb)">$INFO[Container(9005).ListItem.thumb]</value>
 		<value>$INFO[Container(9005).ListItem.icon]</value>
 	</variable>
@@ -2506,11 +2508,12 @@
 		<value condition="Control.HasFocus(101)">$LOCALIZE[31911]</value>
 		<value condition="Control.HasFocus(102)">$LOCALIZE[31906]</value>
 		<value condition="Control.HasFocus(103)">$LOCALIZE[31908]</value>
-		<value condition="Control.HasFocus(104)">$LOCALIZE[31907]</value>
-		<value condition="Control.HasFocus(105)">$LOCALIZE[31909]</value>
-		<value condition="Control.HasFocus(107)">$LOCALIZE[31912]</value>
-		<value condition="Control.HasFocus(108)">$LOCALIZE[31913]</value>
-		<value condition="Control.HasFocus(109)">$LOCALIZE[31914]</value>
+		<value condition="Control.HasFocus(104)">$LOCALIZE[31909]</value>
+		<value condition="Control.HasFocus(105)">$LOCALIZE[31907]</value>
+		<value condition="Control.HasFocus(106)">$LOCALIZE[31925]</value>
+		<value condition="Control.HasFocus(107)">$LOCALIZE[31913]</value>
+		<value condition="Control.HasFocus(108)">$LOCALIZE[31914]</value>
+		<value condition="Control.HasFocus(109)">$LOCALIZE[31912]</value>
 		<value condition="Control.HasFocus(110)">$LOCALIZE[31910]</value>
 		<value condition="Control.HasFocus(121)">$LOCALIZE[31915]</value>
 		<value condition="Control.HasFocus(122)">$LOCALIZE[31905]</value>

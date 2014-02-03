@@ -173,7 +173,7 @@
 			<include>VisibleFadeEffect</include>
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
-				<texture background="true">$VAR[HomeAddOnBackground]</texture>
+				<texture background="true" fallback="special://skin/backgrounds/homescreen/addons.jpg">$VAR[HomeAddOnBackground]</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>FanartCrossfadeTime</fadetime>
 				<include>VisibleFadeEffect</include>
@@ -189,6 +189,15 @@
 				<aspectratio>scale</aspectratio>
 				<fadetime>FanartCrossfadeTime</fadetime>
 				<include>VisibleFadeEffect</include>
+				<visible>!StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites)</visible>
+			</control>
+			<control type="image">
+				<include>Dimensions_Fullscreen</include>
+				<texture>$INFO[Container(510).ListItem.Label,special://skin/backgrounds/favourites/,.jpg]</texture>
+				<aspectratio>scale</aspectratio>
+				<fadetime>FanartCrossfadeTime</fadetime>
+				<include>VisibleFadeEffect</include>
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites)</visible>
 			</control>
 		</control>
 		<control type="group">

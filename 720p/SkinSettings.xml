@@ -237,18 +237,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="104">
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<label>  $LOCALIZE[31396]</label>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(enablecleanhome)</onclick>
-						<selected>Skin.HasSetting(enablecleanhome)</selected>
-					</control>
-					<control type="radiobutton" id="105">
 						<description>enable submenu advise</description>
 						<width>750</width>
 						<height>40</height>
@@ -262,6 +250,19 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Skin.HasSetting(autovisablesubmenu) | Skin.HasSetting(enablecleanhome)</enable>
 					</control>
+					<control type="radiobutton" id="105">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>  $LOCALIZE[31396]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(enablecleanhome)</onclick>
+						<selected>Skin.HasSetting(enablecleanhome)</selected>
+					</control>
+					
 					<control type="radiobutton" id="106">
 						<description>enable addon fanart</description>
 						<width>750</width>
@@ -275,20 +276,8 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+					
 					<control type="radiobutton" id="107">
-						<description>enable library stats</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>  $LOCALIZE[31278]</label>
-						<onclick>Skin.ToggleSetting(hidehomestats)</onclick>
-						<selected>!Skin.HasSetting(hidehomestats)</selected>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-					</control>
-					<control type="radiobutton" id="108">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -300,7 +289,7 @@
 						<onclick>Skin.ToggleSetting(hidesuggestedinfo)</onclick>
 						<selected>!Skin.HasSetting(hidesuggestedinfo)</selected>
 					</control>
-					<control type="radiobutton" id="109">
+					<control type="radiobutton" id="108">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -311,6 +300,19 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(hidehomenowplaying)</onclick>
 						<selected>!Skin.HasSetting(hidehomenowplaying)</selected>
+					</control>
+					<control type="radiobutton" id="109">
+						<description>enable library stats</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>  $LOCALIZE[31278]</label>
+						<onclick>Skin.ToggleSetting(hidehomestats)</onclick>
+						<selected>!Skin.HasSetting(hidehomestats)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="110">
 						<description>RainDrop Effect</description>
@@ -7072,6 +7074,18 @@
 						<randomize>true</randomize>
 						<fadetime>500</fadetime>
 						<visible>![StringCompare(Container(9005).ListItem.Property(HiLiteItem),StartUp) + Skin.HasSetting(hidestartupbackground)]</visible>
+						<visible>!StringCompare(Container(9005).ListItem.Property(HiLiteItem),AddOnBtn)</visible>
+					</control>
+					<control type="image">
+						<left>95</left>
+						<top>130</top>
+						<width>560</width>
+						<height>335</height>
+						<texture background="true" fallback="special://skin/backgrounds/homescreen/addons.jpg">$VAR[HomeBackgroundPreview]</texture>
+						<aspectratio>scale</aspectratio>
+						<fadetime>FanartCrossfadeTime</fadetime>
+						<include>VisibleFadeEffect</include>
+						<visible>StringCompare(Container(9005).ListItem.Property(HiLiteItem),AddOnBtn)</visible>
 					</control>
 					<control type="label">
 						<left>95</left>
@@ -7178,7 +7192,14 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="label" id="606">
+					
+					
+					
+					
+					
+					
+					
+					<control type="label" id="607">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -7188,7 +7209,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="607">
+					<control type="button" id="608">
 						<description>Physical Music Folder</description>
 						<width>750</width>
 						<height>40</height>
@@ -7202,7 +7223,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="label" id="608">
+					<control type="label" id="609">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -7212,7 +7233,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="609">
+					<control type="radiobutton" id="610">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7225,7 +7246,7 @@
 						<onclick>Skin.Reset(enablestartupplaylist)</onclick>
 						<selected>!Skin.HasSetting(hidexbmcintro)</selected>
 					</control>
-					<control type="radiobutton" id="610">
+					<control type="radiobutton" id="611">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7237,7 +7258,7 @@
 						<onclick>Skin.ToggleSetting(usestartupplaylist)</onclick>
 						<selected>Skin.HasSetting(usestartupplaylist)</selected>
 					</control>
-					<control type="button" id="611">
+					<control type="button" id="612">
 						<description>Startup Playlist Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -7251,7 +7272,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Skin.HasSetting(usestartupplaylist)</enable>
 					</control>
-					<control type="label" id="612">
+					<control type="label" id="613">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -7261,7 +7282,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="613">
+					<control type="button" id="614">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7273,7 +7294,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetAddon(lyricscriptpath,xbmc.python.lyrics)</onclick>
 					</control>
-					<control type="button" id="614">
+					<control type="button" id="615">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -7285,6 +7306,9 @@
 						<enable>!IsEmpty(Skin.String(lyricscriptpath))</enable>
 						<onclick>Addon.OpenSettings($INFO[Skin.String(lyricscriptpath)])</onclick>
 					</control>
+					
+					
+					
 					<control type="radiobutton" id="626">
 						<width>750</width>
 						<height>40</height>

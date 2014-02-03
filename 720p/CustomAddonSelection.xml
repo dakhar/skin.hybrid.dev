@@ -114,6 +114,7 @@
 						<onclick>Skin.Reset($INFO[Window(home).Property(usrselectbtn)].label)</onclick>
 						<onclick>Skin.Reset($INFO[Window(home).Property(usrselectbtn)].path)</onclick>
 						<onclick>Skin.Reset($INFO[Window(home).Property(usrselectbtn)].icon)</onclick>
+						<onclick>Skin.Reset($INFO[Window(home).Property(usrselectbtn)].fanart)</onclick>
 						<onclick>ClearProperty(usrselectbtn,home)</onclick>
 					</item>
 					<item>
@@ -121,8 +122,7 @@
 						<label>$LOCALIZE[1036]</label>
 						<onclick>Dialog.Close(2119)</onclick>
 						<onclick>RunScript(script.favourites,changetitle=true&amp;property=$INFO[Window(home).Property(usrselectbtn)])</onclick>
-						<onclick>Skin.Reset($INFO[Window(home).Property(usrselectbtn)].fanart)</onclick>
-						<!--onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].fanart,Favourite)</onclick-->
+						<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].fanart,UsrFavourite)</onclick>	
 						<onclick>ClearProperty(usrselectbtn,home)</onclick>
 						<visible>System.HasAddon(script.favourites)</visible>
 					</item>
