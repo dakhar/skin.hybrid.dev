@@ -5,11 +5,10 @@
 		<top>-8</top>
 		<width>1240</width>
 		<height>230</height>
-		<ondown condition="Control.IsVisible(9004)">9004</ondown>
-		<ondown condition="!Control.IsVisible(9004)">9000</ondown>
 		<onup>9000</onup>
-		<onleft condition="Control.IsVisible(9004)">9004</onleft>
-		<onleft condition="!Control.IsVisible(9004)">9000</onleft>
+		<ondown condition="Control.IsVisible(9004) + !Skin.HasSetting(hidesuggestedinfo)">9004</ondown>
+		<ondown condition="!Control.IsVisible(9004) | Skin.HasSetting(hidesuggestedinfo)">9000</ondown>
+		<onleft>9000</onleft>
 		<orientation>vertical</orientation>
 		<pagecontrol>-</pagecontrol>
 		<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
@@ -19,10 +18,10 @@
 		<top>0</top>
 		<width>1240</width>
 		<height>230</height>
-		<onleft>9000</onleft>
 		<onup>9000</onup>
-		<ondown condition="Control.IsVisible(9004)">9004</ondown>
-		<ondown condition="!Control.IsVisible(9004)">9000</ondown>
+		<ondown condition="Control.IsVisible(9004) + !Skin.HasSetting(hidesuggestedinfo)">9004</ondown>
+		<ondown condition="!Control.IsVisible(9004) | Skin.HasSetting(hidesuggestedinfo)">9000</ondown>
+		<onleft>9000</onleft>
 		<orientation>vertical</orientation>
 		<pagecontrol>-</pagecontrol>
 		<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
@@ -34,8 +33,7 @@
 		<height>490</height>
 		<ondown>9000</ondown>
 		<onup>9000</onup>
-		<onleft condition="Control.IsVisible(9004)">9004</onleft>
-		<onleft condition="!Control.IsVisible(9004)">9000</onleft>
+		<onleft>9000</onleft>
 		<orientation>vertical</orientation>
 		<pagecontrol>-</pagecontrol>
 		<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
