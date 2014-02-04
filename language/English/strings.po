@@ -1205,7 +1205,11 @@ msgctxt "#31405"
 msgid "Enable Extended Information Widget"
 msgstr ""
 
-#empty strings from id 31406 to 31449
+msgctxt "#31406"
+msgid "Enable Return to Start Menu Scroll"
+msgstr ""
+
+#empty strings from id 31407 to 31449
 
 msgctxt "#31450"
 msgid "CONFIGURE APPEARANCE SETTINGS"

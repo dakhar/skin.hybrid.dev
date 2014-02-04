@@ -219,11 +219,26 @@
 						<focusedcolor>white</focusedcolor>
 						<label>  $LOCALIZE[31273]</label>
 						<onclick>Skin.ToggleSetting(wraparoundhomemenu)</onclick>
-						<selected>Skin.HasSetting(wraparoundhomemenu)</selected>
+						<onclick>Skin.Reset(fixedendingmenu)</onclick>
+							<selected>Skin.HasSetting(wraparoundhomemenu)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="103">
+						<description>enable fixed ends menu</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>  $LOCALIZE[31406]</label>
+						<onclick>Skin.ToggleSetting(fixedendingmenu)</onclick>
+						<selected>!Skin.HasSetting(fixedendingmenu)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<enable>!Skin.HasSetting(wraparoundhomemenu)</enable>
+					</control>
+					<control type="radiobutton" id="104">
 						<description>hide horizontal submenu</description>
 						<width>750</width>
 						<height>40</height>
@@ -236,7 +251,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="104">
+					<control type="radiobutton" id="105">
 						<description>enable submenu advise</description>
 						<width>750</width>
 						<height>40</height>
@@ -250,7 +265,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Skin.HasSetting(autovisablesubmenu) | Skin.HasSetting(enablecleanhome)</enable>
 					</control>
-					<control type="radiobutton" id="105">
+					<control type="radiobutton" id="106">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -262,7 +277,7 @@
 						<onclick>Skin.ToggleSetting(enablecleanhome)</onclick>
 						<selected>Skin.HasSetting(enablecleanhome)</selected>
 					</control>
-					<control type="radiobutton" id="106">
+					<control type="radiobutton" id="107">
 						<description>enable addon fanart</description>
 						<width>750</width>
 						<height>40</height>
@@ -275,7 +290,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="107">
+					<control type="radiobutton" id="108">
 						<description>enable extended info widget</description>
 						<width>750</width>
 						<height>40</height>
@@ -284,12 +299,12 @@
 						<focusedcolor>white</focusedcolor>
 						<label>  $LOCALIZE[31405]</label>
 						<onclick>Skin.ToggleSetting(hideextendedwidget)</onclick>
-						<!--onclick>Skin.SetBool(hidesuggestedinfo)</onclick-->
+						<onclick>Skin.SetBool(hidesuggestedinfo)</onclick>
 						<selected>!Skin.HasSetting(hideextendedwidget)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="108">
+					<control type="radiobutton" id="109">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -302,7 +317,7 @@
 						<selected>!Skin.HasSetting(hidesuggestedinfo)</selected>
 						<enable>!Skin.HasSetting(hideextendedwidget)</enable>
 					</control>
-					<control type="radiobutton" id="109">
+					<control type="radiobutton" id="110">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -314,7 +329,7 @@
 						<onclick>Skin.ToggleSetting(hidehomenowplaying)</onclick>
 						<selected>!Skin.HasSetting(hidehomenowplaying)</selected>
 					</control>
-					<control type="radiobutton" id="110">
+					<control type="radiobutton" id="111">
 						<description>enable library stats</description>
 						<width>750</width>
 						<height>40</height>
@@ -327,7 +342,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="111">
+					<control type="radiobutton" id="112">
 						<description>RainDrop Effect</description>
 						<width>750</width>
 						<height>40</height>
@@ -341,6 +356,9 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!Skin.HasSetting(holidayeffects)</enable>
 					</control>
+					
+					
+					
 					<control type="label" id="120">
 						<width>750</width>
 						<height>45</height>

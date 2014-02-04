@@ -2522,14 +2522,18 @@
 		<value condition="Control.HasFocus(9000)">$LOCALIZE[20077] - $INFO[Container(9000).ListItem.label] $INFO[Container(9000).ListItem.label2]</value>
 		<value condition="Control.HasFocus(101)">$LOCALIZE[31911]</value>
 		<value condition="Control.HasFocus(102)">$LOCALIZE[31906]</value>
-		<value condition="Control.HasFocus(103)">$LOCALIZE[31908]</value>
-		<value condition="Control.HasFocus(104)">$LOCALIZE[31909]</value>
-		<value condition="Control.HasFocus(105)">$LOCALIZE[31907]</value>
-		<value condition="Control.HasFocus(106)">$LOCALIZE[31925]</value>
-		<value condition="Control.HasFocus(108)">$LOCALIZE[31913]</value>
-		<value condition="Control.HasFocus(109)">$LOCALIZE[31914]</value>
-		<value condition="Control.HasFocus(110)">$LOCALIZE[31912]</value>
-		<value condition="Control.HasFocus(111)">$LOCALIZE[31910]</value>
+		
+		<value condition="Control.HasFocus(104)">$LOCALIZE[31908]</value>
+		<value condition="Control.HasFocus(105)">$LOCALIZE[31909]</value>
+		<value condition="Control.HasFocus(106)">$LOCALIZE[31907]</value>
+		<value condition="Control.HasFocus(107)">$LOCALIZE[31925]</value>
+		
+		
+		<value condition="Control.HasFocus(109)">$LOCALIZE[31913]</value>
+		<value condition="Control.HasFocus(110)">$LOCALIZE[31914]</value>
+		<value condition="Control.HasFocus(111)">$LOCALIZE[31912]</value>
+		<value condition="Control.HasFocus(112)">$LOCALIZE[31910]</value>
+		
 		<value condition="Control.HasFocus(121)">$LOCALIZE[31915]</value>
 		<value condition="Control.HasFocus(122)">$LOCALIZE[31905]</value>
 		<value condition="Control.HasFocus(123)">$LOCALIZE[31916]</value>
