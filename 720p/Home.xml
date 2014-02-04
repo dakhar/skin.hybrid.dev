@@ -47,8 +47,15 @@
 			<animation effect="zoom" start="0" end="100" center="auto" time="300" delay="1000" easing="out" tween="sine">Visible</animation>
 			<animation effect="zoom" start="100" end="0" center="auto" time="200" easing="in" tween="sine">Hidden</animation>
 			<animation effect="zoom" start="100" end="0" center="auto" time="200" easing="out" tween="sine" condition="Skin.HasSetting(enablecleanhome) + ![Control.HasFocus(9004) | Player.HasMedia | Control.HasFocus(510)]">Conditional</animation>
-			<visible>![Skin.HasSetting(hidesuggestedinfo) | Player.HasMedia]  | Player.HasMedia + !Skin.HasSetting(hidehomenowplaying) | Control.HasFocus(510)</visible>
-			<visible>!StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites)</visible>
+			<visible>!Skin.HasSetting(hideextendedwidget) | Player.HasMedia</visible>
+			<visible>
+				Player.HasMedia + !Skin.HasSetting(hidehomenowplaying) | Control.HasFocus(510) |
+				![Skin.HasSetting(hidesuggestedinfo) | Player.HasMedia] + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !Skin.HasSetting(disablescriptplaylist) |
+				![Skin.HasSetting(hidesuggestedinfo) | Player.HasMedia] + !IsEmpty(Window(home).Property(RecommendedMovie.1.Title)) + [StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies)] |
+				![Skin.HasSetting(hidesuggestedinfo) | Player.HasMedia] + !IsEmpty(Window(home).Property(RecommendedEpisode.1.Title)) + [StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedEpisodes)] |
+				![Skin.HasSetting(hidesuggestedinfo) | Player.HasMedia] + !IsEmpty(Window(home).Property(RecommendedMusicVideo.1.Title)) + [StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentConcerts) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomConcerts) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedConcerts)] |
+				![Skin.HasSetting(hidesuggestedinfo) | Player.HasMedia] + !IsEmpty(Window(home).Property(RecommendedAlbum.1.Title)) + [StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums)]
+			</visible>
 			<include>WidgetPanelVizability</include>
 			<control type="image">
 				<left>471</left>
@@ -244,7 +251,7 @@
 				<top>144</top>
 				<orientation>horizontal</orientation>
 				<itemgap>3</itemgap>
-				<visible>Control.HasFocus(510) | StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList)</visible>
+				<visible>Control.HasFocus(510)</visible>
 				<control type="image">
 					<width>50</width>
 					<height>40</height>
@@ -255,7 +262,6 @@
 					<colordiffuse>E4101010</colordiffuse>
 					<fadetime>FanartCrossFadeTime</fadetime>
 					<visible>
-						StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList) | 
 						StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) | 
 						[StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !Skin.HasSetting(disablescriptplaylist)] |
 						StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedEpisodes) | 
@@ -265,7 +271,6 @@
 				<control type="label">
 					<include>HomeFlagSeparator</include>
 					<visible>
-						StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList) | 
 						StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) | 
 						[StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !Skin.HasSetting(disablescriptplaylist)] |
 						StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedEpisodes) | 
@@ -299,12 +304,7 @@
 					<colordiffuse>FFFFFAF0</colordiffuse>
 					<fadetime>FanartCrossFadeTime</fadetime>
 					<visible>
-						StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomArtists) | 
-						StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) | 
-						[StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !Skin.HasSetting(disablescriptplaylist)] |
-						StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedEpisodes) | 
-						StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentConcerts) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomConcerts) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedConcerts) |
-						StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomSongs) |
+						StringCompare(Container(9000).ListItem.Property(WidgetSet),MusicPlayList) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomSongs) |
 						StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums)
 					</visible>
 				</control>
@@ -351,8 +351,7 @@
 					<label>$VAR[InfoPanelRuntime]</label>
 					<scroll>true</scroll>
 					<visible>
-						StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList) | 
-						StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) | 
+						StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) | 
 						[StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !Skin.HasSetting(disablescriptplaylist)] |
 						StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedEpisodes) | 
 						StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentConcerts) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomConcerts) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedConcerts)
@@ -797,6 +796,21 @@
 					<align>center</align>
 					<aligny>center</aligny>
 					<textcolor>FFFFFAF0</textcolor>
+					<visible>!Control.HasFocus(510) | !Skin.HasSetting(hideextendedwidget)</visible>
+				</control>
+				<control type="label">
+					<left>10</left>
+					<top>10</top>
+					<width>1200</width>
+					<height>29</height>
+					<font>font12_title</font>
+					<label>[UPPERCASE]$INFO[Container(510).ListItem.Label][/UPPERCASE]</label>
+					<scroll>true</scroll>
+					<scrollout>false</scrollout>
+					<align>center</align>
+					<aligny>center</aligny>
+					<textcolor>selected</textcolor>
+					<visible>Control.HasFocus(510) + Skin.HasSetting(hideextendedwidget)</visible>
 				</control>
 				<control type="image">
 					<left>10</left>

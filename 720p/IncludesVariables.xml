@@ -786,7 +786,7 @@
 		<value condition="Player.HasVideo + !Control.HasFocus(510) + Player.IsInternetStream + SubString(VideoPlayer.Title,Virgin 1,Left)">$LOCALIZE[31222]</value>
 		<value condition="Player.HasVideo + !Control.HasFocus(510)">$INFO[VideoPlayer.Title]</value>
 		<value condition="Player.HasAudio + !Control.HasFocus(510)">$INFO[MusicPlayer.Title]</value>
-		<value condition="Control.HasFocus(510) | StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList)">$INFO[Container(510).ListItem.Label]</value>
+		<value condition="Control.HasFocus(510)">$INFO[Container(510).ListItem.Label]</value>
 	</variable>
 	<variable name="MediaPlayButton">
 		<value condition="[Player.Paused | Player.Forwarding | Player.Rewinding]">InfoWidget/InfoWidgetPlayBtn.png</value>
@@ -814,7 +814,7 @@
 		<value condition="Player.HasAudio + IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) + IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044)) + !Control.HasFocus(510)">$INFO[MusicPlayer.Property(fanart_image)]</value>
 		<value condition="Player.HasAudio + IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) + ![IsEmpty(Control.GetLabel(5043)) | Control.HasFocus(510)]">$INFO[Player.FolderPath,,../extrafanart/]</value>
 		<value condition="Player.HasAudio + IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) + IsEmpty(Control.GetLabel(5043)) + !Control.HasFocus(510)">$INFO[Skin.String(PhysicalMusicFolder)]$INFO[MusicPlayer.Artist,,/extrafanart/]</value>
-		<value condition="Control.HasFocus(510) | StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList)">$INFO[Container(510).ListItem.Property(Fanart)]</value>
+		<value condition="Control.HasFocus(510)">$INFO[Container(510).ListItem.Property(Fanart)]</value>
 	</variable>
 	<variable name="InfoWidgetPoster">
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies)">$INFO[Window(home).Property(RecommendedMovie.1.Art(poster))]</value>
@@ -829,7 +829,7 @@
 		<value condition="Player.HasVideo + !Control.HasFocus(510) + StringCompare(VideoPlayer.Title,player.swf playpath=rmc1 live=true)">special://skin/extras/Streaming/RadioMontecarloTV.png</value>
 		<value condition="Player.HasVideo + !Control.HasFocus(510) + Player.IsInternetStream + SubString(VideoPlayer.Title,Virgin 1,Left)">special://skin/extras/Streaming/Virgin.png</value>
 		<value condition="Player.HasVideo + !Control.HasFocus(510)">$INFO[VideoPlayer.Cover]</value>
-		<value condition="Control.HasFocus(510) | StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList)">$INFO[Container(510).ListItem.Icon]</value>
+		<value condition="Control.HasFocus(510)">$INFO[Container(510).ListItem.Icon]</value>
 	</variable>
 	<variable name="InfoWidgetTagLine">
 		<value condition="[StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies)] + ![Player.HasMedia | Control.HasFocus(510)]">$INFO[Window(home).Property(RecommendedMovie.1.TagLine)]</value>
@@ -841,7 +841,7 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomArtists) + ![Player.HasAudio | Control.HasFocus(510)]">$INFO[Window(home).Property(RecommendedAlbum.1.Title)][COLOR=80FFFFFF] | [/COLOR]$INFO[Window(home).Property(RecommendedAlbum.1.Artist)]</value>
 		<value condition="Player.HasVideo + !Control.HasFocus(510)">$INFO[VideoPlayer.TagLine]</value>
 		<value condition="Player.HasAudio + !Control.HasFocus(510)">$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album,[COLOR=80FFFFFF] | [/COLOR]]$INFO[MusicPlayer.Year,[COLOR=80FFFFFF] | [/COLOR]]</value>
-		<value condition="IsEmpty(Container(510).ListItem.Property(EpisodeNumber)) + Control.HasFocus(510) | StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList)">$INFO[Container(510).ListItem.Label2]</value>
+		<value condition="IsEmpty(Container(510).ListItem.Property(EpisodeNumber)) + Control.HasFocus(510)">$INFO[Container(510).ListItem.Label2]</value>
 		<value condition="!IsEmpty(Container(510).ListItem.Property(EpisodeNumber))">$INFO[Container(510).ListItem.Label2]$INFO[Container(510).ListItem.Property(EpisodeNumber),[COLOR=80FFFFFF] | [/COLOR]]</value>
 	</variable>
 	<variable name="InfoWidgetRunTime">
@@ -867,7 +867,7 @@
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomArtists)">$INFO[Window(home).Property(RecommendedAlbum.1.Genre)]</value>
 		<value condition="Player.HasVideo + ![Control.HasFocus(510)]">$INFO[VideoPlayer.Genre]</value>
 		<value condition="Player.HasAudio + ![Control.HasFocus(510)]">$INFO[MusicPlayer.Genre]</value>
-		<value condition="Control.HasFocus(510) | StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList)">$INFO[Container(510).ListItem.Property(Genre)]</value>
+		<value condition="Control.HasFocus(510)">$INFO[Container(510).ListItem.Property(Genre)]</value>
 	</variable>
 	<variable name="InfoWidgetPlot">
 		<value condition="[StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies)] + ![Player.HasMedia | Control.HasFocus(510)] + !IsEmpty(Window(home).Property(RecommendedMovie.1.PlotOutline))">$INFO[Window(home).Property(RecommendedMovie.1.PlotOutline)]</value>
@@ -882,7 +882,8 @@
 		<value condition="Player.HasVideo + !Control.HasFocus(510)">$INFO[VideoPlayer.Plot]</value>
 		<value condition="Player.HasAudio + ![IsEmpty(Window(Visualisation).Property(ArtistSlideshowRunning)) | Control.HasFocus(510)]">[COLOR=FFFFFAF0]$LOCALIZE[31263]: [/COLOR]$INFO[Window(Visualisation).Property(ArtistSlideshow.1.SimilarName)]$INFO[Window(Visualisation).Property(ArtistSlideshow.2.SimilarName), / ]$INFO[Window(Visualisation).Property(ArtistSlideshow.3.SimilarName), / ]$INFO[Window(Visualisation).Property(ArtistSlideshow.4.SimilarName), / ]$INFO[Window(Visualisation).Property(ArtistSlideshow.5.SimilarName), / ][CR]   $INFO[MusicPlayer.Property(Artist_Description)]$INFO[Window(Visualisation).Property(ArtistSlideshow.ArtistBiography), - ]</value>
 		<value condition="Player.HasAudio + IsEmpty(Window(Visualisation).Property(ArtistSlideshowRunning)) + !Control.HasFocus(510)">$INFO[MusicPlayer.Property(Artist_Description)]</value>
-		<value condition="Control.HasFocus(510) | StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList)">$INFO[Container(510).ListItem.Property(Plot)]</value>
+		<value condition="Control.HasFocus(510) + !IsEmpty(Container(510).ListItem.Property(PlotOutline))">$INFO[Container(510).ListItem.Property(PlotOutline)]</value>
+		<value condition="Control.HasFocus(510)">$INFO[Container(510).ListItem.Property(Plot)]</value>
 	</variable>
 	<variable name="InfoWidgetVideoStar">
 		<value condition="!IntegerGreaterThan(Container(510).ListItem.Property(Rating),2)">rating1.png</value>
@@ -901,16 +902,16 @@
 	<variable name="InfoWidgetRating">
 		<value condition="Player.HasVideo + !Control.HasFocus(510)">$INFO[VideoPlayer.Rating]</value>
 		<value condition="Player.HasAudio + !Control.HasFocus(510)">$INFO[MusicPlayer.Rating]</value>
-		<value condition="[Control.HasFocus(510) | StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList)] + IntegerGreaterThan(Container(510).ListItem.Property(Rating),0)">$INFO[Container(510).ListItem.Property(Rating)]</value>
+		<value condition="Control.HasFocus(510) + IntegerGreaterThan(Container(510).ListItem.Property(Rating),0)">$INFO[Container(510).ListItem.Property(Rating)]</value>
 	</variable>
 	<variable name="InfoWidgetYear">
 		<value condition="Player.HasVideo + !Control.HasFocus(510)">$INFO[VideoPlayer.Year]</value>
 		<value condition="Player.HasAudio + !Control.HasFocus(510)">$INFO[MusicPlayer.Year]</value>
-		<value condition="[Control.HasFocus(510) | StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList)] + IntegerGreaterThan(Container(510).ListItem.Property(Year),0)">$INFO[Container(510).ListItem.Property(Year)]</value>
+		<value condition="Control.HasFocus(510) + IntegerGreaterThan(Container(510).ListItem.Property(Year),0)">$INFO[Container(510).ListItem.Property(Year)]</value>
 	</variable>
 	<variable name="InfoPanelRuntime">
-		<value condition="!SubString(Container(510).ListItem.Property(Runtime),min) + [Control.HasFocus(510) | StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList)]">$INFO[Container(510).ListItem.Property(Runtime)] $LOCALIZE[12391]</value>
-		<value condition="SubString(Container(510).ListItem.Property(Runtime),min) + [Control.HasFocus(510) | StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList)]">$INFO[Container(510).ListItem.Property(Runtime)]</value>
+		<value condition="!SubString(Container(510).ListItem.Property(Runtime),min) + Control.HasFocus(510)">$INFO[Container(510).ListItem.Property(Runtime)] $LOCALIZE[12391]</value>
+		<value condition="SubString(Container(510).ListItem.Property(Runtime),min) + Control.HasFocus(510)">$INFO[Container(510).ListItem.Property(Runtime)]</value>
 	</variable>
 	<variable name="InfoWidgetPanel">
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites) | StringCompare(Container(9000).ListItem.Property(WidgetSet),NextAired) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RomGames)">InfoWidget/HomeWidgetVideo.png</value>
@@ -941,8 +942,7 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RomGames)">$LOCALIZE[31246]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),NextAired)">$LOCALIZE[31245]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList) | StringCompare(Container(9000).ListItem.Property(WidgetSet),MusicPlayList)">$INFO[Container(9000).ListItem.Label] $LOCALIZE[559]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites) + !Control.HasFocus(510)">$LOCALIZE[1036]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites) + Control.HasFocus(510)">[COLOR=selected]$INFO[Container(510).ListItem.Label][/COLOR]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites)">$LOCALIZE[1036]</value>
 	</variable>
 	<variable name="FileMngrWindow">
 		<value condition="Control.HasFocus(20)">$LOCALIZE[31216] - $LOCALIZE[31218]</value>
@@ -2526,10 +2526,10 @@
 		<value condition="Control.HasFocus(104)">$LOCALIZE[31909]</value>
 		<value condition="Control.HasFocus(105)">$LOCALIZE[31907]</value>
 		<value condition="Control.HasFocus(106)">$LOCALIZE[31925]</value>
-		<value condition="Control.HasFocus(107)">$LOCALIZE[31913]</value>
-		<value condition="Control.HasFocus(108)">$LOCALIZE[31914]</value>
-		<value condition="Control.HasFocus(109)">$LOCALIZE[31912]</value>
-		<value condition="Control.HasFocus(110)">$LOCALIZE[31910]</value>
+		<value condition="Control.HasFocus(108)">$LOCALIZE[31913]</value>
+		<value condition="Control.HasFocus(109)">$LOCALIZE[31914]</value>
+		<value condition="Control.HasFocus(110)">$LOCALIZE[31912]</value>
+		<value condition="Control.HasFocus(111)">$LOCALIZE[31910]</value>
 		<value condition="Control.HasFocus(121)">$LOCALIZE[31915]</value>
 		<value condition="Control.HasFocus(122)">$LOCALIZE[31905]</value>
 		<value condition="Control.HasFocus(123)">$LOCALIZE[31916]</value>

@@ -276,6 +276,20 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
 					<control type="radiobutton" id="107">
+						<description>enable extended info widget</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>  $LOCALIZE[31405]</label>
+						<onclick>Skin.ToggleSetting(hideextendedwidget)</onclick>
+						<!--onclick>Skin.SetBool(hidesuggestedinfo)</onclick-->
+						<selected>!Skin.HasSetting(hideextendedwidget)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="108">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -286,8 +300,9 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.ToggleSetting(hidesuggestedinfo)</onclick>
 						<selected>!Skin.HasSetting(hidesuggestedinfo)</selected>
+						<enable>!Skin.HasSetting(hideextendedwidget)</enable>
 					</control>
-					<control type="radiobutton" id="108">
+					<control type="radiobutton" id="109">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -299,7 +314,7 @@
 						<onclick>Skin.ToggleSetting(hidehomenowplaying)</onclick>
 						<selected>!Skin.HasSetting(hidehomenowplaying)</selected>
 					</control>
-					<control type="radiobutton" id="109">
+					<control type="radiobutton" id="110">
 						<description>enable library stats</description>
 						<width>750</width>
 						<height>40</height>
@@ -312,7 +327,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="110">
+					<control type="radiobutton" id="111">
 						<description>RainDrop Effect</description>
 						<width>750</width>
 						<height>40</height>
