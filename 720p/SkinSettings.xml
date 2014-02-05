@@ -6443,6 +6443,7 @@
 								<ondown>504</ondown>
 							</control>
 						</control>
+						
 						<control type="group">
 							<visible>Container(9005).HasFocus(37)</visible>
 							<control type="button" id="500">
