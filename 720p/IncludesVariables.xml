@@ -1951,8 +1951,7 @@
 		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=105Test1 live=true)">$LOCALIZE[31206]</value>
 		<value condition="StringCompare(VideoPlayer.Title,player.swf playpath=rmc1 live=true)">$LOCALIZE[31221]</value>
 		<value condition="Player.IsInternetStream + SubString(VideoPlayer.Title,Virgin 1,Left)">$LOCALIZE[31222]</value>
-		<value condition="VideoPlayer.Content(Movies) + !IsEmpty(VideoPlayer.Year) + !substring(VideoPlayer.Title,VideoPlayer.Year)">$INFO[VideoPlayer.Title] ($INFO[VideoPlayer.Year])</value>
-		<!--value>$INFO[VideoPlayer.Title]</value-->
+		<value condition="VideoPlayer.Content(Movies) + !IsEmpty(VideoPlayer.Year) + !Skin.HasSetting(hideyearintitle)">$INFO[VideoPlayer.Title] ($INFO[VideoPlayer.Year])</value>
 		<value>$INFO[Player.Title]</value>
 	</variable>
 	<variable name="VideoPlayingDescription" type="text">
@@ -2099,7 +2098,7 @@
 	<variable name="ContentHeaderLabel" type="text">
 		<value condition="StringCompare(ListItem.label,..)">$LOCALIZE[31346]</value>
 		<value condition="Window.IsActive(script-globalsearch-main.xml)">$LOCALIZE[31209]</value>
-		<value condition="Container.Content(Movies)">$INFO[ListItem.label]$INFO[ListItem.Year,  (,)]</value>
+		<value condition="Container.Content(Movies) + !Skin.HasSetting(hideyearintitle)">$INFO[ListItem.label]$INFO[ListItem.Year,  (,)]</value>
 		<value condition="substring(ListItem.label,$LOCALIZE[20366])">$INFO[ListItem.TVShowTitle] - $LOCALIZE[31347]</value>
 		<value condition="Container.Content(Seasons) | Container.Content(Episodes)">$INFO[ListItem.TVShowTitle] - $INFO[ListItem.label]</value>
 		<value condition="!IsEmpty(Window.Property(current.actor.agelong)) + [Container.Content(Actors) | Container.Content(Directors)]">$INFO[ListItem.label]$INFO[Window.Property(current.actor.agelong),  (,)]</value>
@@ -2541,11 +2540,12 @@
 		<!--value condition="Control.HasFocus(126)">$LOCALIZE[Option maybe Discontinued]</value-->
 		<value condition="Control.HasFocus(127)">$LOCALIZE[31918]</value>
 		<value condition="Control.HasFocus(128)">$LOCALIZE[31919]</value>
-		<value condition="Control.HasFocus(129)">$LOCALIZE[31920]</value>
-		<value condition="Control.HasFocus(130)">$LOCALIZE[31921]</value>
-		<value condition="Control.HasFocus(131)">$LOCALIZE[31922]</value>
-		<value condition="Control.HasFocus(132)">$LOCALIZE[31923]</value>
-		<value condition="Control.HasFocus(133)">$LOCALIZE[31924]</value>
+		<value condition="Control.HasFocus(129)">$LOCALIZE[31926]</value>
+		<value condition="Control.HasFocus(130)">$LOCALIZE[31920]</value>
+		<value condition="Control.HasFocus(131)">$LOCALIZE[31921]</value>
+		<value condition="Control.HasFocus(132)">$LOCALIZE[31922]</value>
+		<value condition="Control.HasFocus(133)">$LOCALIZE[31923]</value>
+		<value condition="Control.HasFocus(134)">$LOCALIZE[31924]</value>
 		<value>$LOCALIZE[36102]</value>
 	</variable>
 	<variable name="HomeSectionInfo">

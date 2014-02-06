@@ -458,7 +458,27 @@
 						<selected>!Skin.HasSetting(hidenewmediastat)</selected>
 						<enable>!Skin.HasSetting(diablewatchedcheck)</enable>
 					</control>
-					<control type="button" id="129">
+					
+					
+					
+					<control type="radiobutton" id="129">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>  $LOCALIZE[31407]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(hideyearintitle)</onclick>
+						<selected>!Skin.HasSetting(hideyearintitle)</selected>
+					</control>
+					
+					
+					
+					
+					
+					<control type="button" id="130">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -473,7 +493,7 @@
 						<onclick condition="Skin.String(mediapopupcontrol,Hidden)">Skin.SetString(mediapopupcontrol,Instant)</onclick>
 						<onclick condition="Skin.String(mediapopupcontrol,Instant)">Skin.Reset(mediapopupcontrol)</onclick>
 					</control>
-					<control type="radiobutton" id="130">
+					<control type="radiobutton" id="131">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -485,7 +505,7 @@
 						<onclick>Skin.ToggleSetting(disableautoscroll)</onclick>
 						<selected>!Skin.HasSetting(disableautoscroll)</selected>
 					</control>
-					<control type="radiobutton" id="131">
+					<control type="radiobutton" id="132">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -497,7 +517,7 @@
 						<onclick>Skin.ToggleSetting(abckeyboard)</onclick>
 						<selected>!Skin.HasSetting(abckeyboard)</selected>
 					</control>
-					<control type="radiobutton" id="132">
+					<control type="radiobutton" id="133">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -509,7 +529,7 @@
 						<onclick>Skin.ToggleSetting(kioskmode)</onclick>
 						<selected>Skin.HasSetting(kioskmode)</selected>
 					</control>
-					<control type="radiobutton" id="133">
+					<control type="radiobutton" id="134">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
