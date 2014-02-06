@@ -915,6 +915,7 @@
 		<value condition="SubString(Container(510).ListItem.Property(Runtime),min) + Control.HasFocus(510)">$INFO[Container(510).ListItem.Property(Runtime)]</value>
 	</variable>
 	<variable name="InfoWidgetPanel">
+		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites) + IntegerGreaterThan(Container(510).numitems,12)">InfoWidget/HomeWidgetFavourite.png</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites) | StringCompare(Container(9000).ListItem.Property(WidgetSet),NextAired) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RomGames)">InfoWidget/HomeWidgetVideo.png</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies)">InfoWidget/HomeWidgetVideo.png</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList)">InfoWidget/HomeWidgetVideo.png</value>
