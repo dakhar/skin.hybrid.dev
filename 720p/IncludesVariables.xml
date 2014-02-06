@@ -814,6 +814,7 @@
 		<value condition="Player.HasAudio + IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) + IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044)) + !Control.HasFocus(510)">$INFO[MusicPlayer.Property(fanart_image)]</value>
 		<value condition="Player.HasAudio + IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) + ![IsEmpty(Control.GetLabel(5043)) | Control.HasFocus(510)]">$INFO[Player.FolderPath,,../extrafanart/]</value>
 		<value condition="Player.HasAudio + IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) + IsEmpty(Control.GetLabel(5043)) + !Control.HasFocus(510)">$INFO[Skin.String(PhysicalMusicFolder)]$INFO[MusicPlayer.Artist,,/extrafanart/]</value>
+		<value condition="Control.HasFocus(510) + StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites)">$INFO[Container(510).ListItem.Label,special://skin/backgrounds/favourites/,.jpg]</value>
 		<value condition="Control.HasFocus(510)">$INFO[Container(510).ListItem.Property(Fanart)]</value>
 	</variable>
 	<variable name="InfoWidgetPoster">
@@ -942,7 +943,8 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RomGames)">$LOCALIZE[31246]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),NextAired)">$LOCALIZE[31245]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),VideoPlayList) | StringCompare(Container(9000).ListItem.Property(WidgetSet),MusicPlayList)">$INFO[Container(9000).ListItem.Label] $LOCALIZE[559]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites)">$LOCALIZE[1036]</value>
+		<value condition="!Control.HasFocus(510) + StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites)">$LOCALIZE[1036]</value>
+		<value condition="Control.HasFocus(510) + StringCompare(Container(9000).ListItem.Property(WidgetSet),Favourites)">[COLOR=selected]$INFO[Container(510).ListItem.Label][/COLOR]</value>
 	</variable>
 	<variable name="FileMngrWindow">
 		<value condition="Control.HasFocus(20)">$LOCALIZE[31216] - $LOCALIZE[31218]</value>

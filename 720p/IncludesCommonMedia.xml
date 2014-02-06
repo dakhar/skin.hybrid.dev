@@ -86,7 +86,6 @@
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
 				<aspectratio>scale</aspectratio>
-				<!--texture background="true">$INFO[ListItem.Label,special://skin/backgrounds/genres/,.jpg]</texture-->
 				<texture background="true">$VAR[GenreLabelFanart,special://skin/backgrounds/genres/,.jpg]</texture>
 				<include>BackgroundFade</include>
 				<fadetime>FanartCrossfadeTime</fadetime>
@@ -96,7 +95,6 @@
 			<control type="image">
 				<include>Dimensions_Fullscreen</include>
 				<aspectratio>scale</aspectratio>
-				<!--texture background="true">$INFO[Container.FolderName,special://skin/backgrounds/genres/,.jpg]</texture-->
 				<texture background="true">$VAR[GenreFolderFanart,special://skin/backgrounds/genres/,.jpg]</texture>
 				<include>BackgroundFade</include>
 				<fadetime>FanartCrossfadeTime</fadetime>
