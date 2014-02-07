@@ -116,7 +116,7 @@
 				<visible>Player.HasAudio + !Control.HasFocus(510)</visible>
 			</control>
 			<control type="image">
-				<left>8</left>
+				<left>12</left>
 				<top>120</top>
 				<width>110</width>
 				<height>60</height>
