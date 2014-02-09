@@ -116,7 +116,7 @@
 				<fadetime>1000</fadetime>
 				<aspectratio>keep</aspectratio>
 				<imagepath background="true">$INFO[Window(Visualisation).Property(ArtistSlideshow)]</imagepath>
-				<visible>Player.HasAudio + !Control.HasFocus(510)</visible>
+				<visible>Player.HasAudio + !Player.IsInternetStream + !Control.HasFocus(510)</visible>
 			</control>
 			<control type="image">
 				<left>12</left>
@@ -126,7 +126,7 @@
 				<aspectratio align="left" aligny="top">keep</aspectratio>
 				<texture background="true">$INFO[Skin.String(PhysicalMusicFolder)]$INFO[MusicPlayer.Artist,,/logo.png]</texture>
 				<fadetime>FanartCrossFadeTime</fadetime>
-				<visible>Player.HasAudio + !Control.HasFocus(510)</visible>
+				<visible>Player.HasAudio + !Player.IsInternetStream + !Control.HasFocus(510)</visible>
 			</control>
 			<control type="videowindow" id="8">
 				<left>6</left>
