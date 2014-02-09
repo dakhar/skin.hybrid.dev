@@ -220,7 +220,7 @@
 						<label>  $LOCALIZE[31273]</label>
 						<onclick>Skin.ToggleSetting(wraparoundhomemenu)</onclick>
 						<onclick>Skin.Reset(fixedendingmenu)</onclick>
-							<selected>Skin.HasSetting(wraparoundhomemenu)</selected>
+						<selected>Skin.HasSetting(wraparoundhomemenu)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
@@ -356,9 +356,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!Skin.HasSetting(holidayeffects)</enable>
 					</control>
-					
-					
-					
 					<control type="label" id="120">
 						<width>750</width>
 						<height>45</height>
@@ -458,9 +455,6 @@
 						<selected>!Skin.HasSetting(hidenewmediastat)</selected>
 						<enable>!Skin.HasSetting(diablewatchedcheck)</enable>
 					</control>
-					
-					
-					
 					<control type="radiobutton" id="129">
 						<width>750</width>
 						<height>40</height>
@@ -473,11 +467,6 @@
 						<onclick>Skin.ToggleSetting(hideyearintitle)</onclick>
 						<selected>!Skin.HasSetting(hideyearintitle)</selected>
 					</control>
-					
-					
-					
-					
-					
 					<control type="button" id="130">
 						<width>750</width>
 						<height>40</height>
@@ -6463,7 +6452,6 @@
 								<ondown>504</ondown>
 							</control>
 						</control>
-						
 						<control type="group">
 							<visible>Container(9005).HasFocus(37)</visible>
 							<control type="button" id="500">

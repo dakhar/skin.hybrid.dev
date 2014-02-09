@@ -190,6 +190,7 @@
 	</include>
 	<include name="WidgetPanelVizability">
 		<visible>
+		StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather) |
 		StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) |
 		StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) |
 		StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies) |

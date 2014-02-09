@@ -7,7 +7,7 @@
 		<animation effect="slide" start="0,0" end="202,0" time="0" condition="StringCompare(Container(510).NumItems,8)">conditional</animation>
 		<animation effect="slide" start="0,0" end="252,0" time="0" condition="StringCompare(Container(510).NumItems,7)">conditional</animation>
 		<animation effect="slide" start="0,0" end="303,0" time="0" condition="StringCompare(Container(510).NumItems,6)">conditional</animation>
-		<animation effect="slide" start="0,0" end="353,0" time="0" condition="StringCompare(Container(510).NumItems,5">conditional</animation>
+		<animation effect="slide" start="0,0" end="353,0" time="0" condition="StringCompare(Container(510).NumItems,5)">conditional</animation>
 		<animation effect="slide" start="0,0" end="404,0" time="0" condition="StringCompare(Container(510).NumItems,4)">conditional</animation>
 		<animation effect="slide" start="0,0" end="454,0" time="0" condition="StringCompare(Container(510).NumItems,3)">conditional</animation>
 		<animation effect="slide" start="0,0" end="505,0" time="0" condition="StringCompare(Container(510).NumItems,2)">conditional</animation>
@@ -2353,9 +2353,7 @@
 			<top>40</top>
 			<control type="panel" id="510">
 				<include>WidgetMusicPanel</include>
-				<visible>
-					<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentSongs)</visible>
-				</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentSongs)</visible>
 				<include>WidgetMusicLayout</include>
 				<content>
 					<item>
@@ -3732,8 +3730,6 @@
 						<onclick>$INFO[Window(home).Property(Favourite.12.Path)]</onclick>
 						<visible>!IsEmpty(Window(home).Property(Favourite.12.Name))</visible>
 					</item>
-					
-					
 					<item>
 						<label>$INFO[Window(home).Property(Favourite.13.Name)]</label>
 						<icon>$INFO[Window(home).Property(Favourite.13.Thumb)]</icon>
@@ -9963,6 +9959,125 @@
 						<icon>DefaultAudioCover.png</icon>
 						<onclick>noop</onclick>
 						<visible>IsEmpty(Window(home).Property(HomePlayListTen.1.Title)) + Container(9000).HasFocus(10)</visible>
+					</item>
+				</content>
+			</control>
+		</control>
+	</include>
+	<include name="WidgetWeatherContent">
+		<control type="group">
+			<left>0</left>
+			<top>40</top>
+			<control type="panel" id="510">
+				<visible>false</visible>
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather)</visible>
+				<visible>!IsEmpty(Window(Weather).Property(Daily.IsFetched)) + StringCompare(Weather.Plugin,weather.wunderground)</visible>
+				<include>WidgetMusicPanel</include>
+				<include>WidgetMusicLayout</include>
+				<!--
+				<include>WidgetVideoPanel</include>
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather)</visible>
+				<include>WidgetVideoLayout</include>
+				-->
+				<content>
+					<item>
+						<label>$INFO[Window(Weather).Property(Location)] - $INFO[Window(Weather).Property(Daily.1.LongDay)]</label>
+						<label2>$LOCALIZE[31176] $LOCALIZE[31000] [B]$INFO[Window(weather).Property(WeatherProvider)][/B]</label2>
+						<icon>$INFO[Window(Weather).Property(Daily.1.OutlookIcon)]</icon>
+						<thumb>special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.1.FanartCode)]</thumb>
+						<property name="Fanart">special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.1.FanartCode)]</property>
+						<property name="Plot">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(Weather).Property(Daily.1.HighTemperature)]     [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(Weather).Property(Daily.1.LowTemperature)][CR][COLOR=grey2]$LOCALIZE[31173] $LOCALIZE[31000] [/COLOR]$INFO[Window(Weather).Property(Daily.1.ChancePrecipitation)][CR]$INFO[Window(Weather).Property(Daily.1.Outlook),[COLOR=grey2]$LOCALIZE[33030]$LOCALIZE[31000] [/COLOR]]</property>
+						<onclick>Weather.Refresh</onclick>
+					</item>
+					<item>
+						<label>$INFO[Window(Weather).Property(Location)] - $INFO[Window(Weather).Property(Daily.2.LongDay)]</label>
+						<label2>$LOCALIZE[31176] $LOCALIZE[31000] [B]$INFO[Window(weather).Property(WeatherProvider)][/B]</label2>
+						<icon>$INFO[Window(Weather).Property(Daily.2.OutlookIcon)]</icon>
+						<thumb>special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.2.FanartCode)]</thumb>
+						<property name="Fanart">special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.2.FanartCode)]</property>
+						<property name="Plot">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(Weather).Property(Daily.2.HighTemperature)]     [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(Weather).Property(Daily.2.LowTemperature)][CR][COLOR=grey2]$LOCALIZE[31173] $LOCALIZE[31000] [/COLOR]$INFO[Window(Weather).Property(Daily.2.ChancePrecipitation)][CR]$INFO[Window(Weather).Property(Daily.2.Outlook),[COLOR=grey2]$LOCALIZE[33030]$LOCALIZE[31000] [/COLOR]]</property>
+						<onclick>Weather.Refresh</onclick>
+					</item>
+					<item>
+						<label>$INFO[Window(Weather).Property(Location)] - $INFO[Window(Weather).Property(Daily.2.LongDay)]</label>
+						<label2>$LOCALIZE[31176] $LOCALIZE[31000] [B]$INFO[Window(weather).Property(WeatherProvider)][/B]</label2>
+						<icon>$INFO[Window(Weather).Property(Daily.2.OutlookIcon)]</icon>
+						<thumb>special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.2.FanartCode)]</thumb>
+						<property name="Fanart">special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.2.FanartCode)]</property>
+						<property name="Plot">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(Weather).Property(Daily.2.HighTemperature)]     [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(Weather).Property(Daily.2.LowTemperature)][CR][COLOR=grey2]$LOCALIZE[31173] $LOCALIZE[31000] [/COLOR]$INFO[Window(Weather).Property(Daily.2.ChancePrecipitation)][CR]$INFO[Window(Weather).Property(Daily.2.Outlook),[COLOR=grey2]$LOCALIZE[33030]$LOCALIZE[31000] [/COLOR]]</property>
+						<onclick>Weather.Refresh</onclick>
+					</item>
+					<item>
+						<label>$INFO[Window(Weather).Property(Location)] - $INFO[Window(Weather).Property(Daily.3.LongDay)]</label>
+						<label2>$LOCALIZE[31176] $LOCALIZE[31000] [B]$INFO[Window(weather).Property(WeatherProvider)][/B]</label2>
+						<icon>$INFO[Window(Weather).Property(Daily.3.OutlookIcon)]</icon>
+						<thumb>special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.3.FanartCode)]</thumb>
+						<property name="Fanart">special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.3.FanartCode)]</property>
+						<property name="Plot">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(Weather).Property(Daily.3.HighTemperature)]     [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(Weather).Property(Daily.3.LowTemperature)][CR][COLOR=grey2]$LOCALIZE[31173] $LOCALIZE[31000] [/COLOR]$INFO[Window(Weather).Property(Daily.3.ChancePrecipitation)][CR]$INFO[Window(Weather).Property(Daily.3.Outlook),[COLOR=grey2]$LOCALIZE[33030]$LOCALIZE[31000] [/COLOR]]</property>
+						<onclick>Weather.Refresh</onclick>
+					</item>
+					<item>
+						<label>$INFO[Window(Weather).Property(Location)] - $INFO[Window(Weather).Property(Daily.4.LongDay)]</label>
+						<label2>$LOCALIZE[31176] $LOCALIZE[31000] [B]$INFO[Window(weather).Property(WeatherProvider)][/B]</label2>
+						<icon>$INFO[Window(Weather).Property(Daily.4.OutlookIcon)]</icon>
+						<thumb>special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.4.FanartCode)]</thumb>
+						<property name="Fanart">special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.4.FanartCode)]</property>
+						<property name="Plot">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(Weather).Property(Daily.4.HighTemperature)]     [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(Weather).Property(Daily.4.LowTemperature)][CR][COLOR=grey2]$LOCALIZE[31173] $LOCALIZE[31000] [/COLOR]$INFO[Window(Weather).Property(Daily.4.ChancePrecipitation)][CR]$INFO[Window(Weather).Property(Daily.4.Outlook),[COLOR=grey2]$LOCALIZE[33030]$LOCALIZE[31000] [/COLOR]]</property>
+						<onclick>Weather.Refresh</onclick>
+					</item>
+					<item>
+						<label>$INFO[Window(Weather).Property(Location)] - $INFO[Window(Weather).Property(Daily.5.LongDay)]</label>
+						<label2>$LOCALIZE[31176] $LOCALIZE[31000] [B]$INFO[Window(weather).Property(WeatherProvider)][/B]</label2>
+						<icon>$INFO[Window(Weather).Property(Daily.5.OutlookIcon)]</icon>
+						<thumb>special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.5.FanartCode)]</thumb>
+						<property name="Fanart">special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.5.FanartCode)]</property>
+						<property name="Plot">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(Weather).Property(Daily.5.HighTemperature)]     [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(Weather).Property(Daily.5.LowTemperature)][CR][COLOR=grey2]$LOCALIZE[31173] $LOCALIZE[31000] [/COLOR]$INFO[Window(Weather).Property(Daily.5.ChancePrecipitation)][CR]$INFO[Window(Weather).Property(Daily.5.Outlook),[COLOR=grey2]$LOCALIZE[33030]$LOCALIZE[31000] [/COLOR]]</property>
+						<onclick>Weather.Refresh</onclick>
+					</item>
+					<item>
+						<label>$INFO[Window(Weather).Property(Location)] - $INFO[Window(Weather).Property(Daily.6.LongDay)]</label>
+						<label2>$LOCALIZE[31176] $LOCALIZE[31000] [B]$INFO[Window(weather).Property(WeatherProvider)][/B]</label2>
+						<icon>$INFO[Window(Weather).Property(Daily.6.OutlookIcon)]</icon>
+						<thumb>special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.6.FanartCode)]</thumb>
+						<property name="Fanart">special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.6.FanartCode)]</property>
+						<property name="Plot">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(Weather).Property(Daily.6.HighTemperature)]     [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(Weather).Property(Daily.6.LowTemperature)][CR][COLOR=grey2]$LOCALIZE[31173] $LOCALIZE[31000] [/COLOR]$INFO[Window(Weather).Property(Daily.6.ChancePrecipitation)][CR]$INFO[Window(Weather).Property(Daily.6.Outlook),[COLOR=grey2]$LOCALIZE[33030]$LOCALIZE[31000] [/COLOR]]</property>
+						<onclick>Weather.Refresh</onclick>
+					</item>
+					<item>
+						<label>$INFO[Window(Weather).Property(Location)] - $INFO[Window(Weather).Property(Daily.7.LongDay)]</label>
+						<label2>$LOCALIZE[31176] $LOCALIZE[31000] [B]$INFO[Window(weather).Property(WeatherProvider)][/B]</label2>
+						<icon>$INFO[Window(Weather).Property(Daily.7.OutlookIcon)]</icon>
+						<thumb>special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.7.FanartCode)]</thumb>
+						<property name="Fanart">special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.7.FanartCode)]</property>
+						<property name="Plot">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(Weather).Property(Daily.7.HighTemperature)]     [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(Weather).Property(Daily.7.LowTemperature)][CR][COLOR=grey2]$LOCALIZE[31173] $LOCALIZE[31000] [/COLOR]$INFO[Window(Weather).Property(Daily.7.ChancePrecipitation)][CR]$INFO[Window(Weather).Property(Daily.7.Outlook),[COLOR=grey2]$LOCALIZE[33030]$LOCALIZE[31000] [/COLOR]]</property>
+						<onclick>Weather.Refresh</onclick>
+					</item>
+					<item>
+						<label>$INFO[Window(Weather).Property(Location)] - $INFO[Window(Weather).Property(Daily.8.LongDay)]</label>
+						<label2>$LOCALIZE[31176] $LOCALIZE[31000] [B]$INFO[Window(weather).Property(WeatherProvider)][/B]</label2>
+						<icon>$INFO[Window(Weather).Property(Daily.8.OutlookIcon)]</icon>
+						<thumb>special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.8.FanartCode)]</thumb>
+						<property name="Fanart">special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.8.FanartCode)]</property>
+						<property name="Plot">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(Weather).Property(Daily.8.HighTemperature)]     [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(Weather).Property(Daily.8.LowTemperature)][CR][COLOR=grey2]$LOCALIZE[31173] $LOCALIZE[31000] [/COLOR]$INFO[Window(Weather).Property(Daily.8.ChancePrecipitation)][CR]$INFO[Window(Weather).Property(Daily.8.Outlook),[COLOR=grey2]$LOCALIZE[33030]$LOCALIZE[31000] [/COLOR]]</property>
+						<onclick>Weather.Refresh</onclick>
+					</item>
+					<item>
+						<label>$INFO[Window(Weather).Property(Location)] - $INFO[Window(Weather).Property(Daily.9.LongDay)]</label>
+						<label2>$LOCALIZE[31176] $LOCALIZE[31000] [B]$INFO[Window(weather).Property(WeatherProvider)][/B]</label2>
+						<icon>$INFO[Window(Weather).Property(Daily.9.OutlookIcon)]</icon>
+						<thumb>special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.9.FanartCode)]</thumb>
+						<property name="Fanart">special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.9.FanartCode)]</property>
+						<property name="Plot">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(Weather).Property(Daily.9.HighTemperature)]     [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(Weather).Property(Daily.9.LowTemperature)][CR][COLOR=grey2]$LOCALIZE[31173] $LOCALIZE[31000] [/COLOR]$INFO[Window(Weather).Property(Daily.9.ChancePrecipitation)][CR]$INFO[Window(Weather).Property(Daily.9.Outlook),[COLOR=grey2]$LOCALIZE[33030]$LOCALIZE[31000] [/COLOR]]</property>
+						<onclick>Weather.Refresh</onclick>
+					</item>
+					<item>
+						<label>$INFO[Window(Weather).Property(Location)] - $INFO[Window(Weather).Property(Daily.10.LongDay)]</label>
+						<label2>$LOCALIZE[31176] $LOCALIZE[31000] [B]$INFO[Window(weather).Property(WeatherProvider)][/B]</label2>
+						<icon>$INFO[Window(Weather).Property(Daily.10.OutlookIcon)]</icon>
+						<thumb>special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.10.FanartCode)]</thumb>
+						<property name="Fanart">special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Daily.10.FanartCode)]</property>
+						<property name="Plot">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(Weather).Property(Daily.10.HighTemperature)]     [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(Weather).Property(Daily.10.LowTemperature)][CR][COLOR=grey2]$LOCALIZE[31173] $LOCALIZE[31000] [/COLOR]$INFO[Window(Weather).Property(Daily.10.ChancePrecipitation)][CR]$INFO[Window(Weather).Property(Daily.10.Outlook),[COLOR=grey2]$LOCALIZE[33030]$LOCALIZE[31000] [/COLOR]]</property>
+						<onclick>Weather.Refresh</onclick>
 					</item>
 				</content>
 			</control>
