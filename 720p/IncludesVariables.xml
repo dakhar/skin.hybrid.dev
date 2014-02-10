@@ -73,6 +73,11 @@
 		<value condition="Control.HasFocus(181) + !IsEmpty(Container(181).ListItem.Property(Fanart))">$INFO[Container(181).ListItem.Property(Fanart)]</value>
 		<value>special://skin/backgrounds/homescreen/search.jpg</value>
 	</variable>
+	<variable name="WeatherBackground" type="text">
+		<value condition="Control.HasFocus(50)">$INFO[Container(50).ListItem.Property(FanArt),special://skin/backgrounds/weather/]</value>
+		<value condition="Control.HasFocus(52)">$INFO[Container(52).ListItem.Property(FanArt),special://skin/backgrounds/weather/]</value>
+		<value>special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Current.fanartCode)]</value>
+	</variable>
 	<variable name="HomeAddOnBackground" type="text">
 		<value condition="Skin.HasSetting(singleglobalbackground) + !IsEmpty(Skin.String(globalbackgroundpath))">$INFO[Skin.String(globalbackgroundpath)]</value>
 		<value condition="Skin.HasSetting(singleglobalbackground) + IsEmpty(Skin.String(globalbackgroundpath))">$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</value>
@@ -750,6 +755,7 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + !IsEmpty(Window.Property(Music.AlbumsCount))">$INFO[Window.Property(Music.AlbumsCount),[B][COLOR=blue]$LOCALIZE[132]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window.Property(Music.ArtistsCount),[B][COLOR=blue]$LOCALIZE[133]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window.Property(Music.SongsCount),[B][COLOR=blue]$LOCALIZE[134]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),PlayDisc) + System.HasMediaDVD">$INFO[System.DVDLabel,[B][COLOR=blue]$LOCALIZE[427]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),PlayDisc) + !System.HasMediaDVD">$LOCALIZE[31260,[B][COLOR=blue]$LOCALIZE[427]$LOCALIZE[31000] [/COLOR][/B]]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Weather) + !StringCompare(Window(Weather).Property(Alerts.Count),0)">$INFO[Window(Weather).Property(Alerts),[B][COLOR=red]$LOCALIZE[33049]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Weather) + !substring(Window(Weather).Property(Day0.Outlook),N/A) + !IsEmpty(Window(Weather).Property(Day0.Outlook))">[B][COLOR=blue]$LOCALIZE[31174][/COLOR][/B] $INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]  [B][COLOR=blue]$LOCALIZE[31177] [/COLOR][/B] $INFO[Window(Weather).Property(Day0.Outlook)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Shutdown)">[B][COLOR=blue]$LOCALIZE[31262]$LOCALIZE[31000] [/COLOR][/B]$INFO[System.TotalUptime]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),FullScreen)">$INFO[Player.Title,[B][COLOR=blue]$LOCALIZE[31040]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Player.FinishTime,[B][COLOR=blue]$LOCALIZE[31049]$LOCALIZE[31000] [/COLOR][/B]]</value>
@@ -863,7 +869,7 @@
 		<value condition="[StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomSongs)] + ![Player.HasMedia | Control.HasFocus(510)]">$LOCALIZE[31264]</value>
 		<value condition="[StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums)] + ![Player.HasMedia | Control.HasFocus(510)]">$LOCALIZE[31264]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomArtists) + ![Player.HasMedia | Control.HasFocus(510)]">$LOCALIZE[31264]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather) + ![Player.HasMedia | Control.HasFocus(510)]">$LOCALIZE[402] $LOCALIZE[31000] $INFO[Window(Weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather) + ![Player.HasMedia | Control.HasFocus(510)]">$LOCALIZE[31174] $INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]  |  $LOCALIZE[402]$LOCALIZE[31000] $INFO[Window(Weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</value>
 	</variable>
 	<variable name="InfoWidgetGenre">
 		<value condition="Control.HasFocus(510)">$INFO[Container(510).ListItem.Property(Genre)]</value>
@@ -894,8 +900,7 @@
 		<value condition="[StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomSongs)] + ![Player.HasMedia | Control.HasFocus(510)]">$INFO[Window(home).Property(RecommendedMusic.1.Plot)]</value>
 		<value condition="[StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums)] + ![Player.HasMedia | Control.HasFocus(510)]">$INFO[Window(home).Property(RecommendedMusic.1.Plot)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomArtists) + ![Player.HasMedia | Control.HasFocus(510)]">$INFO[Window(home).Property(RecommendedMusic.1.Plot)]</value>
-		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather) + StringCompare(Window(Weather).Property(Alerts.Count),0)">[COLOR=grey2]$LOCALIZE[419] : [/COLOR]$INFO[Window(Weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]     [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(Weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits][CR][COLOR=grey2]$LOCALIZE[31173] $LOCALIZE[31000] [/COLOR]$INFO[Window(Weather).Property(Daily.1.ChancePrecipitation)][CR]$INFO[Window(Weather).Property(Day0.Outlook),[COLOR=grey2]$LOCALIZE[33030]$LOCALIZE[31000] [/COLOR]]</value>
-		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather) + !StringCompare(Window(Weather).Property(Alerts.Count),0)">$INFO[Window(Weather).Property(Alerts)]</value>
+		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather)">[COLOR=grey2]$LOCALIZE[419] $LOCALIZE[31000] [/COLOR]$INFO[Window(Weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]     [COLOR=grey2]$LOCALIZE[418] : [/COLOR]$INFO[Window(Weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits][CR][COLOR=grey2]$LOCALIZE[31173] $LOCALIZE[31000] [/COLOR]$INFO[Window(Weather).Property(Daily.1.ChancePrecipitation)][CR]$INFO[Window(Weather).Property(Day0.Outlook),[COLOR=grey2]$LOCALIZE[33030] $LOCALIZE[31000] [/COLOR]]$INFO[Window(Weather).Property(Alerts),[CR][B][COLOR=red]$LOCALIZE[33049] $LOCALIZE[31000] [/COLOR][/B]]</value>
 	</variable>
 	<variable name="InfoWidgetVideoStar">
 		<value condition="!IntegerGreaterThan(Container(510).ListItem.Property(Rating),2)">rating1.png</value>

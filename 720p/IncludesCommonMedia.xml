@@ -36,7 +36,7 @@
 			</control>
 			<control type="multiimage">
 				<include>Dimensions_Fullscreen</include>
-				<imagepath background="true">special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Current.fanartCode)]</imagepath>
+				<imagepath background="true">$VAR[WeatherBackground]</imagepath>
 				<timeperimage>8000</timeperimage>
 				<randomize>true</randomize>
 				<fadetime>FanartCrossfadeTime</fadetime>
