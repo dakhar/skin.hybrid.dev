@@ -816,14 +816,12 @@
 		<value condition="Player.HasAudio + IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) + IsEmpty(Control.GetLabel(5043)) + IsEmpty(Control.GetLabel(5044)) + !Control.HasFocus(510)">$INFO[MusicPlayer.Property(fanart_image)]</value>
 		<value condition="Player.HasAudio + !Player.IsInternetStream + IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) + ![IsEmpty(Control.GetLabel(5043)) | Control.HasFocus(510)]">$INFO[Player.FolderPath,,../extrafanart/]</value>
 		<value condition="Player.HasAudio + !Player.IsInternetStream + IsEmpty(Window(Visualisation).Property(ArtistSlideshow)) + IsEmpty(Control.GetLabel(5043)) + !Control.HasFocus(510)">$INFO[Skin.String(PhysicalMusicFolder)]$INFO[MusicPlayer.Artist,,/extrafanart/]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + [StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies)]">$INFO[Window(home).Property(RecommendedMovie.1.Art(fanart))]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !Skin.HasSetting(disablescriptplaylist)">$INFO[Window(home).Property(RecommendedMovie.1.Art(fanart))]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + [StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedEpisodes)]">$INFO[Window(home).Property(RecommendedEpisode.1.Art(tvshow.fanart))]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + [StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentConcerts) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomConcerts) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedConcerts)]">$INFO[Window(home).Property(RecommendedMusicVideo.1.Art(fanart))]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + [StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomSongs)]">$INFO[Window(home).Property(RecommendedAlbum.1.Art(fanart))]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + [StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums)]">$INFO[Window(home).Property(RecommendedAlbum.1.Art(fanart))]</value>
-		
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomArtists)">$INFO[Window(home).Property(RecommendedAlbum.1.Art(fanart))]</value>
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather)">special://skin/backgrounds/weather/$INFO[Window(Weather).Property(Current.fanartCode)]</value>
 	</variable>
@@ -869,9 +867,11 @@
 		<value condition="[StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomSongs)] + ![Player.HasMedia | Control.HasFocus(510)]">$LOCALIZE[31264]</value>
 		<value condition="[StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums)] + ![Player.HasMedia | Control.HasFocus(510)]">$LOCALIZE[31264]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomArtists) + ![Player.HasMedia | Control.HasFocus(510)]">$LOCALIZE[31264]</value>
-		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather) + ![Player.HasMedia | Control.HasFocus(510)]">$LOCALIZE[31174] $INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]  |  $LOCALIZE[402]$LOCALIZE[31000] $INFO[Window(Weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather) + ![Player.HasMedia | Control.HasFocus(510)]">$LOCALIZE[31174] $INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits][COLOR=50101010]  |  [/COLOR]$LOCALIZE[402]$LOCALIZE[31000] $INFO[Window(Weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</value>
+		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather) + Control.HasFocus(510)">$INFO[Container(510).ListItem.Property(ExtraInfo)]</value>
 	</variable>
 	<variable name="InfoWidgetGenre">
+		<value condition="Control.HasFocus(510) + StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather)">$LOCALIZE[31175] - $INFO[Window(Weather).Property(Updated)]</value>
 		<value condition="Control.HasFocus(510)">$INFO[Container(510).ListItem.Property(Genre)]</value>
 		<value condition="Player.HasVideo + !Control.HasFocus(510)">$INFO[VideoPlayer.Genre]</value>
 		<value condition="Player.HasAudio + !Control.HasFocus(510)">$INFO[MusicPlayer.Genre]</value>
@@ -890,7 +890,6 @@
 		<value condition="Player.HasVideo + !Control.HasFocus(510)">$INFO[VideoPlayer.Plot]</value>
 		<value condition="Player.HasAudio + ![IsEmpty(Window(Visualisation).Property(ArtistSlideshowRunning)) | Control.HasFocus(510)]">[COLOR=FFFFFAF0]$LOCALIZE[31263]: [/COLOR]$INFO[Window(Visualisation).Property(ArtistSlideshow.1.SimilarName)]$INFO[Window(Visualisation).Property(ArtistSlideshow.2.SimilarName), / ]$INFO[Window(Visualisation).Property(ArtistSlideshow.3.SimilarName), / ]$INFO[Window(Visualisation).Property(ArtistSlideshow.4.SimilarName), / ]$INFO[Window(Visualisation).Property(ArtistSlideshow.5.SimilarName), / ][CR]   $INFO[MusicPlayer.Property(Artist_Description)]$INFO[Window(Visualisation).Property(ArtistSlideshow.ArtistBiography), - ]</value>
 		<value condition="Player.HasAudio + IsEmpty(Window(Visualisation).Property(ArtistSlideshowRunning)) + !Control.HasFocus(510)">$INFO[MusicPlayer.Property(Artist_Description)]</value>
-		
 		<value condition="[StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies)] + ![Player.HasMedia | Control.HasFocus(510)] + !IsEmpty(Window(home).Property(RecommendedMovie.1.PlotOutline))">$INFO[Window(home).Property(RecommendedMovie.1.PlotOutline)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !Skin.HasSetting(disablescriptplaylist) + ![Player.HasMedia | Control.HasFocus(510)] + !IsEmpty(Window(home).Property(RecommendedMovie.1.PlotOutline))">$INFO[Window(home).Property(RecommendedMovie.1.PlotOutline)]</value>
 		<value condition="[StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies)] + ![Player.HasMedia | Control.HasFocus(510)]">$INFO[Window(home).Property(RecommendedMovie.1.Plot)]</value>
@@ -939,10 +938,10 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentConcerts) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomConcerts) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedConcerts)">InfoWidget/HomeWidgetVideo.png</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomSongs) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedAlbums) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomArtists)">InfoWidget/HomeWidgetMusic.png</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),MusicPlayList)">InfoWidget/HomeWidgetMusic.png</value>
-		<!--value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather)">InfoWidget/HomeWidgetMusic.png</value-->
+		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather)">InfoWidget/HomeWidgetVideo.png</value>
 	</variable>
 	<variable name="InfoWidgetType">
-		<!--value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather)">$LOCALIZE[8]</value-->
+		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather)">$INFO[Window(Weather).Property(Location)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies)">$LOCALIZE[31228]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies)">$LOCALIZE[31198]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies)">$LOCALIZE[31196]</value>
