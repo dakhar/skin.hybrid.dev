@@ -33,6 +33,7 @@
 				<ondown>200</ondown>
 				<onclick>Dialog.Close(VideoOSD,true)</onclick>
 				<onclick>FullScreen</onclick>
+				<enable>!Window.IsActive(script.pseudotv.TVOverlay.xml)</enable>
 			</control>
 			<control type="button" id="201">
 				<left>55</left>

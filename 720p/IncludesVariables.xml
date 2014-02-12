@@ -842,10 +842,10 @@
 		<value condition="![Player.HasMedia | Control.HasFocus(510)] + StringCompare(Container(9000).ListItem.Property(WidgetSet),Weather)">$INFO[Window(Weather).Property(Current.ConditionIcon)]</value>
 	</variable>
 	<variable name="InfoWidgetTagLine">
-		<value condition="IsEmpty(Container(510).ListItem.Property(EpisodeNumber)) + Control.HasFocus(510)">$INFO[Container(510).ListItem.Label2]</value>
-		<value condition="!IsEmpty(Container(510).ListItem.Property(EpisodeNumber))">$INFO[Container(510).ListItem.Label2]$INFO[Container(510).ListItem.Property(EpisodeNumber),[COLOR=80FFFFFF] | [/COLOR]]</value>
 		<value condition="Player.HasVideo + !Control.HasFocus(510)">$INFO[VideoPlayer.TagLine]</value>
 		<value condition="Player.HasAudio + !Control.HasFocus(510)">$INFO[MusicPlayer.Artist]$INFO[MusicPlayer.Album,[COLOR=80FFFFFF] | [/COLOR]]$INFO[MusicPlayer.Year,[COLOR=80FFFFFF] | [/COLOR]]</value>
+		<value condition="IsEmpty(Container(510).ListItem.Property(EpisodeNumber)) + Control.HasFocus(510)">$INFO[Container(510).ListItem.Label2]</value>
+		<value condition="!IsEmpty(Container(510).ListItem.Property(EpisodeNumber)) + Control.HasFocus(510)">$INFO[Container(510).ListItem.Label2]$INFO[Container(510).ListItem.Property(EpisodeNumber),[COLOR=80FFFFFF] | [/COLOR]]</value>
 		<value condition="[StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomMovies) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedMovies)] + ![Player.HasMedia | Control.HasFocus(510)]">$INFO[Window(home).Property(RecommendedMovie.1.TagLine)]</value>
 		<value condition="[StringCompare(Container(9000).ListItem.Property(WidgetSet),UnWatchedMovies) + !Skin.HasSetting(disablescriptplaylist)] + ![Player.HasMedia | Control.HasFocus(510)]">$INFO[Window(home).Property(RecommendedMovie.1.TagLine)]</value>
 		<value condition="[StringCompare(Container(9000).ListItem.Property(WidgetSet),RecentEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),RandomEpisodes) | StringCompare(Container(9000).ListItem.Property(WidgetSet),SuggestedEpisodes)] + ![Player.HasMedia | Control.HasFocus(510)]">$INFO[Window(home).Property(RecommendedEpisode.1.EpisodeNo)][COLOR=80FFFFFF] | [/COLOR]$INFO[Window(home).Property(RecommendedEpisode.1.TVShowTitle)]</value>
