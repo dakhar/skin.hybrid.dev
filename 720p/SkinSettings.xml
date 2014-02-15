@@ -664,78 +664,23 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="group" id="192">
+					<control type="button" id="198">
 						<width>750</width>
 						<height>40</height>
-						<control type="grouplist" id="193">
-							<orientation>horizontal</orientation>
-							<width>750</width>
-							<height>40</height>
-							<itemgap>0</itemgap>
-							<onup>190</onup>
-							<ondown>199</ondown>
-							<align>left</align>
-							<control type="radiobutton" id="194">
-								<description>Default</description>
-								<width>150</width>
-								<height>40</height>
-								<label> $LOCALIZE[571]</label>
-								<font>font10</font>
-								<align>left</align>
-								<texturefocus>MenuItemFO.png</texturefocus>
-								<texturenofocus>MenuItemNF.png</texturenofocus>
-								<onclick>Skin.Reset(mediapaneltrans)</onclick>
-								<selected>IsEmpty(Skin.String(mediapaneltrans))</selected>
-							</control>
-							<control type="radiobutton" id="195">
-								<description>Step 1</description>
-								<width>150</width>
-								<height>40</height>
-								<label> $LOCALIZE[31287] 1</label>
-								<font>font10</font>
-								<align>left</align>
-								<texturefocus>MenuItemFO.png</texturefocus>
-								<texturenofocus>MenuItemNF.png</texturenofocus>
-								<onclick>Skin.SetString(mediapaneltrans,85)</onclick>
-								<selected>stringcompare(Skin.String(mediapaneltrans),85)</selected>
-							</control>
-							<control type="radiobutton" id="196">
-								<description>Step 2</description>
-								<width>150</width>
-								<height>40</height>
-								<label> $LOCALIZE[31287] 2</label>
-								<font>font10</font>
-								<align>left</align>
-								<texturefocus>MenuItemFO.png</texturefocus>
-								<texturenofocus>MenuItemNF.png</texturenofocus>
-								<onclick>Skin.SetString(mediapaneltrans,65)</onclick>
-								<selected>stringcompare(Skin.String(mediapaneltrans),65)</selected>
-							</control>
-							<control type="radiobutton" id="197">
-								<description>Step 3</description>
-								<width>150</width>
-								<height>40</height>
-								<label> $LOCALIZE[31287] 3</label>
-								<font>font10</font>
-								<align>left</align>
-								<texturefocus>MenuItemFO.png</texturefocus>
-								<texturenofocus>MenuItemNF.png</texturenofocus>
-								<onclick>Skin.SetString(mediapaneltrans,45)</onclick>
-								<selected>stringcompare(Skin.String(mediapaneltrans),45)</selected>
-							</control>
-							<control type="radiobutton" id="198">
-								<description>Step 4</description>
-								<width>150</width>
-								<height>40</height>
-								<label> $LOCALIZE[31287] 4</label>
-								<font>font10</font>
-								<align>left</align>
-								<texturefocus>MenuItemFO.png</texturefocus>
-								<texturenofocus>MenuItemNF.png</texturenofocus>
-								<onclick>Skin.SetString(mediapaneltrans,25)</onclick>
-								<selected>stringcompare(Skin.String(mediapaneltrans),25)</selected>
-							</control>
-						</control>
+						<font>font13</font>
+						<label>$LOCALIZE[31249]</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(mediapaneltrans)] $VAR[TransparentValue][/COLOR]</label2>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick condition="IsEmpty(Skin.String(mediapaneltrans))">Skin.SetString(mediapaneltrans,10)</onclick>
+						<onclick condition="Skin.String(mediapaneltrans,10)">Skin.SetString(mediapaneltrans,25)</onclick>
+						<onclick condition="Skin.String(mediapaneltrans,25)">Skin.SetString(mediapaneltrans,40)</onclick>
+						<onclick condition="Skin.String(mediapaneltrans,40)">Skin.SetString(mediapaneltrans,55)</onclick>
+						<onclick condition="Skin.String(mediapaneltrans,55)">Skin.SetString(mediapaneltrans,70)</onclick>
+						<onclick condition="Skin.String(mediapaneltrans,70)">Skin.SetString(mediapaneltrans,85)</onclick>
+						<onclick condition="Skin.String(mediapaneltrans,85)">Skin.Reset(mediapaneltrans)</onclick>
 					</control>
 					<control type="radiobutton" id="199">
 						<description>Darken Backgrounds</description>
@@ -747,8 +692,8 @@
 						<label>  $LOCALIZE[31018]</label>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(disabledarkbackground)</onclick>
-						<selected>!Skin.HasSetting(disabledarkbackground)</selected>
+						<onclick>Skin.ToggleSetting(disablewidgetadjust)</onclick>
+						<selected>!Skin.HasSetting(disablewidgetadjust)</selected>
 					</control>
 				</control>
 				<control type="textbox">

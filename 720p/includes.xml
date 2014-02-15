@@ -34,11 +34,22 @@
 	<constant name="FanartCrossfadeTime">600</constant>
 	<constant name="IconCrossfadeTime">500</constant>
 	<include name="TransparentEffect">
-		<animation effect="fade" start="100" end="85" time="0" condition="SubString(skin.string(mediapaneltrans),85)">Conditional</animation>
-		<animation effect="fade" start="100" end="65" time="0" condition="SubString(skin.string(mediapaneltrans),65)">Conditional</animation>
-		<animation effect="fade" start="100" end="45" time="0" condition="SubString(skin.string(mediapaneltrans),45)">Conditional</animation>
-		<animation effect="fade" start="100" end="25" time="0" condition="SubString(skin.string(mediapaneltrans),25)">Conditional</animation>
+		<animation effect="fade" start="100" end="15" time="0" condition="SubString(skin.string(mediapaneltrans),85)">Conditional</animation>
+		<animation effect="fade" start="100" end="30" time="0" condition="SubString(skin.string(mediapaneltrans),70)">Conditional</animation>
+		<animation effect="fade" start="100" end="45" time="0" condition="SubString(skin.string(mediapaneltrans),55)">Conditional</animation>
+		<animation effect="fade" start="100" end="60" time="0" condition="SubString(skin.string(mediapaneltrans),40)">Conditional</animation>
+		<animation effect="fade" start="100" end="75" time="0" condition="SubString(skin.string(mediapaneltrans),25)">Conditional</animation>
+		<animation effect="fade" start="100" end="90" time="0" condition="SubString(skin.string(mediapaneltrans),10)">Conditional</animation>
 	</include>
+	
+	
+	<include name="WidgetTransparency">
+		<animation effect="fade" start="100" end="60" time="0" condition="SubString(skin.string(mediapaneltrans),85) | SubString(skin.string(mediapaneltrans),70)">Conditional</animation>
+		<animation effect="fade" start="100" end="75" time="0" condition="SubString(skin.string(mediapaneltrans),55) | SubString(skin.string(mediapaneltrans),40)">Conditional</animation>
+		<animation effect="fade" start="100" end="90" time="0" condition="SubString(skin.string(mediapaneltrans),25) | SubString(skin.string(mediapaneltrans),10)">Conditional</animation>
+	</include>
+	
+	
 	<include name="KBurnsAnimateFanart">
 		<animation effect="zoom" start="110" end="130" center="auto" time="16000" tween="cubic" easing="inout" pulse="true" condition="!Skin.HasSetting(noanimatefanart)">Conditional</animation>
 		<animation effect="slide" start="-10,-10" end="20,20" time="8000" tween="cubic" easing="inout" pulse="true" condition="!Skin.HasSetting(noanimatefanart)">Conditional</animation>

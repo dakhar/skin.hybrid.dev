@@ -86,7 +86,7 @@
 				<height>284</height>
 				<texture>InfoWidget/HomeWidgetInfo.png</texture>
 				<colordiffuse>FFFFFAF0</colordiffuse>
-				<include>TransparentEffect</include>
+				<include condition="!Skin.HasSetting(disablewidgetadjust)">WidgetTransparency</include>
 			</control>
 			<control type="image">
 				<left>-9</left>
@@ -765,7 +765,7 @@
 			<texture>$VAR[InfoWidgetPanel]</texture>
 			<colordiffuse>FFFFFAF0</colordiffuse>
 			<fadetime>FanartCrossFadeTime</fadetime>
-			<include>TransparentEffect</include>
+			<include condition="!Skin.HasSetting(disablewidgetadjust)">WidgetTransparency</include>
 			<animation effect="slide" start="0,0" end="0,-400" time="400" easing="out" tween="sine" condition="Skin.HasSetting(enablecleanhome) + !Control.HasFocus(510)">Conditional</animation>
 			<animation effect="fade" start="0" end="100" time="500" delay="3000" condition="Window.Previous(Startup)">WindowOpen</animation>
 			<visible>Control.IsVisible(602) | Control.HasFocus(510)</visible>

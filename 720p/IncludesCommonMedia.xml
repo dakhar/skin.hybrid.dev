@@ -425,16 +425,6 @@
 			<texture>black-back.png</texture>
 			<visible>!Control.IsVisible(508) + !Control.IsVisible(509)</visible>
 		</control>
-		<control type="image">
-			<include>Window_OpenClose_Animation</include>
-			<include>Dimensions_Fullscreen</include>
-			<include>VisibleFadeEffect</include>
-			<aspectratio>stretch</aspectratio>
-			<texture>black-back.png</texture>
-			<visible>!Skin.HasSetting(disabledarkbackground)</visible>
-			<!-- Better to check which views do NOT need -->
-			<visible>Control.IsVisible(515) | Control.IsVisible(504) | Control.IsVisible(505) | Control.IsVisible(500) | Control.IsVisible(550) | Control.IsVisible(551)</visible>
-		</control>
 	</include>
 	<include name="ArtistExtraFanArt">
 		<control type="multiimage" id="5043">

@@ -91,7 +91,7 @@ msgid "In Progress"
 msgstr ""
 
 msgctxt "#31018"
-msgid "Enable Darker Backgrounds in Media Lists"
+msgid "Enable Home Page Widget Panel Transparency"
 msgstr ""
 
 msgctxt "#31019"
@@ -580,7 +580,13 @@ msgctxt "#31247"
 msgid "Relocate Menu Item Number"
 msgstr ""
 
-#empty strings from id 31248 to 31249
+msgctxt "#31248"
+msgid "% Transparency"
+msgstr ""
+
+msgctxt "#31249"
+msgid "Background Transparency"
+msgstr ""
 
 # Misc Labels 31250
 
@@ -729,7 +735,7 @@ msgid "Home Screen Options"
 msgstr ""
 
 msgctxt "#31286"
-msgid "Background Panel Transparency"
+msgid "Skin Transparency Levels"
 msgstr ""
 
 msgctxt "#31287"
