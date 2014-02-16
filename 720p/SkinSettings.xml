@@ -5,16 +5,6 @@
 	<onload condition="System.HasAddon(script.favourites)">XBMC.RunScript(script.favourites)</onload>
 	<onload>SetProperty(MenuItemActive,Settings,Home)</onload>
 	<onload condition="stringcompare(Container(9009).Position,0) + !stringcompare(Skin.String(initialmenuposi),0)">Control.Move(9009,$INFO[Skin.String(initialmenuposi)])</onload>
-	<onload condition="stringcompare(Container(9008).ListItem.label,$LOCALIZE[31700]) + stringcompare(Skin.String(mpaacountrycert),$LOCALIZE[31701])">Control.Move(9008,1)</onload>
-	<onload condition="stringcompare(Container(9008).ListItem.label,$LOCALIZE[31700]) + stringcompare(Skin.String(mpaacountrycert),$LOCALIZE[31703])">Control.Move(9008,2)</onload>
-	<onload condition="stringcompare(Container(9008).ListItem.label,$LOCALIZE[31700]) + stringcompare(Skin.String(mpaacountrycert),$LOCALIZE[31706])">Control.Move(9008,3)</onload>
-	<onload condition="stringcompare(Container(9008).ListItem.label,$LOCALIZE[31700]) + stringcompare(Skin.String(mpaacountrycert),$LOCALIZE[31708])">Control.Move(9008,4)</onload>
-	<onload condition="stringcompare(Container(9008).ListItem.label,$LOCALIZE[31700]) + stringcompare(Skin.String(mpaacountrycert),$LOCALIZE[31707])">Control.Move(9008,5)</onload>
-	<onload condition="stringcompare(Container(9008).ListItem.label,$LOCALIZE[31700]) + stringcompare(Skin.String(mpaacountrycert),$LOCALIZE[31702])">Control.Move(9008,6)</onload>
-	<onload condition="stringcompare(Container(9008).ListItem.label,$LOCALIZE[31700]) + stringcompare(Skin.String(mpaacountrycert),$LOCALIZE[31705])">Control.Move(9008,7)</onload>
-	<onload condition="stringcompare(Container(9008).ListItem.label,$LOCALIZE[31700]) + stringcompare(Skin.String(mpaacountrycert),$LOCALIZE[31709])">Control.Move(9008,8)</onload>
-	<onload condition="stringcompare(Container(9008).ListItem.label,$LOCALIZE[31700]) + stringcompare(Skin.String(mpaacountrycert),$LOCALIZE[31704])">Control.Move(9008,9)</onload>
-	<onload condition="stringcompare(Container(9008).ListItem.label,$LOCALIZE[31700]) + stringcompare(Skin.String(mpaacountrycert),$LOCALIZE[31710])">Control.Move(9008,10)</onload>
 	<controls>
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
@@ -417,6 +407,21 @@
 						<onclick>Skin.ToggleSetting(hidenowplayingfanart)</onclick>
 						<selected>!Skin.HasSetting(hidenowplayingfanart)</selected>
 					</control>
+					
+					<control type="radiobutton" id="125">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>  $LOCALIZE[31020]</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(enablefullmpaa)</onclick>
+						<selected>Skin.HasSetting(enablefullmpaa)</selected>
+					</control>
+					
+					
 					<control type="button" id="126">
 						<width>750</width>
 						<height>40</height>
@@ -427,8 +432,19 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Control.Move(9008,1)</onclick>
-						<onclick>Skin.SetString(mpaacountrycert,$INFO[Container(9008).ListItem.label])</onclick>
+						<onclick condition="IsEmpty(Skin.String(mpaacountrycert))">Skin.SetString(mpaacountrycert,UK)</onclick>
+						<onclick condition="Skin.String(mpaacountrycert,USA)">Skin.SetString(mpaacountrycert,UK)</onclick>
+						<onclick condition="Skin.String(mpaacountrycert,UK)">Skin.SetString(mpaacountrycert,Aus)</onclick>
+						<onclick condition="Skin.String(mpaacountrycert,Aus)">Skin.SetString(mpaacountrycert,Bra)</onclick>
+						<onclick condition="Skin.String(mpaacountrycert,Bra)">Skin.SetString(mpaacountrycert,Can)</onclick>
+						<onclick condition="Skin.String(mpaacountrycert,Can)">Skin.SetString(mpaacountrycert,DK)</onclick>
+						<onclick condition="Skin.String(mpaacountrycert,DK)">Skin.SetString(mpaacountrycert,DE)</onclick>
+						<onclick condition="Skin.String(mpaacountrycert,DE)">Skin.SetString(mpaacountrycert,HK)</onclick>
+						<onclick condition="Skin.String(mpaacountrycert,HK)">Skin.SetString(mpaacountrycert,Ire)</onclick>
+						<onclick condition="Skin.String(mpaacountrycert,Ire)">Skin.SetString(mpaacountrycert,Jpn)</onclick>
+						<onclick condition="Skin.String(mpaacountrycert,Jpn)">Skin.SetString(mpaacountrycert,NL)</onclick>
+						<onclick condition="Skin.String(mpaacountrycert,NL)">Skin.SetString(mpaacountrycert,USA)</onclick>
+						<enable>!Skin.HasSetting(enablefullmpaa)</enable>
 					</control>
 					<control type="radiobutton" id="127">
 						<width>750</width>
@@ -7790,83 +7806,7 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(6)</visible>
 				</control>
-				<control type="list" id="9008">
-					<visible>Container(9000).Hasfocus(1)</visible>
-					<onleft>9001</onleft>
-					<onright>9001</onright>
-					<onup>9001</onup>
-					<ondown>9001</ondown>
-					<itemlayout height="1" width="750"></itemlayout>
-					<focusedlayout height="1" width="750"></focusedlayout>
-					<content>
-						<item>
-							<label>$LOCALIZE[31700]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-						</item>
-						<item>
-							<label>$LOCALIZE[31701]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-						</item>
-						<item>
-							<label>$LOCALIZE[31703]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-						</item>
-						<item>
-							<label>$LOCALIZE[31706]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-						</item>
-						<item>
-							<label>$LOCALIZE[31708]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-						</item>
-						<item>
-							<label>$LOCALIZE[31707]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-						</item>
-						<item>
-							<label>$LOCALIZE[31702]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-						</item>
-						<item>
-							<label>$LOCALIZE[31705]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-						</item>
-						<item>
-							<label>$LOCALIZE[31709]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-						</item>
-						<item>
-							<label>$LOCALIZE[31704]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-						</item>
-						<item>
-							<label>$LOCALIZE[31710]</label>
-							<onclick>noop</onclick>
-							<icon>-</icon>
-							<thumb>-</thumb>
-						</item>
-					</content>
-				</control>
+				
 				<control type="list" id="9009">
 					<onleft>9001</onleft>
 					<onright>9001</onright>

@@ -289,7 +289,24 @@
 			<aligny>center</aligny>
 			<include>Window_OpenClose_Animation</include>
 			<label>$INFO[ListItem.Tagline]</label>
+			<visible>!Skin.HasSetting(enablefullmpaa)</visible>
 			<visible>!IsEmpty(ListItem.Tagline) + Container.Content(Movies)</visible>
+		</control>
+		<control type="label">
+			<left>10</left>
+			<top>45</top>
+			<width>1260</width>
+			<height>20</height>
+			<font>font12_title</font>
+			<textcolor>grey2</textcolor>
+			<wrapmultiline>true</wrapmultiline>
+			<scroll>false</scroll>
+			<align>center</align>
+			<aligny>center</aligny>
+			<include>Window_OpenClose_Animation</include>
+			<label>$INFO[Listitem.mpaa]</label>
+			<visible>Skin.HasSetting(enablefullmpaa)</visible>
+			<visible>!IsEmpty(Listitem.mpaa) + Container.Content(Movies)</visible>
 		</control>
 		<control type="group">
 			<include>Window_OpenClose_Animation</include>
