@@ -239,7 +239,7 @@
 	<include name="DefaultInitialSetup">
 		<onload condition="System.Date(11-24,1-6)">Skin.Setbool(holidayeffects)</onload>
 		<onload>Skin.SetBool(showweatherfanart)</onload>
-		<onload>Skin.SetString(mpaacountrycert,UK)</onload>
+		<onload>Skin.SetString(mpaacertificate,UK)</onload>
 		<onload>Skin.SetString(initialmenuitem,0)</onload>
 		<onload>Skin.SetString(initialmenuposi,2)</onload>
 		<onload condition="!IsEmpty(Weather.Plugin)">Skin.SetString(homeitem.1.label,$LOCALIZE[31610])</onload>

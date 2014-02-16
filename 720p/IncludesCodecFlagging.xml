@@ -16,12 +16,7 @@
 			<width>75</width>
 			<height>35</height>
 			<aspectratio align="right">keep</aspectratio>
-			
-			<!--texture>$VAR[RatingMPAA,flagging/ratings/,.png]</texture-->
-			
 			<texture>$VAR[RatingMPAA,flagging/ratings/,.png]</texture>
-			
-			
 			<visible>!IsEmpty(ListItem.Mpaa)</visible>
 		</control>
 	</include>

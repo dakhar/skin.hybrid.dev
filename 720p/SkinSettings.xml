@@ -432,18 +432,18 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick condition="IsEmpty(Skin.String(mpaacountrycert))">Skin.SetString(mpaacountrycert,UK)</onclick>
-						<onclick condition="Skin.String(mpaacountrycert,USA)">Skin.SetString(mpaacountrycert,UK)</onclick>
-						<onclick condition="Skin.String(mpaacountrycert,UK)">Skin.SetString(mpaacountrycert,Aus)</onclick>
-						<onclick condition="Skin.String(mpaacountrycert,Aus)">Skin.SetString(mpaacountrycert,Bra)</onclick>
-						<onclick condition="Skin.String(mpaacountrycert,Bra)">Skin.SetString(mpaacountrycert,Can)</onclick>
-						<onclick condition="Skin.String(mpaacountrycert,Can)">Skin.SetString(mpaacountrycert,DK)</onclick>
-						<onclick condition="Skin.String(mpaacountrycert,DK)">Skin.SetString(mpaacountrycert,DE)</onclick>
-						<onclick condition="Skin.String(mpaacountrycert,DE)">Skin.SetString(mpaacountrycert,HK)</onclick>
-						<onclick condition="Skin.String(mpaacountrycert,HK)">Skin.SetString(mpaacountrycert,Ire)</onclick>
-						<onclick condition="Skin.String(mpaacountrycert,Ire)">Skin.SetString(mpaacountrycert,Jpn)</onclick>
-						<onclick condition="Skin.String(mpaacountrycert,Jpn)">Skin.SetString(mpaacountrycert,NL)</onclick>
-						<onclick condition="Skin.String(mpaacountrycert,NL)">Skin.SetString(mpaacountrycert,USA)</onclick>
+						<onclick condition="IsEmpty(Skin.String(mpaacertificate))">Skin.SetString(mpaacertificate,UK)</onclick>
+						<onclick condition="Skin.String(mpaacertificate,USA)">Skin.SetString(mpaacertificate,UK)</onclick>
+						<onclick condition="Skin.String(mpaacertificate,UK)">Skin.SetString(mpaacertificate,Aus)</onclick>
+						<onclick condition="Skin.String(mpaacertificate,Aus)">Skin.SetString(mpaacertificate,Bra)</onclick>
+						<onclick condition="Skin.String(mpaacertificate,Bra)">Skin.SetString(mpaacertificate,Can)</onclick>
+						<onclick condition="Skin.String(mpaacertificate,Can)">Skin.SetString(mpaacertificate,DK)</onclick>
+						<onclick condition="Skin.String(mpaacertificate,DK)">Skin.SetString(mpaacertificate,DE)</onclick>
+						<onclick condition="Skin.String(mpaacertificate,DE)">Skin.SetString(mpaacertificate,HK)</onclick>
+						<onclick condition="Skin.String(mpaacertificate,HK)">Skin.SetString(mpaacertificate,Ire)</onclick>
+						<onclick condition="Skin.String(mpaacertificate,Ire)">Skin.SetString(mpaacertificate,Jpn)</onclick>
+						<onclick condition="Skin.String(mpaacertificate,Jpn)">Skin.SetString(mpaacertificate,NL)</onclick>
+						<onclick condition="Skin.String(mpaacertificate,NL)">Skin.SetString(mpaacertificate,USA)</onclick>
 						<enable>!Skin.HasSetting(enablefullmpaa)</enable>
 					</control>
 					<control type="radiobutton" id="127">
