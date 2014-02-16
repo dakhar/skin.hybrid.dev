@@ -669,7 +669,7 @@
 						<height>40</height>
 						<font>font13</font>
 						<label>$LOCALIZE[31249]</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(mediapaneltrans)] $VAR[TransparentValue][/COLOR]</label2>
+						<label2>[COLOR=selected]$INFO[Skin.String(mediapaneltrans)]$VAR[TransparentValue][/COLOR]</label2>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -683,7 +683,7 @@
 						<onclick condition="Skin.String(mediapaneltrans,85)">Skin.Reset(mediapaneltrans)</onclick>
 					</control>
 					<control type="radiobutton" id="199">
-						<description>Darken Backgrounds</description>
+						<description>Widget Transparency</description>
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
