@@ -773,11 +773,11 @@
 						<label>$LOCALIZE[31289]</label>
 						<onclick>Skin.SetString(homeitemlastlabel,$INFO[Skin.String(homeitem.1.label)])</onclick>
 						<onclick>Skin.SetString(homeitemlastaction,$INFO[Skin.String(homeitem.1.path)])</onclick>
-						<onclick>Skin.ToggleSetting(stickyHomemenuaction)</onclick>
-						<selected>Skin.HasSetting(stickyHomemenuaction)</selected>
+						<onclick>Skin.ToggleSetting(stickyhomemenuaction)</onclick>
+						<selected>Skin.HasSetting(stickyhomemenuaction)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<enable>!StringCompare(Skin.String(homeitem.1.sub),$LOCALIZE[31254]) + !IsEmpty(Skin.String(homeitem.1.path))</enable>
+						<enable>!StringCompare(Skin.String(homeitem.1.sub),$LOCALIZE[31254]) + !IsEmpty(Skin.String(homeitem.1.path)) + !Skin.HasSetting(homeitem.1.menu)</enable>
 					</control>
 					<control type="button" id="202">
 						<width>750</width>
@@ -789,13 +789,56 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.Reset(stickyHomemenuaction)</onclick>
+						<onclick>Skin.Reset(stickyhomemenuaction)</onclick>
 						<onclick>Skin.Reset(homeitemlastlabel)</onclick>
 						<onclick>Skin.Reset(homeitemlastaction)</onclick>
 						<onclick>SetProperty(usrselectbtn,homeitem.1,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					<control type="button" id="203">
+					
+					
+			
+
+					<control type="radiobutton" id="203">
+						<description>Two Page Menu System</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label> - $LOCALIZE[31408]</label>
+						
+						
+						<onclick>Skin.ToggleSetting(homeitem.1.menu)</onclick>
+						
+						
+						<onclick>Skin.Reset(stickyhomemenuaction)</onclick>
+						<onclick>Skin.Reset(homeitemlastlabel)</onclick>
+						<onclick>Skin.Reset(homeitemlastaction)</onclick>
+						
+						
+						<selected>Skin.HasSetting(homeitem.1.menu)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>!IsEmpty(Skin.String(homeitem.1.label))</visible>
+					</control>
+
+
+<!--
+
+
+						<onclick condition="!Skin.String(homeitem.1.display)">Skin.SetString(homeitem.1.display,LiveContent)</onclick>
+						<onclick condition="Skin.String(homeitem.1.display)">Skin.Reset(homeitem.1.display)</onclick>
+						<onclick condition="stringcompare(Skin.String(homeitem.1.type),Weather) + !Skin.String(homeitem.1.display)">Skin.SetBool(showweatherfanart)</onclick>
+						<onclick condition="stringcompare(Skin.String(homeitem.1.type),Weather) + Skin.String(homeitem.1.display)">Skin.Reset(showweatherfanart)</onclick>
+						<selected>Skin.String(homeitem.1.display)</selected>
+
+
+-->
+			
+					
+					
+					<control type="button" id="204">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -805,14 +848,14 @@
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.Reset(stickyHomemenuaction)</onclick>
+						<onclick>Skin.Reset(stickyhomemenuaction)</onclick>
 						<onclick>Skin.Reset(homeitemlastlabel)</onclick>
 						<onclick>Skin.Reset(homeitemlastaction)</onclick>
 						<onclick>SetProperty(usrselectbtn,homeitem.1,Home)</onclick>
 						<onclick>ActivateWindow(2116)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.1.label))</visible>
 					</control>
-					<control type="button" id="204">
+					<control type="button" id="205">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -826,7 +869,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.1.label))</visible>
 					</control>
-					<control type="button" id="205">
+					<control type="button" id="206">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -840,7 +883,7 @@
 						<onclick>ActivateWindow(2118)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.1.label))</visible>
 					</control>
-					<control type="radiobutton" id="206">
+					<control type="radiobutton" id="207">
 						<description>Live Content BackGrounds</description>
 						<width>750</width>
 						<height>40</height>
@@ -869,7 +912,7 @@
 						</enable>
 						<visible>!IsEmpty(Skin.String(homeitem.1.label))</visible>
 					</control>
-					<control type="button" id="207">
+					<control type="button" id="208">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -880,20 +923,24 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.1,Home)</onclick>
-						<onclick>SetProperty(MenuItemLabel,$INFO[Skin.String(homeitem.1.label)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPath,$INFO[Skin.String(homeitem.1.path)],Home)</onclick>
-						<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.1.sub)],Home)</onclick>
-						<onclick>SetProperty(MenuItemStats,$INFO[Skin.String(homeitem.1.stats)],Home)</onclick>
-						<onclick>SetProperty(MenuItemAddOn,$INFO[Skin.String(homeitem.1.addon)],Home)</onclick>
-						<onclick>SetProperty(MenuItemWidget,$INFO[Skin.String(homeitem.1.widget)],Home)</onclick>
-						<onclick>SetProperty(MenuItemType,$INFO[Skin.String(homeitem.1.type)],Home)</onclick>
-						<onclick>SetProperty(MenuItemFanArt,$INFO[Skin.String(homeitem.1.fanart)],Home)</onclick>
-						<onclick>SetProperty(MenuItemDisplay,$INFO[Skin.String(homeitem.1.display)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPlaylist,$INFO[Skin.String(homeitem.1.playlist)],Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(homeitem.1.label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(homeitem.1.path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(homeitem.1.sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemStats,$INFO[Skin.String(homeitem.1.stats)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(homeitem.1.addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(homeitem.1.widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(homeitem.1.type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.1.fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.1.display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.1.playlist)],Home)</onclick>
+						
+						<onclick condition="Skin.HasSetting(homeitem.1.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
+						<onclick condition="!Skin.HasSetting(homeitem.1.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
+						
 						<onclick>ActivateWindow(2128)</onclick>
-						<visible>!IsEmpty(Skin.String(homeitem.1.label)) + !Skin.HasSetting(stickyHomemenuaction)</visible>
+						<visible>!IsEmpty(Skin.String(homeitem.1.label)) + !Skin.HasSetting(stickyhomemenuaction)</visible>
 					</control>
-					<control type="button" id="208">
+					<control type="button" id="209">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -906,7 +953,30 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.2,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					<control type="button" id="209">
+					
+					
+					
+					
+					<control type="radiobutton" id="210">
+						<description>Two Page Menu System</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label> - $LOCALIZE[31408]</label>
+						<onclick>Skin.ToggleSetting(homeitem.2.menu)</onclick>
+						<selected>Skin.HasSetting(homeitem.2.menu)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>!IsEmpty(Skin.String(homeitem.2.label))</visible>
+					</control>
+					
+					
+					
+					
+					
+					<control type="button" id="211">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -920,7 +990,7 @@
 						<onclick>ActivateWindow(2116)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.2.label))</visible>
 					</control>
-					<control type="button" id="210">
+					<control type="button" id="212">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -934,7 +1004,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.2.label))</visible>
 					</control>
-					<control type="button" id="211">
+					<control type="button" id="213">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -948,7 +1018,7 @@
 						<onclick>ActivateWindow(2118)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.2.label))</visible>
 					</control>
-					<control type="radiobutton" id="212">
+					<control type="radiobutton" id="214">
 						<description>Live Content BackGrounds</description>
 						<width>750</width>
 						<height>40</height>
@@ -976,7 +1046,7 @@
 						</enable>
 						<visible>!IsEmpty(Skin.String(homeitem.2.label))</visible>
 					</control>
-					<control type="button" id="213">
+					<control type="button" id="215">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -987,20 +1057,22 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.2,Home)</onclick>
-						<onclick>SetProperty(MenuItemLabel,$INFO[Skin.String(homeitem.2.label)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPath,$INFO[Skin.String(homeitem.2.path)],Home)</onclick>
-						<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.2.sub)],Home)</onclick>
-						<onclick>SetProperty(MenuItemStats,$INFO[Skin.String(homeitem.2.stats)],Home)</onclick>
-						<onclick>SetProperty(MenuItemAddOn,$INFO[Skin.String(homeitem.2.addon)],Home)</onclick>
-						<onclick>SetProperty(MenuItemWidget,$INFO[Skin.String(homeitem.2.widget)],Home)</onclick>
-						<onclick>SetProperty(MenuItemType,$INFO[Skin.String(homeitem.2.type)],Home)</onclick>
-						<onclick>SetProperty(MenuItemFanArt,$INFO[Skin.String(homeitem.2.fanart)],Home)</onclick>
-						<onclick>SetProperty(MenuItemDisplay,$INFO[Skin.String(homeitem.2.display)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPlaylist,$INFO[Skin.String(homeitem.2.playlist)],Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(homeitem.2.label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(homeitem.2.path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(homeitem.2.sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemStats,$INFO[Skin.String(homeitem.2.stats)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(homeitem.2.addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(homeitem.2.widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(homeitem.2.type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.2.fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.2.display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.2.playlist)],Home)</onclick>
+						<onclick condition="Skin.HasSetting(homeitem.2.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
+						<onclick condition="!Skin.HasSetting(homeitem.2.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.2.label))</visible>
 					</control>
-					<control type="button" id="214">
+					<control type="button" id="216">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1013,7 +1085,28 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.3,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					<control type="button" id="215">
+					
+					
+					
+					<control type="radiobutton" id="217">
+						<description>Two Page Menu System</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label> - $LOCALIZE[31408]</label>
+						<onclick>Skin.ToggleSetting(homeitem.3.menu)</onclick>
+						<selected>Skin.HasSetting(homeitem.3.menu)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>!IsEmpty(Skin.String(homeitem.3.label))</visible>
+					</control>
+					
+					
+					
+					
+					<control type="button" id="218">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1027,7 +1120,7 @@
 						<onclick>ActivateWindow(2116)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.3.label))</visible>
 					</control>
-					<control type="button" id="216">
+					<control type="button" id="219">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1041,7 +1134,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.3.label))</visible>
 					</control>
-					<control type="button" id="217">
+					<control type="button" id="220">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1055,7 +1148,7 @@
 						<onclick>ActivateWindow(2118)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.3.label))</visible>
 					</control>
-					<control type="radiobutton" id="218">
+					<control type="radiobutton" id="221">
 						<description>Live Content BackGrounds</description>
 						<width>750</width>
 						<height>40</height>
@@ -1083,7 +1176,7 @@
 						</enable>
 						<visible>!IsEmpty(Skin.String(homeitem.3.label))</visible>
 					</control>
-					<control type="button" id="219">
+					<control type="button" id="222">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1094,20 +1187,22 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.3,Home)</onclick>
-						<onclick>SetProperty(MenuItemLabel,$INFO[Skin.String(homeitem.3.label)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPath,$INFO[Skin.String(homeitem.3.path)],Home)</onclick>
-						<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.3.sub)],Home)</onclick>
-						<onclick>SetProperty(MenuItemStats,$INFO[Skin.String(homeitem.3.stats)],Home)</onclick>
-						<onclick>SetProperty(MenuItemAddOn,$INFO[Skin.String(homeitem.3.addon)],Home)</onclick>
-						<onclick>SetProperty(MenuItemWidget,$INFO[Skin.String(homeitem.3.widget)],Home)</onclick>
-						<onclick>SetProperty(MenuItemType,$INFO[Skin.String(homeitem.3.type)],Home)</onclick>
-						<onclick>SetProperty(MenuItemFanArt,$INFO[Skin.String(homeitem.3.fanart)],Home)</onclick>
-						<onclick>SetProperty(MenuItemDisplay,$INFO[Skin.String(homeitem.3.display)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPlaylist,$INFO[Skin.String(homeitem.3.playlist)],Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(homeitem.3.label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(homeitem.3.path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(homeitem.3.sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemStats,$INFO[Skin.String(homeitem.3.stats)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(homeitem.3.addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(homeitem.3.widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(homeitem.3.type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.3.fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.3.display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.3.playlist)],Home)</onclick>
+						<onclick condition="Skin.HasSetting(homeitem.3.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
+						<onclick condition="!Skin.HasSetting(homeitem.3.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.3.label))</visible>
 					</control>
-					<control type="button" id="220">
+					<control type="button" id="223">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1120,7 +1215,30 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.4,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					<control type="button" id="221">
+					
+					
+					
+					
+					<control type="radiobutton" id="224">
+						<description>Two Page Menu System</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label> - $LOCALIZE[31408]</label>
+						<onclick>Skin.ToggleSetting(homeitem.4.menu)</onclick>
+						<selected>Skin.HasSetting(homeitem.4.menu)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>!IsEmpty(Skin.String(homeitem.4.label))</visible>
+					</control>
+					
+					
+					
+					
+					
+					<control type="button" id="225">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1134,7 +1252,7 @@
 						<onclick>ActivateWindow(2116)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.4.label))</visible>
 					</control>
-					<control type="button" id="222">
+					<control type="button" id="226">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1148,7 +1266,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.4.label))</visible>
 					</control>
-					<control type="button" id="223">
+					<control type="button" id="227">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1162,7 +1280,7 @@
 						<onclick>ActivateWindow(2118)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.4.label))</visible>
 					</control>
-					<control type="radiobutton" id="224">
+					<control type="radiobutton" id="228">
 						<description>Live Content BackGrounds</description>
 						<width>750</width>
 						<height>40</height>
@@ -1190,7 +1308,7 @@
 						</enable>
 						<visible>!IsEmpty(Skin.String(homeitem.4.label))</visible>
 					</control>
-					<control type="button" id="225">
+					<control type="button" id="229">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1201,20 +1319,22 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.4,Home)</onclick>
-						<onclick>SetProperty(MenuItemLabel,$INFO[Skin.String(homeitem.4.label)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPath,$INFO[Skin.String(homeitem.4.path)],Home)</onclick>
-						<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.4.sub)],Home)</onclick>
-						<onclick>SetProperty(MenuItemStats,$INFO[Skin.String(homeitem.4.stats)],Home)</onclick>
-						<onclick>SetProperty(MenuItemAddOn,$INFO[Skin.String(homeitem.4.addon)],Home)</onclick>
-						<onclick>SetProperty(MenuItemWidget,$INFO[Skin.String(homeitem.4.widget)],Home)</onclick>
-						<onclick>SetProperty(MenuItemType,$INFO[Skin.String(homeitem.4.type)],Home)</onclick>
-						<onclick>SetProperty(MenuItemFanArt,$INFO[Skin.String(homeitem.4.fanart)],Home)</onclick>
-						<onclick>SetProperty(MenuItemDisplay,$INFO[Skin.String(homeitem.4.display)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPlaylist,$INFO[Skin.String(homeitem.4.playlist)],Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(homeitem.4.label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(homeitem.4.path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(homeitem.4.sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemStats,$INFO[Skin.String(homeitem.4.stats)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(homeitem.4.addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(homeitem.4.widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(homeitem.4.type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.4.fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.4.display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.4.playlist)],Home)</onclick>
+						<onclick condition="Skin.HasSetting(homeitem.4.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
+						<onclick condition="!Skin.HasSetting(homeitem.4.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.4.label))</visible>
 					</control>
-					<control type="button" id="226">
+					<control type="button" id="230">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1227,7 +1347,33 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.5,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					<control type="button" id="227">
+					
+					
+					
+					
+					<control type="radiobutton" id="231">
+						<description>Two Page Menu System</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label> - $LOCALIZE[31408]</label>
+						<onclick>Skin.ToggleSetting(homeitem.5.menu)</onclick>
+						<selected>Skin.HasSetting(homeitem.5.menu)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>!IsEmpty(Skin.String(homeitem.5.label))</visible>
+					</control>
+					
+					
+					
+					
+					
+					
+					
+					
+					<control type="button" id="232">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1241,7 +1387,7 @@
 						<onclick>ActivateWindow(2116)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.5.label))</visible>
 					</control>
-					<control type="button" id="228">
+					<control type="button" id="233">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1255,7 +1401,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.5.label))</visible>
 					</control>
-					<control type="button" id="229">
+					<control type="button" id="234">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1269,7 +1415,7 @@
 						<onclick>ActivateWindow(2118)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.5.label))</visible>
 					</control>
-					<control type="radiobutton" id="230">
+					<control type="radiobutton" id="235">
 						<description>Live Content BackGrounds</description>
 						<width>750</width>
 						<height>40</height>
@@ -1297,7 +1443,7 @@
 						</enable>
 						<visible>!IsEmpty(Skin.String(homeitem.5.label))</visible>
 					</control>
-					<control type="button" id="231">
+					<control type="button" id="236">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1308,20 +1454,22 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.5,Home)</onclick>
-						<onclick>SetProperty(MenuItemLabel,$INFO[Skin.String(homeitem.5.label)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPath,$INFO[Skin.String(homeitem.5.path)],Home)</onclick>
-						<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.5.sub)],Home)</onclick>
-						<onclick>SetProperty(MenuItemStats,$INFO[Skin.String(homeitem.5.stats)],Home)</onclick>
-						<onclick>SetProperty(MenuItemAddOn,$INFO[Skin.String(homeitem.5.addon)],Home)</onclick>
-						<onclick>SetProperty(MenuItemWidget,$INFO[Skin.String(homeitem.5.widget)],Home)</onclick>
-						<onclick>SetProperty(MenuItemType,$INFO[Skin.String(homeitem.5.type)],Home)</onclick>
-						<onclick>SetProperty(MenuItemFanArt,$INFO[Skin.String(homeitem.5.fanart)],Home)</onclick>
-						<onclick>SetProperty(MenuItemDisplay,$INFO[Skin.String(homeitem.5.display)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPlaylist,$INFO[Skin.String(homeitem.5.playlist)],Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(homeitem.5.label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(homeitem.5.path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(homeitem.5.sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemStats,$INFO[Skin.String(homeitem.5.stats)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(homeitem.5.addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(homeitem.5.widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(homeitem.5.type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.5.fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.5.display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.5.playlist)],Home)</onclick>
+						<onclick condition="Skin.HasSetting(homeitem.5.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
+						<onclick condition="!Skin.HasSetting(homeitem.5.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.5.label))</visible>
 					</control>
-					<control type="button" id="232">
+					<control type="button" id="237">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1334,7 +1482,29 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.6,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					<control type="button" id="233">
+					
+					
+					
+					<control type="radiobutton" id="238">
+						<description>Two Page Menu System</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label> - $LOCALIZE[31408]</label>
+						<onclick>Skin.ToggleSetting(homeitem.6.menu)</onclick>
+						<selected>Skin.HasSetting(homeitem.6.menu)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>!IsEmpty(Skin.String(homeitem.6.label))</visible>
+					</control>
+					
+					
+					
+					
+					
+					<control type="button" id="239">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1348,7 +1518,7 @@
 						<onclick>ActivateWindow(2116)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.6.label))</visible>
 					</control>
-					<control type="button" id="234">
+					<control type="button" id="240">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1362,7 +1532,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.6.label))</visible>
 					</control>
-					<control type="button" id="235">
+					<control type="button" id="241">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1376,7 +1546,7 @@
 						<onclick>ActivateWindow(2118)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.6.label))</visible>
 					</control>
-					<control type="radiobutton" id="236">
+					<control type="radiobutton" id="242">
 						<description>Live Content BackGrounds</description>
 						<width>750</width>
 						<height>40</height>
@@ -1404,7 +1574,7 @@
 						</enable>
 						<visible>!IsEmpty(Skin.String(homeitem.6.label))</visible>
 					</control>
-					<control type="button" id="237">
+					<control type="button" id="243">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1415,20 +1585,22 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.6,Home)</onclick>
-						<onclick>SetProperty(MenuItemLabel,$INFO[Skin.String(homeitem.6.label)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPath,$INFO[Skin.String(homeitem.6.path)],Home)</onclick>
-						<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.6.sub)],Home)</onclick>
-						<onclick>SetProperty(MenuItemStats,$INFO[Skin.String(homeitem.6.stats)],Home)</onclick>
-						<onclick>SetProperty(MenuItemAddOn,$INFO[Skin.String(homeitem.6.addon)],Home)</onclick>
-						<onclick>SetProperty(MenuItemWidget,$INFO[Skin.String(homeitem.6.widget)],Home)</onclick>
-						<onclick>SetProperty(MenuItemType,$INFO[Skin.String(homeitem.6.type)],Home)</onclick>
-						<onclick>SetProperty(MenuItemFanArt,$INFO[Skin.String(homeitem.6.fanart)],Home)</onclick>
-						<onclick>SetProperty(MenuItemDisplay,$INFO[Skin.String(homeitem.6.display)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPlaylist,$INFO[Skin.String(homeitem.6.playlist)],Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(homeitem.6.label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(homeitem.6.path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(homeitem.6.sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemStats,$INFO[Skin.String(homeitem.6.stats)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(homeitem.6.addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(homeitem.6.widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(homeitem.6.type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.6.fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.6.display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.6.playlist)],Home)</onclick>
+						<onclick condition="Skin.HasSetting(homeitem.6.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
+						<onclick condition="!Skin.HasSetting(homeitem.6.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.6.label))</visible>
 					</control>
-					<control type="button" id="238">
+					<control type="button" id="244">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1441,7 +1613,27 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.7,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					<control type="button" id="239">
+					
+					
+					
+					<control type="radiobutton" id="245">
+						<description>Two Page Menu System</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label> - $LOCALIZE[31408]</label>
+						<onclick>Skin.ToggleSetting(homeitem.7.menu)</onclick>
+						<selected>Skin.HasSetting(homeitem.7.menu)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>!IsEmpty(Skin.String(homeitem.7.label))</visible>
+					</control>
+					
+					
+					
+					<control type="button" id="246">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1455,7 +1647,7 @@
 						<onclick>ActivateWindow(2116)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.7.label))</visible>
 					</control>
-					<control type="button" id="240">
+					<control type="button" id="247">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1469,7 +1661,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.7.label))</visible>
 					</control>
-					<control type="button" id="241">
+					<control type="button" id="248">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1483,7 +1675,7 @@
 						<onclick>ActivateWindow(2118)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.7.label))</visible>
 					</control>
-					<control type="radiobutton" id="242">
+					<control type="radiobutton" id="249">
 						<description>Live Content BackGrounds</description>
 						<width>750</width>
 						<height>40</height>
@@ -1511,7 +1703,7 @@
 						</enable>
 						<visible>!IsEmpty(Skin.String(homeitem.7.label))</visible>
 					</control>
-					<control type="button" id="243">
+					<control type="button" id="250">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1522,20 +1714,22 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.7,Home)</onclick>
-						<onclick>SetProperty(MenuItemLabel,$INFO[Skin.String(homeitem.7.label)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPath,$INFO[Skin.String(homeitem.7.path)],Home)</onclick>
-						<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.7.sub)],Home)</onclick>
-						<onclick>SetProperty(MenuItemStats,$INFO[Skin.String(homeitem.7.stats)],Home)</onclick>
-						<onclick>SetProperty(MenuItemAddOn,$INFO[Skin.String(homeitem.7.addon)],Home)</onclick>
-						<onclick>SetProperty(MenuItemWidget,$INFO[Skin.String(homeitem.7.widget)],Home)</onclick>
-						<onclick>SetProperty(MenuItemType,$INFO[Skin.String(homeitem.7.type)],Home)</onclick>
-						<onclick>SetProperty(MenuItemFanArt,$INFO[Skin.String(homeitem.7.fanart)],Home)</onclick>
-						<onclick>SetProperty(MenuItemDisplay,$INFO[Skin.String(homeitem.7.display)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPlaylist,$INFO[Skin.String(homeitem.7.playlist)],Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(homeitem.7.label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(homeitem.7.path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(homeitem.7.sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemStats,$INFO[Skin.String(homeitem.7.stats)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(homeitem.7.addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(homeitem.7.widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(homeitem.7.type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.7.fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.7.display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.7.playlist)],Home)</onclick>
+						<onclick condition="Skin.HasSetting(homeitem.7.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
+						<onclick condition="!Skin.HasSetting(homeitem.7.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.7.label))</visible>
 					</control>
-					<control type="button" id="244">
+					<control type="button" id="251">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1548,7 +1742,28 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.8,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					<control type="button" id="245">
+					
+					
+					<control type="radiobutton" id="252">
+						<description>Two Page Menu System</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label> - $LOCALIZE[31408]</label>
+						<onclick>Skin.ToggleSetting(homeitem.8.menu)</onclick>
+						<selected>Skin.HasSetting(homeitem.8.menu)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>!IsEmpty(Skin.String(homeitem.8.label))</visible>
+					</control>
+					
+					
+					
+					
+					
+					<control type="button" id="253">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1562,7 +1777,7 @@
 						<onclick>ActivateWindow(2116)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.8.label))</visible>
 					</control>
-					<control type="button" id="246">
+					<control type="button" id="254">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1576,7 +1791,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.8.label))</visible>
 					</control>
-					<control type="button" id="247">
+					<control type="button" id="255">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1590,7 +1805,7 @@
 						<onclick>ActivateWindow(2118)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.8.label))</visible>
 					</control>
-					<control type="radiobutton" id="248">
+					<control type="radiobutton" id="256">
 						<description>Live Content BackGrounds</description>
 						<width>750</width>
 						<height>40</height>
@@ -1618,7 +1833,7 @@
 						</enable>
 						<visible>!IsEmpty(Skin.String(homeitem.8.label))</visible>
 					</control>
-					<control type="button" id="249">
+					<control type="button" id="257">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1629,20 +1844,22 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.8,Home)</onclick>
-						<onclick>SetProperty(MenuItemLabel,$INFO[Skin.String(homeitem.8.label)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPath,$INFO[Skin.String(homeitem.8.path)],Home)</onclick>
-						<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.8.sub)],Home)</onclick>
-						<onclick>SetProperty(MenuItemStats,$INFO[Skin.String(homeitem.8.stats)],Home)</onclick>
-						<onclick>SetProperty(MenuItemAddOn,$INFO[Skin.String(homeitem.8.addon)],Home)</onclick>
-						<onclick>SetProperty(MenuItemWidget,$INFO[Skin.String(homeitem.8.widget)],Home)</onclick>
-						<onclick>SetProperty(MenuItemType,$INFO[Skin.String(homeitem.8.type)],Home)</onclick>
-						<onclick>SetProperty(MenuItemFanArt,$INFO[Skin.String(homeitem.8.fanart)],Home)</onclick>
-						<onclick>SetProperty(MenuItemDisplay,$INFO[Skin.String(homeitem.8.display)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPlaylist,$INFO[Skin.String(homeitem.8.playlist)],Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(homeitem.8.label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(homeitem.8.path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(homeitem.8.sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemStats,$INFO[Skin.String(homeitem.8.stats)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(homeitem.8.addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(homeitem.8.widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(homeitem.8.type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.8.fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.8.display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.8.playlist)],Home)</onclick>
+						<onclick condition="Skin.HasSetting(homeitem.8.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
+						<onclick condition="!Skin.HasSetting(homeitem.8.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.8.label))</visible>
 					</control>
-					<control type="button" id="250">
+					<control type="button" id="258">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1655,7 +1872,30 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.9,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					<control type="button" id="251">
+					
+					
+					
+					<control type="radiobutton" id="259">
+						<description>Two Page Menu System</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label> - $LOCALIZE[31408]</label>
+						<onclick>Skin.ToggleSetting(homeitem.9.menu)</onclick>
+						<selected>Skin.HasSetting(homeitem.9.menu)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>!IsEmpty(Skin.String(homeitem.9.label))</visible>
+					</control>
+					
+					
+					
+					
+					
+					
+					<control type="button" id="260">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1669,7 +1909,7 @@
 						<onclick>ActivateWindow(2116)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.9.label))</visible>
 					</control>
-					<control type="button" id="252">
+					<control type="button" id="261">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1683,7 +1923,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.9.label))</visible>
 					</control>
-					<control type="button" id="253">
+					<control type="button" id="262">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1697,7 +1937,7 @@
 						<onclick>ActivateWindow(2118)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.9.label))</visible>
 					</control>
-					<control type="radiobutton" id="254">
+					<control type="radiobutton" id="263">
 						<description>Live Content BackGrounds</description>
 						<width>750</width>
 						<height>40</height>
@@ -1725,7 +1965,7 @@
 						</enable>
 						<visible>!IsEmpty(Skin.String(homeitem.9.label))</visible>
 					</control>
-					<control type="button" id="255">
+					<control type="button" id="264">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1736,20 +1976,22 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.9,Home)</onclick>
-						<onclick>SetProperty(MenuItemLabel,$INFO[Skin.String(homeitem.9.label)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPath,$INFO[Skin.String(homeitem.9.path)],Home)</onclick>
-						<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.9.sub)],Home)</onclick>
-						<onclick>SetProperty(MenuItemStats,$INFO[Skin.String(homeitem.9.stats)],Home)</onclick>
-						<onclick>SetProperty(MenuItemAddOn,$INFO[Skin.String(homeitem.9.addon)],Home)</onclick>
-						<onclick>SetProperty(MenuItemWidget,$INFO[Skin.String(homeitem.9.widget)],Home)</onclick>
-						<onclick>SetProperty(MenuItemType,$INFO[Skin.String(homeitem.9.type)],Home)</onclick>
-						<onclick>SetProperty(MenuItemFanArt,$INFO[Skin.String(homeitem.9.fanart)],Home)</onclick>
-						<onclick>SetProperty(MenuItemDisplay,$INFO[Skin.String(homeitem.9.display)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPlaylist,$INFO[Skin.String(homeitem.9.playlist)],Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(homeitem.9.label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(homeitem.9.path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(homeitem.9.sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemStats,$INFO[Skin.String(homeitem.9.stats)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(homeitem.9.addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(homeitem.9.widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(homeitem.9.type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.9.fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.9.display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.9.playlist)],Home)</onclick>
+						<onclick condition="Skin.HasSetting(homeitem.9.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
+						<onclick condition="!Skin.HasSetting(homeitem.9.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.9.label))</visible>
 					</control>
-					<control type="button" id="256">
+					<control type="button" id="265">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1762,7 +2004,29 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.10,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					<control type="button" id="257">
+					
+					
+					
+					
+					<control type="radiobutton" id="266">
+						<description>Two Page Menu System</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label> - $LOCALIZE[31408]</label>
+						<onclick>Skin.ToggleSetting(homeitem.10.menu)</onclick>
+						<selected>Skin.HasSetting(homeitem.10.menu)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<visible>!IsEmpty(Skin.String(homeitem.10.label))</visible>
+					</control>
+					
+					
+					
+					
+					<control type="button" id="267">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1776,7 +2040,7 @@
 						<onclick>ActivateWindow(2116)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.10.label))</visible>
 					</control>
-					<control type="button" id="258">
+					<control type="button" id="268">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1790,7 +2054,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.10.label))</visible>
 					</control>
-					<control type="button" id="259">
+					<control type="button" id="269">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1804,7 +2068,7 @@
 						<onclick>ActivateWindow(2118)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.10.label))</visible>
 					</control>
-					<control type="radiobutton" id="260">
+					<control type="radiobutton" id="270">
 						<description>Live Content BackGrounds</description>
 						<width>750</width>
 						<height>40</height>
@@ -1832,7 +2096,7 @@
 						</enable>
 						<visible>!IsEmpty(Skin.String(homeitem.10.label))</visible>
 					</control>
-					<control type="button" id="261">
+					<control type="button" id="271">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1843,20 +2107,22 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>SetProperty(usrselectbtn,homeitem.10,Home)</onclick>
-						<onclick>SetProperty(MenuItemLabel,$INFO[Skin.String(homeitem.10.label)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPath,$INFO[Skin.String(homeitem.10.path)],Home)</onclick>
-						<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.10.sub)],Home)</onclick>
-						<onclick>SetProperty(MenuItemStats,$INFO[Skin.String(homeitem.10.stats)],Home)</onclick>
-						<onclick>SetProperty(MenuItemAddOn,$INFO[Skin.String(homeitem.10.addon)],Home)</onclick>
-						<onclick>SetProperty(MenuItemWidget,$INFO[Skin.String(homeitem.10.widget)],Home)</onclick>
-						<onclick>SetProperty(MenuItemType,$INFO[Skin.String(homeitem.10.type)],Home)</onclick>
-						<onclick>SetProperty(MenuItemFanArt,$INFO[Skin.String(homeitem.10.fanart)],Home)</onclick>
-						<onclick>SetProperty(MenuItemDisplay,$INFO[Skin.String(homeitem.10.display)],Home)</onclick>
-						<onclick>SetProperty(MenuItemPlaylist,$INFO[Skin.String(homeitem.10.playlist)],Home)</onclick>
+						<onclick>SetProperty(SwapItemLabel,$INFO[Skin.String(homeitem.10.label)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPath,$INFO[Skin.String(homeitem.10.path)],Home)</onclick>
+						<onclick>SetProperty(SwapItemSub,$INFO[Skin.String(homeitem.10.sub)],Home)</onclick>
+						<onclick>SetProperty(SwapItemStats,$INFO[Skin.String(homeitem.10.stats)],Home)</onclick>
+						<onclick>SetProperty(SwapItemAddOn,$INFO[Skin.String(homeitem.10.addon)],Home)</onclick>
+						<onclick>SetProperty(SwapItemWidget,$INFO[Skin.String(homeitem.10.widget)],Home)</onclick>
+						<onclick>SetProperty(SwapItemType,$INFO[Skin.String(homeitem.10.type)],Home)</onclick>
+						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.10.fanart)],Home)</onclick>
+						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.10.display)],Home)</onclick>
+						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.10.playlist)],Home)</onclick>
+						<onclick condition="Skin.HasSetting(homeitem.10.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
+						<onclick condition="!Skin.HasSetting(homeitem.10.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.10.label))</visible>
 					</control>
-					<control type="radiobutton" id="262">
+					<control type="radiobutton" id="272">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1868,7 +2134,28 @@
 						<onclick>Skin.ToggleSetting(hidesytemmenuitem)</onclick>
 						<selected>!Skin.HasSetting(hidesytemmenuitem)</selected>
 					</control>
-					<control type="button" id="263">
+					
+					
+					
+					<control type="radiobutton" id="273">
+						<description>Two Page Menu System</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label> - $LOCALIZE[31408]</label>
+						<onclick>Skin.ToggleSetting(homeitem.13.menu)</onclick>
+						<selected>Skin.HasSetting(homeitem.13.menu)</selected>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<enable>!Skin.HasSetting(hidesytemmenuitem)</enable>
+					</control>
+					
+					
+					
+					
+					<control type="button" id="274">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1882,7 +2169,10 @@
 						<onclick>ActivateWindow(2116)</onclick>
 						<enable>!Skin.HasSetting(hidesytemmenuitem)</enable>
 					</control>
-					<control type="button" id="264">
+					
+					
+					
+					<control type="button" id="275">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1896,7 +2186,7 @@
 						<onclick>ActivateWindow(2117)</onclick>
 						<enable>!Skin.HasSetting(hidesytemmenuitem)</enable>
 					</control>
-					<control type="button" id="265">
+					<control type="button" id="276">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -1910,7 +2200,7 @@
 						<onclick>ActivateWindow(2118)</onclick>
 						<enable>!Skin.HasSetting(hidesytemmenuitem)</enable>
 					</control>
-					<control type="label" id="266">
+					<control type="label" id="277">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -1920,7 +2210,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="267">
+					<control type="radiobutton" id="278">
 						<description>Enable PlayDisc Option Menu item 12</description>
 						<width>750</width>
 						<height>40</height>
@@ -1933,7 +2223,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="radiobutton" id="268">
+					<control type="radiobutton" id="279">
 						<description>Enable FullScreen Option Menu item 11</description>
 						<width>750</width>
 						<height>40</height>

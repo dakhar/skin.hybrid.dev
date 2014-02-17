@@ -103,6 +103,12 @@
 		<value condition="Control.HasFocus(711) + IsEmpty(Container(711).ListItem.Property(Fanart))">$INFO[Container(711).ListItem.Icon]</value>
 		<value condition="Control.HasFocus(711) + !IsEmpty(Container(711).ListItem.Property(Fanart))">$INFO[Container(711).ListItem.Property(Fanart)]</value>
 	</variable>
+	<variable name="AltHomeMenuBackground" type="text">
+		<value condition="Skin.HasSetting(singleglobalbackground) + !IsEmpty(Skin.String(globalbackgroundpath))">$INFO[Skin.String(globalbackgroundpath)]</value>
+		<value condition="Skin.HasSetting(singleglobalbackground) + IsEmpty(Skin.String(globalbackgroundpath))">$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</value>
+		<value condition="Control.HasFocus(9006) + StringCompare(Container(9006).ListItem.Property(Fanart),UsrFavourite)">$INFO[Container(9006).ListItem.Label,special://skin/backgrounds/favourites/,.jpg]</value>
+		<value condition="Control.HasFocus(9006) + !IsEmpty(Container(9006).ListItem.Property(Fanart))">$INFO[Container(9006).ListItem.Property(Fanart)]</value>
+	</variable>
 	<variable name="LiveContentOne">
 		<value condition="Container(9000).HasFocus(1) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(home).Property(HomePlayListOne.5.Art(thumb))]</value>
 		<value condition="Container(9000).HasFocus(2) + StringCompare(Container(9000).ListItem.Property(HiLiteItem),MusicPlayList) + StringCompare(Container(9000).ListItem.Property(PlayListType),Music)">$INFO[Window(home).Property(HomePlayListTwo.5.Art(thumb))]</value>
@@ -2335,7 +2341,7 @@
 		<value condition="substring(ListItem.mpaa,제한)">$INFO[Skin.String(mpaacertificate)]/r18</value>
 		<value condition="substring(ListItem.mpaa,불가)">$INFO[Skin.String(mpaacertificate)]/18</value>
 		<value condition="substring(ListItem.mpaa,전체)">$INFO[Skin.String(mpaacertificate)]/u</value>
-		<value condition="substring(Listitem.mpaa,X18)">x18</value>
+		<value condition="substring(Listitem.mpaa,X18)">$INFO[Skin.String(mpaacertificate)]/x18</value>
 		<value condition="substring(listitem.mpaa,18)">$INFO[Skin.String(mpaacertificate)]/18</value>
 		<value condition="substring(listitem.mpaa,10) + stringcompare(Skin.String(mpaacertificate),Fr)">$INFO[Skin.String(mpaacertificate)]/10</value>
 		<value condition="substring(listitem.mpaa,10) + !stringcompare(Skin.String(mpaacertificate),Fr)">$INFO[Skin.String(mpaacertificate)]/pg</value>
@@ -2351,8 +2357,8 @@
 		<value condition="substring(listitem.mpaa,3)">$INFO[Skin.String(mpaacertificate)]/u</value>
 		<value condition="substring(listitem.mpaa,0)">$INFO[Skin.String(mpaacertificate)]/0</value>
 		<value condition="substring(listitem.mpaa, PG )">$INFO[Skin.String(mpaacertificate)]/pg</value>
-		<value condition="substring(listitem.mpaa,Not Rated)">notrated</value>
-		<value condition="substring(listitem.mpaa,restricted)">restricted</value>
+		<value condition="substring(listitem.mpaa,Not Rated)">$INFO[Skin.String(mpaacertificate)]/notrated</value>
+		<value condition="substring(listitem.mpaa,restricted)">$INFO[Skin.String(mpaacertificate)]/restricted</value>
 		<value condition="substring(listitem.mpaa, R )">$INFO[Skin.String(mpaacertificate)]/r18</value>
 		<value condition="substring(listitem.mpaa, U )">$INFO[Skin.String(mpaacertificate)]/u</value>
 		<value condition="substring(listitem.mpaa, G )">$INFO[Skin.String(mpaacertificate)]/g</value>
@@ -2371,7 +2377,7 @@
 		<value condition="substring(VideoPlayer.mpaa,제한)">$INFO[Skin.String(mpaacertificate)]/r18</value>
 		<value condition="substring(VideoPlayer.mpaa,불가)">$INFO[Skin.String(mpaacertificate)]/18</value>
 		<value condition="substring(VideoPlayer.mpaa,전체)">$INFO[Skin.String(mpaacertificate)]/u</value>
-		<value condition="substring(VideoPlayer.mpaa,X18)">x18</value>
+		<value condition="substring(VideoPlayer.mpaa,X18)">$INFO[Skin.String(mpaacertificate)]/x18</value>
 		<value condition="substring(VideoPlayer.mpaa,18)">$INFO[Skin.String(mpaacertificate)]/18</value>
 		<value condition="substring(VideoPlayer.mpaa,10) + stringcompare(Skin.String(mpaacertificate),Fr)">$INFO[Skin.String(mpaacertificate)]/10</value>
 		<value condition="substring(VideoPlayer.mpaa,10) + !stringcompare(Skin.String(mpaacertificate),Fr)">$INFO[Skin.String(mpaacertificate)]/pg</value>
@@ -2387,8 +2393,8 @@
 		<value condition="substring(VideoPlayer.mpaa,3)">$INFO[Skin.String(mpaacertificate)]/u</value>
 		<value condition="substring(VideoPlayer.mpaa,0)">$INFO[Skin.String(mpaacertificate)]/0</value>
 		<value condition="substring(VideoPlayer.mpaa, PG )">$INFO[Skin.String(mpaacertificate)]/pg</value>
-		<value condition="substring(VideoPlayer.mpaa,Not Rated)">notrated</value>
-		<value condition="substring(VideoPlayer.mpaa,restricted)">restricted</value>
+		<value condition="substring(VideoPlayer.mpaa,Not Rated)">$INFO[Skin.String(mpaacertificate)]/notrated</value>
+		<value condition="substring(VideoPlayer.mpaa,restricted)">$INFO[Skin.String(mpaacertificate)]/restricted</value>
 		<value condition="substring(VideoPlayer.mpaa, R )">$INFO[Skin.String(mpaacertificate)]/r18</value>
 		<value condition="substring(VideoPlayer.mpaa, U )">$INFO[Skin.String(mpaacertificate)]/u</value>
 		<value condition="substring(VideoPlayer.mpaa, G )">$INFO[Skin.String(mpaacertificate)]/g</value>

@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
 	<include name="HomeAddonSystem">
+		
+		
+		
+		
+		
+		
+		
+		
 		<control type="group" id="9003">
 			<animation effect="fade" time="300" delay="1000">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
 			<ondown condition="IntegerGreaterThan(Window(home).Property(favourite.count),0) + !Skin.HasSetting(disablescriptfavourites)">ActivateWindow(Favourites)</ondown>
 			<ondown condition="!IntegerGreaterThan(Window(home).Property(favourite.count),0) | Skin.HasSetting(disablescriptfavourites)">9000</ondown>
+			
+			
 			<control type="group">
 				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),addonsetone)</visible>
 				<left>0</left>
@@ -27,6 +37,7 @@
 					</content>
 				</control>
 			</control>
+			
 			<control type="group">
 				<visible>StringCompare(Container(9000).ListItem.Property(AddOnSet),addonsettwo)</visible>
 				<left>0</left>
@@ -216,6 +227,9 @@
 					</content>
 				</control>
 			</control>
+			
+			<include>CheckMenuAltPage</include>
+			
 		</control>
 	</include>
 	<include name="HomeAddonsCommonLayout">

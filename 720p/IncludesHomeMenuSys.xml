@@ -7,7 +7,10 @@
 				<label>$INFO[Skin.String(homeitem.1.label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemOne,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(homeitem.1.type)],Home)</onclick>
-				<onclick>$INFO[Skin.String(homeitem.1.path)]</onclick>
+				<onclick>SetProperty(MenuItemAddon,$INFO[Skin.String(homeitem.1.addon)],Home)</onclick>
+				<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.1.sub)],Home)</onclick>
+				<onclick condition="!Skin.HasSetting(homeitem.1.menu)">$INFO[Skin.String(homeitem.1.path)]</onclick>
+				<onclick condition="Skin.HasSetting(homeitem.1.menu)">ActivateWindow(2129)</onclick>		
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(homeitem.1.fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(homeitem.1.sub)]</property>
@@ -27,7 +30,12 @@
 				<label>$INFO[Skin.String(homeitemlastlabel)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemOne,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(homeitem.1.type)],Home)</onclick>
+				
+				<onclick>SetProperty(MenuItemAddon,None,Home)</onclick>
+				<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.1.sub)],Home)</onclick>
+				
 				<onclick>$INFO[Skin.String(homeitemlastaction)]</onclick>
+
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(homeitem.1.fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(homeitem.1.sub)]</property>
@@ -44,7 +52,10 @@
 				<label>$INFO[Skin.String(homeitem.2.label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemTwo,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(homeitem.2.type)],Home)</onclick>
-				<onclick>$INFO[Skin.String(homeitem.2.path)]</onclick>
+				<onclick>SetProperty(MenuItemAddon,$INFO[Skin.String(homeitem.2.addon)],Home)</onclick>
+				<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.2.sub)],Home)</onclick>
+				<onclick condition="!Skin.HasSetting(homeitem.2.menu)">$INFO[Skin.String(homeitem.2.path)]</onclick>
+				<onclick condition="Skin.HasSetting(homeitem.2.menu)">ActivateWindow(2129)</onclick>		
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(homeitem.2.fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(homeitem.2.sub)]</property>
@@ -61,7 +72,10 @@
 				<label>$INFO[Skin.String(homeitem.3.label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemThree,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(homeitem.3.type)],Home)</onclick>
-				<onclick>$INFO[Skin.String(homeitem.3.path)]</onclick>
+				<onclick>SetProperty(MenuItemAddon,$INFO[Skin.String(homeitem.3.addon)],Home)</onclick>
+				<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.3.sub)],Home)</onclick>
+				<onclick condition="!Skin.HasSetting(homeitem.3.menu)">$INFO[Skin.String(homeitem.3.path)]</onclick>
+				<onclick condition="Skin.HasSetting(homeitem.3.menu)">ActivateWindow(2129)</onclick>		
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(homeitem.3.fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(homeitem.3.sub)]</property>
@@ -78,7 +92,10 @@
 				<label>$INFO[Skin.String(homeitem.4.label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemFour,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(homeitem.4.type)],Home)</onclick>
-				<onclick>$INFO[Skin.String(homeitem.4.path)]</onclick>
+				<onclick>SetProperty(MenuItemAddon,$INFO[Skin.String(homeitem.4.addon)],Home)</onclick>
+				<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.4.sub)],Home)</onclick>
+				<onclick condition="!Skin.HasSetting(homeitem.4.menu)">$INFO[Skin.String(homeitem.4.path)]</onclick>
+				<onclick condition="Skin.HasSetting(homeitem.4.menu)">ActivateWindow(2129)</onclick>		
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(homeitem.4.fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(homeitem.4.sub)]</property>
@@ -95,7 +112,10 @@
 				<label>$INFO[Skin.String(homeitem.5.label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemFive,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(homeitem.5.type)],Home)</onclick>
-				<onclick>$INFO[Skin.String(homeitem.5.path)]</onclick>
+				<onclick>SetProperty(MenuItemAddon,$INFO[Skin.String(homeitem.5.addon)],Home)</onclick>
+				<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.5.sub)],Home)</onclick>
+				<onclick condition="!Skin.HasSetting(homeitem.5.menu)">$INFO[Skin.String(homeitem.5.path)]</onclick>
+				<onclick condition="Skin.HasSetting(homeitem.5.menu)">ActivateWindow(2129)</onclick>		
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(homeitem.5.fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(homeitem.5.sub)]</property>
@@ -112,7 +132,10 @@
 				<label>$INFO[Skin.String(homeitem.6.label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemSix,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(homeitem.6.type)],Home)</onclick>
-				<onclick>$INFO[Skin.String(homeitem.6.path)]</onclick>
+				<onclick>SetProperty(MenuItemAddon,$INFO[Skin.String(homeitem.6.addon)],Home)</onclick>
+				<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.6.sub)],Home)</onclick>
+				<onclick condition="!Skin.HasSetting(homeitem.6.menu)">$INFO[Skin.String(homeitem.6.path)]</onclick>
+				<onclick condition="Skin.HasSetting(homeitem.6.menu)">ActivateWindow(2129)</onclick>		
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(homeitem.6.fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(homeitem.6.sub)]</property>
@@ -129,7 +152,10 @@
 				<label>$INFO[Skin.String(homeitem.7.label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemSeven,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(homeitem.7.type)],Home)</onclick>
-				<onclick>$INFO[Skin.String(homeitem.7.path)]</onclick>
+				<onclick>SetProperty(MenuItemAddon,$INFO[Skin.String(homeitem.7.addon)],Home)</onclick>
+				<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.7.sub)],Home)</onclick>
+				<onclick condition="!Skin.HasSetting(homeitem.7.menu)">$INFO[Skin.String(homeitem.7.path)]</onclick>
+				<onclick condition="Skin.HasSetting(homeitem.7.menu)">ActivateWindow(2129)</onclick>		
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(homeitem.7.fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(homeitem.7.sub)]</property>
@@ -146,7 +172,10 @@
 				<label>$INFO[Skin.String(homeitem.8.label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemEight,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(homeitem.8.type)],Home)</onclick>
-				<onclick>$INFO[Skin.String(homeitem.8.path)]</onclick>
+				<onclick>SetProperty(MenuItemAddon,$INFO[Skin.String(homeitem.8.addon)],Home)</onclick>
+				<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.8.sub)],Home)</onclick>
+				<onclick condition="!Skin.HasSetting(homeitem.8.menu)">$INFO[Skin.String(homeitem.8.path)]</onclick>
+				<onclick condition="Skin.HasSetting(homeitem.8.menu)">ActivateWindow(2129)</onclick>		
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(homeitem.8.fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(homeitem.8.sub)]</property>
@@ -163,7 +192,10 @@
 				<label>$INFO[Skin.String(homeitem.9.label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemNine,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(homeitem.9.type)],Home)</onclick>
-				<onclick>$INFO[Skin.String(homeitem.9.path)]</onclick>
+				<onclick>SetProperty(MenuItemAddon,$INFO[Skin.String(homeitem.9.addon)],Home)</onclick>
+				<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.9.sub)],Home)</onclick>
+				<onclick condition="!Skin.HasSetting(homeitem.9.menu)">$INFO[Skin.String(homeitem.9.path)]</onclick>
+				<onclick condition="Skin.HasSetting(homeitem.9.menu)">ActivateWindow(2129)</onclick>		
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(homeitem.9.fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(homeitem.9.sub)]</property>
@@ -180,7 +212,10 @@
 				<label>$INFO[Skin.String(homeitem.10.label)]</label>
 				<onclick>SetProperty(MenuItemActive,ItemTen,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,$INFO[Skin.String(homeitem.10.type)],Home)</onclick>
-				<onclick>$INFO[Skin.String(homeitem.10.path)]</onclick>
+				<onclick>SetProperty(MenuItemAddon,$INFO[Skin.String(homeitem.10.addon)],Home)</onclick>
+				<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.10.sub)],Home)</onclick>
+				<onclick condition="!Skin.HasSetting(homeitem.10.menu)">$INFO[Skin.String(homeitem.10.path)]</onclick>
+				<onclick condition="Skin.HasSetting(homeitem.10.menu)">ActivateWindow(2129)</onclick>		
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(homeitem.10.fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(homeitem.10.sub)]</property>
@@ -210,6 +245,8 @@
 				<label>$LOCALIZE[31365]</label>
 				<onclick>SetProperty(MenuItemActive,PlayDisc,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,PlayDisc,Home)</onclick>
+				<onclick>SetProperty(MenuItemAddon,None,Home)</onclick>
+				<onclick>SetProperty(MenuItemSub,None,Home)</onclick>
 				<onclick>XBMC.PlayDVD()</onclick>
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(homeitem.12.fanart)]</thumb>
@@ -224,7 +261,10 @@
 				<label>$LOCALIZE[13000]</label>
 				<onclick>SetProperty(MenuItemActive,Settings,Home)</onclick>
 				<onclick>SetProperty(MenuItemSelected,Settings,Home)</onclick>
-				<onclick>ActivateWindow(Settings)</onclick>
+				<onclick>SetProperty(MenuItemAddon,$INFO[Skin.String(homeitem.13.addon)],Home)</onclick>
+				<onclick>SetProperty(MenuItemSub,$INFO[Skin.String(homeitem.13.sub)],Home)</onclick>
+				<onclick condition="!Skin.HasSetting(homeitem.13.menu)">ActivateWindow(Settings)</onclick>
+				<onclick condition="Skin.HasSetting(homeitem.13.menu)">ActivateWindow(2129)</onclick>		
 				<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
 				<thumb>$INFO[Skin.String(homeitem.13.fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(homeitem.13.sub)]</property>

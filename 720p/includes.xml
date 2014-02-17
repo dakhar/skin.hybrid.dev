@@ -73,6 +73,7 @@
 		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(usrselectbtn)].fanart)</onclick>
 		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(usrselectbtn)].widget)</onclick>
 		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(usrselectbtn)].display)</onclick>
+		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(usrselectbtn)].menu)</onclick>
 	</include>
 	<include name="CloseMenuChoice">
 		<onclick condition="Window.IsVisible(2114)">Dialog.Close(2114)</onclick>
@@ -1459,6 +1460,22 @@
 			<animation effect="slide" start="0,10" end="0,0" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="slide" start="0,0" end="0,10" time="200" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
+	</include>
+	<include name="CheckMenuAltPage">
+		<visible>
+			[Container(9000).HasFocus(1) + !Skin.HasSetting(homeitem.1.menu)] |
+			[Container(9000).HasFocus(2) + !Skin.HasSetting(homeitem.2.menu)] |
+			[Container(9000).HasFocus(3) + !Skin.HasSetting(homeitem.3.menu)] |
+			[Container(9000).HasFocus(4) + !Skin.HasSetting(homeitem.4.menu)] |
+			[Container(9000).HasFocus(5) + !Skin.HasSetting(homeitem.5.menu)] |
+			[Container(9000).HasFocus(6) + !Skin.HasSetting(homeitem.6.menu)] |
+			[Container(9000).HasFocus(7) + !Skin.HasSetting(homeitem.7.menu)] |
+			[Container(9000).HasFocus(8) + !Skin.HasSetting(homeitem.8.menu)] |
+			[Container(9000).HasFocus(9) + !Skin.HasSetting(homeitem.9.menu)] |
+			[Container(9000).HasFocus(10) + !Skin.HasSetting(homeitem.10.menu)] |
+			[Container(9000).HasFocus(13) + !Skin.HasSetting(homeitem.13.menu)] |
+			Container(9000).HasFocus(11) | Container(9000).HasFocus(12)
+		</visible>
 	</include>
 	<include name="MenuMoviePlayListCheck">
 		<visible>

@@ -40,7 +40,10 @@
 					<onleft>9010</onleft>
 					<onright>9010</onright>
 					<include>SubMenuCommonLayout</include>
-					<include>HomeSubMenuVideos</include>
+					
+					<content>
+						<include>HomeSubMenuVideos</include>
+					</content>
 				</control>
 			</control>
 			<control type="group">
@@ -77,7 +80,10 @@
 					<onleft>9011</onleft>
 					<onright>9011</onright>
 					<include>SubMenuCommonLayout</include>
-					<include>HomeSubMenuMusic</include>
+					
+					<content>
+						<include>HomeSubMenuMusic</include>
+					</content>
 				</control>
 			</control>
 			<control type="group">
@@ -114,7 +120,10 @@
 					<onleft>9012</onleft>
 					<onright>9012</onright>
 					<include>SubMenuCommonLayout</include>
-					<include>HomeSubMenuSystem</include>
+					
+					<content>
+						<include>HomeSubMenuSystem</include>
+					</content>
 				</control>
 			</control>
 			<control type="group">
@@ -151,7 +160,10 @@
 					<onleft>9013</onleft>
 					<onright>9013</onright>
 					<include>SubMenuCommonLayout</include>
-					<include>HomeSubMenuPlayDisc</include>
+					
+					<content>
+						<include>HomeSubMenuPlayDisc</include>
+					</content>
 				</control>
 			</control>
 			<control type="group">
@@ -188,7 +200,10 @@
 					<onleft>9014</onleft>
 					<onright>9014</onright>
 					<include>SubMenuCommonLayout</include>
-					<include>HomeSubMenuLiveTV</include>
+					
+					<content>
+						<include>HomeSubMenuLiveTV</include>
+					</content>
 				</control>
 			</control>
 			<control type="group">
@@ -225,7 +240,10 @@
 					<onleft>9015</onleft>
 					<onright>9015</onright>
 					<include>SubMenuCommonLayout</include>
-					<include>HomeSubMenuPictures</include>
+					
+					<content>
+						<include>HomeSubMenuPictures</include>
+					</content>
 				</control>
 			</control>
 			<control type="group">
@@ -262,7 +280,10 @@
 					<onleft>9016</onleft>
 					<onright>9016</onright>
 					<include>SubMenuCommonLayout</include>
-					<include>HomeSubMenuMovies</include>
+					
+					<content>
+						<include>HomeSubMenuMovies</include>
+					</content>
 				</control>
 			</control>
 			<control type="group">
@@ -299,7 +320,10 @@
 					<onleft>9017</onleft>
 					<onright>9017</onright>
 					<include>SubMenuCommonLayout</include>
-					<include>HomeSubMenuTVShows</include>
+					
+					<content>
+						<include>HomeSubMenuTVShows</include>
+					</content>
 				</control>
 			</control>
 			<control type="group">
@@ -336,7 +360,10 @@
 					<onleft>9018</onleft>
 					<onright>9018</onright>
 					<include>SubMenuCommonLayout</include>
-					<include>HomeSubMenuExit</include>
+					
+					<content>
+						<include>HomeSubMenuExit</include>
+					</content>
 				</control>
 			</control>
 			<control type="group">
@@ -373,7 +400,10 @@
 					<onleft>9019</onleft>
 					<onright>9019</onright>
 					<include>SubMenuCommonLayout</include>
-					<include>HomeSubMenuConcerts</include>
+					
+					<content>
+						<include>HomeSubMenuConcerts</include>
+					</content>
 				</control>
 			</control>
 			<control type="group">
@@ -410,7 +440,10 @@
 					<onleft>9020</onleft>
 					<onright>9020</onright>
 					<include>SubMenuCommonLayout</include>
-					<include>HomeSubMenuFavourites</include>
+					
+					<content>
+						<include>HomeSubMenuFavourites</include>
+					</content>
 				</control>
 			</control>
 			<control type="group">
@@ -447,7 +480,10 @@
 					<onleft>9021</onleft>
 					<onright>9021</onright>
 					<include>SubMenuCommonLayout</include>
-					<include>HomeSubMenuUserOne</include>
+					
+					<content>
+						<include>HomeSubMenuUserOne</include>
+					</content>
 				</control>
 			</control>
 			<control type="group">
@@ -484,7 +520,10 @@
 					<onleft>9022</onleft>
 					<onright>9022</onright>
 					<include>SubMenuCommonLayout</include>
-					<include>HomeSubMenuUserTwo</include>
+					
+					<content>
+						<include>HomeSubMenuUserTwo</include>
+					</content>
 				</control>
 			</control>
 			<control type="group">
@@ -521,7 +560,10 @@
 					<onleft>9023</onleft>
 					<onright>9023</onright>
 					<include>SubMenuCommonLayout</include>
-					<include>HomeSubMenuProg</include>
+					
+					<content>
+						<include>HomeSubMenuProg</include>
+					</content>
 				</control>
 			</control>
 			<control type="group">
@@ -558,7 +600,10 @@
 					<onleft>9024</onleft>
 					<onright>9024</onright>
 					<include>SubMenuCommonLayout</include>
-					<include>HomeSubMenuUserThree</include>
+					
+					<content>
+						<include>HomeSubMenuUserThree</include>
+					</content>
 				</control>
 			</control>
 			<control type="group">
@@ -595,9 +640,13 @@
 					<onleft>9025</onleft>
 					<onright>9025</onright>
 					<include>SubMenuCommonLayout</include>
-					<include>HomeSubMenuFullscreen</include>
+					
+					<content>
+						<include>HomeSubMenuFullscreen</include>
+					</content>
 				</control>
 			</control>
+			<include>CheckMenuAltPage</include>
 		</control>
 	</include>
 	<include name="SubMenuCommonValues">
@@ -684,9 +733,11 @@
 		</focusedlayout>
 	</include>
 	<include name="HomeSubMenuVideos">
-		<content>
+		
 			<item>
 				<label>$VAR[SubMenuVideosOne]</label>
+				<icon>DefaultMovieTitle.png</icon>
+				
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(subvideos.1.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(subvideos.1.path)])</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + IsEmpty(Skin.String(subvideos.1.path))">Skin.SetString(homeitemlastaction,ActivateWindow(Videos,MovieTitles,return))</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$VAR[SubMenuVideosOne])</onclick>
@@ -698,6 +749,8 @@
 			</item>
 			<item>
 				<label>$VAR[SubMenuVideosTwo]</label>
+				<icon>DefaultTVShowTitle.png</icon>
+				
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(subvideos.2.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(subvideos.2.path)])</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + IsEmpty(Skin.String(subvideos.2.path))">Skin.SetString(homeitemlastaction,ActivateWindow(Videos,TvShowTitles,return))</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$VAR[SubMenuVideosTwo])</onclick>
@@ -709,6 +762,7 @@
 			</item>
 			<item>
 				<label>$VAR[SubMenuVideosThree]</label>
+				<icon>DefaultMusicVideoTitle.png</icon>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(subvideos.3.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(subvideos.3.path)])</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + IsEmpty(Skin.String(subvideos.3.path))">Skin.SetString(homeitemlastaction,ActivateWindow(Videos,MusicVideoTitles,return))</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$VAR[SubMenuVideosThree])</onclick>
@@ -720,6 +774,7 @@
 			</item>
 			<item>
 				<label>$VAR[SubMenuVideosFour]</label>
+				<icon>DefaultFolder.png</icon>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(subvideos.4.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(subvideos.4.path)])</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + IsEmpty(Skin.String(subvideos.4.path))">Skin.SetString(homeitemlastaction,ActivateWindow(Videos,Files,return))</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$VAR[SubMenuVideosFour])</onclick>
@@ -730,6 +785,7 @@
 			</item>
 			<item>
 				<label>$VAR[SubMenuVideosFive]</label>
+				<icon>DefaultFolder.png</icon>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(subvideos.5.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(subvideos.5.path)])</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + IsEmpty(Skin.String(subvideos.5.path))">Skin.SetString(homeitemlastaction,ActivateWindow(Videos,Root))</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$VAR[SubMenuVideosFive])</onclick>
@@ -741,6 +797,7 @@
 			</item>
 			<item>
 				<label>$VAR[SubMenuVideosSix]</label>
+				<icon>DefaultAddonVideo.png</icon>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(subvideos.6.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(subvideos.6.path)])</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + IsEmpty(Skin.String(subvideos.6.path))">Skin.SetString(homeitemlastaction,ActivateWindow(Videos,Addons,return))</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$VAR[SubMenuVideosSix])</onclick>
@@ -749,12 +806,13 @@
 				<onclick condition="!IsEmpty(Skin.String(subvideos.6.path))">$INFO[Skin.String(subvideos.6.path)]</onclick>
 				<visible>!stringcompare(Skin.String(subvideos.6.path),Hidden)</visible>
 			</item>
-		</content>
+		
 	</include>
 	<include name="HomeSubMenuMovies">
-		<content>
+		
 			<item>
 				<label>$VAR[SubMenuMoviesOne]</label>
+				<icon>DefaultVideoPlaylists.png</icon>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(submovies.1.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(submovies.1.path)])</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + IsEmpty(Skin.String(submovies.1.path))">Skin.SetString(homeitemlastaction,ActivateWindow(2125,return))</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$VAR[SubMenuMoviesOne])</onclick>
@@ -765,6 +823,7 @@
 			</item>
 			<item>
 				<label>$VAR[SubMenuMoviesTwo]</label>
+				<icon>DefaultSets.png</icon>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(submovies.2.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(submovies.2.path)])</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + IsEmpty(Skin.String(submovies.2.path))">Skin.SetString(homeitemlastaction,ActivateWindow(Videos,MovieSets,return))</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$VAR[SubMenuMoviesTwo])</onclick>
@@ -776,6 +835,7 @@
 			</item>
 			<item>
 				<label>$VAR[SubMenuMoviesThree]</label>
+				<icon>DefaultMovieTitle.png</icon>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(submovies.3.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(submovies.3.path)])</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + IsEmpty(Skin.String(submovies.3.path))">Skin.SetString(homeitemlastaction,ActivateWindow(Videos,MovieTitles,return))</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$VAR[SubMenuMoviesThree])</onclick>
@@ -786,6 +846,7 @@
 			</item>
 			<item>
 				<label>$VAR[SubMenuMoviesFour]</label>
+				<icon>DefaultGenre.png</icon>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(submovies.4.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(submovies.4.path)])</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + IsEmpty(Skin.String(submovies.4.path))">Skin.SetString(homeitemlastaction,ActivateWindow(Videos,MovieGenres,return))</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$VAR[SubMenuMoviesFour])</onclick>
@@ -796,6 +857,7 @@
 			</item>
 			<item>
 				<label>$VAR[SubMenuMoviesFive]</label>
+				<icon>DefaultTags.png</icon>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(submovies.5.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(submovies.5.path)])</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + IsEmpty(Skin.String(submovies.5.path))">Skin.SetString(homeitemlastaction,ActivateWindow(Videos,MovieTags,return))</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$VAR[SubMenuMoviesFive])</onclick>
@@ -806,6 +868,7 @@
 			</item>
 			<item>
 				<label>$VAR[SubMenuMoviesSix]</label>
+				<icon>DefaultVideoPlaylists.png</icon>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(submovies.6.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(submovies.6.path)])</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + IsEmpty(Skin.String(submovies.6.path))">Skin.SetString(homeitemlastaction,ActivateWindow(VideoLibrary,special://videoplaylists/,return))</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$VAR[SubMenuMoviesSix])</onclick>
@@ -814,10 +877,10 @@
 				<onclick condition="!IsEmpty(Skin.String(submovies.6.path))">$INFO[Skin.String(submovies.6.path)]</onclick>
 				<visible>!stringcompare(Skin.String(submovies.6.path),Hidden)</visible>
 			</item>
-		</content>
+		
 	</include>
 	<include name="HomeSubMenuTVShows">
-		<content>
+		
 			<item>
 				<label>$VAR[SubMenuTVShowsOne]</label>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(subtvshows.1.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(subtvshows.1.path)])</onclick>
@@ -878,10 +941,10 @@
 				<onclick condition="!IsEmpty(Skin.String(subtvshows.6.path))">$INFO[Skin.String(subtvshows.6.path)]</onclick>
 				<visible>!stringcompare(Skin.String(subtvshows.6.path),Hidden)</visible>
 			</item>
-		</content>
+		
 	</include>
 	<include name="HomeSubMenuMusic">
-		<content>
+		
 			<item>
 				<label>$VAR[SubMenuMusicOne]</label>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(submusic.1.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(submusic.1.path)])</onclick>
@@ -955,10 +1018,10 @@
 				<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
 				<visible>!Library.HasContent(Music) + IsEmpty(Skin.String(submusic.6.path))</visible>
 			</item>
-		</content>
+		
 	</include>
 	<include name="HomeSubMenuSystem">
-		<content>
+		
 			<item>
 				<label>$VAR[SubMenuSystemOne]</label>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(subsystem.1.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(subsystem.1.path)])</onclick>
@@ -1022,10 +1085,10 @@
 				<onclick condition="!IsEmpty(Skin.String(subsystem.6.path))">$INFO[Skin.String(subsystem.6.path)]</onclick>
 				<visible>!stringcompare(Skin.String(subsystem.6.path),Hidden)</visible>
 			</item>
-		</content>
+		
 	</include>
 	<include name="HomeSubMenuPlayDisc">
-		<content>
+		
 			<item>
 				<label>13391</label>
 				<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
@@ -1037,10 +1100,10 @@
 				<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 				<onclick>RipCD</onclick>
 			</item>
-		</content>
+		
 	</include>
 	<include name="HomeSubMenuPictures">
-		<content>
+		
 			<item>
 				<label>$VAR[SubMenuPicturesOne]</label>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(subpictures.1.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(subpictures.1.path)])</onclick>
@@ -1091,10 +1154,10 @@
 				<onclick>$INFO[Skin.String(subpictures.6.path)]</onclick>
 				<visible>!IsEmpty(Skin.String(subpictures.6.path))</visible>
 			</item>
-		</content>
+		
 	</include>
 	<include name="HomeSubMenuLiveTV">
-		<content>
+		
 			<item>
 				<label>$VAR[SubMenuLiveTVOne]</label>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(sublivetv.1.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(sublivetv.1.path)])</onclick>
@@ -1158,10 +1221,10 @@
 				<onclick>$INFO[Skin.String(sublivetv.6.path)]</onclick>
 				<visible>!IsEmpty(Skin.String(sublivetv.6.path))</visible>
 			</item>
-		</content>
+		
 	</include>
 	<include name="HomeSubMenuConcerts">
-		<content>
+		
 			<item>
 				<label>$VAR[SubMenuConcertsOne]</label>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + IsEmpty(Skin.String(subconcerts.1.path))">Skin.SetString(homeitemlastaction,ActivateWindow(2126),return)</onclick>
@@ -1220,10 +1283,10 @@
 				<onclick>$INFO[Skin.String(subconcerts.6.path)]</onclick>
 				<visible>!IsEmpty(Skin.String(subconcerts.6.path))</visible>
 			</item>
-		</content>
+		
 	</include>
 	<include name="HomeSubMenuFavourites">
-		<content>
+		
 			<item>
 				<label>$INFO[Window(home).Property(favourite.1.name)]</label>
 				<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
@@ -1266,10 +1329,10 @@
 				<visible>!IsEmpty(Window(home).Property(favourite.6.name))</visible>
 				<visible>!IsEmpty(Window(home).Property(favourite.6.path))</visible>
 			</item>
-		</content>
+		
 	</include>
 	<include name="HomeSubMenuUserOne">
-		<content>
+		
 			<item>
 				<label>$INFO[Skin.String(usersubone.1.label)]</label>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastaction,$INFO[Skin.String(usersubone.1.path)])</onclick>
@@ -1318,10 +1381,10 @@
 				<onclick>$INFO[Skin.String(usersubone.6.path)]</onclick>
 				<visible>!IsEmpty(Skin.String(usersubone.6.path))</visible>
 			</item>
-		</content>
+		
 	</include>
 	<include name="HomeSubMenuUserTwo">
-		<content>
+		
 			<item>
 				<label>$INFO[Skin.String(usersubtwo.1.label)]</label>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastaction,$INFO[Skin.String(usersubtwo.1.path)])</onclick>
@@ -1370,10 +1433,10 @@
 				<onclick>$INFO[Skin.String(usersubtwo.6.path)]</onclick>
 				<visible>!IsEmpty(Skin.String(usersubtwo.6.path))</visible>
 			</item>
-		</content>
+		
 	</include>
 	<include name="HomeSubMenuProg">
-		<content>
+		
 			<item>
 				<label>$INFO[Skin.String(subprog.1.label)]</label>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(subprog.1.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(subprog.1.path)])</onclick>
@@ -1422,10 +1485,10 @@
 				<onclick>$INFO[Skin.String(subprog.6.path)]</onclick>
 				<visible>!IsEmpty(Skin.String(subprog.6.path))</visible>
 			</item>
-		</content>
+		
 	</include>
 	<include name="HomeSubMenuUserThree">
-		<content>
+		
 			<item>
 				<label>$INFO[Skin.String(usersubthree.1.label)]</label>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastaction,$INFO[Skin.String(usersubthree.1.path)])</onclick>
@@ -1474,10 +1537,10 @@
 				<onclick>$INFO[Skin.String(usersubthree.6.path)]</onclick>
 				<visible>!IsEmpty(Skin.String(usersubthree.6.path))</visible>
 			</item>
-		</content>
+		
 	</include>
 	<include name="HomeSubMenuExit">
-		<content>
+		
 			<item>
 				<label>$VAR[SubMenuExitOne]</label>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(subexit.1.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(subexit.1.path)])</onclick>
@@ -1539,10 +1602,10 @@
 				<onclick condition="!IsEmpty(Skin.String(subexit.6.path))">$INFO[Skin.String(subexit.6.path)]</onclick>
 				<visible>!stringcompare(Skin.String(subexit.6.path),Hidden)</visible>
 			</item>
-		</content>
+		
 	</include>
 	<include name="HomeSubMenuFullscreen">
-		<content>
+		
 			<item>
 				<label>210</label>
 				<onclick>XBMC.PlayerControl(Previous)</onclick>
@@ -1589,6 +1652,6 @@
 				<onclick>XBMC.PlayerControl(record)</onclick>
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 			</item>
-		</content>
+		
 	</include>
 </includes>
