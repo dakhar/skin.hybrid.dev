@@ -4440,6 +4440,15 @@
 								<property name="HiLiteItem">$INFO[Skin.String(homeitem.1.type)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.1.path)) + !Skin.String(homeitem.1.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
 							</item>
+							<item id="1">
+								<description>Home Menu Item One</description>
+								<label>$INFO[Skin.String(homeitem.1.label)] $LOCALIZE[31021]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
+								<thumb>$INFO[Skin.String(homeitem.1.fanart)]</thumb>
+								<property name="HiLiteItem">$INFO[Skin.String(homeitem.1.type)]</property>
+								<visible>!IsEmpty(Skin.String(homeitem.1.path)) + Skin.String(homeitem.1.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
+							</item>
 							<item id="2">
 								<description>Home Menu Item Two</description>
 								<label>$INFO[Skin.String(homeitem.2.label)]</label>
@@ -4448,6 +4457,15 @@
 								<thumb>$INFO[Skin.String(homeitem.2.fanart)]</thumb>
 								<property name="HiLiteItem">$INFO[Skin.String(homeitem.2.type)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.2.path)) + !Skin.String(homeitem.2.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
+							</item>
+							<item id="2">
+								<description>Home Menu Item Two</description>
+								<label>$INFO[Skin.String(homeitem.2.label)] $LOCALIZE[31021]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
+								<thumb>$INFO[Skin.String(homeitem.2.fanart)]</thumb>
+								<property name="HiLiteItem">$INFO[Skin.String(homeitem.2.type)]</property>
+								<visible>!IsEmpty(Skin.String(homeitem.2.path)) + Skin.String(homeitem.2.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
 							</item>
 							<item id="3">
 								<description>Home Menu Item Three</description>
@@ -4458,6 +4476,15 @@
 								<property name="HiLiteItem">$INFO[Skin.String(homeitem.3.type)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.3.path)) + !Skin.String(homeitem.3.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
 							</item>
+							<item id="3">
+								<description>Home Menu Item Three</description>
+								<label>$INFO[Skin.String(homeitem.3.label)] $LOCALIZE[31021]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
+								<thumb>$INFO[Skin.String(homeitem.3.fanart)]</thumb>
+								<property name="HiLiteItem">$INFO[Skin.String(homeitem.3.type)]</property>
+								<visible>!IsEmpty(Skin.String(homeitem.3.path)) + Skin.String(homeitem.3.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
+							</item>
 							<item id="4">
 								<description>Home Menu Item Four</description>
 								<label>$INFO[Skin.String(homeitem.4.label)]</label>
@@ -4466,6 +4493,15 @@
 								<thumb>$INFO[Skin.String(homeitem.4.fanart)]</thumb>
 								<property name="HiLiteItem">$INFO[Skin.String(homeitem.4.type)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.4.path)) + !Skin.String(homeitem.4.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
+							</item>
+							<item id="4">
+								<description>Home Menu Item Four</description>
+								<label>$INFO[Skin.String(homeitem.4.label)] $LOCALIZE[31021]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
+								<thumb>$INFO[Skin.String(homeitem.4.fanart)]</thumb>
+								<property name="HiLiteItem">$INFO[Skin.String(homeitem.4.type)]</property>
+								<visible>!IsEmpty(Skin.String(homeitem.4.path)) + Skin.String(homeitem.4.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
 							</item>
 							<item id="5">
 								<description>Home Menu Item Five</description>
@@ -4476,6 +4512,15 @@
 								<property name="HiLiteItem">$INFO[Skin.String(homeitem.5.type)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.5.path)) + !Skin.String(homeitem.5.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
 							</item>
+							<item id="5">
+								<description>Home Menu Item Five</description>
+								<label>$INFO[Skin.String(homeitem.5.label)] $LOCALIZE[31021]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
+								<thumb>$INFO[Skin.String(homeitem.5.fanart)]</thumb>
+								<property name="HiLiteItem">$INFO[Skin.String(homeitem.5.type)]</property>
+								<visible>!IsEmpty(Skin.String(homeitem.5.path)) + Skin.String(homeitem.5.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
+							</item>
 							<item id="6">
 								<description>Home Menu Item Six</description>
 								<label>$INFO[Skin.String(homeitem.6.label)]</label>
@@ -4484,6 +4529,15 @@
 								<thumb>$INFO[Skin.String(homeitem.6.fanart)]</thumb>
 								<property name="HiLiteItem">$INFO[Skin.String(homeitem.6.type)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.6.path)) + !Skin.String(homeitem.6.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
+							</item>
+							<item id="6">
+								<description>Home Menu Item Six</description>
+								<label>$INFO[Skin.String(homeitem.6.label)] $LOCALIZE[31021]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
+								<thumb>$INFO[Skin.String(homeitem.6.fanart)]</thumb>
+								<property name="HiLiteItem">$INFO[Skin.String(homeitem.6.type)]</property>
+								<visible>!IsEmpty(Skin.String(homeitem.6.path)) + Skin.String(homeitem.6.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
 							</item>
 							<item id="7">
 								<description>Home Menu Item Seven</description>
@@ -4494,6 +4548,15 @@
 								<property name="HiLiteItem">$INFO[Skin.String(homeitem.7.type)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.7.path)) + !Skin.String(homeitem.7.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
 							</item>
+							<item id="7">
+								<description>Home Menu Item Seven</description>
+								<label>$INFO[Skin.String(homeitem.7.label)] $LOCALIZE[31021]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
+								<thumb>$INFO[Skin.String(homeitem.7.fanart)]</thumb>
+								<property name="HiLiteItem">$INFO[Skin.String(homeitem.7.type)]</property>
+								<visible>!IsEmpty(Skin.String(homeitem.7.path)) + Skin.String(homeitem.7.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
+							</item>
 							<item id="8">
 								<description>Home Menu Item Eight</description>
 								<label>$INFO[Skin.String(homeitem.8.label)]</label>
@@ -4502,6 +4565,15 @@
 								<thumb>$INFO[Skin.String(homeitem.8.fanart)]</thumb>
 								<property name="HiLiteItem">$INFO[Skin.String(homeitem.8.type)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.8.path)) + !Skin.String(homeitem.8.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
+							</item>
+							<item id="8">
+								<description>Home Menu Item Eight</description>
+								<label>$INFO[Skin.String(homeitem.8.label)] $LOCALIZE[31021]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
+								<thumb>$INFO[Skin.String(homeitem.8.fanart)]</thumb>
+								<property name="HiLiteItem">$INFO[Skin.String(homeitem.8.type)]</property>
+								<visible>!IsEmpty(Skin.String(homeitem.8.path)) + Skin.String(homeitem.8.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
 							</item>
 							<item id="9">
 								<description>Home Menu Item Nine</description>
@@ -4512,6 +4584,15 @@
 								<property name="HiLiteItem">$INFO[Skin.String(homeitem.9.type)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.9.path)) + !Skin.String(homeitem.9.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
 							</item>
+							<item id="9">
+								<description>Home Menu Item Nine</description>
+								<label>$INFO[Skin.String(homeitem.9.label)] $LOCALIZE[31021]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
+								<thumb>$INFO[Skin.String(homeitem.9.fanart)]</thumb>
+								<property name="HiLiteItem">$INFO[Skin.String(homeitem.9.type)]</property>
+								<visible>!IsEmpty(Skin.String(homeitem.9.path)) + Skin.String(homeitem.9.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
+							</item>
 							<item id="10">
 								<description>Home Menu Item Ten</description>
 								<label>$INFO[Skin.String(homeitem.10.label)]</label>
@@ -4520,6 +4601,15 @@
 								<thumb>$INFO[Skin.String(homeitem.10.fanart)]</thumb>
 								<property name="HiLiteItem">$INFO[Skin.String(homeitem.10.type)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.10.path)) + !Skin.String(homeitem.10.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
+							</item>
+							<item id="10">
+								<description>Home Menu Item Ten</description>
+								<label>$INFO[Skin.String(homeitem.10.label)] $LOCALIZE[31021]</label>
+								<onclick>noop</onclick>
+								<icon>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</icon>
+								<thumb>$INFO[Skin.String(homeitem.10.fanart)]</thumb>
+								<property name="HiLiteItem">$INFO[Skin.String(homeitem.10.type)]</property>
+								<visible>!IsEmpty(Skin.String(homeitem.10.path)) + Skin.String(homeitem.10.display) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
 							</item>
 							<item id="11">
 								<description>Fullscreen</description>

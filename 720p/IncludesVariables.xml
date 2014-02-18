@@ -11,6 +11,13 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Music) + !Skin.HasSetting(hidemusicdbfanart) + !IsEmpty(Window(home).Property(RandomAlbum.1.fanart))">$INFO[Window(home).Property(RandomAlbum.1.fanart)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) + !Skin.HasSetting(hideconcertdbfanart) + !IsEmpty(Skin.String(usrconcertsfanartdir))">$INFO[Skin.String(usrconcertsfanartdir)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Concerts) + !Skin.HasSetting(hideconcertdbfanart) + !IsEmpty(Window(home).Property(RandomMusicVideo.1.fanart))">$INFO[Window(home).Property(RandomMusicVideo.1.fanart)]</value>
+		
+		
+		<!--
+		<value condition="StringCompare(Container(9000).ListItem.Property(HiLiteItem),Favourites)">$INFO[Container(9000).ListItem.Label,special://skin/backgrounds/favourites/,.jpg]</value>
+		-->
+		
+		
 		<value condition="Container(9000).Hasfocus(1) + !IsEmpty(Skin.String(homeitem.1.fanart))">$INFO[Skin.String(homeitem.1.fanart)]</value>
 		<value condition="Container(9000).Hasfocus(2) + !IsEmpty(Skin.String(homeitem.2.fanart))">$INFO[Skin.String(homeitem.2.fanart)]</value>
 		<value condition="Container(9000).Hasfocus(3) + !IsEmpty(Skin.String(homeitem.3.fanart))">$INFO[Skin.String(homeitem.3.fanart)]</value>
@@ -23,6 +30,10 @@
 		<value condition="Container(9000).Hasfocus(10) + !IsEmpty(Skin.String(homeitem.10.fanart))">$INFO[Skin.String(homeitem.10.fanart)]</value>
 		<value condition="Container(9000).Hasfocus(12) + !IsEmpty(Skin.String(homeitem.12.fanart))">$INFO[Skin.String(homeitem.12.fanart)]</value>
 		<value condition="Container(9000).Hasfocus(13) + !IsEmpty(Skin.String(homeitem.13.fanart))">$INFO[Skin.String(homeitem.13.fanart)]</value>
+		
+		
+		
+		
 		<value>$INFO[Skin.CurrentTheme,special://skin/backgrounds/,.jpg]</value>
 	</variable>
 	<variable name="CommonMenuItemBackground" type="text">

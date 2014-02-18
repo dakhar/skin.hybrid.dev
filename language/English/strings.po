@@ -99,7 +99,11 @@ msgctxt "#31020"
 msgid "Enable Full MPAA Description for Movies"
 msgstr ""
 
-#empty strings from id 31021 to 31034
+msgctxt "#31021"
+msgid "(Not Home Screen)"
+msgstr ""
+
+#empty strings from id 31022 to 31034
 
 msgctxt "#31035"
 msgid "Enable New Media Banners"
