@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="2129">
-  <!--onload>RunScript(script.foobar)</onload-->
-  <!--onunload>SetProperty(foo,bar)</onunload-->
-  <defaultcontrol always="true">9006</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
-  <!--backgroundcolor>0xff00ff00</backgroundcolor-->
-  <!--views>50,51,509,510</views-->
-  <!--visible>Window.IsActive(Home)</visible-->
-  <!--animation effect="fade" time="100">WindowOpen</animation-->
-  <!--animation effect="slide" end="0,576" time="100">WindowClose</animation-->
-  <zorder>1</zorder>
-  <coordinates>
-    <posx>0</posx>
-    <posy>0</posy>
-    <!--origin x="100" y="50">Window.IsActive(Home)</origin-->
-  </coordinates>
-  <previouswindow>Home</previouswindow>
-  <controls>
-    <include>CommonBackground</include>
-	<control type="image">
+	<!--onload>RunScript(script.foobar)</onload-->
+	<!--onunload>SetProperty(foo,bar)</onunload-->
+	<defaultcontrol always="true">9006</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<!--backgroundcolor>0xff00ff00</backgroundcolor-->
+	<!--views>50,51,509,510</views-->
+	<!--visible>Window.IsActive(Home)</visible-->
+	<!--animation effect="fade" time="100">WindowOpen</animation-->
+	<!--animation effect="slide" end="0,576" time="100">WindowClose</animation-->
+	<zorder>1</zorder>
+	<coordinates>
+		<posx>0</posx>
+		<posy>0</posy>
+		<!--origin x="100" y="50">Window.IsActive(Home)</origin-->
+	</coordinates>
+	<previouswindow>Home</previouswindow>
+	<controls>
+		<include>CommonBackground</include>
+		<control type="image">
 			<left>0</left>
 			<top>600r</top>
 			<width>1280</width>
@@ -46,7 +46,7 @@
 			<include>TransparentEffect</include>
 			<texture>black-back.png</texture>
 		</control>
-	<control type="button" id="800">
+		<control type="button" id="800">
 			<include>InvisibleButton</include>
 			<onleft>801</onleft>
 			<onright>804</onright>
@@ -54,15 +54,10 @@
 			<ondown>9006</ondown>
 			<visible>false</visible>
 		</control>
-		
 		<include>FloorReturnButtons</include>
 		<include>CommonNowPlaying</include>
-		<include>BehindDialogFadeOut</include>	
-	
-	
-	
-	
-	<control type="group">
+		<include>BehindDialogFadeOut</include>
+		<control type="group">
 			<visible>Control.IsVisible(9006)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="panel" id="9006">
@@ -89,7 +84,6 @@
 						<bordersize>5</bordersize>
 						<texture background="true">$INFO[Listitem.icon]</texture>
 					</control>
-					
 					<!--control type="image">
 						<left>0</left>
 						<top>0</top>
@@ -111,7 +105,6 @@
 						<aligny>center</aligny>
 						<info>ListItem.label</info>
 					</control>
-					
 				</itemlayout>
 				<focusedlayout height="173" width="216">
 					<!--control type="image">
@@ -145,125 +138,104 @@
 						<aligny>center</aligny>
 						<info>ListItem.label</info>
 					</control>
-					
 				</focusedlayout>
-				
 				<content>
-				
-				<item>
-					<label>$LOCALIZE[31282]</label>
-					<label2>$LOCALIZE[31409]</label2>
-					<onclick>ActivateWindow(home)</onclick>
-					<icon>DefaultLogoReturn.png</icon>
-					<property name="Fanart">$INFO[Skin.String(addonsetone.1.fanart)]</property>
-				</item>
-				<item>
-					<label>$INFO[Skin.String(homeitem.1.label)]</label>
-					<label2>$LOCALIZE[31410]</label2>
-					<onclick>$INFO[Skin.String(homeitem.1.path)]</onclick>
-					<icon>DefaultShortcut.png</icon>
-					<property name="Fanart">$INFO[Skin.String(homeitem.1.fanart)]</property>
-					
-					<visible>StringCompare(Window(home).Property(MenuItemActive),ItemOne)</visible>
-					
-				</item>
-				<item>
-					<label>$INFO[Skin.String(homeitem.2.label)]</label>
-					<label2>$LOCALIZE[31410]</label2>
-					<onclick>$INFO[Skin.String(homeitem.2.path)]</onclick>
-					<icon>DefaultShortcut.png</icon>
-					<property name="Fanart">$INFO[Skin.String(homeitem.2.fanart)]</property>
-					
-					<visible>StringCompare(Window(home).Property(MenuItemActive),ItemTwo)</visible>
-				</item>
-				<item>
-					<label>$INFO[Skin.String(homeitem.3.label)]</label>
-					<label2>$LOCALIZE[31410]</label2>
-					<onclick>$INFO[Skin.String(homeitem.3.path)]</onclick>
-					<icon>DefaultShortcut.png</icon>
-					<property name="Fanart">$INFO[Skin.String(homeitem.3.fanart)]</property>
-					
-					<visible>StringCompare(Window(home).Property(MenuItemActive),ItemThree)</visible>
-				</item>
-				<item>
-					<label>$INFO[Skin.String(homeitem.4.label)]</label>
-					<label2>$LOCALIZE[31410]</label2>
-					<onclick>$INFO[Skin.String(homeitem.4.path)]</onclick>
-					<icon>DefaultShortcut.png</icon>
-					<property name="Fanart">$INFO[Skin.String(homeitem.4.fanart)]</property>
-					
-					<visible>StringCompare(Window(home).Property(MenuItemActive),ItemFour)</visible>
-				</item>
-				<item>
-					<label>$INFO[Skin.String(homeitem.5.label)]</label>
-					<label2>$LOCALIZE[31410]</label2>
-					<onclick>$INFO[Skin.String(homeitem.5.path)]</onclick>
-					<icon>DefaultShortcut.png</icon>
-					<property name="Fanart">$INFO[Skin.String(homeitem.5.fanart)]</property>
-					
-					<visible>StringCompare(Window(home).Property(MenuItemActive),ItemFive)</visible>
-				</item>
-				<item>
-					<label>$INFO[Skin.String(homeitem.6.label)]</label>
-					<label2>$LOCALIZE[31410]</label2>
-					<onclick>$INFO[Skin.String(homeitem.6.path)]</onclick>
-					<icon>DefaultShortcut.png</icon>
-					<property name="Fanart">$INFO[Skin.String(homeitem.6.fanart)]</property>
-					
-					<visible>StringCompare(Window(home).Property(MenuItemActive),ItemSix)</visible>
-				</item>
-				<item>
-					<label>$INFO[Skin.String(homeitem.7.label)]</label>
-					<label2>$LOCALIZE[31410]</label2>
-					<onclick>$INFO[Skin.String(homeitem.7.path)]</onclick>
-					<icon>DefaultShortcut.png</icon>
-					<property name="Fanart">$INFO[Skin.String(homeitem.7.fanart)]</property>
-					
-					<visible>StringCompare(Window(home).Property(MenuItemActive),ItemSeven)</visible>
-				</item>
-				<item>
-					<label>$INFO[Skin.String(homeitem.8.label)]</label>
-					<label2>$LOCALIZE[31410]</label2>
-					<onclick>$INFO[Skin.String(homeitem.8.path)]</onclick>
-					<icon>DefaultShortcut.png</icon>
-					<property name="Fanart">$INFO[Skin.String(homeitem.8.fanart)]</property>
-					
-					<visible>StringCompare(Window(home).Property(MenuItemActive),ItemEight)</visible>
-				</item>
-				<item>
-					<label>$INFO[Skin.String(homeitem.9.label)]</label>
-					<label2>$LOCALIZE[31410]</label2>
-					<onclick>$INFO[Skin.String(homeitem.9.path)]</onclick>
-					<icon>DefaultShortcut.png</icon>
-					<property name="Fanart">$INFO[Skin.String(homeitem.9.fanart)]</property>
-					
-					<visible>StringCompare(Window(home).Property(MenuItemActive),ItemNine)</visible>
-				</item>
-				<item>
-					<label>$INFO[Skin.String(homeitem.10.label)]</label>
-					<label2>$LOCALIZE[31410]</label2>
-					<onclick>$INFO[Skin.String(homeitem.10.path)]</onclick>
-					<icon>DefaultShortcut.png</icon>
-					<property name="Fanart">$INFO[Skin.String(homeitem.10.fanart)]</property>
-					
-					<visible>StringCompare(Window(home).Property(MenuItemActive),ItemTen)</visible>
-				</item>
-				<item>
-					<label>$LOCALIZE[13000]</label>
-					<label2>$LOCALIZE[31410]</label2>
-					<onclick>ActivateWindow(Settings)</onclick>
-					<icon>DefaultShortcut.png</icon>
-					<property name="Fanart">$INFO[Skin.String(homeitem.13.fanart)]</property>
-					
-					<visible>StringCompare(Window(home).Property(MenuItemActive),Settings)</visible>
-				</item>
-				
-				
-				
-				
-				
-				
-				<!--
+					<item>
+						<label>$LOCALIZE[31282]</label>
+						<label2>$LOCALIZE[31409]</label2>
+						<onclick>ActivateWindow(home)</onclick>
+						<icon>DefaultLogoReturn.png</icon>
+						<property name="Fanart">$INFO[Skin.String(addonsetone.1.fanart)]</property>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(homeitem.1.label)]</label>
+						<label2>$LOCALIZE[31410]</label2>
+						<onclick>$INFO[Skin.String(homeitem.1.path)]</onclick>
+						<icon>DefaultShortcut.png</icon>
+						<property name="Fanart">$INFO[Skin.String(homeitem.1.fanart)]</property>
+						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemOne)</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(homeitem.2.label)]</label>
+						<label2>$LOCALIZE[31410]</label2>
+						<onclick>$INFO[Skin.String(homeitem.2.path)]</onclick>
+						<icon>DefaultShortcut.png</icon>
+						<property name="Fanart">$INFO[Skin.String(homeitem.2.fanart)]</property>
+						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemTwo)</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(homeitem.3.label)]</label>
+						<label2>$LOCALIZE[31410]</label2>
+						<onclick>$INFO[Skin.String(homeitem.3.path)]</onclick>
+						<icon>DefaultShortcut.png</icon>
+						<property name="Fanart">$INFO[Skin.String(homeitem.3.fanart)]</property>
+						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemThree)</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(homeitem.4.label)]</label>
+						<label2>$LOCALIZE[31410]</label2>
+						<onclick>$INFO[Skin.String(homeitem.4.path)]</onclick>
+						<icon>DefaultShortcut.png</icon>
+						<property name="Fanart">$INFO[Skin.String(homeitem.4.fanart)]</property>
+						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemFour)</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(homeitem.5.label)]</label>
+						<label2>$LOCALIZE[31410]</label2>
+						<onclick>$INFO[Skin.String(homeitem.5.path)]</onclick>
+						<icon>DefaultShortcut.png</icon>
+						<property name="Fanart">$INFO[Skin.String(homeitem.5.fanart)]</property>
+						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemFive)</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(homeitem.6.label)]</label>
+						<label2>$LOCALIZE[31410]</label2>
+						<onclick>$INFO[Skin.String(homeitem.6.path)]</onclick>
+						<icon>DefaultShortcut.png</icon>
+						<property name="Fanart">$INFO[Skin.String(homeitem.6.fanart)]</property>
+						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemSix)</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(homeitem.7.label)]</label>
+						<label2>$LOCALIZE[31410]</label2>
+						<onclick>$INFO[Skin.String(homeitem.7.path)]</onclick>
+						<icon>DefaultShortcut.png</icon>
+						<property name="Fanart">$INFO[Skin.String(homeitem.7.fanart)]</property>
+						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemSeven)</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(homeitem.8.label)]</label>
+						<label2>$LOCALIZE[31410]</label2>
+						<onclick>$INFO[Skin.String(homeitem.8.path)]</onclick>
+						<icon>DefaultShortcut.png</icon>
+						<property name="Fanart">$INFO[Skin.String(homeitem.8.fanart)]</property>
+						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemEight)</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(homeitem.9.label)]</label>
+						<label2>$LOCALIZE[31410]</label2>
+						<onclick>$INFO[Skin.String(homeitem.9.path)]</onclick>
+						<icon>DefaultShortcut.png</icon>
+						<property name="Fanart">$INFO[Skin.String(homeitem.9.fanart)]</property>
+						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemNine)</visible>
+					</item>
+					<item>
+						<label>$INFO[Skin.String(homeitem.10.label)]</label>
+						<label2>$LOCALIZE[31410]</label2>
+						<onclick>$INFO[Skin.String(homeitem.10.path)]</onclick>
+						<icon>DefaultShortcut.png</icon>
+						<property name="Fanart">$INFO[Skin.String(homeitem.10.fanart)]</property>
+						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemTen)</visible>
+					</item>
+					<item>
+						<label>$LOCALIZE[13000]</label>
+						<label2>$LOCALIZE[31410]</label2>
+						<onclick>ActivateWindow(Settings)</onclick>
+						<icon>DefaultShortcut.png</icon>
+						<property name="Fanart">$INFO[Skin.String(homeitem.13.fanart)]</property>
+						<visible>StringCompare(Window(home).Property(MenuItemActive),Settings)</visible>
+					</item>
+					<!--
 				
 				<include name="HomeSubMenuVideos">
 		
@@ -279,35 +251,33 @@
 				<visible>!stringcompare(Skin.String(subvideos.1.path),Hidden)</visible>
 			</item>
 				-->
-				
-				
-				<include condition="StringCompare(Window(home).Property(MenuItemSub),Videos)">HomeSubMenuVideos</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemSub),Movies)">HomeSubMenuMovies</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemSub),TVShows)">HomeSubMenuTVShows</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemSub),Music)">HomeSubMenuMusic</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemSub),Settings)">HomeSubMenuSystem</include>
-				<!--include condition="StringCompare(Window(home).Property(MenuItemSub),PlayDisc)">HomeSubMenuPlayDisc</include-->
-				<include condition="StringCompare(Window(home).Property(MenuItemSub),Pictures)">HomeSubMenuPictures</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemSub),LiveTV)">HomeSubMenuLiveTV</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemSub),Concerts)">HomeSubMenuConcerts</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemSub),Favourites)">HomeSubMenuFavourites</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemSub),UserOne)">HomeSubMenuUserOne</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemSub),UserTwo)">HomeSubMenuUserTwo</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemSub),Programs)">HomeSubMenuProg</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemSub),UserThree)">HomeSubMenuUserThree</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemSub),Shutdown)">HomeSubMenuExit</include>
-				<!--include condition="StringCompare(Window(home).Property(MenuItemSub),FullScreen)">HomeSubMenuFullscreen</include-->
-				<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsetone)">HomeAddonSetOne</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsettwo)">HomeAddonSetTwo</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsetthree)">HomeAddonSetThree</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsetfour)">HomeAddonSetFour</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsetfive)">HomeAddonSetFive</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsetsix)">HomeAddonSetSix</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsetseven)">HomeAddonSetSeven</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonseteight)">HomeAddonSetEight</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsetnine)">HomeAddonSetNine</include>
-				<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsetten)">HomeAddonSetTen</include>
-				<!--
+					<include condition="StringCompare(Window(home).Property(MenuItemSub),Videos)">HomeSubMenuVideos</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemSub),Movies)">HomeSubMenuMovies</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemSub),TVShows)">HomeSubMenuTVShows</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemSub),Music)">HomeSubMenuMusic</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemSub),Settings)">HomeSubMenuSystem</include>
+					<!--include condition="StringCompare(Window(home).Property(MenuItemSub),PlayDisc)">HomeSubMenuPlayDisc</include-->
+					<include condition="StringCompare(Window(home).Property(MenuItemSub),Pictures)">HomeSubMenuPictures</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemSub),LiveTV)">HomeSubMenuLiveTV</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemSub),Concerts)">HomeSubMenuConcerts</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemSub),Favourites)">HomeSubMenuFavourites</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemSub),UserOne)">HomeSubMenuUserOne</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemSub),UserTwo)">HomeSubMenuUserTwo</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemSub),Programs)">HomeSubMenuProg</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemSub),UserThree)">HomeSubMenuUserThree</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemSub),Shutdown)">HomeSubMenuExit</include>
+					<!--include condition="StringCompare(Window(home).Property(MenuItemSub),FullScreen)">HomeSubMenuFullscreen</include-->
+					<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsetone)">HomeAddonSetOne</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsettwo)">HomeAddonSetTwo</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsetthree)">HomeAddonSetThree</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsetfour)">HomeAddonSetFour</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsetfive)">HomeAddonSetFive</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsetsix)">HomeAddonSetSix</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsetseven)">HomeAddonSetSeven</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonseteight)">HomeAddonSetEight</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsetnine)">HomeAddonSetNine</include>
+					<include condition="StringCompare(Window(home).Property(MenuItemAddon),addonsetten)">HomeAddonSetTen</include>
+					<!--
 				5 x items
 				<item>
 					<label>$INFO[Skin.String(addonsetone.1.label)]</label>
@@ -319,14 +289,7 @@
 					<visible>!IsEmpty(Skin.String(addonsetone.1.path))</visible>
 				</item>
 				-->
-				
-				
-				
-				
-				
-				
-				
-				<!--
+					<!--
 				
 				MenuItemAddon
 				
@@ -358,9 +321,7 @@
 				
 				<onclick>SetProperty(MenuItemActive,ItemTwo,Home)</onclick>
 				-->
-				
-				
-				<!--item>
+					<!--item>
 				<label>$VAR[SubMenuVideosOne]</label>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + !IsEmpty(Skin.String(subvideos.1.path))">Skin.SetString(homeitemlastaction,$INFO[Skin.String(subvideos.1.path)])</onclick>
 				<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction) + IsEmpty(Skin.String(subvideos.1.path))">Skin.SetString(homeitemlastaction,ActivateWindow(Videos,MovieTitles,return))</onclick>
@@ -371,9 +332,7 @@
 				<visible>Library.HasContent(Movies) | !IsEmpty(Skin.String(subvideos.1.path))</visible>
 				<visible>!stringcompare(Skin.String(subvideos.1.path),Hidden)</visible>
 			</item-->
-			
-			
-			<!--
+					<!--
 		<setting type="string" name="skin.hybrid.dev.subvideos.1.label"></setting>
         <setting type="string" name="skin.hybrid.dev.subvideos.1.path"></setting>
         <setting type="string" name="skin.hybrid.dev.subvideos.2.label"></setting>
@@ -416,18 +375,8 @@
 		
 		
 			-->
-				
-				
-		
-				
-				
-						
-					</content>
-				
-				
-				
+				</content>
 			</control>
-			
 			<!--control type="scrollbar" id="60">
 				<left>1170</left>
 				<top>110</top>
@@ -445,27 +394,14 @@
 				<visible>Control.IsVisible(9006)</visible>
 			</control-->
 		</control>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-				<!--
+		<!--
 	<include>HomeSubMenuControl</include>
 				<thumb>$INFO[Skin.String(homeitem.2.fanart)]</thumb>
 				<property name="SubMenu">$INFO[Skin.String(homeitem.2.sub)]</property>
 				<property name="AddOnSet">$INFO[Skin.String(homeitem.2.addon)]</property>
 	-->
-	
-	<!--include>MainHeaderLabel</include-->
-	<control type="label">
+		<!--include>MainHeaderLabel</include-->
+		<control type="label">
 			<left>55</left>
 			<top>5</top>
 			<width>1170</width>
@@ -492,7 +428,7 @@
 			<include>Window_OpenClose_Animation</include>
 			<label>$INFO[Container(9006).ListItem.label2]</label>
 		</control>
-   		<include>BottomClock</include>
+		<include>BottomClock</include>
 		<control type="image">
 			<description>LOGO</description>
 			<left>0</left>
@@ -537,5 +473,5 @@
 			<animation effect="fade" start="100" end="0" time="200" condition="Window.IsVisible(infodialog)">Conditional</animation>
 			<visible>!StringCompare(System.ProfileName,Master user)</visible>
 		</control>
-  </controls>
+	</controls>
 </window>

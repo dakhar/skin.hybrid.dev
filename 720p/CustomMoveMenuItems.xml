@@ -35,8 +35,8 @@
 				<top>0</top>
 				<width>64</width>
 				<height>32</height>
-				<label>-</label>
-				<font>-</font>
+				
+				
 				<onclick>PreviousMenu</onclick>
 				<texturefocus>DialogCloseButton-focus.png</texturefocus>
 				<texturenofocus>DialogCloseButton.png</texturenofocus>
@@ -132,19 +132,7 @@
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].fanart,$INFO[Skin.String(homeitem.1.fanart)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].display,$INFO[Skin.String(homeitem.1.display)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].playlist,$INFO[Skin.String(homeitem.1.playlist)])</onclick>
-						
-						<onclick condition="Skin.HasSetting(homeitem.1.menu)">Skin.SetBool($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.1.menu)])</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.1.menu)">Skin.Reset($INFO[Window(Home).Property(usrselectbtn)].menu)</onclick>
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
+						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.1.menu)])</onclick>
 						<onclick>Skin.SetString(homeitem.1.label,$INFO[Window(Home).Property(SwapItemLabel)])</onclick>
 						<onclick>Skin.SetString(homeitem.1.path,$INFO[Window(Home).Property(SwapItemPath)])</onclick>
 						<onclick>Skin.SetString(homeitem.1.sub,$INFO[Window(Home).Property(SwapItemSub)])</onclick>
@@ -155,10 +143,7 @@
 						<onclick>Skin.SetString(homeitem.1.fanart,$INFO[Window(Home).Property(SwapItemFanArt)])</onclick>
 						<onclick>Skin.SetString(homeitem.1.display,$INFO[Window(Home).Property(SwapItemDisplay)])</onclick>
 						<onclick>Skin.SetString(homeitem.1.playlist,$INFO[Window(Home).Property(SwapItemPlaylist)])</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),true)">Skin.SetBool(homeitem.1.menu)</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),false)">Skin.Reset(homeitem.1.menu)</onclick>
-						
-						
+						<onclick>Skin.SetString(homeitem.1.menu,$INFO[Window(Home).Property(SwapItemAltMenu)])</onclick>
 						<onclick>Dialog.Close(2128)</onclick>
 						<onclick>Skin.Reset(usrselectaddon)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.1.label)) + !Skin.HasSetting(stickyhomemenuaction)</visible>
@@ -176,9 +161,7 @@
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].fanart,$INFO[Skin.String(homeitem.2.fanart)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].display,$INFO[Skin.String(homeitem.2.display)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].playlist,$INFO[Skin.String(homeitem.2.playlist)])</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.2.menu)">Skin.SetBool($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.2.menu)])</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.2.menu)">Skin.Reset($INFO[Window(Home).Property(usrselectbtn)].menu)</onclick>
-						
+						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.2.menu)])</onclick>
 						<onclick>Skin.SetString(homeitem.2.label,$INFO[Window(Home).Property(SwapItemLabel)])</onclick>
 						<onclick>Skin.SetString(homeitem.2.path,$INFO[Window(Home).Property(SwapItemPath)])</onclick>
 						<onclick>Skin.SetString(homeitem.2.sub,$INFO[Window(Home).Property(SwapItemSub)])</onclick>
@@ -189,8 +172,7 @@
 						<onclick>Skin.SetString(homeitem.2.fanart,$INFO[Window(Home).Property(SwapItemFanArt)])</onclick>
 						<onclick>Skin.SetString(homeitem.2.display,$INFO[Window(Home).Property(SwapItemDisplay)])</onclick>
 						<onclick>Skin.SetString(homeitem.2.playlist,$INFO[Window(Home).Property(SwapItemPlaylist)])</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),true)">Skin.SetBool(homeitem.2.menu)</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),false)">Skin.Reset(homeitem.2.menu)</onclick>
+						<onclick>Skin.SetString(homeitem.2.menu,$INFO[Window(Home).Property(SwapItemAltMenu)])</onclick>
 						<onclick>Dialog.Close(2128)</onclick>
 						<onclick>Skin.Reset(usrselectaddon)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.2.path))</visible>
@@ -208,9 +190,7 @@
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].fanart,$INFO[Skin.String(homeitem.3.fanart)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].display,$INFO[Skin.String(homeitem.3.display)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].playlist,$INFO[Skin.String(homeitem.3.playlist)])</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.3.menu)">Skin.SetBool($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.3.menu)])</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.3.menu)">Skin.Reset($INFO[Window(Home).Property(usrselectbtn)].menu)</onclick>
-						
+						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.3.menu)])</onclick>
 						<onclick>Skin.SetString(homeitem.3.label,$INFO[Window(Home).Property(SwapItemLabel)])</onclick>
 						<onclick>Skin.SetString(homeitem.3.path,$INFO[Window(Home).Property(SwapItemPath)])</onclick>
 						<onclick>Skin.SetString(homeitem.3.sub,$INFO[Window(Home).Property(SwapItemSub)])</onclick>
@@ -221,8 +201,7 @@
 						<onclick>Skin.SetString(homeitem.3.fanart,$INFO[Window(Home).Property(SwapItemFanArt)])</onclick>
 						<onclick>Skin.SetString(homeitem.3.display,$INFO[Window(Home).Property(SwapItemDisplay)])</onclick>
 						<onclick>Skin.SetString(homeitem.3.playlist,$INFO[Window(Home).Property(SwapItemPlaylist)])</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),true)">Skin.SetBool(homeitem.3.menu)</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),false)">Skin.Reset(homeitem.3.menu)</onclick>
+						<onclick>Skin.SetString(homeitem.3.menu,$INFO[Window(Home).Property(SwapItemAltMenu)])</onclick>
 						<onclick>Dialog.Close(2128)</onclick>
 						<onclick>Skin.Reset(usrselectaddon)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.3.path))</visible>
@@ -240,9 +219,7 @@
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].fanart,$INFO[Skin.String(homeitem.4.fanart)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].display,$INFO[Skin.String(homeitem.4.display)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].playlist,$INFO[Skin.String(homeitem.4.playlist)])</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.4.menu)">Skin.SetBool($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.4.menu)])</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.4.menu)">Skin.Reset($INFO[Window(Home).Property(usrselectbtn)].menu)</onclick>
-						
+						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.4.menu)])</onclick>
 						<onclick>Skin.SetString(homeitem.4.label,$INFO[Window(Home).Property(SwapItemLabel)])</onclick>
 						<onclick>Skin.SetString(homeitem.4.path,$INFO[Window(Home).Property(SwapItemPath)])</onclick>
 						<onclick>Skin.SetString(homeitem.4.sub,$INFO[Window(Home).Property(SwapItemSub)])</onclick>
@@ -253,8 +230,7 @@
 						<onclick>Skin.SetString(homeitem.4.fanart,$INFO[Window(Home).Property(SwapItemFanArt)])</onclick>
 						<onclick>Skin.SetString(homeitem.4.display,$INFO[Window(Home).Property(SwapItemDisplay)])</onclick>
 						<onclick>Skin.SetString(homeitem.4.playlist,$INFO[Window(Home).Property(SwapItemPlaylist)])</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),true)">Skin.SetBool(homeitem.4.menu)</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),false)">Skin.Reset(homeitem.4.menu)</onclick>
+						<onclick>Skin.SetString(homeitem.4.menu,$INFO[Window(Home).Property(SwapItemAltMenu)])</onclick>
 						<onclick>Dialog.Close(2128)</onclick>
 						<onclick>Skin.Reset(usrselectaddon)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.4.path))</visible>
@@ -272,9 +248,7 @@
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].fanart,$INFO[Skin.String(homeitem.5.fanart)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].display,$INFO[Skin.String(homeitem.5.display)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].playlist,$INFO[Skin.String(homeitem.5.playlist)])</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.5.menu)">Skin.SetBool($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.5.menu)])</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.5.menu)">Skin.Reset($INFO[Window(Home).Property(usrselectbtn)].menu)</onclick>
-			
+						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.5.menu)])</onclick>
 						<onclick>Skin.SetString(homeitem.5.label,$INFO[Window(Home).Property(SwapItemLabel)])</onclick>
 						<onclick>Skin.SetString(homeitem.5.path,$INFO[Window(Home).Property(SwapItemPath)])</onclick>
 						<onclick>Skin.SetString(homeitem.5.sub,$INFO[Window(Home).Property(SwapItemSub)])</onclick>
@@ -285,8 +259,7 @@
 						<onclick>Skin.SetString(homeitem.5.fanart,$INFO[Window(Home).Property(SwapItemFanArt)])</onclick>
 						<onclick>Skin.SetString(homeitem.5.display,$INFO[Window(Home).Property(SwapItemDisplay)])</onclick>
 						<onclick>Skin.SetString(homeitem.5.playlist,$INFO[Window(Home).Property(SwapItemPlaylist)])</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),true)">Skin.SetBool(homeitem.5.menu)</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),false)">Skin.Reset(homeitem.5.menu)</onclick>
+						<onclick>Skin.SetString(homeitem.5.menu,$INFO[Window(Home).Property(SwapItemAltMenu)])</onclick>
 						<onclick>Dialog.Close(2128)</onclick>
 						<onclick>Skin.Reset(usrselectaddon)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.5.path))</visible>
@@ -304,9 +277,7 @@
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].fanart,$INFO[Skin.String(homeitem.6.fanart)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].display,$INFO[Skin.String(homeitem.6.display)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].playlist,$INFO[Skin.String(homeitem.6.playlist)])</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.6.menu)">Skin.SetBool($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.6.menu)])</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.6.menu)">Skin.Reset($INFO[Window(Home).Property(usrselectbtn)].menu)</onclick>
-						
+						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.6.menu)])</onclick>
 						<onclick>Skin.SetString(homeitem.6.label,$INFO[Window(Home).Property(SwapItemLabel)])</onclick>
 						<onclick>Skin.SetString(homeitem.6.path,$INFO[Window(Home).Property(SwapItemPath)])</onclick>
 						<onclick>Skin.SetString(homeitem.6.sub,$INFO[Window(Home).Property(SwapItemSub)])</onclick>
@@ -317,8 +288,7 @@
 						<onclick>Skin.SetString(homeitem.6.fanart,$INFO[Window(Home).Property(SwapItemFanArt)])</onclick>
 						<onclick>Skin.SetString(homeitem.6.display,$INFO[Window(Home).Property(SwapItemDisplay)])</onclick>
 						<onclick>Skin.SetString(homeitem.6.playlist,$INFO[Window(Home).Property(SwapItemPlaylist)])</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),true)">Skin.SetBool(homeitem.6.menu)</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),false)">Skin.Reset(homeitem.6.menu)</onclick>
+						<onclick>Skin.SetString(homeitem.6.menu,$INFO[Window(Home).Property(SwapItemAltMenu)])</onclick>
 						<onclick>Dialog.Close(2128)</onclick>
 						<onclick>Skin.Reset(usrselectaddon)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.6.path))</visible>
@@ -336,9 +306,7 @@
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].fanart,$INFO[Skin.String(homeitem.7.fanart)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].display,$INFO[Skin.String(homeitem.7.display)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].playlist,$INFO[Skin.String(homeitem.7.playlist)])</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.7.menu)">Skin.SetBool($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.7.menu)])</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.7.menu)">Skin.Reset($INFO[Window(Home).Property(usrselectbtn)].menu)</onclick>
-						
+						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.7.menu)])</onclick>
 						<onclick>Skin.SetString(homeitem.7.label,$INFO[Window(Home).Property(SwapItemLabel)])</onclick>
 						<onclick>Skin.SetString(homeitem.7.path,$INFO[Window(Home).Property(SwapItemPath)])</onclick>
 						<onclick>Skin.SetString(homeitem.7.sub,$INFO[Window(Home).Property(SwapItemSub)])</onclick>
@@ -349,8 +317,7 @@
 						<onclick>Skin.SetString(homeitem.7.fanart,$INFO[Window(Home).Property(SwapItemFanArt)])</onclick>
 						<onclick>Skin.SetString(homeitem.7.display,$INFO[Window(Home).Property(SwapItemDisplay)])</onclick>
 						<onclick>Skin.SetString(homeitem.7.playlist,$INFO[Window(Home).Property(SwapItemPlaylist)])</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),true)">Skin.SetBool(homeitem.7.menu)</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),false)">Skin.Reset(homeitem.7.menu)</onclick>
+						<onclick>Skin.SetString(homeitem.7.menu,$INFO[Window(Home).Property(SwapItemAltMenu)])</onclick>
 						<onclick>Dialog.Close(2128)</onclick>
 						<onclick>Skin.Reset(usrselectaddon)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.7.path))</visible>
@@ -368,9 +335,7 @@
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].fanart,$INFO[Skin.String(homeitem.8.fanart)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].display,$INFO[Skin.String(homeitem.8.display)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].playlist,$INFO[Skin.String(homeitem.8.playlist)])</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.8.menu)">Skin.SetBool($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.8.menu)])</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.8.menu)">Skin.Reset($INFO[Window(Home).Property(usrselectbtn)].menu)</onclick>
-						
+						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.8.menu)])</onclick>
 						<onclick>Skin.SetString(homeitem.8.label,$INFO[Window(Home).Property(SwapItemLabel)])</onclick>
 						<onclick>Skin.SetString(homeitem.8.path,$INFO[Window(Home).Property(SwapItemPath)])</onclick>
 						<onclick>Skin.SetString(homeitem.8.sub,$INFO[Window(Home).Property(SwapItemSub)])</onclick>
@@ -381,8 +346,7 @@
 						<onclick>Skin.SetString(homeitem.8.fanart,$INFO[Window(Home).Property(SwapItemFanArt)])</onclick>
 						<onclick>Skin.SetString(homeitem.8.display,$INFO[Window(Home).Property(SwapItemDisplay)])</onclick>
 						<onclick>Skin.SetString(homeitem.8.playlist,$INFO[Window(Home).Property(SwapItemPlaylist)])</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),true)">Skin.SetBool(homeitem.8.menu)</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),false)">Skin.Reset(homeitem.8.menu)</onclick>
+						<onclick>Skin.SetString(homeitem.8.menu,$INFO[Window(Home).Property(SwapItemAltMenu)])</onclick>
 						<onclick>Dialog.Close(2128)</onclick>
 						<onclick>Skin.Reset(usrselectaddon)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.8.path))</visible>
@@ -400,9 +364,7 @@
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].fanart,$INFO[Skin.String(homeitem.9.fanart)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].display,$INFO[Skin.String(homeitem.9.display)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].playlist,$INFO[Skin.String(homeitem.9.playlist)])</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.9.menu)">Skin.SetBool($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.9.menu)])</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.9.menu)">Skin.Reset($INFO[Window(Home).Property(usrselectbtn)].menu)</onclick>
-						
+						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.9.menu)])</onclick>
 						<onclick>Skin.SetString(homeitem.9.label,$INFO[Window(Home).Property(SwapItemLabel)])</onclick>
 						<onclick>Skin.SetString(homeitem.9.path,$INFO[Window(Home).Property(SwapItemPath)])</onclick>
 						<onclick>Skin.SetString(homeitem.9.sub,$INFO[Window(Home).Property(SwapItemSub)])</onclick>
@@ -413,8 +375,7 @@
 						<onclick>Skin.SetString(homeitem.9.fanart,$INFO[Window(Home).Property(SwapItemFanArt)])</onclick>
 						<onclick>Skin.SetString(homeitem.9.display,$INFO[Window(Home).Property(SwapItemDisplay)])</onclick>
 						<onclick>Skin.SetString(homeitem.9.playlist,$INFO[Window(Home).Property(SwapItemPlaylist)])</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),true)">Skin.SetBool(homeitem.9.menu)</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),false)">Skin.Reset(homeitem.9.menu)</onclick>
+						<onclick>Skin.SetString(homeitem.9.menu,$INFO[Window(Home).Property(SwapItemAltMenu)])</onclick>
 						<onclick>Dialog.Close(2128)</onclick>
 						<onclick>Skin.Reset(usrselectaddon)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.9.path))</visible>
@@ -432,9 +393,7 @@
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].fanart,$INFO[Skin.String(homeitem.10.fanart)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].display,$INFO[Skin.String(homeitem.10.display)])</onclick>
 						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].playlist,$INFO[Skin.String(homeitem.10.playlist)])</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.10.menu)">Skin.SetBool($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.10.menu)])</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.10.menu)">Skin.Reset($INFO[Window(Home).Property(usrselectbtn)].menu)</onclick>
-						
+						<onclick>Skin.SetString($INFO[Window(Home).Property(usrselectbtn)].menu,$INFO[Skin.String(homeitem.10.menu)])</onclick>
 						<onclick>Skin.SetString(homeitem.10.label,$INFO[Window(Home).Property(SwapItemLabel)])</onclick>
 						<onclick>Skin.SetString(homeitem.10.path,$INFO[Window(Home).Property(SwapItemPath)])</onclick>
 						<onclick>Skin.SetString(homeitem.10.sub,$INFO[Window(Home).Property(SwapItemSub)])</onclick>
@@ -445,8 +404,7 @@
 						<onclick>Skin.SetString(homeitem.10.fanart,$INFO[Window(Home).Property(SwapItemFanArt)])</onclick>
 						<onclick>Skin.SetString(homeitem.10.display,$INFO[Window(Home).Property(SwapItemDisplay)])</onclick>
 						<onclick>Skin.SetString(homeitem.10.playlist,$INFO[Window(Home).Property(SwapItemPlaylist)])</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),true)">Skin.SetBool(homeitem.10.menu)</onclick>
-						<onclick condition="SubString(Window(home).Property(SwapItemAltMenu),false)">Skin.Reset(homeitem.10.menu)</onclick>
+						<onclick>Skin.SetString(homeitem.10.menu,$INFO[Window(Home).Property(SwapItemAltMenu)])</onclick>
 						<onclick>Dialog.Close(2128)</onclick>
 						<onclick>Skin.Reset(usrselectaddon)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.10.path))</visible>

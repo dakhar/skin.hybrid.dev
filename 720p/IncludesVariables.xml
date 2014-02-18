@@ -523,15 +523,6 @@
 		<value condition="!Player.Paused">$LOCALIZE[31054]</value>
 		<value condition="Player.Paused">$LOCALIZE[14098]</value>
 	</variable>
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	<variable name="SubMenuVideosOne" type="text">
 		<value condition="!IsEmpty(Skin.String(subvideos.1.label))">$INFO[Skin.String(subvideos.1.label)]</value>
 		<value>$LOCALIZE[342]</value>
@@ -739,7 +730,6 @@
 		<value condition="Control.HasFocus(709) + IntegerGreaterThan(Container(709).NumItems,0)">$INFO[Container(709).ListItem.label,[B][COLOR=blue]$LOCALIZE[31242]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="Control.HasFocus(710) + IntegerGreaterThan(Container(701).NumItems,0)">$INFO[Container(710).ListItem.label,[B][COLOR=blue]$LOCALIZE[31242]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="Control.HasFocus(711) + IntegerGreaterThan(Container(711).NumItems,0)">$INFO[Container(711).ListItem.label,[B][COLOR=blue]$LOCALIZE[31242]$LOCALIZE[31000] [/COLOR][/B]]</value>
-		
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),VideoPlayList) + Container(9000).Hasfocus(1) + !IsEmpty(Window(home).Property(HomePlayListOne.Count))">$INFO[Window(home).Property(HomePlayListOne.Count),[B][COLOR=blue]$LOCALIZE[31259]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListOne.Watched),[B][COLOR=blue]$LOCALIZE[16102]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListOne.Unwatched),[B][COLOR=blue]$LOCALIZE[16101]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),VideoPlayList) + Container(9000).Hasfocus(2) + !IsEmpty(Window(home).Property(HomePlayListTwo.Count))">$INFO[Window(home).Property(HomePlayListTwo.Count),[B][COLOR=blue]$LOCALIZE[31259]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListTwo.Watched),[B][COLOR=blue]$LOCALIZE[16102]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListTwo.Unwatched),[B][COLOR=blue]$LOCALIZE[16101]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),VideoPlayList) + Container(9000).Hasfocus(3) + !IsEmpty(Window(home).Property(HomePlayListThree.Count))">$INFO[Window(home).Property(HomePlayListThree.Count),[B][COLOR=blue]$LOCALIZE[31259]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListThree.Watched),[B][COLOR=blue]$LOCALIZE[16102]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListThree.Unwatched),[B][COLOR=blue]$LOCALIZE[16101]$LOCALIZE[31000] [/COLOR][/B]]</value>
@@ -750,7 +740,6 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),VideoPlayList) + Container(9000).Hasfocus(8) + !IsEmpty(Window(home).Property(HomePlayListEight.Count))">$INFO[Window(home).Property(HomePlayListEight.Count),[B][COLOR=blue]$LOCALIZE[31259]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListEight.Watched),[B][COLOR=blue]$LOCALIZE[16102]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListEight.Unwatched),[B][COLOR=blue]$LOCALIZE[16101]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),VideoPlayList) + Container(9000).Hasfocus(9) + !IsEmpty(Window(home).Property(HomePlayListNine.Count))">$INFO[Window(home).Property(HomePlayListNine.Count),[B][COLOR=blue]$LOCALIZE[31259]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListNine.Watched),[B][COLOR=blue]$LOCALIZE[16102]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListNine.Unwatched),[B][COLOR=blue]$LOCALIZE[16101]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),VideoPlayList) + Container(9000).Hasfocus(10) + !IsEmpty(Window(home).Property(HomePlayListTen.Count))">$INFO[Window(home).Property(HomePlayListTen.Count),[B][COLOR=blue]$LOCALIZE[31259]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListTen.Watched),[B][COLOR=blue]$LOCALIZE[16102]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListTen.Unwatched),[B][COLOR=blue]$LOCALIZE[16101]$LOCALIZE[31000] [/COLOR][/B]]</value>
-		
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),MusicPlayList) + Container(9000).Hasfocus(1) + !IsEmpty(Window(home).Property(HomePlayListOne.Artists))">$INFO[Window(home).Property(HomePlayListOne.Artists),[B][COLOR=blue]$LOCALIZE[133]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListOne.Albums),[B][COLOR=blue]$LOCALIZE[132]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListOne.Songs),[B][COLOR=blue]$LOCALIZE[134]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),MusicPlayList) + Container(9000).Hasfocus(2) + !IsEmpty(Window(home).Property(HomePlayListTwo.Artists))">$INFO[Window(home).Property(HomePlayListTwo.Artists),[B][COLOR=blue]$LOCALIZE[133]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListTwo.Albums),[B][COLOR=blue]$LOCALIZE[132]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListTwo.Songs),[B][COLOR=blue]$LOCALIZE[134]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),MusicPlayList) + Container(9000).Hasfocus(3) + !IsEmpty(Window(home).Property(HomePlayListThree.Artists))">$INFO[Window(home).Property(HomePlayListThree.Artists),[B][COLOR=blue]$LOCALIZE[133]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListThree.Albums),[B][COLOR=blue]$LOCALIZE[132]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListThree.Songs),[B][COLOR=blue]$LOCALIZE[134]$LOCALIZE[31000] [/COLOR][/B]]</value>
@@ -761,7 +750,6 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),MusicPlayList) + Container(9000).Hasfocus(8) + !IsEmpty(Window(home).Property(HomePlayListEight.Artists))">$INFO[Window(home).Property(HomePlayListEight.Artists),[B][COLOR=blue]$LOCALIZE[133]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListEight.Albums),[B][COLOR=blue]$LOCALIZE[132]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListEight.Songs),[B][COLOR=blue]$LOCALIZE[134]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),MusicPlayList) + Container(9000).Hasfocus(9) + !IsEmpty(Window(home).Property(HomePlayListNine.Artists))">$INFO[Window(home).Property(HomePlayListNine.Artists),[B][COLOR=blue]$LOCALIZE[133]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListNine.Albums),[B][COLOR=blue]$LOCALIZE[132]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListNine.Songs),[B][COLOR=blue]$LOCALIZE[134]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),MusicPlayList) + Container(9000).Hasfocus(10) + !IsEmpty(Window(home).Property(HomePlayListTen.Artists))">$INFO[Window(home).Property(HomePlayListTen.Artists),[B][COLOR=blue]$LOCALIZE[133]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListTen.Albums),[B][COLOR=blue]$LOCALIZE[132]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window(home).Property(HomePlayListTen.Songs),[B][COLOR=blue]$LOCALIZE[134]$LOCALIZE[31000] [/COLOR][/B]]</value>
-		
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),Videos) + !IsEmpty(Window.Property(Movies.Count))">$INFO[Window.Property(Movies.Count),[B][COLOR=blue]$LOCALIZE[20342]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window.Property(TVShows.Count),[B][COLOR=blue]$LOCALIZE[20343]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window.Property(MusicVideos.Count),[B][COLOR=blue]$LOCALIZE[20389]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),Movies) + !IsEmpty(Window.Property(Movies.Count))">$INFO[Window.Property(Movies.Count),[B][COLOR=blue]$LOCALIZE[20342]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window.Property(Movies.Watched),[B][COLOR=blue]$LOCALIZE[16102]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window.Property(Movies.UnWatched),[B][COLOR=blue]$LOCALIZE[16101]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),TVShows) + !IsEmpty(Window.Property(TVShows.Count))">$INFO[Window.Property(TVShows.Count),[B][COLOR=blue]$LOCALIZE[20343]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window.Property(Episodes.Count),[B][COLOR=blue]$LOCALIZE[20360]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Window.Property(Episodes.UnWatched),[B][COLOR=blue]$LOCALIZE[16101]$LOCALIZE[31000] [/COLOR][/B]]</value>
@@ -773,7 +761,6 @@
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),Weather) + !substring(Window(Weather).Property(Day0.Outlook),N/A) + !IsEmpty(Window(Weather).Property(Day0.Outlook))">[B][COLOR=blue]$LOCALIZE[31174][/COLOR][/B] $INFO[Window(Weather).Property(Current.Temperature)]$INFO[System.TemperatureUnits]  [B][COLOR=blue]$LOCALIZE[31177] [/COLOR][/B] $INFO[Window(Weather).Property(Day0.Outlook)]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),Shutdown)">[B][COLOR=blue]$LOCALIZE[31262]$LOCALIZE[31000] [/COLOR][/B]$INFO[System.TotalUptime]</value>
 		<value condition="StringCompare(Container(9000).ListItem.Property(LibStats),FullScreen)">$INFO[Player.Title,[B][COLOR=blue]$LOCALIZE[31040]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[Player.FinishTime,[B][COLOR=blue]$LOCALIZE[31049]$LOCALIZE[31000] [/COLOR][/B]]</value>
-		
 		<value condition="!substring(System.CPUTemperature,?) + !substring(System.GPUTemperature,?)">$INFO[Network.IPAddress,[B][COLOR=blue]IP$LOCALIZE[31000] [/COLOR][/B]]     $INFO[System.CPUTemperature,[B][COLOR=blue]$LOCALIZE[401]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[System.GPUTemperature,[B][COLOR=blue]$LOCALIZE[141] [/COLOR][/B]]</value>
 		<value condition="!substring(System.CPUTemperature,?)">$INFO[Network.IPAddress,[B][COLOR=blue]IP$LOCALIZE[31000] [/COLOR][/B]]     $INFO[System.CPUTemperature,[B][COLOR=blue]$LOCALIZE[401]$LOCALIZE[31000] [/COLOR][/B]]     $INFO[System.UsedSpacePercent,[B][COLOR=blue]$LOCALIZE[155]$LOCALIZE[31000] [/COLOR][/B]]</value>
 		<value>$INFO[Network.IPAddress,[B][COLOR=blue]IP$LOCALIZE[31000] [/COLOR][/B]]     $INFO[system.memory(used.percent),[B][COLOR=blue]RAM$LOCALIZE[31000] [/COLOR][/B]]     $INFO[System.UsedSpacePercent,[B][COLOR=blue]$LOCALIZE[155]$LOCALIZE[31000] [/COLOR][/B]]</value>
@@ -2362,11 +2349,7 @@
 		<value condition="substring(listitem.mpaa, R )">$INFO[Skin.String(mpaacertificate)]/r18</value>
 		<value condition="substring(listitem.mpaa, U )">$INFO[Skin.String(mpaacertificate)]/u</value>
 		<value condition="substring(listitem.mpaa, G )">$INFO[Skin.String(mpaacertificate)]/g</value>
-		
-		
 	</variable>
-	
-	
 	<variable name="VideoPlayerMPAA">
 		<value condition="substring(VideoPlayer.mpaa,TV-Y7) | substring(VideoPlayer.mpaa,TV-Y7-FV)">TV/tv-y7</value>
 		<value condition="substring(VideoPlayer.mpaa,TV-Y)">TV/tv-y</value>
@@ -2398,9 +2381,6 @@
 		<value condition="substring(VideoPlayer.mpaa, R )">$INFO[Skin.String(mpaacertificate)]/r18</value>
 		<value condition="substring(VideoPlayer.mpaa, U )">$INFO[Skin.String(mpaacertificate)]/u</value>
 		<value condition="substring(VideoPlayer.mpaa, G )">$INFO[Skin.String(mpaacertificate)]/g</value>
-	
-	
-	
 	</variable>
 	<variable name="InfoWidgetMPAA">
 		<value condition="SubString(Container(510).ListItem.Property(Mpaa),Rated NR) | SubString(Container(510).ListItem.Property(Mpaa),Rated: NR) | StringCompare(Container(510).ListItem.Property(Mpaa),NR)">WidgetRating/MPAA_NR_Certificate_US.png</value>

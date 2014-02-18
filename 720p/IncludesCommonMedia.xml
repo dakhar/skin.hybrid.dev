@@ -104,8 +104,6 @@
 			</control>
 			<visible>Skin.HasSetting(hidenowplayingfanart) | !Player.HasAudio | Player.Paused | SubString(Window(videolibrary).Property(TvTunesIsAlive),TRUE) | Window.IsVisible(weather)</visible>
 		</control>
-		
-		
 		<control type="group">
 			<include>AlbumArtMusicVizWall</include>
 			<control type="multiimage">
@@ -182,8 +180,6 @@
 				<include>VisibleFadeEffect</include>
 			</control>
 		</control>
-		
-
 		<control type="group">
 			<visible>!Skin.HasSetting(hidebackgroundfanart) + !Skin.HasSetting(hideaddonfanart)</visible>
 			<visible>Control.HasFocus(510)</visible>
@@ -206,9 +202,7 @@
 			</control>
 		</control>
 		<control type="group">
-			
 			<visible>!Skin.HasSetting(hidebackgroundfanart) + !Skin.HasSetting(hideaddonfanart)</visible>
-			
 			<visible>Control.HasFocus(9006)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="image">

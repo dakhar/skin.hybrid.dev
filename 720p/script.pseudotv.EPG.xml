@@ -37,7 +37,7 @@
 				<top>0</top>
 				<width>300</width>
 				<height>40</height>
-				<label>Current Date</label>
+				<label>$LOCALIZE[31507]</label>
 				<font>font12_title</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -58,7 +58,7 @@
 				<top>40</top>
 				<width>220</width>
 				<height>40</height>
-				<label>Channel</label>
+				<label>$LOCALIZE[19029]</label>
 				<font>special12</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -101,7 +101,10 @@
 				<top>80</top>
 				<width>220</width>
 				<height>40</height>
-				<label>Channel</label>
+				<label>$LOCALIZE[19029]</label>
+				
+				
+				
 				<font>special12</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -144,7 +147,7 @@
 				<top>120</top>
 				<width>220</width>
 				<height>40</height>
-				<label>Channel</label>
+				<label>$LOCALIZE[19029]</label>
 				<font>special12</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -187,7 +190,7 @@
 				<top>160</top>
 				<width>220</width>
 				<height>40</height>
-				<label>Channel</label>
+				<label>$LOCALIZE[19029]</label>
 				<font>special12</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -230,7 +233,7 @@
 				<top>200</top>
 				<width>220</width>
 				<height>40</height>
-				<label>Channel</label>
+				<label>$LOCALIZE[19029]</label>
 				<font>special12</font>
 				<align>left</align>
 				<aligny>center</aligny>
@@ -273,7 +276,7 @@
 				<top>240</top>
 				<width>220</width>
 				<height>40</height>
-				<label>Channel</label>
+				<label>$LOCALIZE[19029]</label>
 				<font>special12</font>
 				<align>left</align>
 				<aligny>center</aligny>

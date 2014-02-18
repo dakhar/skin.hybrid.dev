@@ -407,7 +407,6 @@
 						<onclick>Skin.ToggleSetting(hidenowplayingfanart)</onclick>
 						<selected>!Skin.HasSetting(hidenowplayingfanart)</selected>
 					</control>
-					
 					<control type="radiobutton" id="125">
 						<width>750</width>
 						<height>40</height>
@@ -420,8 +419,6 @@
 						<onclick>Skin.ToggleSetting(enablefullmpaa)</onclick>
 						<selected>Skin.HasSetting(enablefullmpaa)</selected>
 					</control>
-					
-					
 					<control type="button" id="126">
 						<width>750</width>
 						<height>40</height>
@@ -795,10 +792,6 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.1,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					
-					
-			
-
 					<control type="radiobutton" id="203">
 						<description>Two Page Menu System</description>
 						<width>750</width>
@@ -807,37 +800,16 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label> - $LOCALIZE[31408]</label>
-						
-						
-						<onclick>Skin.ToggleSetting(homeitem.1.menu)</onclick>
-						
-						
+						<onclick condition="!Skin.String(homeitem.1.menu)">Skin.SetString(homeitem.1.menu,MultiMenu)</onclick>
+						<onclick condition="Skin.String(homeitem.1.menu)">Skin.Reset(homeitem.1.menu)</onclick>
 						<onclick>Skin.Reset(stickyhomemenuaction)</onclick>
 						<onclick>Skin.Reset(homeitemlastlabel)</onclick>
 						<onclick>Skin.Reset(homeitemlastaction)</onclick>
-						
-						
-						<selected>Skin.HasSetting(homeitem.1.menu)</selected>
+						<selected>Skin.String(homeitem.1.menu)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<visible>!IsEmpty(Skin.String(homeitem.1.label))</visible>
 					</control>
-
-
-<!--
-
-
-						<onclick condition="!Skin.String(homeitem.1.display)">Skin.SetString(homeitem.1.display,LiveContent)</onclick>
-						<onclick condition="Skin.String(homeitem.1.display)">Skin.Reset(homeitem.1.display)</onclick>
-						<onclick condition="stringcompare(Skin.String(homeitem.1.type),Weather) + !Skin.String(homeitem.1.display)">Skin.SetBool(showweatherfanart)</onclick>
-						<onclick condition="stringcompare(Skin.String(homeitem.1.type),Weather) + Skin.String(homeitem.1.display)">Skin.Reset(showweatherfanart)</onclick>
-						<selected>Skin.String(homeitem.1.display)</selected>
-
-
--->
-			
-					
-					
 					<control type="button" id="204">
 						<width>750</width>
 						<height>40</height>
@@ -933,10 +905,7 @@
 						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.1.fanart)],Home)</onclick>
 						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.1.display)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.1.playlist)],Home)</onclick>
-						
-						<onclick condition="Skin.HasSetting(homeitem.1.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.1.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
-						
+						<onclick>SetProperty(SwapItemAltMenu,$INFO[Skin.String(homeitem.1.menu)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.1.label)) + !Skin.HasSetting(stickyhomemenuaction)</visible>
 					</control>
@@ -953,10 +922,6 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.2,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					
-					
-					
-					
 					<control type="radiobutton" id="210">
 						<description>Two Page Menu System</description>
 						<width>750</width>
@@ -965,17 +930,13 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label> - $LOCALIZE[31408]</label>
-						<onclick>Skin.ToggleSetting(homeitem.2.menu)</onclick>
-						<selected>Skin.HasSetting(homeitem.2.menu)</selected>
+						<onclick condition="!Skin.String(homeitem.2.menu)">Skin.SetString(homeitem.2.menu,MultiMenu)</onclick>
+						<onclick condition="Skin.String(homeitem.2.menu)">Skin.Reset(homeitem.2.menu)</onclick>
+						<selected>Skin.String(homeitem.2.menu)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<visible>!IsEmpty(Skin.String(homeitem.2.label))</visible>
 					</control>
-					
-					
-					
-					
-					
 					<control type="button" id="211">
 						<width>750</width>
 						<height>40</height>
@@ -1067,8 +1028,7 @@
 						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.2.fanart)],Home)</onclick>
 						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.2.display)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.2.playlist)],Home)</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.2.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.2.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
+						<onclick>SetProperty(SwapItemAltMenu,$INFO[Skin.String(homeitem.2.menu)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.2.label))</visible>
 					</control>
@@ -1085,9 +1045,6 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.3,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					
-					
-					
 					<control type="radiobutton" id="217">
 						<description>Two Page Menu System</description>
 						<width>750</width>
@@ -1096,16 +1053,13 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label> - $LOCALIZE[31408]</label>
-						<onclick>Skin.ToggleSetting(homeitem.3.menu)</onclick>
-						<selected>Skin.HasSetting(homeitem.3.menu)</selected>
+						<onclick condition="!Skin.String(homeitem.3.menu)">Skin.SetString(homeitem.3.menu,MultiMenu)</onclick>
+						<onclick condition="Skin.String(homeitem.3.menu)">Skin.Reset(homeitem.3.menu)</onclick>
+						<selected>Skin.String(homeitem.3.menu)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<visible>!IsEmpty(Skin.String(homeitem.3.label))</visible>
 					</control>
-					
-					
-					
-					
 					<control type="button" id="218">
 						<width>750</width>
 						<height>40</height>
@@ -1197,8 +1151,7 @@
 						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.3.fanart)],Home)</onclick>
 						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.3.display)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.3.playlist)],Home)</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.3.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.3.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
+						<onclick>SetProperty(SwapItemAltMenu,$INFO[Skin.String(homeitem.3.menu)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.3.label))</visible>
 					</control>
@@ -1215,10 +1168,6 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.4,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					
-					
-					
-					
 					<control type="radiobutton" id="224">
 						<description>Two Page Menu System</description>
 						<width>750</width>
@@ -1227,17 +1176,13 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label> - $LOCALIZE[31408]</label>
-						<onclick>Skin.ToggleSetting(homeitem.4.menu)</onclick>
-						<selected>Skin.HasSetting(homeitem.4.menu)</selected>
+						<onclick condition="!Skin.String(homeitem.4.menu)">Skin.SetString(homeitem.4.menu,MultiMenu)</onclick>
+						<onclick condition="Skin.String(homeitem.4.menu)">Skin.Reset(homeitem.4.menu)</onclick>
+						<selected>Skin.String(homeitem.4.menu)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<visible>!IsEmpty(Skin.String(homeitem.4.label))</visible>
 					</control>
-					
-					
-					
-					
-					
 					<control type="button" id="225">
 						<width>750</width>
 						<height>40</height>
@@ -1329,8 +1274,7 @@
 						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.4.fanart)],Home)</onclick>
 						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.4.display)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.4.playlist)],Home)</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.4.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.4.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
+						<onclick>SetProperty(SwapItemAltMenu,$INFO[Skin.String(homeitem.4.menu)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.4.label))</visible>
 					</control>
@@ -1347,10 +1291,6 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.5,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					
-					
-					
-					
 					<control type="radiobutton" id="231">
 						<description>Two Page Menu System</description>
 						<width>750</width>
@@ -1359,20 +1299,13 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label> - $LOCALIZE[31408]</label>
-						<onclick>Skin.ToggleSetting(homeitem.5.menu)</onclick>
-						<selected>Skin.HasSetting(homeitem.5.menu)</selected>
+						<onclick condition="!Skin.String(homeitem.5.menu)">Skin.SetString(homeitem.5.menu,MultiMenu)</onclick>
+						<onclick condition="Skin.String(homeitem.5.menu)">Skin.Reset(homeitem.5.menu)</onclick>
+						<selected>Skin.String(homeitem.5.menu)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<visible>!IsEmpty(Skin.String(homeitem.5.label))</visible>
 					</control>
-					
-					
-					
-					
-					
-					
-					
-					
 					<control type="button" id="232">
 						<width>750</width>
 						<height>40</height>
@@ -1464,8 +1397,7 @@
 						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.5.fanart)],Home)</onclick>
 						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.5.display)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.5.playlist)],Home)</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.5.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.5.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
+						<onclick>SetProperty(SwapItemAltMenu,$INFO[Skin.String(homeitem.5.menu)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.5.label))</visible>
 					</control>
@@ -1482,9 +1414,6 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.6,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					
-					
-					
 					<control type="radiobutton" id="238">
 						<description>Two Page Menu System</description>
 						<width>750</width>
@@ -1493,17 +1422,13 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label> - $LOCALIZE[31408]</label>
-						<onclick>Skin.ToggleSetting(homeitem.6.menu)</onclick>
-						<selected>Skin.HasSetting(homeitem.6.menu)</selected>
+						<onclick condition="!Skin.String(homeitem.6.menu)">Skin.SetString(homeitem.6.menu,MultiMenu)</onclick>
+						<onclick condition="Skin.String(homeitem.6.menu)">Skin.Reset(homeitem.6.menu)</onclick>
+						<selected>Skin.String(homeitem.6.menu)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<visible>!IsEmpty(Skin.String(homeitem.6.label))</visible>
 					</control>
-					
-					
-					
-					
-					
 					<control type="button" id="239">
 						<width>750</width>
 						<height>40</height>
@@ -1595,8 +1520,7 @@
 						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.6.fanart)],Home)</onclick>
 						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.6.display)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.6.playlist)],Home)</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.6.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.6.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
+						<onclick>SetProperty(SwapItemAltMenu,$INFO[Skin.String(homeitem.6.menu)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.6.label))</visible>
 					</control>
@@ -1613,9 +1537,6 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.7,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					
-					
-					
 					<control type="radiobutton" id="245">
 						<description>Two Page Menu System</description>
 						<width>750</width>
@@ -1624,15 +1545,13 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label> - $LOCALIZE[31408]</label>
-						<onclick>Skin.ToggleSetting(homeitem.7.menu)</onclick>
-						<selected>Skin.HasSetting(homeitem.7.menu)</selected>
+						<onclick condition="!Skin.String(homeitem.7.menu)">Skin.SetString(homeitem.7.menu,MultiMenu)</onclick>
+						<onclick condition="Skin.String(homeitem.7.menu)">Skin.Reset(homeitem.7.menu)</onclick>
+						<selected>Skin.String(homeitem.7.menu)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<visible>!IsEmpty(Skin.String(homeitem.7.label))</visible>
 					</control>
-					
-					
-					
 					<control type="button" id="246">
 						<width>750</width>
 						<height>40</height>
@@ -1724,8 +1643,7 @@
 						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.7.fanart)],Home)</onclick>
 						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.7.display)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.7.playlist)],Home)</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.7.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.7.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
+						<onclick>SetProperty(SwapItemAltMenu,$INFO[Skin.String(homeitem.7.menu)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.7.label))</visible>
 					</control>
@@ -1742,8 +1660,6 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.8,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					
-					
 					<control type="radiobutton" id="252">
 						<description>Two Page Menu System</description>
 						<width>750</width>
@@ -1752,17 +1668,13 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label> - $LOCALIZE[31408]</label>
-						<onclick>Skin.ToggleSetting(homeitem.8.menu)</onclick>
-						<selected>Skin.HasSetting(homeitem.8.menu)</selected>
+						<onclick condition="!Skin.String(homeitem.8.menu)">Skin.SetString(homeitem.8.menu,MultiMenu)</onclick>
+						<onclick condition="Skin.String(homeitem.8.menu)">Skin.Reset(homeitem.8.menu)</onclick>
+						<selected>Skin.String(homeitem.8.menu)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<visible>!IsEmpty(Skin.String(homeitem.8.label))</visible>
 					</control>
-					
-					
-					
-					
-					
 					<control type="button" id="253">
 						<width>750</width>
 						<height>40</height>
@@ -1854,8 +1766,7 @@
 						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.8.fanart)],Home)</onclick>
 						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.8.display)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.8.playlist)],Home)</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.8.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.8.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
+						<onclick>SetProperty(SwapItemAltMenu,$INFO[Skin.String(homeitem.8.menu)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.8.label))</visible>
 					</control>
@@ -1872,9 +1783,6 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.9,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					
-					
-					
 					<control type="radiobutton" id="259">
 						<description>Two Page Menu System</description>
 						<width>750</width>
@@ -1883,18 +1791,13 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label> - $LOCALIZE[31408]</label>
-						<onclick>Skin.ToggleSetting(homeitem.9.menu)</onclick>
-						<selected>Skin.HasSetting(homeitem.9.menu)</selected>
+						<onclick condition="!Skin.String(homeitem.9.menu)">Skin.SetString(homeitem.9.menu,MultiMenu)</onclick>
+						<onclick condition="Skin.String(homeitem.9.menu)">Skin.Reset(homeitem.9.menu)</onclick>
+						<selected>Skin.String(homeitem.9.menu)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<visible>!IsEmpty(Skin.String(homeitem.9.label))</visible>
 					</control>
-					
-					
-					
-					
-					
-					
 					<control type="button" id="260">
 						<width>750</width>
 						<height>40</height>
@@ -1986,8 +1889,7 @@
 						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.9.fanart)],Home)</onclick>
 						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.9.display)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.9.playlist)],Home)</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.9.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.9.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
+						<onclick>SetProperty(SwapItemAltMenu,$INFO[Skin.String(homeitem.9.menu)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.9.label))</visible>
 					</control>
@@ -2004,10 +1906,6 @@
 						<onclick>SetProperty(usrselectbtn,homeitem.10,Home)</onclick>
 						<onclick>ActivateWindow(2114)</onclick>
 					</control>
-					
-					
-					
-					
 					<control type="radiobutton" id="266">
 						<description>Two Page Menu System</description>
 						<width>750</width>
@@ -2016,16 +1914,13 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label> - $LOCALIZE[31408]</label>
-						<onclick>Skin.ToggleSetting(homeitem.10.menu)</onclick>
-						<selected>Skin.HasSetting(homeitem.10.menu)</selected>
+						<onclick condition="!Skin.String(homeitem.10.menu)">Skin.SetString(homeitem.10.menu,MultiMenu)</onclick>
+						<onclick condition="Skin.String(homeitem.10.menu)">Skin.Reset(homeitem.10.menu)</onclick>
+						<selected>Skin.String(homeitem.10.menu)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<visible>!IsEmpty(Skin.String(homeitem.10.label))</visible>
 					</control>
-					
-					
-					
-					
 					<control type="button" id="267">
 						<width>750</width>
 						<height>40</height>
@@ -2117,8 +2012,7 @@
 						<onclick>SetProperty(SwapItemFanArt,$INFO[Skin.String(homeitem.10.fanart)],Home)</onclick>
 						<onclick>SetProperty(SwapItemDisplay,$INFO[Skin.String(homeitem.10.display)],Home)</onclick>
 						<onclick>SetProperty(SwapItemPlaylist,$INFO[Skin.String(homeitem.10.playlist)],Home)</onclick>
-						<onclick condition="Skin.HasSetting(homeitem.10.menu)">SetProperty(SwapItemAltMenu,true,Home)</onclick>
-						<onclick condition="!Skin.HasSetting(homeitem.10.menu)">SetProperty(SwapItemAltMenu,false,Home)</onclick>
+						<onclick>SetProperty(SwapItemAltMenu,$INFO[Skin.String(homeitem.10.menu)],Home)</onclick>
 						<onclick>ActivateWindow(2128)</onclick>
 						<visible>!IsEmpty(Skin.String(homeitem.10.label))</visible>
 					</control>
@@ -2134,9 +2028,6 @@
 						<onclick>Skin.ToggleSetting(hidesytemmenuitem)</onclick>
 						<selected>!Skin.HasSetting(hidesytemmenuitem)</selected>
 					</control>
-					
-					
-					
 					<control type="radiobutton" id="273">
 						<description>Two Page Menu System</description>
 						<width>750</width>
@@ -2145,16 +2036,13 @@
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<label> - $LOCALIZE[31408]</label>
-						<onclick>Skin.ToggleSetting(homeitem.13.menu)</onclick>
-						<selected>Skin.HasSetting(homeitem.13.menu)</selected>
+						<onclick condition="!Skin.String(homeitem.13.menu)">Skin.SetString(homeitem.13.menu,MultiMenu)</onclick>
+						<onclick condition="Skin.String(homeitem.13.menu)">Skin.Reset(homeitem.13.menu)</onclick>
+						<selected>Skin.String(homeitem.13.menu)</selected>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!Skin.HasSetting(hidesytemmenuitem)</enable>
 					</control>
-					
-					
-					
-					
 					<control type="button" id="274">
 						<width>750</width>
 						<height>40</height>
@@ -2169,9 +2057,6 @@
 						<onclick>ActivateWindow(2116)</onclick>
 						<enable>!Skin.HasSetting(hidesytemmenuitem)</enable>
 					</control>
-					
-					
-					
 					<control type="button" id="275">
 						<width>750</width>
 						<height>40</height>
@@ -4440,8 +4325,8 @@
 						<top>8</top>
 						<width>33</width>
 						<height>22</height>
-						<label>-</label>
-						<font>-</font>
+						
+						
 						<texturenofocus>scroll-down-2.png</texturenofocus>
 						<texturefocus>scroll-down-focus-2.png</texturefocus>
 						<onclick>Control.Move(9005,1)</onclick>
@@ -4456,8 +4341,8 @@
 						<top>8</top>
 						<width>33</width>
 						<height>22</height>
-						<label>-</label>
-						<font>-</font>
+						
+						
 						<texturenofocus>scroll-up-2.png</texturenofocus>
 						<texturefocus>scroll-up-focus-2.png</texturefocus>
 						<onclick>Control.Move(9005,-1)</onclick>
@@ -4638,7 +4523,7 @@
 							</item>
 							<item id="11">
 								<description>Fullscreen</description>
-								<label>-</label>
+								
 								<onclick>noop</onclick>
 								<icon>-</icon>
 								<thumb>-</thumb>
@@ -8096,7 +7981,6 @@
 					<orientation>vertical</orientation>
 					<visible>Container(9000).Hasfocus(6)</visible>
 				</control>
-				
 				<control type="list" id="9009">
 					<onleft>9001</onleft>
 					<onright>9001</onright>
