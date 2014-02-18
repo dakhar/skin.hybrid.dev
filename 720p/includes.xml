@@ -59,6 +59,8 @@
 	<include name="ClearButtonChoice">
 		<onclick>Skin.Reset($INFO[Window(home).Property(usrselectbtn)].label)</onclick>
 		<onclick>Skin.Reset($INFO[Window(home).Property(usrselectbtn)].path)</onclick>
+		<onclick>Skin.Reset($INFO[Window(home).Property(usrselectbtn)].icon)</onclick>
+		<onclick>Skin.Reset($INFO[Window(home).Property(usrselectbtn)].fanart)</onclick>
 		<onclick condition="Window.IsVisible(2114) + stringcompare(Skin.String(usrselectbtn),homeitem.1)">Skin.Reset(homeitemlastaction)</onclick>
 		<onclick condition="Window.IsVisible(2114) + stringcompare(Skin.String(usrselectbtn),homeitem.1)">Skin.Reset(homeitemlastlabel)</onclick>
 		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(usrselectbtn)].playlist)</onclick>
@@ -66,7 +68,6 @@
 		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(usrselectbtn)].stats)</onclick>
 		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(usrselectbtn)].addon)</onclick>
 		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(usrselectbtn)].type)</onclick>
-		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(usrselectbtn)].fanart)</onclick>
 		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(usrselectbtn)].widget)</onclick>
 		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(usrselectbtn)].display)</onclick>
 		<onclick condition="Window.IsVisible(2114)">Skin.Reset($INFO[Window(home).Property(usrselectbtn)].menu)</onclick>

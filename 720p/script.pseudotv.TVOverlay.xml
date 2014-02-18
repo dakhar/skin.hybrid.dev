@@ -13,7 +13,6 @@
 			<include>Dimensions_Fullscreen</include>
 			<include>VisibleFadeEffect</include>
 			<aspectratio>stretch</aspectratio>
-			<include>TransparentEffect</include>
 			<texture>black-back.png</texture>
 		</control>
 		<control type="image" id="103">

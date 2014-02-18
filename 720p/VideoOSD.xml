@@ -24,7 +24,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>210</label>
+				
 				
 				<texturefocus>OSD/OSDHomeBtnFO.png</texturefocus>
 				<texturenofocus>OSD/OSDHomeBtnNF.png</texturenofocus>
@@ -41,7 +41,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>210</label>
+				
 				
 				<texturefocus>OSD/OSDPrevTrackFO.png</texturefocus>
 				<texturenofocus>OSD/OSDPrevTrackNF.png</texturenofocus>
@@ -56,7 +56,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31057</label>
+				
 				
 				<texturefocus>OSD/OSDRewindFO.png</texturefocus>
 				<texturenofocus>OSD/OSDRewindNF.png</texturenofocus>
@@ -71,8 +71,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31054</label>
-				<altlabel>208</altlabel>
+				
 				
 				<texturefocus>OSD/OSDPauseFO.png</texturefocus>
 				<texturenofocus>OSD/OSDPauseNF.png</texturenofocus>
@@ -90,7 +89,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31055</label>
+				
 				
 				<texturefocus>OSD/OSDStopFO.png</texturefocus>
 				<texturenofocus>OSD/OSDStopNF.png</texturenofocus>
@@ -105,7 +104,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31056</label>
+				
 				
 				<texturefocus>OSD/OSDForwardFO.png</texturefocus>
 				<texturenofocus>OSD/OSDForwardNF.png</texturenofocus>
@@ -120,7 +119,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>209</label>
+				
 				
 				<texturefocus>OSD/OSDNextTrackFO.png</texturefocus>
 				<texturenofocus>OSD/OSDNextTrackNF.png</texturenofocus>
@@ -145,7 +144,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>210</label>
+				
 				
 				<texturefocus>OSD/OSDHomeBtnFO.png</texturefocus>
 				<texturenofocus>OSD/OSDHomeBtnNF.png</texturenofocus>
@@ -161,7 +160,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>210</label>
+				
 				
 				<texturefocus>OSD/OSDChannelUPFO.png</texturefocus>
 				<texturenofocus>OSD/OSDChannelUPNF.png</texturenofocus>
@@ -176,7 +175,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31057</label>
+				
 				
 				<texturefocus>OSD/OSDChannelDownFO.png</texturefocus>
 				<texturenofocus>OSD/OSDChannelDownNF.png</texturenofocus>
@@ -191,7 +190,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31057</label>
+				
 				
 				<texturefocus>OSD/OSDRewindFO.png</texturefocus>
 				<texturenofocus>OSD/OSDRewindNF.png</texturenofocus>
@@ -208,8 +207,6 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31054</label>
-				<altlabel>208</altlabel>
 				
 				<texturefocus>OSD/OSDPauseFO.png</texturefocus>
 				<texturenofocus>OSD/OSDPauseNF.png</texturenofocus>
@@ -229,7 +226,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31054</label>
+				
 				
 				<texturefocus>OSD/OSDStopFO.png</texturefocus>
 				<texturenofocus>OSD/OSDStopNF.png</texturenofocus>
@@ -244,7 +241,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31056</label>
+				
 				
 				<texturefocus>OSD/OSDForwardFO.png</texturefocus>
 				<texturenofocus>OSD/OSDForwardNF.png</texturenofocus>
@@ -261,7 +258,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>19019</label>
+				
 				
 				<texturefocus>OSD/OSDChannelListFO.png</texturefocus>
 				<texturenofocus>OSD/OSDChannelListNF.png</texturenofocus>
@@ -277,7 +274,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>$LOCALIZE[19029]$INFO[VideoPlayer.ChannelName, - ]</label>
+				
 				
 				<texturefocus>OSD/OSDepgFO.png</texturefocus>
 				<texturenofocus>OSD/OSDepgNF.png</texturenofocus>
@@ -304,7 +301,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>36501</label>
+				
 				
 				<texturefocus>OSD/OSDStereoscopicFO.png</texturefocus>
 				<texturenofocus>OSD/OSDStereoscopicNF.png</texturenofocus>
@@ -318,7 +315,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31059</label>
+				
 				
 				<texturefocus>OSD/OSDSubtitlesFO.png</texturefocus>
 				<texturenofocus>OSD/OSDSubtitlesNF.png</texturenofocus>
@@ -332,7 +329,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>13395</label>
+				
 				
 				<texturefocus>OSD/OSDVideoFO.png</texturefocus>
 				<texturenofocus>OSD/OSDVideoNF.png</texturenofocus>
@@ -347,7 +344,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>13396</label>
+				
 				
 				<texturefocus>OSD/OSDAudioFO.png</texturefocus>
 				<texturenofocus>OSD/OSDAudioNF.png</texturenofocus>
@@ -362,7 +359,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31058</label>
+				
 				
 				<texturefocus>OSD/OSDBookmarksFO.png</texturefocus>
 				<texturenofocus>OSD/OSDBookmarksNF.png</texturenofocus>
@@ -377,7 +374,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31058</label>
+				
 				
 				<texturefocus>OSD/OSDDvdFO.png</texturefocus>
 				<texturenofocus>OSD/OSDDvdNF.png</texturenofocus>
@@ -404,7 +401,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>36501</label>
+				
 				
 				<texturefocus>OSD/OSDStereoscopicFO.png</texturefocus>
 				<texturenofocus>OSD/OSDStereoscopicNF.png</texturenofocus>
@@ -418,7 +415,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31059</label>
+				
 				
 				<texturefocus>OSD/OSDTeleTextFO.png</texturefocus>
 				<texturenofocus>OSD/OSDTeleTextNF.png</texturenofocus>
@@ -433,7 +430,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>13395</label>
+				
 				
 				<texturefocus>OSD/OSDVideoFO.png</texturefocus>
 				<texturenofocus>OSD/OSDVideoNF.png</texturenofocus>
@@ -448,7 +445,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>13396</label>
+				
 				
 				<texturefocus>OSD/OSDAudioFO.png</texturefocus>
 				<texturenofocus>OSD/OSDAudioNF.png</texturenofocus>
@@ -463,8 +460,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31054</label>
-				<altlabel>208</altlabel>
+				
 				
 				<texturefocus>OSD/OSDRecordOffFO.png</texturefocus>
 				<texturenofocus>OSD/OSDRecordOffNF.png</texturenofocus>
