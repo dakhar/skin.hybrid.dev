@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
-	<include name="WidgetPanelAdjust">
-		<animation effect="slide" start="0,0" end="50,0" time="0" condition="StringCompare(Container(510).NumItems,11)">conditional</animation>
-		<animation effect="slide" start="0,0" end="101,0" time="0" condition="StringCompare(Container(510).NumItems,10)">conditional</animation>
-		<animation effect="slide" start="0,0" end="151,0" time="0" condition="StringCompare(Container(510).NumItems,9)">conditional</animation>
-		<animation effect="slide" start="0,0" end="202,0" time="0" condition="StringCompare(Container(510).NumItems,8)">conditional</animation>
-		<animation effect="slide" start="0,0" end="252,0" time="0" condition="StringCompare(Container(510).NumItems,7)">conditional</animation>
-		<animation effect="slide" start="0,0" end="303,0" time="0" condition="StringCompare(Container(510).NumItems,6)">conditional</animation>
-		<animation effect="slide" start="0,0" end="353,0" time="0" condition="StringCompare(Container(510).NumItems,5)">conditional</animation>
-		<animation effect="slide" start="0,0" end="404,0" time="0" condition="StringCompare(Container(510).NumItems,4)">conditional</animation>
-		<animation effect="slide" start="0,0" end="454,0" time="0" condition="StringCompare(Container(510).NumItems,3)">conditional</animation>
-		<animation effect="slide" start="0,0" end="505,0" time="0" condition="StringCompare(Container(510).NumItems,2)">conditional</animation>
-		<animation effect="slide" start="0,0" end="555,0" time="0" condition="StringCompare(Container(510).NumItems,1)">conditional</animation>
-	</include>
 	<include name="WidgetVideoPanel">
-		<!--include>WidgetPanelAdjust</include-->
 		<left>0</left>
 		<top>-8</top>
 		<width>1240</width>
@@ -28,7 +14,6 @@
 		<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 	</include>
 	<include name="WidgetMusicPanel">
-		<!--include>WidgetPanelAdjust</include-->
 		<left>0</left>
 		<top>-8</top>
 		<width>1240</width>
@@ -42,7 +27,6 @@
 		<animation effect="fade" reversible="true" time="300">VisibleChange</animation>
 	</include>
 	<include name="WidgetFavouritePanel">
-		<!--include>WidgetPanelAdjust</include-->
 		<left>0</left>
 		<top>-8</top>
 		<width>1240</width>
