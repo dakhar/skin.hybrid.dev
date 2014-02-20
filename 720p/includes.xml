@@ -84,8 +84,6 @@
 		<top>-20</top>
 		<width>1</width>
 		<height>1</height>
-		
-		
 		<texturenofocus>-</texturenofocus>
 		<texturefocus>-</texturefocus>
 	</include>
@@ -235,8 +233,6 @@
 			<top>0</top>
 			<width>250</width>
 			<height>720</height>
-			
-			
 			<texturenofocus>-</texturenofocus>
 			<texturefocus>-</texturefocus>
 			<visible>true</visible>
@@ -246,7 +242,6 @@
 			<top>260</top>
 			<width>42</width>
 			<height>128</height>
-			
 			<texturefocus>Home/HasSub.png</texturefocus>
 			<texturenofocus>Home/HasSub.png</texturenofocus>
 		</control>
@@ -489,8 +484,6 @@
 				<top>0</top>
 				<width>45</width>
 				<height>45</height>
-				
-				
 				<onclick>ActivateWindow(PlayerControls)</onclick>
 				<texturefocus border="5">FloorButtons/FloorPlayFO.png</texturefocus>
 				<texturenofocus border="5">FloorButtons/FloorPlayNF.png</texturenofocus>
@@ -507,8 +500,6 @@
 				<top>0</top>
 				<width>45</width>
 				<height>45</height>
-				
-				
 				<onclick>PlayMedia("$INFO[ListItem.Trailer]")</onclick>
 				<texturefocus border="5">FloorButtons/FloorTrailerFO.png</texturefocus>
 				<texturenofocus border="5">FloorButtons/FloorTrailerNF.png</texturenofocus>
@@ -526,8 +517,6 @@
 				<top>0</top>
 				<width>45</width>
 				<height>45</height>
-				
-				
 				<texturefocus border="5">FloorButtons/FloorSearchFO.png</texturefocus>
 				<texturenofocus border="5">FloorButtons/FloorSearchNF.png</texturenofocus>
 				<onleft>801</onleft>
@@ -545,8 +534,6 @@
 				<top>0</top>
 				<width>45</width>
 				<height>45</height>
-				
-				
 				<texturefocus border="5">FloorButtons/FloorSearchFO.png</texturefocus>
 				<texturenofocus border="5">FloorButtons/FloorSearchNF.png</texturenofocus>
 				<onleft>801</onleft>
@@ -564,8 +551,6 @@
 				<top>0</top>
 				<width>45</width>
 				<height>45</height>
-				
-				
 				<onclick>back</onclick>
 				<texturefocus border="5">FloorButtons/FloorBackFO.png</texturefocus>
 				<texturenofocus border="5">FloorButtons/FloorBackNF.png</texturenofocus>
@@ -580,8 +565,6 @@
 				<top>0</top>
 				<width>45</width>
 				<height>45</height>
-				
-				
 				<onclick>Dialog.Close(all,true)</onclick>
 				<onclick>ActivateWindow(home)</onclick>
 				<texturefocus border="5">FloorButtons/FloorHomeFO.png</texturefocus>

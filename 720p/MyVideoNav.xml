@@ -77,7 +77,6 @@
 					<description>View As button</description>
 					<textwidth>235</textwidth>
 					<include>ButtonCommonValues</include>
-					
 				</control>
 				<control type="button" id="3">
 					<description>Sort by button</description>

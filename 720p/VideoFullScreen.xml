@@ -58,9 +58,7 @@
 				<texture>Home/NowPlayingBack.png</texture>
 				<visible>Player.ShowInfo | !Skin.HasSetting(hideseekbarosd) | Window.IsActive(VideoOSD)</visible>
 			</control>
-			
-<include>HomeScreenFloor</include>
-			
+			<include>HomeScreenFloor</include>
 			<include>OSDMediaPlot</include>
 			<control type="group" id="1">
 				<include condition="!Skin.HasSetting(hideartworkosd) + VideoPlayer.Content(Movies)">OSDMovieCover</include>
@@ -206,7 +204,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				
 			</control>
 			<control type="label" id="11">
 				<description>row 2 label</description>
@@ -217,7 +214,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				
 			</control>
 			<control type="label" id="12">
 				<description>row 3 label</description>
@@ -228,7 +224,6 @@
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font12</font>
-				
 			</control>
 		</control>
 		<control type="selectbutton" id="503">

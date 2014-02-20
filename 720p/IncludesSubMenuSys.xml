@@ -727,7 +727,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subvideos.1.path))">ActivateWindow(Videos,MovieTitles,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subvideos.1.path))">$INFO[Skin.String(subvideos.1.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>Library.HasContent(Movies) | !IsEmpty(Skin.String(subvideos.1.path))</visible>
 			<visible>!stringcompare(Skin.String(subvideos.1.path),Hidden)</visible>
 		</item>
@@ -741,7 +740,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subvideos.2.path))">ActivateWindow(Videos,TvShowTitles,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subvideos.2.path))">$INFO[Skin.String(subvideos.2.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>Library.HasContent(TVShows) | !IsEmpty(Skin.String(subvideos.2.path))</visible>
 			<visible>!stringcompare(Skin.String(subvideos.2.path),Hidden)</visible>
 		</item>
@@ -755,7 +753,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subvideos.3.path))">ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subvideos.3.path))">$INFO[Skin.String(subvideos.3.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>Library.HasContent(MusicVideos) | !IsEmpty(Skin.String(subvideos.3.path))</visible>
 			<visible>!stringcompare(Skin.String(subvideos.3.path),Hidden)</visible>
 		</item>
@@ -769,7 +766,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subvideos.4.path))">ActivateWindow(Videos,Files,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subvideos.4.path))">$INFO[Skin.String(subvideos.4.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subvideos.4.path),Hidden)</visible>
 		</item>
 		<item>
@@ -782,7 +778,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subvideos.5.path))">ActivateWindow(Videos,Root)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subvideos.5.path))">$INFO[Skin.String(subvideos.5.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>Library.HasContent(Video) | !IsEmpty(Skin.String(subvideos.5.path))</visible>
 			<visible>!stringcompare(Skin.String(subvideos.5.path),Hidden)</visible>
 		</item>
@@ -796,7 +791,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subvideos.6.path))">ActivateWindow(Videos,Addons,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subvideos.6.path))">$INFO[Skin.String(subvideos.6.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subvideos.6.path),Hidden)</visible>
 		</item>
 	</include>
@@ -811,7 +805,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(submovies.1.path))">ActivateWindow(2125,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(submovies.1.path))">$INFO[Skin.String(submovies.1.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(submovies.1.path),Hidden)</visible>
 		</item>
 		<item>
@@ -824,7 +817,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(submovies.2.path))">ActivateWindow(Videos,MovieSets,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(submovies.2.path))">$INFO[Skin.String(submovies.2.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>Library.HasContent(MovieSets) | !IsEmpty(Skin.String(submovies.2.path))</visible>
 			<visible>!stringcompare(Skin.String(submovies.2.path),Hidden)</visible>
 		</item>
@@ -838,7 +830,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(submovies.3.path))">ActivateWindow(Videos,MovieTitles,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(submovies.3.path))">$INFO[Skin.String(submovies.3.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(submovies.3.path),Hidden)</visible>
 		</item>
 		<item>
@@ -851,7 +842,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(submovies.4.path))">ActivateWindow(Videos,MovieGenres,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(submovies.4.path))">$INFO[Skin.String(submovies.4.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(submovies.4.path),Hidden)</visible>
 		</item>
 		<item>
@@ -864,7 +854,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(submovies.5.path))">ActivateWindow(Videos,MovieTags,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(submovies.5.path))">$INFO[Skin.String(submovies.5.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(submovies.5.path),Hidden)</visible>
 		</item>
 		<item>
@@ -877,7 +866,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(submovies.6.path))">ActivateWindow(VideoLibrary,special://videoplaylists/,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(submovies.6.path))">$INFO[Skin.String(submovies.6.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(submovies.6.path),Hidden)</visible>
 		</item>
 	</include>
@@ -892,7 +880,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subtvshows.1.path))">ActivateWindow(2124),return</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subtvshows.1.path))">$INFO[Skin.String(subtvshows.1.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subtvshows.1.path),Hidden)</visible>
 		</item>
 		<item>
@@ -905,7 +892,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subtvshows.2.path))">ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subtvshows.2.path))">$INFO[Skin.String(subtvshows.2.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subtvshows.2.path),Hidden)</visible>
 		</item>
 		<item>
@@ -918,7 +904,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subtvshows.3.path))">ActivateWindow(Videos,TVShowTitles,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subtvshows.3.path))">$INFO[Skin.String(subtvshows.3.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subtvshows.3.path),Hidden)</visible>
 		</item>
 		<item>
@@ -931,7 +916,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subtvshows.4.path))">ActivateWindow(Videos,TVShowGenres,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subtvshows.4.path))">$INFO[Skin.String(subtvshows.4.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subtvshows.4.path),Hidden)</visible>
 		</item>
 		<item>
@@ -944,7 +928,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subtvshows.5.path))">ActivateWindow(Videos,TVShowTags, return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subtvshows.5.path))">$INFO[Skin.String(subtvshows.5.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subtvshows.5.path),Hidden)</visible>
 		</item>
 		<item>
@@ -957,7 +940,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subtvshows.6.path))">ActivateWindow(Videos,TVShowYears,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subtvshows.6.path))">$INFO[Skin.String(subtvshows.6.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subtvshows.6.path),Hidden)</visible>
 		</item>
 	</include>
@@ -972,7 +954,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(submusic.1.path))">ActivateWindow(MusicLibrary,Artists,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(submusic.1.path))">$INFO[Skin.String(submusic.1.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>Library.HasContent(Music) | !IsEmpty(Skin.String(submusic.1.path))</visible>
 			<visible>!stringcompare(Skin.String(submusic.1.path),Hidden)</visible>
 		</item>
@@ -986,7 +967,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(submusic.2.path))">ActivateWindow(MusicLibrary,Albums,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(submusic.2.path))">$INFO[Skin.String(submusic.2.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>Library.HasContent(Music) | !IsEmpty(Skin.String(submusic.2.path))</visible>
 			<visible>!stringcompare(Skin.String(submusic.2.path),Hidden)</visible>
 		</item>
@@ -1000,7 +980,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(submusic.3.path))">PlayerControl(PartyMode(music))</onclick>
 			<onclick condition="!IsEmpty(Skin.String(submusic.3.path))">$INFO[Skin.String(submusic.3.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>Library.HasContent(Music) | !IsEmpty(Skin.String(submusic.3.path))</visible>
 			<visible>!stringcompare(Skin.String(submusic.3.path),Hidden)</visible>
 		</item>
@@ -1014,7 +993,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(submusic.4.path))">ActivateWindow(MusicFiles)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(submusic.4.path))">$INFO[Skin.String(submusic.4.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(submusic.4.path),Hidden)</visible>
 		</item>
 		<item>
@@ -1027,7 +1005,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(submusic.5.path))">ActivateWindow(MusicLibrary,root)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(submusic.5.path))">$INFO[Skin.String(submusic.5.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>Library.HasContent(Music) | !IsEmpty(Skin.String(submusic.5.path))</visible>
 			<visible>!stringcompare(Skin.String(submusic.5.path),Hidden)</visible>
 		</item>
@@ -1041,7 +1018,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(submusic.6.path))">ActivateWindow(MusicLibrary,Addons,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(submusic.6.path))">$INFO[Skin.String(submusic.6.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>Library.HasContent(Music) | !IsEmpty(Skin.String(submusic.6.path))</visible>
 			<visible>!stringcompare(Skin.String(submusic.6.path),Hidden)</visible>
 		</item>
@@ -1053,7 +1029,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$LOCALIZE[24001])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!Library.HasContent(Music) + IsEmpty(Skin.String(submusic.6.path))</visible>
 		</item>
 	</include>
@@ -1068,7 +1043,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subsystem.1.path))">ActivateWindow(SkinSettings),return</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subsystem.1.path))">$INFO[Skin.String(subsystem.1.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subsystem.1.path),Hidden)</visible>
 		</item>
 		<item>
@@ -1083,7 +1057,6 @@
 			<onclick condition="IsEmpty(Skin.String(subsystem.2.path)) + System.HasAddon(service.openelec.settings)">RunAddon(service.openelec.settings)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subsystem.2.path)) + System.HasAddon(script.raspbmc.settings)">RunAddon(script.raspbmc.settings)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subsystem.2.path))">$INFO[Skin.String(subsystem.2.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(subsystem.2.path)) | System.HasAddon(os.openelec.settings) | System.HasAddon(service.openelec.settings) | System.HasAddon(script.raspbmc.settings)</visible>
 			<visible>!stringcompare(Skin.String(subsystem.2.path),Hidden)</visible>
 		</item>
@@ -1097,7 +1070,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subsystem.3.path))">ActivateWindow(FileManager)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subsystem.3.path))">$INFO[Skin.String(subsystem.3.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subsystem.3.path),Hidden)</visible>
 		</item>
 		<item>
@@ -1110,7 +1082,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subsystem.4.path))">ActivateWindow(AddonBrowser),return</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subsystem.4.path))">$INFO[Skin.String(subsystem.4.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subsystem.4.path),Hidden)</visible>
 		</item>
 		<item>
@@ -1123,7 +1094,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subsystem.5.path))">ActivateWindow(Profiles)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subsystem.5.path))">$INFO[Skin.String(subsystem.5.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subsystem.5.path),Hidden)</visible>
 		</item>
 		<item>
@@ -1136,26 +1106,9 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subsystem.6.path))">ActivateWindow(ShutdownMenu)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subsystem.6.path))">$INFO[Skin.String(subsystem.6.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subsystem.6.path),Hidden)</visible>
 		</item>
 	</include>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	<include name="HomeSubMenuPlayDisc">
 		<item>
 			<label>13391</label>
@@ -1169,15 +1122,6 @@
 			<onclick>RipCD</onclick>
 		</item>
 	</include>
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	<include name="HomeSubMenuPictures">
 		<item>
 			<label>$VAR[SubMenuPicturesOne]</label>
@@ -1189,7 +1133,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subpictures.1.path))">ActivateWindow(Pictures,Addons,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subpictures.1.path))">$INFO[Skin.String(subpictures.1.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subpictures.1.path),Hidden)</visible>
 		</item>
 		<item>
@@ -1200,7 +1143,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(subpictures.2.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(subpictures.2.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(subpictures.2.path))</visible>
 		</item>
 		<item>
@@ -1211,7 +1153,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(subpictures.3.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(subpictures.3.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(subpictures.3.path))</visible>
 		</item>
 		<item>
@@ -1222,7 +1163,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(subpictures.4.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(subpictures.4.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(subpictures.4.path))</visible>
 		</item>
 		<item>
@@ -1233,7 +1173,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(subpictures.5.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(subpictures.5.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(subpictures.5.path))</visible>
 		</item>
 		<item>
@@ -1244,7 +1183,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(subpictures.6.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(subpictures.6.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(subpictures.6.path))</visible>
 		</item>
 	</include>
@@ -1259,7 +1197,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(sublivetv.1.path))">ActivateWindowAndFocus(MyPVR, 32,0, 11,0)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(sublivetv.1.path))">$INFO[Skin.String(sublivetv.1.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>System.GetBool(pvrmanager.enabled) | !IsEmpty(Skin.String(sublivetv.1.path))</visible>
 			<visible>!stringcompare(Skin.String(sublivetv.1.path),Hidden)</visible>
 		</item>
@@ -1273,7 +1210,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(sublivetv.2.path))">ActivateWindowAndFocus(MyPVR, 33,0, 12,0)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(sublivetv.2.path))">$INFO[Skin.String(sublivetv.2.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>System.GetBool(pvrmanager.enabled) | !IsEmpty(Skin.String(sublivetv.2.path))</visible>
 			<visible>!stringcompare(Skin.String(sublivetv.2.path),Hidden)</visible>
 		</item>
@@ -1287,7 +1223,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(sublivetv.3.path))">ActivateWindowAndFocus(MyPVR, 31,0, 10,0)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(sublivetv.3.path))">$INFO[Skin.String(sublivetv.3.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>System.GetBool(pvrmanager.enabled) | !IsEmpty(Skin.String(sublivetv.3.path))</visible>
 			<visible>!stringcompare(Skin.String(sublivetv.3.path),Hidden)</visible>
 		</item>
@@ -1301,7 +1236,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(sublivetv.4.path))">ActivateWindowAndFocus(MyPVR, 34,0, 13,0)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(sublivetv.4.path))">$INFO[Skin.String(sublivetv.4.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>System.GetBool(pvrmanager.enabled) | !IsEmpty(Skin.String(sublivetv.4.path))</visible>
 			<visible>!stringcompare(Skin.String(sublivetv.4.path),Hidden)</visible>
 		</item>
@@ -1315,7 +1249,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(sublivetv.5.path))">ActivateWindowAndFocus(MyPVR, 35,0, 14,0)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(sublivetv.5.path))">$INFO[Skin.String(sublivetv.5.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>System.GetBool(pvrmanager.enabled) | !IsEmpty(Skin.String(sublivetv.5.path))</visible>
 			<visible>!stringcompare(Skin.String(sublivetv.5.path),Hidden)</visible>
 		</item>
@@ -1327,22 +1260,9 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(sublivetv.6.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(sublivetv.6.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(sublivetv.6.path))</visible>
 		</item>
 	</include>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	<include name="HomeSubMenuConcerts">
 		<item>
 			<label>$VAR[SubMenuConcertsOne]</label>
@@ -1354,7 +1274,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subconcerts.1.path))">ActivateWindow(2126),return</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subconcerts.1.path))">$INFO[Skin.String(subconcerts.1.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subconcerts.1.path),Hidden)</visible>
 		</item>
 		<item>
@@ -1367,7 +1286,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subconcerts.2.path))">ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subconcerts.2.path))">$INFO[Skin.String(subconcerts.2.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subconcerts.2.path),Hidden)</visible>
 		</item>
 		<item>
@@ -1380,7 +1298,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subconcerts.3.path))">ActivateWindow(Videos,MusicVideoGenres,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subconcerts.3.path))">$INFO[Skin.String(subconcerts.3.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subconcerts.3.path),Hidden)</visible>
 		</item>
 		<item>
@@ -1393,7 +1310,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subconcerts.4.path))">ActivateWindow(Videos,MusicVideoYears,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subconcerts.4.path))">$INFO[Skin.String(subconcerts.4.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subconcerts.4.path),Hidden)</visible>
 		</item>
 		<item>
@@ -1406,7 +1322,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subconcerts.5.path))">ActivateWindow(Videos,MusicVideoTags,return)</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subconcerts.5.path))">$INFO[Skin.String(subconcerts.5.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subconcerts.5.path),Hidden)</visible>
 		</item>
 		<item>
@@ -1417,7 +1332,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(subconcerts.6.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(subconcerts.6.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(subconcerts.6.path))</visible>
 		</item>
 	</include>
@@ -1428,7 +1342,6 @@
 			<thumb>$INFO[Window(home).Property(favourite.1.thumb)]</thumb>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Window(home).Property(favourite.1.path)]</onclick>
-			<property name="Fanart">UsrFavourite</property>
 			<visible>!IsEmpty(Window(home).Property(favourite.1.name))</visible>
 			<visible>!IsEmpty(Window(home).Property(favourite.1.path))</visible>
 		</item>
@@ -1438,7 +1351,6 @@
 			<thumb>$INFO[Window(home).Property(favourite.2.thumb)]</thumb>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Window(home).Property(favourite.2.path)]</onclick>
-			<property name="Fanart">UsrFavourite</property>
 			<visible>!IsEmpty(Window(home).Property(favourite.2.name))</visible>
 			<visible>!IsEmpty(Window(home).Property(favourite.2.path))</visible>
 		</item>
@@ -1448,7 +1360,6 @@
 			<thumb>$INFO[Window(home).Property(favourite.3.thumb)]</thumb>
 			<onclick>$INFO[Window(home).Property(favourite.3.path)]</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-			<property name="Fanart">UsrFavourite</property>
 			<visible>!IsEmpty(Window(home).Property(favourite.3.name))</visible>
 			<visible>!IsEmpty(Window(home).Property(favourite.3.path))</visible>
 		</item>
@@ -1458,7 +1369,6 @@
 			<thumb>$INFO[Window(home).Property(favourite.1.thumb)]</thumb>
 			<onclick>$INFO[Window(home).Property(favourite.4.path)]</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
-			<property name="Fanart">UsrFavourite</property>
 			<visible>!IsEmpty(Window(home).Property(favourite.4.name))</visible>
 			<visible>!IsEmpty(Window(home).Property(favourite.4.path))</visible>
 		</item>
@@ -1468,7 +1378,6 @@
 			<thumb>$INFO[Window(home).Property(favourite.5.thumb)]</thumb>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Window(home).Property(favourite.5.path)]</onclick>
-			<property name="Fanart">UsrFavourite</property>
 			<visible>!IsEmpty(Window(home).Property(favourite.5.name))</visible>
 			<visible>!IsEmpty(Window(home).Property(favourite.5.path))</visible>
 		</item>
@@ -1478,7 +1387,6 @@
 			<thumb>$INFO[Window(home).Property(favourite.6.thumb)]</thumb>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Window(home).Property(favourite.6.path)]</onclick>
-			<property name="Fanart">UsrFavourite</property>
 			<visible>!IsEmpty(Window(home).Property(favourite.6.name))</visible>
 			<visible>!IsEmpty(Window(home).Property(favourite.6.path))</visible>
 		</item>
@@ -1492,7 +1400,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubone.1.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubone.1.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubone.1.path))</visible>
 		</item>
 		<item>
@@ -1503,7 +1410,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubone.2.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubone.2.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubone.2.path))</visible>
 		</item>
 		<item>
@@ -1514,7 +1420,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubone.3.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubone.3.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubone.3.path))</visible>
 		</item>
 		<item>
@@ -1525,7 +1430,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubone.4.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubone.4.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubone.4.path))</visible>
 		</item>
 		<item>
@@ -1536,7 +1440,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubone.5.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubone.5.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubone.5.path))</visible>
 		</item>
 		<item>
@@ -1547,7 +1450,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubone.6.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubone.6.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubone.6.path))</visible>
 		</item>
 	</include>
@@ -1560,7 +1462,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubtwo.1.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubtwo.1.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubtwo.1.path))</visible>
 		</item>
 		<item>
@@ -1571,7 +1472,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubtwo.2.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubtwo.2.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubtwo.2.path))</visible>
 		</item>
 		<item>
@@ -1582,7 +1482,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubtwo.3.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubtwo.3.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubtwo.3.path))</visible>
 		</item>
 		<item>
@@ -1593,7 +1492,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubtwo.4.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubtwo.4.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubtwo.4.path))</visible>
 		</item>
 		<item>
@@ -1604,7 +1502,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubtwo.5.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubtwo.5.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubtwo.5.path))</visible>
 		</item>
 		<item>
@@ -1615,7 +1512,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubtwo.6.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubtwo.6.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubtwo.6.path))</visible>
 		</item>
 	</include>
@@ -1628,7 +1524,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(subprog.1.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(subprog.1.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(subprog.1.path))</visible>
 		</item>
 		<item>
@@ -1639,7 +1534,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(subprog.2.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(subprog.2.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(subprog.2.path))</visible>
 		</item>
 		<item>
@@ -1650,7 +1544,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(subprog.3.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(subprog.3.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(subprog.3.path))</visible>
 		</item>
 		<item>
@@ -1661,7 +1554,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(subprog.4.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(subprog.4.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(subprog.4.path))</visible>
 		</item>
 		<item>
@@ -1672,7 +1564,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(subprog.5.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(subprog.5.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(subprog.5.path))</visible>
 		</item>
 		<item>
@@ -1683,7 +1574,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(subprog.6.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(subprog.6.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(subprog.6.path))</visible>
 		</item>
 	</include>
@@ -1696,7 +1586,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubthree.1.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubthree.1.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubthree.1.path))</visible>
 		</item>
 		<item>
@@ -1707,7 +1596,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubthree.2.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubthree.2.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubthree.2.path))</visible>
 		</item>
 		<item>
@@ -1718,7 +1606,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubthree.3.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubthree.3.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubthree.3.path))</visible>
 		</item>
 		<item>
@@ -1729,7 +1616,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubthree.4.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubthree.4.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubthree.4.path))</visible>
 		</item>
 		<item>
@@ -1740,7 +1626,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubthree.5.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubthree.5.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubthree.5.path))</visible>
 		</item>
 		<item>
@@ -1751,7 +1636,6 @@
 			<onclick condition="Container(9000).Hasfocus(1) + Skin.HasSetting(stickyhomemenuaction)">Skin.SetString(homeitemlastlabel,$INFO[Skin.String(usersubthree.6.label)])</onclick>
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick>$INFO[Skin.String(usersubthree.6.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!IsEmpty(Skin.String(usersubthree.6.path))</visible>
 		</item>
 	</include>
@@ -1766,7 +1650,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subexit.1.path))">Quit</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subexit.1.path))">$INFO[Skin.String(subexit.1.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subexit.1.path),Hidden)</visible>
 		</item>
 		<item>
@@ -1779,7 +1662,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subexit.2.path))">Shutdown</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subexit.2.path))">$INFO[Skin.String(subexit.2.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subexit.2.path),Hidden)</visible>
 		</item>
 		<item>
@@ -1792,7 +1674,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subexit.3.path))">Suspend</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subexit.3.path))">$INFO[Skin.String(subexit.3.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subexit.3.path),Hidden)</visible>
 		</item>
 		<item>
@@ -1805,7 +1686,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subexit.4.path))">Hibernate</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subexit.4.path))">$INFO[Skin.String(subexit.4.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subexit.4.path),Hidden)</visible>
 		</item>
 		<item>
@@ -1818,7 +1698,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subexit.5.path))">Reboot</onclick>
 			<onclick condition="!IsEmpty(Skin.String(subexit.5.path))">$INFO[Skin.String(subexit.5.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>Library.HasContent(Video) | !IsEmpty(Skin.String(subexit.5.path))</visible>
 			<visible>!stringcompare(Skin.String(subexit.5.path),Hidden)</visible>
 		</item>
@@ -1832,7 +1711,6 @@
 			<onclick>SetProperty(SubMenuBackground,$VAR[SubMenuItemBackground],Home)</onclick>
 			<onclick condition="IsEmpty(Skin.String(subexit.6.path))">System.LogOff </onclick>
 			<onclick condition="!IsEmpty(Skin.String(subexit.6.path))">$INFO[Skin.String(subexit.6.path)]</onclick>
-			<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 			<visible>!stringcompare(Skin.String(subexit.6.path),Hidden)</visible>
 		</item>
 	</include>

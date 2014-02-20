@@ -118,7 +118,6 @@
 						<label2>$LOCALIZE[31409]</label2>
 						<onclick>ActivateWindow(home)</onclick>
 						<icon>DefaultLogoReturn.png</icon>
-						<property name="Fanart">$VAR[CommonMenuItemBackground]</property>
 					</item>
 					<item>
 						<label>$INFO[Skin.String(homeitem.1.label)]</label>
@@ -126,7 +125,6 @@
 						<onclick>$INFO[Skin.String(homeitem.1.path)]</onclick>
 						<icon>DefaultShortcut.png</icon>
 						<thumb>$INFO[Skin.String(homeitem.1.icon)]</thumb>
-						<property name="Fanart">$INFO[Skin.String(homeitem.1.fanart)]</property>
 						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemOne)</visible>
 					</item>
 					<item>
@@ -135,7 +133,6 @@
 						<onclick>$INFO[Skin.String(homeitem.2.path)]</onclick>
 						<icon>DefaultShortcut.png</icon>
 						<thumb>$INFO[Skin.String(homeitem.2.icon)]</thumb>
-						<property name="Fanart">$INFO[Skin.String(homeitem.2.fanart)]</property>
 						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemTwo)</visible>
 					</item>
 					<item>
@@ -144,7 +141,6 @@
 						<onclick>$INFO[Skin.String(homeitem.3.path)]</onclick>
 						<icon>DefaultShortcut.png</icon>
 						<thumb>$INFO[Skin.String(homeitem.3.icon)]</thumb>
-						<property name="Fanart">$INFO[Skin.String(homeitem.3.fanart)]</property>
 						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemThree)</visible>
 					</item>
 					<item>
@@ -153,7 +149,6 @@
 						<onclick>$INFO[Skin.String(homeitem.4.path)]</onclick>
 						<icon>DefaultShortcut.png</icon>
 						<thumb>$INFO[Skin.String(homeitem.4.icon)]</thumb>
-						<property name="Fanart">$INFO[Skin.String(homeitem.4.fanart)]</property>
 						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemFour)</visible>
 					</item>
 					<item>
@@ -162,7 +157,6 @@
 						<onclick>$INFO[Skin.String(homeitem.5.path)]</onclick>
 						<icon>DefaultShortcut.png</icon>
 						<thumb>$INFO[Skin.String(homeitem.5.icon)]</thumb>
-						<property name="Fanart">$INFO[Skin.String(homeitem.5.fanart)]</property>
 						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemFive)</visible>
 					</item>
 					<item>
@@ -171,7 +165,6 @@
 						<onclick>$INFO[Skin.String(homeitem.6.path)]</onclick>
 						<icon>DefaultShortcut.png</icon>
 						<thumb>$INFO[Skin.String(homeitem.6.icon)]</thumb>
-						<property name="Fanart">$INFO[Skin.String(homeitem.6.fanart)]</property>
 						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemSix)</visible>
 					</item>
 					<item>
@@ -180,7 +173,6 @@
 						<onclick>$INFO[Skin.String(homeitem.7.path)]</onclick>
 						<icon>DefaultShortcut.png</icon>
 						<thumb>$INFO[Skin.String(homeitem.7.icon)]</thumb>
-						<property name="Fanart">$INFO[Skin.String(homeitem.7.fanart)]</property>
 						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemSeven)</visible>
 					</item>
 					<item>
@@ -189,7 +181,6 @@
 						<onclick>$INFO[Skin.String(homeitem.8.path)]</onclick>
 						<icon>DefaultShortcut.png</icon>
 						<thumb>$INFO[Skin.String(homeitem.8.icon)]</thumb>
-						<property name="Fanart">$INFO[Skin.String(homeitem.8.fanart)]</property>
 						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemEight)</visible>
 					</item>
 					<item>
@@ -198,7 +189,6 @@
 						<onclick>$INFO[Skin.String(homeitem.9.path)]</onclick>
 						<icon>DefaultShortcut.png</icon>
 						<thumb>$INFO[Skin.String(homeitem.9.icon)]</thumb>
-						<property name="Fanart">$INFO[Skin.String(homeitem.9.fanart)]</property>
 						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemNine)</visible>
 					</item>
 					<item>
@@ -207,7 +197,6 @@
 						<onclick>$INFO[Skin.String(homeitem.10.path)]</onclick>
 						<icon>DefaultShortcut.png</icon>
 						<thumb>$INFO[Skin.String(homeitem.10.icon)]</thumb>
-						<property name="Fanart">$INFO[Skin.String(homeitem.10.fanart)]</property>
 						<visible>StringCompare(Window(home).Property(MenuItemActive),ItemTen)</visible>
 					</item>
 					<item>
@@ -216,7 +205,6 @@
 						<onclick>ActivateWindow(Settings)</onclick>
 						<icon>DefaultShortcut.png</icon>
 						<thumb>$INFO[Skin.String(homeitem.13.icon)]</thumb>
-						<property name="Fanart">$INFO[Skin.String(homeitem.13.fanart)]</property>
 						<visible>StringCompare(Window(home).Property(MenuItemActive),Settings)</visible>
 					</item>
 					<include condition="StringCompare(Window(home).Property(MenuItemSub),Videos)">HomeSubMenuVideos</include>
