@@ -18,7 +18,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>210</label>
+				
 				<texturefocus>OSD/OSDHomeBtnFO.png</texturefocus>
 				<texturenofocus>OSD/OSDHomeBtnNF.png</texturenofocus>
 				<onleft>704</onleft>
@@ -33,7 +33,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>210</label>
+				
 				<texturefocus>OSD/OSDPlaylistFO.png</texturefocus>
 				<texturenofocus>OSD/OSDPlaylistNF.png</texturenofocus>
 				<onleft>600</onleft>
@@ -48,7 +48,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>210</label>
+				
 				<texturefocus>OSD/OSDPrevTrackFO.png</texturefocus>
 				<texturenofocus>OSD/OSDPrevTrackNF.png</texturenofocus>
 				<onleft>601</onleft>
@@ -62,7 +62,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31057</label>
+				
 				<texturefocus>OSD/OSDRewindFO.png</texturefocus>
 				<texturenofocus>OSD/OSDRewindNF.png</texturenofocus>
 				<onleft>602</onleft>
@@ -76,7 +76,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31054</label>
+				
 				<altlabel>208</altlabel>
 				<texturefocus>OSD/OSDPauseFO.png</texturefocus>
 				<texturenofocus>OSD/OSDPauseNF.png</texturenofocus>
@@ -94,7 +94,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31055</label>
+				
 				<texturefocus>OSD/OSDStopFO.png</texturefocus>
 				<texturenofocus>OSD/OSDStopNF.png</texturenofocus>
 				<onleft>604</onleft>
@@ -108,7 +108,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31056</label>
+				
 				<texturefocus>OSD/OSDForwardFO.png</texturefocus>
 				<texturenofocus>OSD/OSDForwardNF.png</texturenofocus>
 				<onleft>605</onleft>
@@ -122,7 +122,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>209</label>
+				
 				<texturefocus>OSD/OSDNextTrackFO.png</texturefocus>
 				<texturenofocus>OSD/OSDNextTrackNF.png</texturenofocus>
 				<onleft>606</onleft>
@@ -136,7 +136,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>$LOCALIZE[486]$INFO[Playlist.Repeat, $LOCALIZE[31000] ]</label>
+				
 				<texturefocus>-</texturefocus>
 				<texturenofocus>-</texturenofocus>
 				<onclick>XBMC.PlayerControl(Repeat)</onclick>
@@ -204,7 +204,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>$LOCALIZE[590]$INFO[Playlist.Random, $LOCALIZE[31000] ]</label>
+				
 				<texturefocus>OSD/OSDRandomOffFO.png</texturefocus>
 				<texturenofocus>OSD/OSDRandomOffNF.png</texturenofocus>
 				<usealttexture>Playlist.IsRandom</usealttexture>
@@ -227,7 +227,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31343</label>
+				
 				<texturefocus>OSD/OSDLyricsFO.png</texturefocus>
 				<texturenofocus>OSD/OSDLyricsNF.png</texturenofocus>
 				<alttexturefocus>OSD/OSDLyricsFO.png</alttexturefocus>
@@ -248,7 +248,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>12006</label>
+				
 				<texturefocus>OSD/OSDVizFO.png</texturefocus>
 				<texturenofocus>OSD/OSDVizNF.png</texturenofocus>
 				<onleft>701</onleft>
@@ -261,7 +261,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>$LOCALIZE[250] $LOCALIZE[21417]</label>
+				
 				<texturefocus>OSD/OSDPresetSettingsFO.png</texturefocus>
 				<texturenofocus>OSD/OSDPresetSettingsNF.png</texturenofocus>
 				<onleft>500</onleft>
@@ -275,7 +275,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>31048</label>
+				
 				<texturefocus>OSD/OSDPreFO.png</texturefocus>
 				<texturenofocus>OSD/OSDPreNF.png</texturenofocus>
 				<onleft>702</onleft>
@@ -289,7 +289,7 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
-				<label>264</label>
+				
 				<texturefocus>OSD/OSDRecordOffFO.png</texturefocus>
 				<texturenofocus>OSD/OSDRecordOffNF.png</texturenofocus>
 				<onleft>703</onleft>

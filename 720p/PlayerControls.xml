@@ -239,7 +239,7 @@
 					<top>0</top>
 					<width>40</width>
 					<height>40</height>
-					<label>31343</label>
+					
 					<texturefocus>OSD/OSDLyricsFO.png</texturefocus>
 					<texturenofocus>OSD/OSDLyricsNF.png</texturenofocus>
 					<alttexturefocus>OSD/OSDLyricsFO.png</alttexturefocus>
