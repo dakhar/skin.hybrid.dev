@@ -277,6 +277,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,EjectTray())</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[13391])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultDVDRom.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].fanart,special://skin/backgrounds/SKINDEFAULT.jpg)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].widget,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,PlayDisc)</onclick>
@@ -292,6 +293,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path)</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[31243])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultScript.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,None)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1105,6 +1107,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindow(Videos,MovieActors,return))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[20338] $LOCALIZE[344])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultActor.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,Movies)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,Movies)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1174,6 +1177,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindow(Videos,library://video/inprogressshows.xml/,return))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[575])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultInProgressShows.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,TVShows)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,TVShows)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1190,6 +1194,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindow(Videos,RecentlyAddedEpisodes,return))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[31253])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultRecentlyAddedEpisodes.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,TVShows)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,TVShows)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1206,6 +1211,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindow(Videos,TVShowGenres,return))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[135])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultGenre.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,TVShows)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,TVShows)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1222,6 +1228,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindow(Videos,TVShowTags, return))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[20459])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultTags.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,TVShows)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,TVShows)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1238,6 +1245,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindow(Videos,TVShowYears,return))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[652])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultYear.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,TVShows)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,TVShows)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1254,6 +1262,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindow(Videos,TVShowActors, return))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[344])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultActor.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,TVShows)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,TVShows)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1390,6 +1399,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindow(PVR))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[31502])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultTVShows.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,LiveTV)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,LiveTV)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1406,6 +1416,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindowAndFocus(MyPVR, 32,0, 11,0))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[19023])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultVideoPlaylists.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,LiveTV)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,LiveTV)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1422,6 +1433,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindowAndFocus(MyPVR, 33,0, 12,0))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[19024])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultVideoPlaylists.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,LiveTV)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,LiveTV)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1438,6 +1450,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindowAndFocus(MyPVR, 31,0, 10,0))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[19069])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultYear.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,LiveTV)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,LiveTV)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1454,6 +1467,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindowAndFocus(MyPVR, 34,0, 13,0))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[19163])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultStreaming.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,LiveTV)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,LiveTV)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1470,6 +1484,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindowAndFocus(MyPVR, 35,0, 14,0))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[19040])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultInProgressShows.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,LiveTV)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,LiveTV)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1487,6 +1502,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindow(Profiles))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[13200])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,unknown-user.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,Settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,Settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1503,6 +1519,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindow(LoginScreen))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[31333])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,unknown-user.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,Settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,Shutdown)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1519,6 +1536,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,System.LogOff)</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[20126])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,unknown-user.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,Shutdown)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,Shutdown)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1536,6 +1554,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindow(ShutdownMenu))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[13005])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultShortcut.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,Settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,Shutdown)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1552,6 +1571,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,Quit)</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[13012])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultShortcut.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,Shutdown)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,Shutdown)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1568,6 +1588,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,Shutdown)</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[13005])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultShortcut.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,Shutdown)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,Shutdown)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1585,6 +1606,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,Suspend)</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[13011])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultShortcut.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,Shutdown)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,Shutdown)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1602,6 +1624,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,Hibernate)</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[13010])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultShortcut.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,Shutdown)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,Shutdown)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1619,6 +1642,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,Reboot)</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[13013])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultShortcut.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,Shutdown)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,Shutdown)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1637,6 +1661,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindow(Settings),return)</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[13000])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultScript.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,Settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,Settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1653,6 +1678,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindow(FileManager))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[7])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultShortcut.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,Settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,Settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1669,6 +1695,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindow(SkinSettings),return)</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[166])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultShortcut.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,Settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,Settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1685,6 +1712,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindow(SystemInfo))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[130])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultShortcut.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,Settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,Settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
@@ -1701,6 +1729,7 @@
 				<include>ClearButtonChoice</include>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].path,ActivateWindow(AddonBrowser))</onclick>
 				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].label,$LOCALIZE[24001])</onclick>
+				<onclick>Skin.SetString($INFO[Window(home).Property(usrselectbtn)].icon,DefaultShortcut.png)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].sub,Settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].stats,Settings)</onclick>
 				<onclick condition="Window.IsVisible(2114)">Skin.SetString($INFO[Window(home).Property(usrselectbtn)].addon,None)</onclick>
