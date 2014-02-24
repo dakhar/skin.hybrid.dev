@@ -36,7 +36,9 @@ msgctxt "#31004"
 msgid "Working..."
 msgstr ""
 
-#empty string with id 31005
+msgctxt "#31005"
+msgid "Menu Icons"
+msgstr ""
 
 msgctxt "#31006"
 msgid "View Options"
@@ -1209,7 +1211,9 @@ msgctxt "#31403"
 msgid "Select Background Image"
 msgstr ""
 
-#empty strings id 31404
+msgctxt "#31404"
+msgid "Extended Menu Page:"
+msgstr ""
 
 msgctxt "#31405"
 msgid "Enable Extended Information Widget"
