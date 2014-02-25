@@ -16,7 +16,7 @@
 			<visible>!Skin.HasSetting(initialsetuprun)</visible>
 		</control>
 		<include condition="Skin.HasSetting(initialsetuprun)">CommonBackground</include>
-		<control type="button" id="700">
+		<control type="button" id="800">
 			<include>InvisibleButton</include>
 			<onleft>801</onleft>
 			<onright>804</onright>
@@ -5862,11 +5862,6 @@
 								<visible>[Control.HasFocus(604) | Control.HasFocus(605)]</visible>
 							</control>
 						</focusedlayout>
-						
-						
-						
-						
-						
 						<content>
 							<item id="1">
 								<description>Home Menu Item One</description>
@@ -5878,7 +5873,6 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.1.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.1.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.1.path))</visible>
-								
 							</item>
 							<item id="2">
 								<description>Home Menu Item Two</description>
@@ -5890,7 +5884,6 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.2.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.2.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.2.path))</visible>
-								
 							</item>
 							<item id="3">
 								<description>Home Menu Item Three</description>
@@ -5902,7 +5895,6 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.3.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.3.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.3.path))</visible>
-								
 							</item>
 							<item id="4">
 								<description>Home Menu Item Four</description>
@@ -5914,7 +5906,6 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.4.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.4.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.4.path))</visible>
-								
 							</item>
 							<item id="5">
 								<description>Home Menu Item Five</description>
@@ -5926,7 +5917,6 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.5.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.5.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.5.path))</visible>
-								
 							</item>
 							<item id="6">
 								<description>Home Menu Item Six</description>
@@ -5938,7 +5928,6 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.6.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.6.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.6.path))</visible>
-							
 							</item>
 							<item id="7">
 								<description>Home Menu Item Seven</description>
@@ -5950,7 +5939,6 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.7.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.7.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.7.path))</visible>
-							
 							</item>
 							<item id="7">
 								<description>Home Menu Item Eight</description>
@@ -5962,7 +5950,6 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.8.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.8.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.8.path))</visible>
-								
 							</item>
 							<item id="9">
 								<description>Home Menu Item Nine</description>
@@ -5974,7 +5961,6 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.9.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.9.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.9.path))</visible>
-							
 							</item>
 							<item id="10">
 								<description>Home Menu Item Ten</description>
@@ -5986,7 +5972,6 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.10.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.10.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.10.path))</visible>
-							
 							</item>
 							<item id="11">
 								<description>Fullscreen</description>
@@ -6012,17 +5997,8 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.13.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.13.addon)]</property>
 								<visible>!Skin.HasSetting(hideHomemenusystem)</visible>
-								
 							</item>
-						
-						
-						
-						
 						</content>
-						
-						
-						
-						
 					</control>
 					<control type="panel" id="9007">
 						<left>25</left>
@@ -6033,8 +6009,6 @@
 						<onright>9007</onright>
 						<onup>604</onup>
 						<ondown>604</ondown>
-						
-						
 						<itemlayout height="139" width="140">
 							<control type="image">
 								<left>1</left>
@@ -6241,9 +6215,6 @@
 						<selected>Skin.HasSetting(enablefanartscript)</selected>
 						<enable>System.HasAddon(script.grab.fanart)</enable>
 					</control>
-					
-					
-					
 					<control type="button" id="705">
 						<width>750</width>
 						<height>40</height>
@@ -6257,12 +6228,6 @@
 						<enable>Skin.HasSetting(enablefanartscript)</enable>
 						<visible>System.HasAddon(script.grab.fanart)</visible>
 					</control>
-					
-					
-					
-					
-					
-					
 					<control type="button" id="706">
 						<description>User Album Thumbnails Path</description>
 						<width>750</width>
@@ -6277,14 +6242,6 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					
-					
-					
-					
-					
-					
-					
-					
 					<control type="button" id="707">
 						<description>User Movie FanArt Path</description>
 						<width>750</width>
@@ -6330,9 +6287,6 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!Skin.HasSetting(enablefanartscript)</enable>
 					</control>
-					
-					
-					
 					<control type="button" id="710">
 						<description>User Concerts FanArt Path</description>
 						<width>750</width>
@@ -6347,9 +6301,6 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					
-					
-					
 					<control type="label" id="711">
 						<width>750</width>
 						<height>45</height>

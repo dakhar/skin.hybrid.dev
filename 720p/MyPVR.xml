@@ -2,7 +2,6 @@
 <window>
 	<defaultcontrol>32</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	
 	<controls>
 		<include>CommonBackground</include>
 		<include>MediaViewBackgrounds</include>
