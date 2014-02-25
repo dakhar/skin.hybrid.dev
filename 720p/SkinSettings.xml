@@ -16,7 +16,7 @@
 			<visible>!Skin.HasSetting(initialsetuprun)</visible>
 		</control>
 		<include condition="Skin.HasSetting(initialsetuprun)">CommonBackground</include>
-		<control type="button" id="800">
+		<control type="button" id="700">
 			<include>InvisibleButton</include>
 			<onleft>801</onleft>
 			<onright>804</onright>
@@ -3382,7 +3382,7 @@
 							<onclick>SetProperty(usrselectbtn,addonsetone.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="707">
+						<control type="label" id="407">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -3469,7 +3469,7 @@
 							<onclick>SetProperty(usrselectbtn,addonsettwo.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="714">
+						<control type="label" id="414">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -3556,7 +3556,7 @@
 							<onclick>SetProperty(usrselectbtn,addonsetthree.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="721">
+						<control type="label" id="421">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -3643,7 +3643,7 @@
 							<onclick>SetProperty(usrselectbtn,addonsetfour.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="728">
+						<control type="label" id="428">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -3730,7 +3730,7 @@
 							<onclick>SetProperty(usrselectbtn,addonsetfive.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="735">
+						<control type="label" id="435">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -3817,7 +3817,7 @@
 							<onclick>SetProperty(usrselectbtn,addonsetsix.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="742">
+						<control type="label" id="442">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -3904,7 +3904,7 @@
 							<onclick>SetProperty(usrselectbtn,addonsetseven.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="749">
+						<control type="label" id="449">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -3991,7 +3991,7 @@
 							<onclick>SetProperty(usrselectbtn,addonseteight.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="756">
+						<control type="label" id="456">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -4078,7 +4078,7 @@
 							<onclick>SetProperty(usrselectbtn,addonsetnine.5,Home)</onclick>
 							<onclick>ActivateWindow(2119)</onclick>
 						</control>
-						<control type="label" id="763">
+						<control type="label" id="463">
 							<width>750</width>
 							<height>45</height>
 							<font>font13_title</font>
@@ -4371,7 +4371,7 @@
 								<property name="HiLiteItem">$INFO[Skin.String(homeitem.7.type)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.7.path)) + !Skin.HasSetting(holidayeffects) + !Skin.HasSetting(singleglobalbackground)</visible>
 							</item>
-							<item id="8">
+							<item id="7">
 								<description>Home Menu Item Eight</description>
 								<label>$INFO[Skin.String(homeitem.8.label)]</label>
 								<onclick>noop</onclick>
@@ -5952,7 +5952,7 @@
 								<visible>!IsEmpty(Skin.String(homeitem.7.path))</visible>
 							
 							</item>
-							<item id="8">
+							<item id="7">
 								<description>Home Menu Item Eight</description>
 								<label>$INFO[Skin.String(homeitem.8.label)]</label>
 								<onclick>noop</onclick>
@@ -6194,7 +6194,7 @@
 					<onright>60</onright>
 					<onup>9008</onup>
 					<ondown>9008</ondown>
-					<control type="label" id="600">
+					<control type="label" id="700">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -6204,7 +6204,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="601">
+					<control type="button" id="702">
 						<description>Physical Music Folder</description>
 						<width>750</width>
 						<height>40</height>
@@ -6218,7 +6218,7 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
-					<control type="label" id="602">
+					<control type="label" id="703">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -6228,7 +6228,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="603">
+					<control type="radiobutton" id="704">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6241,7 +6241,10 @@
 						<selected>Skin.HasSetting(enablefanartscript)</selected>
 						<enable>System.HasAddon(script.grab.fanart)</enable>
 					</control>
-					<control type="button" id="604">
+					
+					
+					
+					<control type="button" id="705">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6260,7 +6263,7 @@
 					
 					
 					
-					<control type="button" id="605">
+					<control type="button" id="706">
 						<description>User Album Thumbnails Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -6282,7 +6285,7 @@
 					
 					
 					
-					<control type="button" id="606">
+					<control type="button" id="707">
 						<description>User Movie FanArt Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -6297,7 +6300,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!Skin.HasSetting(enablefanartscript)</enable>
 					</control>
-					<control type="button" id="607">
+					<control type="button" id="708">
 						<description>User TVShow FanArt Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -6312,7 +6315,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>!Skin.HasSetting(enablefanartscript)</enable>
 					</control>
-					<control type="button" id="608">
+					<control type="button" id="709">
 						<description>User Artists FanArt Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -6330,7 +6333,7 @@
 					
 					
 					
-					<control type="button" id="609">
+					<control type="button" id="710">
 						<description>User Concerts FanArt Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -6347,7 +6350,7 @@
 					
 					
 					
-					<control type="label" id="610">
+					<control type="label" id="711">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -6357,7 +6360,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="radiobutton" id="611">
+					<control type="radiobutton" id="712">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6370,7 +6373,7 @@
 						<onclick>Skin.Reset(enablestartupplaylist)</onclick>
 						<selected>!Skin.HasSetting(hidexbmcintro)</selected>
 					</control>
-					<control type="radiobutton" id="612">
+					<control type="radiobutton" id="713">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6382,7 +6385,7 @@
 						<onclick>Skin.ToggleSetting(usestartupplaylist)</onclick>
 						<selected>Skin.HasSetting(usestartupplaylist)</selected>
 					</control>
-					<control type="button" id="613">
+					<control type="button" id="714">
 						<description>Startup Playlist Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -6396,7 +6399,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<enable>Skin.HasSetting(usestartupplaylist)</enable>
 					</control>
-					<control type="label" id="614">
+					<control type="label" id="715">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -6406,7 +6409,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="615">
+					<control type="button" id="716">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6418,7 +6421,7 @@
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 						<onclick>Skin.SetAddon(lyricscriptpath,xbmc.python.lyrics)</onclick>
 					</control>
-					<control type="button" id="616">
+					<control type="button" id="717">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6430,7 +6433,7 @@
 						<enable>!IsEmpty(Skin.String(lyricscriptpath))</enable>
 						<onclick>Addon.OpenSettings($INFO[Skin.String(lyricscriptpath)])</onclick>
 					</control>
-					<control type="radiobutton" id="626">
+					<control type="radiobutton" id="726">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6443,7 +6446,7 @@
 						<selected>!Skin.HasSetting(disabletvtunes)</selected>
 						<enable>System.HasAddon(script.tvtunes)</enable>
 					</control>
-					<control type="button" id="627">
+					<control type="button" id="727">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6456,7 +6459,7 @@
 						<enable>!Skin.HasSetting(disabletvtunes)</enable>
 						<visible>System.HasAddon(script.tvtunes)</visible>
 					</control>
-					<control type="radiobutton" id="628">
+					<control type="radiobutton" id="728">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6469,7 +6472,7 @@
 						<selected>!Skin.HasSetting(disableslideshowart)</selected>
 						<enable>System.HasAddon(script.artistslideshow)</enable>
 					</control>
-					<control type="button" id="629">
+					<control type="button" id="729">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6482,7 +6485,7 @@
 						<enable>!Skin.HasSetting(disableslideshowart)</enable>
 						<visible>System.HasAddon(script.artistslideshow)</visible>
 					</control>
-					<control type="radiobutton" id="630">
+					<control type="radiobutton" id="730">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6495,7 +6498,7 @@
 						<selected>!Skin.HasSetting(disableglobalsearch)</selected>
 						<enable>System.HasAddon(script.globalsearch)</enable>
 					</control>
-					<control type="button" id="631">
+					<control type="button" id="731">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6508,7 +6511,7 @@
 						<enable>!Skin.HasSetting(disableglobalsearch)</enable>
 						<visible>System.HasAddon(script.globalsearch)</visible>
 					</control>
-					<control type="radiobutton" id="632">
+					<control type="radiobutton" id="732">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6521,7 +6524,7 @@
 						<selected>!Skin.HasSetting(disablevideoextras)</selected>
 						<enable>System.HasAddon(script.videoextras)</enable>
 					</control>
-					<control type="button" id="633">
+					<control type="button" id="733">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6534,7 +6537,7 @@
 						<enable>!Skin.HasSetting(disablevideoextras)</enable>
 						<visible>System.HasAddon(script.videoextras)</visible>
 					</control>
-					<control type="radiobutton" id="634">
+					<control type="radiobutton" id="734">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6547,7 +6550,7 @@
 						<selected>!Skin.HasSetting(disabletvnextaired)</selected>
 						<enable>System.HasAddon(script.tv.show.next.aired)</enable>
 					</control>
-					<control type="button" id="635">
+					<control type="button" id="735">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6560,7 +6563,7 @@
 						<enable>!Skin.HasSetting(disabletvnextaired)</enable>
 						<visible>System.HasAddon(script.tv.show.next.aired)</visible>
 					</control>
-					<control type="radiobutton" id="638">
+					<control type="radiobutton" id="738">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6573,7 +6576,7 @@
 						<selected>!Skin.HasSetting(disablewatchitlater)</selected>
 						<enable>System.HasAddon(script.simpleplaylists)</enable>
 					</control>
-					<control type="button" id="639">
+					<control type="button" id="739">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6586,7 +6589,7 @@
 						<enable>!Skin.HasSetting(disablewatchitlater)</enable>
 						<visible>System.HasAddon(script.simpleplaylists)</visible>
 					</control>
-					<control type="radiobutton" id="640">
+					<control type="radiobutton" id="740">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6599,7 +6602,7 @@
 						<selected>!Skin.HasSetting(disablescriptplaylist)</selected>
 						<enable>System.HasAddon(script.randomandlastitems)</enable>
 					</control>
-					<control type="button" id="641">
+					<control type="button" id="741">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6612,7 +6615,7 @@
 						<enable>!Skin.HasSetting(disablescriptplaylist)</enable>
 						<visible>System.HasAddon(script.randomandlastitems)</visible>
 					</control>
-					<control type="label" id="645">
+					<control type="label" id="745">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -6622,7 +6625,7 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="button" id="619">
+					<control type="button" id="746">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
@@ -6634,7 +6637,7 @@
 						<onclick>Addon.OpenSettings(service.skin.widgets)</onclick>
 						<enable>System.HasAddon(service.skin.widgets)</enable>
 					</control>
-					<control type="label" id="655">
+					<control type="label" id="755">
 						<width>750</width>
 						<height>45</height>
 						<font>font13_title</font>
@@ -6644,13 +6647,13 @@
 						<align>left</align>
 						<aligny>center</aligny>
 					</control>
-					<control type="image" id="656">
+					<control type="image" id="756">
 						<width>750</width>
 						<height>120</height>
 						<aspectratio aligny="center" align="center">keep</aspectratio>
 						<texture>warning.png</texture>
 					</control>
-					<control type="button" id="657">
+					<control type="button" id="757">
 						<description>Reset Skin Values</description>
 						<width>750</width>
 						<height>40</height>
