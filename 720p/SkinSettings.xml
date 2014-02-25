@@ -5862,6 +5862,11 @@
 								<visible>[Control.HasFocus(604) | Control.HasFocus(605)]</visible>
 							</control>
 						</focusedlayout>
+						
+						
+						
+						
+						
 						<content>
 							<item id="1">
 								<description>Home Menu Item One</description>
@@ -5873,7 +5878,7 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.1.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.1.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.1.path))</visible>
-								<visible>Skin.String(homeitem.1.menu,MultiMenu)</visible>
+								
 							</item>
 							<item id="2">
 								<description>Home Menu Item Two</description>
@@ -5885,7 +5890,7 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.2.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.2.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.2.path))</visible>
-								<visible>Skin.String(homeitem.2.menu,MultiMenu)</visible>
+								
 							</item>
 							<item id="3">
 								<description>Home Menu Item Three</description>
@@ -5897,7 +5902,7 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.3.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.3.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.3.path))</visible>
-								<visible>Skin.String(homeitem.3.menu,MultiMenu)</visible>
+								
 							</item>
 							<item id="4">
 								<description>Home Menu Item Four</description>
@@ -5909,7 +5914,7 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.4.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.4.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.4.path))</visible>
-								<visible>Skin.String(homeitem.4.menu,MultiMenu)</visible>
+								
 							</item>
 							<item id="5">
 								<description>Home Menu Item Five</description>
@@ -5921,7 +5926,7 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.5.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.5.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.5.path))</visible>
-								<visible>Skin.String(homeitem.5.menu,MultiMenu)</visible>
+								
 							</item>
 							<item id="6">
 								<description>Home Menu Item Six</description>
@@ -5933,7 +5938,7 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.6.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.6.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.6.path))</visible>
-								<visible>Skin.String(homeitem.6.menu,MultiMenu)</visible>
+							
 							</item>
 							<item id="7">
 								<description>Home Menu Item Seven</description>
@@ -5945,7 +5950,7 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.7.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.7.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.7.path))</visible>
-								<visible>Skin.String(homeitem.7.menu,MultiMenu)</visible>
+							
 							</item>
 							<item id="8">
 								<description>Home Menu Item Eight</description>
@@ -5957,7 +5962,7 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.8.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.8.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.8.path))</visible>
-								<visible>Skin.String(homeitem.8.menu,MultiMenu)</visible>
+								
 							</item>
 							<item id="9">
 								<description>Home Menu Item Nine</description>
@@ -5969,7 +5974,7 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.9.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.9.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.9.path))</visible>
-								<visible>Skin.String(homeitem.9.menu,MultiMenu)</visible>
+							
 							</item>
 							<item id="10">
 								<description>Home Menu Item Ten</description>
@@ -5981,7 +5986,7 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.10.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.10.addon)]</property>
 								<visible>!IsEmpty(Skin.String(homeitem.10.path))</visible>
-								<visible>Skin.String(homeitem.10.menu,MultiMenu)</visible>
+							
 							</item>
 							<item id="11">
 								<description>Fullscreen</description>
@@ -6007,9 +6012,17 @@
 								<property name="Submenu">$INFO[Skin.String(homeitem.13.sub)]</property>
 								<property name="Addon">$INFO[Skin.String(homeitem.13.addon)]</property>
 								<visible>!Skin.HasSetting(hideHomemenusystem)</visible>
-								<visible>Skin.String(homeitem.13.menu,MultiMenu)</visible>
+								
 							</item>
+						
+						
+						
+						
 						</content>
+						
+						
+						
+						
 					</control>
 					<control type="panel" id="9007">
 						<left>25</left>
@@ -6241,66 +6254,13 @@
 						<enable>Skin.HasSetting(enablefanartscript)</enable>
 						<visible>System.HasAddon(script.grab.fanart)</visible>
 					</control>
+					
+					
+					
+					
+					
+					
 					<control type="button" id="605">
-						<description>User Movie FanArt Path</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>31296</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(usrmoviefanartdir)][/COLOR]</label2>
-						<onclick>Skin.Reset(usrmoviefanartdir)</onclick>
-						<onclick>Skin.SetPath(usrmoviefanartdir)</onclick>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<!--enable>!Skin.HasSetting(enablefanartscript)</enable-->
-					</control>
-					<control type="button" id="606">
-						<description>User TVShow FanArt Path</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>31297</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(usrtvshowfanartdir)][/COLOR]</label2>
-						<onclick>Skin.Reset(usrtvshowfanartdir)</onclick>
-						<onclick>Skin.SetPath(usrtvshowfanartdir)</onclick>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<!--enable>!Skin.HasSetting(enablefanartscript)</enable-->
-					</control>
-					<control type="button" id="607">
-						<description>User Artists FanArt Path</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>31299</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(usrartistsfanartdir)][/COLOR]</label2>
-						<onclick>Skin.Reset(usrartistsfanartdir)</onclick>
-						<onclick>Skin.SetPath(usrartistsfanartdir)</onclick>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<!--enable>!Skin.HasSetting(enablefanartscript)</enable-->
-					</control>
-					<control type="button" id="608">
-						<description>User Concerts FanArt Path</description>
-						<width>750</width>
-						<height>40</height>
-						<font>font13</font>
-						<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<label>31298</label>
-						<label2>[COLOR=selected]$INFO[Skin.String(usrconcertsfanartdir)][/COLOR]</label2>
-						<onclick>Skin.Reset(usrconcertsfanartdir)</onclick>
-						<onclick>Skin.SetPath(usrconcertsfanartdir)</onclick>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>
-					</control>
-					<control type="button" id="609">
 						<description>User Album Thumbnails Path</description>
 						<width>750</width>
 						<height>40</height>
@@ -6314,6 +6274,79 @@
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
 					</control>
+					
+					
+					
+					
+					
+					
+					
+					
+					<control type="button" id="606">
+						<description>User Movie FanArt Path</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>31296</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(usrmoviefanartdir)][/COLOR]</label2>
+						<onclick>Skin.Reset(usrmoviefanartdir)</onclick>
+						<onclick>Skin.SetPath(usrmoviefanartdir)</onclick>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<enable>!Skin.HasSetting(enablefanartscript)</enable>
+					</control>
+					<control type="button" id="607">
+						<description>User TVShow FanArt Path</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>31297</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(usrtvshowfanartdir)][/COLOR]</label2>
+						<onclick>Skin.Reset(usrtvshowfanartdir)</onclick>
+						<onclick>Skin.SetPath(usrtvshowfanartdir)</onclick>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<enable>!Skin.HasSetting(enablefanartscript)</enable>
+					</control>
+					<control type="button" id="608">
+						<description>User Artists FanArt Path</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>31299</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(usrartistsfanartdir)][/COLOR]</label2>
+						<onclick>Skin.Reset(usrartistsfanartdir)</onclick>
+						<onclick>Skin.SetPath(usrartistsfanartdir)</onclick>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<enable>!Skin.HasSetting(enablefanartscript)</enable>
+					</control>
+					
+					
+					
+					<control type="button" id="609">
+						<description>User Concerts FanArt Path</description>
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<label>31298</label>
+						<label2>[COLOR=selected]$INFO[Skin.String(usrconcertsfanartdir)][/COLOR]</label2>
+						<onclick>Skin.Reset(usrconcertsfanartdir)</onclick>
+						<onclick>Skin.SetPath(usrconcertsfanartdir)</onclick>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+					</control>
+					
+					
+					
 					<control type="label" id="610">
 						<width>750</width>
 						<height>45</height>
