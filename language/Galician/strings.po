@@ -36,6 +36,10 @@ msgctxt "#31008"
 msgid "Fullscreen"
 msgstr "Pantalla completa"
 
+msgctxt "#31009"
+msgid "New"
+msgstr "Novo"
+
 msgctxt "#31011"
 msgid "Misc Options"
 msgstr "Outras opcións"
@@ -371,6 +375,10 @@ msgstr "Escolla do Usuario Dez"
 msgctxt "#31241"
 msgid "User Select"
 msgstr "Escolla do Usuario"
+
+msgctxt "#31243"
+msgid "XBMC Command"
+msgstr "Comando do XBMC"
 
 msgctxt "#31245"
 msgid "Next Aired Episodes"

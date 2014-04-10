@@ -32,6 +32,10 @@ msgctxt "#31008"
 msgid "Fullscreen"
 msgstr "Schermo Intero"
 
+msgctxt "#31009"
+msgid "New"
+msgstr "Nuovo"
+
 msgctxt "#31011"
 msgid "Misc Options"
 msgstr "Opzioni Varie"
@@ -231,6 +235,10 @@ msgstr "Traccia numero"
 msgctxt "#31220"
 msgid "Album Details"
 msgstr "Dettagli Album"
+
+msgctxt "#31243"
+msgid "XBMC Command"
+msgstr "Comando XBMC"
 
 msgctxt "#31253"
 msgid "Recently Added"
