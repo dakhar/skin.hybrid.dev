@@ -45,7 +45,7 @@
         <value>Animação</value>
     </rule>
 	<rule field="genre" operator="contains">
-        <value>Анимация</value>
+        <value>мультфильм</value>
     </rule>
 	<order direction="ascending">title</order>
 </smartplaylist>
